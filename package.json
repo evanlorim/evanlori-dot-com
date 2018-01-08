@@ -1,0 +1,13 @@
+{
+  "name": "apathinwalking.github.io",
+  "version": "1.0.0",
+  "repository": "https://github.com/apathinwalking/apathinwalking.github.io",
+  "author": "Evan Lori Mahone",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "font-awesome": "^4.7.0",
+    "sass-material-colors": "^0.0.5"
+  }
+}
