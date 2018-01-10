@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "elm2091"
 github_username:  "apathinwalking"
+cloud_name: "dweooc0sz"
 
 # Build settings
 markdown: kramdown
@@ -26,3 +27,4 @@ exclude:
   - yarn.lock
   - tasks
   - Rakefile
+  - .env

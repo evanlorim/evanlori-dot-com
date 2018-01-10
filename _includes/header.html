@@ -2,16 +2,11 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="https://bulma.io">
       <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
-      <span class="nav-spacer"></span>
-      <span class="title">{{ site.title_short }}</span>
     </a>
-    <a class="navbar-item">
-      Home
-    </a>
+	{% for link in site.data.nav %}
+	    <a class="navbar-item" href="{{ link.href }}">{{ link.title }}</a>
+	{% endfor %}
     <button class="button navbar-burger">
-      <span></span>
-      <span></span>
-      <span></span>
     </button>
   </div>
 </nav>
