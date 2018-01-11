@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include head.html %}
+	<body>
+		{% include header.html %}
+
+		<section class="hero is-primary is-medium">
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">Portfolio</h1>
+					<h2 class="subtitle">Digital and Traditional art by Me</h2>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="tabs">
+				<ul>
+					<li class="is-active"><a href="/portfolio/digital/">Digital</a></li>
+					<li><a href="/portfolio/traditional/">Traditional</a></li>
+					<li><a>Flyers</a></li>
+					<li><a>Logos</a></li>
+				</ul>
+			</div>
+
+			{{ content }}
+		</div>
+
+		{% include footer.html %}
+	</body>
+</html>

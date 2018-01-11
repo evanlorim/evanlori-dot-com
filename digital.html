@@ -1,0 +1,16 @@
+---
+layout: portfolio
+title: Digital Art
+subtitle: Digital art by me.
+permalink: /portfolio/digital/
+---
+<div class="columns is-multiline">
+	{% for item in site.data.portfolio.digital %}
+		 <div class="column is-one-quarter is-info"><div class="notification">
+			 <p class="title">{{ item.public_id | truncate: 10 }}</p>
+			 <figure class="image is-3by3">
+				 <img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_300,h_300,c_fill/w_300,h_300,c_crop/{{ item.public_id }}">
+			 </figure>
+		</div></div>
+	{% endfor %}
+</div>
