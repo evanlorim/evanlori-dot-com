@@ -14,14 +14,17 @@
 		</section>
 
 		<div class="container">
-			<div class="tabs">
-				<ul>
-					<li class="is-active"><a href="/portfolio/digital/">Digital</a></li>
-					<li><a href="/portfolio/traditional/">Traditional</a></li>
-					<li><a>Flyers</a></li>
-					<li><a>Logos</a></li>
-				</ul>
-			</div>
+			<div class="tabs is-centered is-medium"><ul>
+
+				{% for link in site.data.portfolio-nav %}
+					{% if link.href == page.url %}
+						{% assign isactive = 'is-active' %}
+					{% else %}
+						{% assign isactive = '' %}
+					{% endif %}
+					<li class="{{ isactive }}"><a href="{{ link.href }}">{{ link.title }}</a></li>
+				{% endfor %}
+			</ul></div>
 
 			{{ content }}
 		</div>

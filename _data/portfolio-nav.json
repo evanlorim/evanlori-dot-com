@@ -1,0 +1,19 @@
+[
+	{
+		"title": "Digital",
+		"href": "/portfolio/digital/",
+		"initial": true
+	},
+	{
+		"title": "Traditional",
+		"href": "/portfolio/traditional/"
+	},
+	{
+		"title": "Flyers",
+		"href": "/portfolio/flyers/"
+	},
+	{
+		"title": "Logos",
+		"href": "/portfolio/logos/"
+	}
+]

@@ -2,13 +2,10 @@ title: Evan Lori Mahone
 title_short: ELM
 subtitle: "Trans fem // Artist // Activist // Programmer"
 email: evan@bmoretransalliance.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Evan Lori Mahone's website.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: "elm2091"
-github_username:  "apathinwalking"
-cloud_name: "dweooc0sz"
+url: "http://evanlori.com" 
+cloud_name: "evanlori"
 
 # Build settings
 markdown: kramdown

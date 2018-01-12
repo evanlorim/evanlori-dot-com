@@ -1,5 +1,6 @@
 require 'cloudinary'
 require 'json'
+require 'active_support/core_ext/string'
 
 def query_folder(folder)
 	max_results = 100
@@ -15,11 +16,20 @@ def query_folder(folder)
 end
 
 def write_json(data, output_path)
+	json_data = JSON.pretty_generate(JSON.parse(data.to_json))
+
 	exists = File.exists? File.expand_path(output_path)
 	if (not exists)
 		FileUtils.mkdir_p File.dirname(output_path)
 	end
-	File.open(output_path, "w") { |f| f.write(data.to_json) }
+	File.open(output_path, "w") { |f| f.write(json_data) }
+end
+
+def get_title(str)
+	regex = /\/?(?:.(?!\/))+$/
+	partial = regex.match(str).to_s
+	partial = partial.gsub('/', '')
+	return partial.gsub(/\..*$/, '').titleize
 end
 
 def get_cloudinary_folder(folder, task_symbol)
@@ -28,6 +38,7 @@ def get_cloudinary_folder(folder, task_symbol)
   task task_symbol do
 		output_path = File.join('_data/portfolio', folder + ".json")
 		data = query_folder(folder)
+		data.each { |d| d['title'] = get_title(d['public_id']) }
 		write_json(data, output_path)
 		puts("wrote #{folder} to JSON")
   end
