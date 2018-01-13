@@ -252,6 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (= 4.2.9)
   cloudinary (~> 1.8, >= 1.8.2)
   github-pages (~> 172)
   jekyll (~> 3.6.2)

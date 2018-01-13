@@ -4,13 +4,4 @@ title: Traditional Art
 subtitle: Traditional art by me.
 permalink: /portfolio/traditional/
 ---
-<div class="columns is-multiline">
-	{% for item in site.data.portfolio.traditional %}
-		 <div class="column is-one-quarter is-info"><div class="notification">
-			 <p class="title">{{ item.title }}</p>
-			 <figure class="image is-3by3">
-				 <img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_300,h_300,c_fill/w_300,h_300,c_crop/{{ item.public_id }}.{{ item.format }}">
-			 </figure>
-		</div></div>
-	{% endfor %}
-</div>
+{% include image-grid.html images=site.data.portfolio.traditional %}
