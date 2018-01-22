@@ -4,7 +4,7 @@ subtitle: "Trans fem // Artist // Activist // Programmer"
 email: evan@bmoretransalliance.com
 description: >-
   Evan Lori Mahone's website.
-url: "http://evanlori.com" 
+url: "http://evanlori.com"
 cloud_name: "evanlori"
 
 # Build settings
@@ -14,6 +14,18 @@ plugins:
 sass:
   style: expanded
   sass_dir: _sass
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
 
 exclude:
   - Gemfile
@@ -25,3 +37,4 @@ exclude:
   - tasks
   - Rakefile
   - .env
+  - .tmp

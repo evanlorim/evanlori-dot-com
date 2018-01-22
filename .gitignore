@@ -2,4 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 .env
+.tmp
 node_modules
