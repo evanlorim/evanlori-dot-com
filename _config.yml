@@ -15,17 +15,8 @@ sass:
   style: expanded
   sass_dir: _sass
 
-collections:
-  category:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: category
-    values:
-      layout: "category"
+include:
+  - _categories
 
 exclude:
   - Gemfile

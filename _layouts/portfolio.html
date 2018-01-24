@@ -1,33 +1,43 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-{% include head.html %}
-	<body>
-		{% include header.html %}
+---
+layout: default
+---
+{% assign capital_category = page.category | capitalize %}
+{% assign title = page.title | default: capital_category %}
+{% include hero.html title = title subtitle = page.subtitle %}
 
-		<section class="hero is-primary is-medium">
-			<div class="hero-body">
-				<div class="container">
-					<h1 class="title is-1">{{ page.title }}</h1>
-					<h2 class="subtitle is-3">{{ page.subtitle }}</h2>
-				</div>
-			</div>
-		</section>
+<div class="section"><div class="container">
+	<div class="tabs is-medium portfolio-tabs"><ul>
 
-		<div class="section"><div class="container">
-			<div class="tabs is-medium"><ul>
-				{% for link in site.data.portfolio-nav %}
-					{% if link.href == page.url %}
-						{% assign isactive = 'is-active' %}
-					{% else %}
-						{% assign isactive = '' %}
+		{% if page.url == '/portfolio/' or page.url == '/portfolio.html' %}
+			{% assign latest_isactive = 'is-active' %}
+			{% assign posts = site.posts %}
+		{% else %}
+			{% assign latest_isactive = '' %}
+		{% endif %}
+
+		<li class="{{ latest_isactive }}"><a href="/portfolio/ }}">Latest</a></li>
+
+		{% for category in site.categories %}
+			{% assign category_url = "/portfolio/" | append: category[0] | append: '/' %}
+			{% assign category_title = category[0] | capitalize %}
+
+			{% if (category_url == page.url) and latest_isactive == '' %}
+				{% assign isactive = 'is-active' %}
+
+				{% assign posts = "" | split: "" %}
+				{% for post in site.posts %}
+					{% if post.categories contains page.category %}
+					{% assign posts = posts | push: post %}
 					{% endif %}
-					<li class="{{ isactive }}"><a href="{{ link.href }}">{{ link.title }}</a></li>
 				{% endfor %}
-			</ul></div>
-			{% include image-grid.html images=site.posts %}
-			{{ content }}
-		</div></div>
 
-		{% include footer.html %}
-	</body>
-</html>
+			{% else %}
+				{% assign isactive = '' %}
+			{% endif %}
+
+			<li class="{{ isactive }}"><a href="/portfolio/{{ category[0] }}">{{ category_title }}</a></li>
+		{% endfor %}
+	</ul></div>
+	{% include image-grid.html images = posts %}
+	{{ content }}
+</div></div>
