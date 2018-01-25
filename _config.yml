@@ -7,16 +7,28 @@ description: >-
 url: "http://evanlori.com"
 cloud_name: "evanlori"
 
-# Build settings
-markdown: kramdown
-plugins:
+collections:
+  artwork:
+    output: true
+  artwork-categories:
+    output: true
+    layout: artwork-category
+    permalink: /artwork/:name/
 
-sass:
-  style: expanded
-  sass_dir: _sass
-
-include:
-  - _categories
+defaults:
+  -
+    scope:
+      path: ""
+      type: artwork
+    values:
+      layout: "art"
+      featured: false
+  -
+    scope:
+      path: ""
+      type: artwork-categories
+    values:
+      layout: "artwork-category"
 
 exclude:
   - Gemfile
@@ -29,3 +41,11 @@ exclude:
   - Rakefile
   - .env
   - .tmp
+
+# Build settings
+markdown: kramdown
+plugins:
+
+sass:
+  style: expanded
+  sass_dir: _sass

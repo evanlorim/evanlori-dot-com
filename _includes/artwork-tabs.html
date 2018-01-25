@@ -1,0 +1,23 @@
+{% assign categories = (site.artwork-categories | sort:"order") %}
+<div class="tabs is-medium artwork-tabs"><ul>
+
+    {% if include.category == 'latest' %}
+        {% assign latest_isactive = 'is-active' %}
+    {% else %}
+		{% assign latest_isactive = '' %}
+	{% endif %}
+
+	<li class="{{ latest_isactive }}"><a href="/artwork/">Latest</a></li>
+
+    {% for category in categories %}
+        {% assign category_url = "/artwork/" | append: category.category | append: '/' %}
+        {% assign category_title = category.category | capitalize %}
+        {% if (include.category == category.category) and latest_isactive == '' %}
+            {% assign isactive = 'is-active' %}
+        {% else %}
+            {% assign isactive = '' %}
+        {% endif %}
+		<li class="{{ isactive }}"><a href="{{ category_url }}">{{ category_title }}</a></li>
+    {% endfor %}
+
+</ul></div>

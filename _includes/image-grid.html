@@ -1,9 +1,0 @@
-<div class="columns is-multiline">
-	{% for item in include.images %}
-		 <div class="column is-one-quarter is-info">
-			 <figure class="image is-3by3">
-				 <img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_300,h_300,c_fill/w_300,h_300,c_crop/{{ item.public_id }}">
-			 </figure>
-		</div>
-	{% endfor %}
-</div>
