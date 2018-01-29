@@ -4,7 +4,7 @@ gem "jekyll", "~> 3.6.2"
 gem "minima", "~> 2.0"
 
 group :jekyll_plugins do
-	gem 'github-pages', '~> 172'
+  gem "jekyll-paginate-v2", "~> 1.7"
 end
 
 group :development do

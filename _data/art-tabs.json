@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Latest",
+        "category": "latest",
+        "href": "/art/"
+    },
+    {
+        "title": "Digital",
+        "category": "digital",
+        "href": "/art/digital/"
+    },
+    {
+        "title": "Drawn",
+        "category": "drawn",
+        "href": "/art/drawn/"
+    },
+    {
+        "title": "Sketchbook",
+        "category": "sketchbook",
+        "href": "/art/sketchbook/"
+    }
+]

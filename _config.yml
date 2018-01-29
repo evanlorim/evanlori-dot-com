@@ -7,29 +7,6 @@ description: >-
 url: "http://evanlori.com"
 cloud_name: "evanlori"
 
-collections:
-  artwork:
-    output: true
-  artwork-categories:
-    output: true
-    layout: artwork-category
-    permalink: /artwork/:name/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: artwork
-    values:
-      layout: "art"
-      featured: false
-  -
-    scope:
-      path: ""
-      type: artwork-categories
-    values:
-      layout: "artwork-category"
-
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -45,7 +22,20 @@ exclude:
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-paginate-v2
 
 sass:
   style: expanded
   sass_dir: _sass
+
+pagination:
+  enabled: true
+  per_page: 6
+  limit: 0
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2

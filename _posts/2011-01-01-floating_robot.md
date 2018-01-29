@@ -1,7 +1,6 @@
 ---
-layout: "art"
-title: "Floating Robot"
-public_id: "portfolio/floating_robot"
-category: "sketchbook"
+title: Floating Robot
+public_id: portfolio/floating_robot
+categories: sketchbook
 date: 2011-01-01
 ---

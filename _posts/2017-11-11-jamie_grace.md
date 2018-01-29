@@ -1,9 +1,7 @@
 ---
-layout: "art"
-title: "Jamie Grace"
-public_id: "portfolio/jamie_grace"
-categories:
-  - "design"
-  - "digital"
-date: 2017-11-11 
+title: Jamie Grace
+public_id: portfolio/jamie_grace
+categories: digital
+tags: [illustration, color, trans, bta]
+date: 2017-11-11
 ---
