@@ -17,21 +17,7 @@
 						<time datetime="2016-1-1">{{ a.date | date_to_long_string }}</time>
 					</div>
 
-					<div class="content">
-						<div class="field is-grouped is-grouped-multiline">
-							{% for category in a.categories %}
-								<div class="control"><div class="tags has-addons">
-									<span class="tag is-primary">category</span>
-									<span class="tag is-light">{{category}}</span>
-								</div></div>
-							{% endfor %}
-							<div class="control"><div class="tags">
-								{% for tag in a.tags %}
-									<span class="tag is-info">{{tag}}</span>
-								{% endfor %}
-							</div></div>
-						</div>
-					</div>
+				
 
 				</div>
 

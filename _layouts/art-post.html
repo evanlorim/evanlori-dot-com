@@ -1,9 +1,44 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-{% include head.html %}
-	<body>
-		{% include header.html %}
-		{{ content }}
-		{% include footer.html %}
-	</body>
-</html>
+---
+layout: default
+---
+<div class="section"><div class="container"><div class="columns">
+
+	<div class="column image-column">
+		<figure class="image is-4by3">
+	<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_800,h_600,c_fill/w_800,h_600,c_crop/{{ page.public_id }}">
+		</figure>
+	</div>
+
+	<div class="column content-column">
+		<p class="title is-2">{{ page.title }}</p>
+
+		<nav class="level">
+
+			<div class="level-left"><div class="level-item">
+				<p class="subtitle"><time datetime="2016-1-1">{{ page.date | date_to_long_string }}</time></p>
+			</div></div>
+
+			<div class="level-right"><div class="level-item"><div class="tags">
+				{% for category in page.categories %}
+					<span class="tag is-dark is-medium"><a href="/art/{{category}}/">{{category}}</a></span>
+				{% endfor %}
+			</div></div></div>
+
+		</nav>
+
+		<p class="content">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+		</p>
+
+		<div class="content"><div class="field is-grouped is-grouped-multiline">
+			{% for tag in page.tags %}
+				<div class="control"><div class="tags has-addons">
+					<span class="tag is-dark"><i class="fa fa-tags"></i></span>
+					<span class="tag is-primary">{{tag}}</span>
+				</div></div>
+			{% endfor %}
+		</div></div>
+
+	</div>
+
+</div></div></div>

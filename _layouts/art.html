@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign title = page.category | capitalize | default: page.title  %}
+{% assign title = page.title | default page.category %}
 {% assign category = page.category | default: 'latest' %}
 
 {% include hero.html title = title subtitle = page.subtitle %}

@@ -1,6 +1,8 @@
 ---
+layout: art-post
 title: Treebark City
 public_id: portfolio/treebark_city
 categories: sketchbook
-date: 2014-04-12
+tags: [markers, color, illustration, surreal]
+date: 2017-04-12
 ---
