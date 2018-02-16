@@ -1,12 +1,15 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
-    </a>
-	{% for link in site.data.nav %}
-	    <a class="navbar-item" href="{{ link.href }}">{{ link.title }}</a>
-	{% endfor %}
-    <button class="button navbar-burger">
-    </button>
+    <div class="container">
+
+
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
+            </a>
+            {% for link in site.data.nav %}
+                <a class="navbar-item" href="{{ link.href }}">{{ link.title }}</a>
+            {% endfor %}
+            <button class="button navbar-burger"></button>
+        </div>
   </div>
 </nav>

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% include hero.html title = page.title subtitle = page.subtitle %}
+
+{% for post in paginator.posts %}
+    <p>{{ post.title }}</p>
+{% endfor %}

@@ -4,9 +4,9 @@ layout: default
 <div class="section"><div class="container"><div class="columns">
 
 	<div class="column image-column">
-		<figure class="image is-4by3">
-	<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_800,h_600,c_fill/w_800,h_600,c_crop/{{ page.public_id }}">
-		</figure>
+		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
+			<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
+		</a>
 	</div>
 
 	<div class="column content-column">
@@ -32,9 +32,10 @@ layout: default
 
 		<div class="content"><div class="field is-grouped is-grouped-multiline">
 			{% for tag in page.tags %}
+				{% assign tag_data = site.data.tags | where: "name", tag | first %}
 				<div class="control"><div class="tags has-addons">
-					<span class="tag is-dark"><i class="fa fa-tags"></i></span>
-					<span class="tag is-primary">{{tag}}</span>
+					<span class="tag is-rounded is-{{ tag_data.color }}">{{ tag_data.type }}</span>
+					<a href="{{ tag_data.href }}" class="tag is-rounded is-dark">{{ tag }}</a>
 				</div></div>
 			{% endfor %}
 		</div></div>

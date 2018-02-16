@@ -1,16 +1,35 @@
 ---
 layout: default
 ---
-{% assign title = page.title | default page.category %}
-{% assign category = page.category | default: 'latest' %}
+{% assign title = page.title | default: page.category %}
 
-{% include hero.html title = title subtitle = page.subtitle %}
+<section class="hero is-primary is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">{{ title }}</h1>
+            <h2 class="subtitle">{{ page.subtitle }}</h2>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container">
+            {% include art-tabs.html category = page.category subcategory = page.subcategory %}
+        </div>
+    </div>
+</section>
+
+{{ content }}
 
 <div class="section"><div class="container">
-    {% include art-tabs.html category = category %}
-    {% include art-grid.html art = paginator.posts %}
 
-    {{ content }}
+    <div class="columns is-8 is-variable">
+        <div class="column is-three-quarters">
+            {% include art-grid.html art = paginator.posts %}
+        </div>
+        <div class="column is-one-quarter">
+            {% include art-tags.html tag = page.tag %}
+        </div>
+    </div>
 
     {% include page-nav.html paginator=paginator %}
+
 </div></div>

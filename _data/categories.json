@@ -1,0 +1,25 @@
+[
+    {
+        "tab-title": "Latest",
+        "category": "art",
+        "href": "/art/"
+    },
+    {
+        "tab-title": "Digital",
+        "category": "art",
+        "subcategory": "digital",
+        "href": "/art/digital/"
+    },
+    {
+        "tab-title": "Drawn",
+        "category": "art",
+        "subcategory": "drawn",
+        "href": "/art/drawn/"
+    },
+    {
+        "tab-title": "Sketchbook",
+        "category": "art",
+        "subcategory": "sketchbook",
+        "href": "/art/sketchbook/"
+    }
+]
