@@ -1,25 +1,48 @@
 [
-    {
-        "tab-title": "Latest",
-        "category": "art",
-        "href": "/art/"
-    },
-    {
-        "tab-title": "Digital",
-        "category": "art",
-        "subcategory": "digital",
-        "href": "/art/digital/"
-    },
-    {
-        "tab-title": "Drawn",
-        "category": "art",
-        "subcategory": "drawn",
-        "href": "/art/drawn/"
-    },
-    {
-        "tab-title": "Sketchbook",
-        "category": "art",
-        "subcategory": "sketchbook",
-        "href": "/art/sketchbook/"
-    }
+	{
+		"tab-title": "Latest",
+		"category": "art",
+		"href": "/art/"
+	},
+	{
+		"tab-title": "Digital",
+		"category": "art",
+		"subcategory": "digital",
+		"href": "/art/digital/"
+	},
+	{
+		"tab-title": "Drawn",
+		"category": "art",
+		"subcategory": "drawn",
+		"href": "/art/drawn/"
+	},
+	{
+		"tab-title": "Sketchbook",
+		"category": "art",
+		"subcategory": "sketchbook",
+		"href": "/art/sketchbook/"
+	},
+	{
+		"tab-title": "Latest",
+		"category": "code",
+		"href": "/code/"
+	},
+	{
+		"tab-title": "Software",
+		"category": "code",
+		"subcategory": "software",
+		"href": "/code/software/"
+	},
+	{
+		"tab-title": "Web",
+		"category": "code",
+		"subcategory": "web",
+		"href": "/code/web/"
+	},
+	{
+		"tab-title": "Fiddles",
+		"category": "code",
+		"subcategory": "fiddles",
+		"href": "/code/fiddles/"
+	}
 ]

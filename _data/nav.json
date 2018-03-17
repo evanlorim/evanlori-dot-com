@@ -1,18 +1,54 @@
 [
-    {
-        "title": "Home",
-        "href": "/"
-    },
-    {
-        "title": "Art",
-        "href": "/art"
-    },
-    {
-        "title": "Code",
-        "href": "/code"
-    },
-    {
-        "title": "Work",
-        "href": "/work"
-    }
+	{
+		"title": "Home",
+		"href": "/"
+	},
+	{
+		"title": "Art",
+		"href": "/art",
+		"links": [
+			{
+				"title": "Latest",
+				"href": "/art/"
+			},
+			{
+				"title": "Digital",
+				"href": "/art/digital/"
+			},
+			{
+				"title": "Drawn",
+				"href": "/art/drawn/"
+			},
+			{
+				"title": "Sketchbook",
+				"href": "/art/sketchbook/"
+			}
+		]
+	},
+	{
+		"title": "Code",
+		"href": "/code",
+		"links": [
+			{
+				"title": "Latest",
+				"href": "/code/"
+			},
+			{
+				"title": "Software",
+				"href": "/code/software/"
+			},
+			{
+				"title": "Web",
+				"href": "/code/web/"
+			},
+			{
+				"title": "Fiddles",
+				"href": "/code/fiddles/"
+			}
+		]
+	},
+	{
+		"title": "Work",
+		"href": "/work"
+	}
 ]

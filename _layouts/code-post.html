@@ -1,3 +1,46 @@
 ---
 layout: default
 ---
+<div class="section"><div class="container"><div class="columns">
+
+	<div class="column image-column">
+		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
+			<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
+		</a>
+	</div>
+
+	<div class="column content-column">
+		<p class="title is-2">{{ page.title }}</p>
+
+		<nav class="level">
+
+			<div class="level-left"><div class="level-item">
+				<p class="subtitle"><time datetime="2016-1-1">{{ page.date | date_to_long_string }}</time></p>
+			</div></div>
+
+			<div class="level-right"><div class="level-item"><div class="tags">
+				{% for category in page.categories %}
+					<span class="tag is-dark is-medium"><a href="/art/{{category}}/">{{category}}</a></span>
+				{% endfor %}
+			</div></div></div>
+
+		</nav>
+
+		<p class="content">
+			Description coming soon!
+			<!-- At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. -->
+		</p>
+
+		<div class="content"><div class="field is-grouped is-grouped-multiline">
+			{% for tag in page.tags %}
+				{% assign tag_data = site.data.tags | where: "name", tag | first %}
+				<div class="control"><div class="tags has-addons">
+					<span class="tag is-rounded is-{{ tag_data.color }}">{{ tag_data.type }}</span>
+					<a href="{{ tag_data.href }}" class="tag is-rounded is-dark">{{ tag }}</a>
+				</div></div>
+			{% endfor %}
+		</div></div>
+
+	</div>
+
+</div></div></div>

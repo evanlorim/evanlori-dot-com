@@ -1,29 +1,47 @@
 [
-    { "category": "art", "name": "pen-and-ink", "href": "/art/tags/pen-and-ink", "type": "media", "color": "primary"},
-    { "category": "art", "name": "markers", "href": "/art/tags/markers", "type": "media", "color": "primary"},
-    { "category": "art", "name": "multimedia", "href": "/art/tags/multimedia", "type": "media", "color": "primary"},
-    { "category": "art", "name": "vector", "href": "/art/tags/vector", "type": "media", "color": "primary"},
-    { "category": "art", "name": "digitized", "href": "/art/tags/digitized", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "pen-and-ink", "href": "/art/tags/pen-and-ink", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "markers", "href": "/art/tags/markers", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "multimedia", "href": "/art/tags/multimedia", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "vector", "href": "/art/tags/vector", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "digitized", "href": "/art/tags/digitized", "type": "media", "color": "primary"},
 
-    { "category": "art", "name": "color", "href": "/art/tags/color", "type": "color", "color": "info" },
-    { "category": "art", "name": "black-and-white", "href": "/art/tags/black-and-white", "type": "color", "color": "info" },
+	{ "category": "art", "name": "color", "href": "/art/tags/color", "type": "color", "color": "info" },
+	{ "category": "art", "name": "black-and-white", "href": "/art/tags/black-and-white", "type": "color", "color": "info" },
 
-    { "category": "art", "name": "graphic-design", "href": "/art/tags/graphic-design", "type": "type", "color": "success" },
-    { "category": "art", "name": "flyer", "href": "/art/tags/flyer", "type": "type", "color": "success" },
-    { "category": "art", "name": "logo", "href": "/art/tags/logo", "type": "type", "color": "success" },
-    { "category": "art", "name": "button", "href": "/art/tags/button", "type": "type", "color": "success" },
-    { "category": "art", "name": "sprite", "href": "/art/tags/sprite", "type": "type", "color": "success" },
-    { "category": "art", "name": "illustration", "href": "/art/tags/illustration", "type": "type", "color": "success" },
-    { "category": "art", "name": "doodle", "href": "/art/tags/doodle", "type": "type", "color": "success" },
+	{ "category": "art", "name": "graphic-design", "href": "/art/tags/graphic-design", "type": "type", "color": "success" },
+	{ "category": "art", "name": "flyer", "href": "/art/tags/flyer", "type": "type", "color": "success" },
+	{ "category": "art", "name": "logo", "href": "/art/tags/logo", "type": "type", "color": "success" },
+	{ "category": "art", "name": "button", "href": "/art/tags/button", "type": "type", "color": "success" },
+	{ "category": "art", "name": "sprite", "href": "/art/tags/sprite", "type": "type", "color": "success" },
+	{ "category": "art", "name": "illustration", "href": "/art/tags/illustration", "type": "type", "color": "success" },
+	{ "category": "art", "name": "doodle", "href": "/art/tags/doodle", "type": "type", "color": "success" },
 
-    { "category": "art", "name": "abstract", "href": "/art/tags/abstract", "type": "style", "color": "danger" },
-    { "category": "art", "name": "surreal", "href": "/art/tags/surreal", "type": "style", "color": "danger" },
-    { "category": "art", "name": "pattern", "href": "/art/tags/pattern", "type": "style", "color": "danger" },
-    { "category": "art", "name": "fractal", "href": "/art/tags/fractal", "type": "style", "color": "danger" },
-    { "category": "art", "name": "text", "href": "/art/tags/text", "type": "style", "color": "danger" },
-    { "category": "art", "name": "pixel-art", "href": "/art/tags/pixel-art", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "abstract", "href": "/art/tags/abstract", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "surreal", "href": "/art/tags/surreal", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "pattern", "href": "/art/tags/pattern", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "fractal", "href": "/art/tags/fractal", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "text", "href": "/art/tags/text", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "pixel-art", "href": "/art/tags/pixel-art", "type": "style", "color": "danger" },
 
 
-    { "category": "art", "name": "trans", "href": "/art/tags/trans", "type": "topic", "color": "warning" },
-    { "category": "art", "name": "bta", "href": "/art/tags/bta", "type": "topic", "color": "warning" },
+	{ "category": "art", "name": "trans", "href": "/art/tags/trans", "type": "topic", "color": "warning" },
+	{ "category": "art", "name": "bta", "href": "/art/tags/bta", "type": "topic", "color": "warning" },
+
+
+	{ "category": "code", "name": "html", "href": "/code/tags/html", "type": "language", "color": "primary" },
+	{ "category": "code", "name": "js", "href": "/code/tags/js", "type": "language", "color": "primary" },
+	{ "category": "code", "name": "css", "href": "/code/tags/css", "type": "language", "color": "primary" },
+	{ "category": "code", "name": "python", "href": "/code/tags/python", "type": "language", "color": "primary" },
+	{ "category": "code", "name": "r", "href": "/code/tags/python", "type": "language", "color": "primary" },
+
+	{ "category": "code", "name": "nodejs", "href": "/code/tags/nodejs", "type": "tool", "color": "info" },
+	{ "category": "code", "name": "jekyll", "href": "/code/tags/jekyll", "type": "tool", "color": "info" },
+
+	{ "category": "code", "name": "angular", "href": "/code/tags/angular", "type": "framework", "color": "success" },
+	{ "category": "code", "name": "materialize", "href": "/code/tags/materialize", "type": "framework", "color": "success" },
+	{ "category": "code", "name": "bulma", "href": "/code/tags/bulma", "type": "framework", "color": "success" },
+
+	{ "category": "code", "name": "p5", "href": "/code/tags/p5", "type": "library", "color": "danger" },
+	{ "category": "code", "name": "d3", "href": "/code/tags/d3", "type": "library", "color": "danger" },
+	{ "category": "code", "name": "leaflet", "href": "/code/tags/leaflet", "type": "library", "color": "danger" }
 ]

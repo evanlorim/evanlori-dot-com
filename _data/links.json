@@ -1,0 +1,35 @@
+{
+	"facebook": {
+		"href": "https://facebook.com/elm2091",
+		"icon": "fab fa-facebook"
+	},
+	"twitter": {
+		"href": "https://twitter.com/elm2091",
+		"icon": "fab fa-twitter"
+	},
+	"patreon": {
+		"href": "https://www.patreon.com/evanlori",
+		"icon": "fab fa-patreon"
+	},
+	"linkedin": {
+		"href": "https://www.linkedin.com/in/evan-lori-mahone-71607783/",
+		"icon": "fab fa-linkedin"
+	},
+	"github": {
+		"href": "https://github.com/apathinwalking",
+		"icon": "fab fa-github"
+	},
+	"instagram": {
+		"href": "https://instagram.com/elm2091",
+		"icon": "fab fa-instagram"
+	},
+	"paypal": {
+		"href": "https://paypal.me/EvanLori",
+		"icon": "fab fa-paypal"
+	},
+	"email": {
+		"address": "evan@evanlori.com",
+		"href": "mailto:evan@evanlori.com",
+		"icon": "fas fa-envelope"
+	}
+}

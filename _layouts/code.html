@@ -1,8 +1,37 @@
 ---
 layout: default
 ---
-{% include hero.html title = page.title subtitle = page.subtitle %}
+{% assign title = page.title | default: page.category %}
+{% assign category = page.category | default: 'code' %}
 
-{% for post in paginator.posts %}
-    <p>{{ post.title }}</p>
-{% endfor %}
+<section class="hero is-primary is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">{{ title }}</h1>
+            <h2 class="subtitle">{{ page.subtitle }}</h2>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container">
+
+            {% include tabs.html category = category subcategory = page.subcategory %}
+        </div>
+    </div>
+</section>
+
+{{ content }}
+
+<div class="section"><div class="container">
+
+    <div class="columns is-8 is-variable">
+        <div class="column is-three-quarters">
+            {% include posts-grid.html posts = paginator.posts %}
+        </div>
+        <div class="column is-one-quarter">
+            {% include tags-panel.html category = category tag = page.tag %}
+        </div>
+    </div>
+
+    {% include page-nav.html paginator=paginator %}
+
+</div></div>
