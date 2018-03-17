@@ -12,3 +12,34 @@
   INFO [b1b905ca] Finished in 0.131 seconds with exit status 0 (successful).
   INFO [a5957092] Running /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD as deploy@198.199.90.179
  DEBUG [a5957092] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-17 15:13:26 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6184c820] Running /usr/bin/env mkdir -p /tmp as deploy@198.199.90.179
+ DEBUG [6184c820] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6184c820] Finished in 0.981 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 100.0%
+  INFO [7ac0038d] Running /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh as deploy@198.199.90.179
+ DEBUG [7ac0038d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh
+  INFO [7ac0038d] Finished in 0.135 seconds with exit status 0 (successful).
+  INFO [78059ab7] Running /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD as deploy@198.199.90.179
+ DEBUG [78059ab7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-17 15:15:00 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f62de1a3] Running /usr/bin/env mkdir -p /tmp as deploy@198.199.90.179
+ DEBUG [f62de1a3] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f62de1a3] Finished in 0.820 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 100.0%
+  INFO [ddd99cff] Running /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh as deploy@198.199.90.179
+ DEBUG [ddd99cff] Command: /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh
+  INFO [ddd99cff] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [ef4db2f7] Running /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD as deploy@198.199.90.179
+ DEBUG [ef4db2f7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD )
+ DEBUG [ef4db2f7] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [ef4db2f7] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

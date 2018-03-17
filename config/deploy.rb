@@ -2,7 +2,7 @@
 lock "~> 3.10.1"
 
 set :application, "evanlori-dot-com"
-set :repo_url, "git@example.com:apathinwalking/evanlori-dot-com"
+set :repo_url, "git@github.com:apathinwalking/evanlori-dot-com"
 
 
 set :deploy_to, -> { "/var/www/evanlori.com" }
