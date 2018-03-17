@@ -43,3 +43,85 @@
 
 Please make sure you have the correct access rights
 and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-17 15:22:54 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [477bd2aa] Running /usr/bin/env mkdir -p /tmp as deploy@198.199.90.179
+ DEBUG [477bd2aa] Command: /usr/bin/env mkdir -p /tmp
+  INFO [477bd2aa] Finished in 0.928 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 100.0%
+  INFO [17e47566] Running /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh as deploy@198.199.90.179
+ DEBUG [17e47566] Command: /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh
+  INFO [17e47566] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [7d46d34a] Running /usr/bin/env git ls-remote git@github.com:apathinwalking/evanlori-dot-com HEAD as deploy@198.199.90.179
+ DEBUG [7d46d34a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git ls-remote git@github.com:apathinwalking/evanlori-dot-com HEAD )
+ DEBUG [7d46d34a] 	Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+ DEBUG [7d46d34a] 	fb219cb883e805d77a21f8953a62b2f5e7de638a	HEAD
+  INFO [7d46d34a] Finished in 0.510 seconds with exit status 0 (successful).
+  INFO [081db809] Running /usr/bin/env mkdir -p /var/www/evanlori.com/shared /var/www/evanlori.com/releases as deploy@198.199.90.179
+ DEBUG [081db809] Command: /usr/bin/env mkdir -p /var/www/evanlori.com/shared /var/www/evanlori.com/releases
+ DEBUG [081db809] 	mkdir: 
+ DEBUG [081db809] 	cannot create directory ‘/var/www/evanlori.com/shared’
+ DEBUG [081db809] 	: Permission denied
+ DEBUG [081db809] 	
+ DEBUG [081db809] 	mkdir: 
+ DEBUG [081db809] 	cannot create directory ‘/var/www/evanlori.com/releases’
+ DEBUG [081db809] 	: Permission denied
+ DEBUG [081db809] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-17 15:24:32 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8dabe286] Running /usr/bin/env mkdir -p /tmp as deploy@198.199.90.179
+ DEBUG [8dabe286] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8dabe286] Finished in 1.041 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 100.0%
+  INFO [40f49b64] Running /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh as deploy@198.199.90.179
+ DEBUG [40f49b64] Command: /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh
+  INFO [40f49b64] Finished in 0.233 seconds with exit status 0 (successful).
+  INFO [ddfad3ff] Running /usr/bin/env git ls-remote git@github.com:apathinwalking/evanlori-dot-com HEAD as deploy@198.199.90.179
+ DEBUG [ddfad3ff] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git ls-remote git@github.com:apathinwalking/evanlori-dot-com HEAD )
+ DEBUG [ddfad3ff] 	Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+ DEBUG [ddfad3ff] 	fb219cb883e805d77a21f8953a62b2f5e7de638a	HEAD
+  INFO [ddfad3ff] Finished in 0.576 seconds with exit status 0 (successful).
+  INFO [ecb8eded] Running /usr/bin/env mkdir -p /var/www/evanlori.com/shared /var/www/evanlori.com/releases as deploy@198.199.90.179
+ DEBUG [ecb8eded] Command: /usr/bin/env mkdir -p /var/www/evanlori.com/shared /var/www/evanlori.com/releases
+  INFO [ecb8eded] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [6b256b88] Running [ -f /var/www/evanlori.com/current/REVISION ] as deploy@198.199.90.179
+ DEBUG [6b256b88] Command: [ -f /var/www/evanlori.com/current/REVISION ]
+ DEBUG [6b256b88] Finished in 0.121 seconds with exit status 1 (failed).
+ DEBUG [9fea1ae0] Running [ -f /var/www/evanlori.com/repo/HEAD ] as deploy@198.199.90.179
+ DEBUG [9fea1ae0] Command: [ -f /var/www/evanlori.com/repo/HEAD ]
+ DEBUG [9fea1ae0] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [9966240e] Running if test ! -d /var/www/evanlori.com; then echo "Directory does not exist '/var/www/evanlori.com'" 1>&2; false; fi as deploy@198.199.90.179
+ DEBUG [9966240e] Command: if test ! -d /var/www/evanlori.com; then echo "Directory does not exist '/var/www/evanlori.com'" 1>&2; false; fi
+ DEBUG [9966240e] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [54cde963] Running /usr/bin/env git clone --mirror git@github.com:apathinwalking/evanlori-dot-com /var/www/evanlori.com/repo as deploy@198.199.90.179
+ DEBUG [54cde963] Command: cd /var/www/evanlori.com && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git clone --mirror git@github.com:apathinwalking/evanlori-dot-com /var/www/evanlori.com/repo )
+ DEBUG [54cde963] 	Cloning into bare repository '/var/www/evanlori.com/repo'...
+  INFO [54cde963] Finished in 1.095 seconds with exit status 0 (successful).
+ DEBUG [68eb0950] Running if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi as deploy@198.199.90.179
+ DEBUG [68eb0950] Command: if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi
+ DEBUG [68eb0950] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [ee7b8a38] Running /usr/bin/env git remote set-url origin git@github.com:apathinwalking/evanlori-dot-com as deploy@198.199.90.179
+ DEBUG [ee7b8a38] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git remote set-url origin git@github.com:apathinwalking/evanlori-dot-com )
+  INFO [ee7b8a38] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [031ca5b3] Running /usr/bin/env git remote update --prune as deploy@198.199.90.179
+ DEBUG [031ca5b3] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [031ca5b3] 	Fetching origin
+  INFO [031ca5b3] Finished in 0.524 seconds with exit status 0 (successful).
+ DEBUG [2cc0de4d] Running if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi as deploy@198.199.90.179
+ DEBUG [2cc0de4d] Command: if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi
+ DEBUG [2cc0de4d] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [0fdabc45] Running /usr/bin/env mkdir -p /var/www/evanlori.com/releases/20180317192434 as deploy@198.199.90.179
+ DEBUG [0fdabc45] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env mkdir -p /var/www/evanlori.com/releases/20180317192434 )
+  INFO [0fdabc45] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [e64ec954] Running /usr/bin/env git archive master _site | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/evanlori.com/releases/20180317192434 as deploy@198.199.90.179
+ DEBUG [e64ec954] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git archive master _site | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/evanlori.com/releases/20180317192434 )
+ DEBUG [e64ec954] 	fatal: pathspec '_site' did not match any files
+ DEBUG [e64ec954] 	tar: 
+ DEBUG [e64ec954] 	This does not look like a tar archive
+ DEBUG [e64ec954] 	
+ DEBUG [e64ec954] 	tar: 
+ DEBUG [e64ec954] 	Exiting with failure status due to previous errors
