@@ -1,0 +1,14 @@
+# Logfile created on 2018-03-17 15:13:06 -0400 by logger.rb/56815
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-17 15:13:06 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ec02e183] Running /usr/bin/env mkdir -p /tmp as deploy@198.199.90.179
+ DEBUG [ec02e183] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ec02e183] Finished in 1.007 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-evanlori-dot-com-production-elm.sh 100.0%
+  INFO [b1b905ca] Running /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh as deploy@198.199.90.179
+ DEBUG [b1b905ca] Command: /usr/bin/env chmod 700 /tmp/git-ssh-evanlori-dot-com-production-elm.sh
+  INFO [b1b905ca] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [a5957092] Running /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD as deploy@198.199.90.179
+ DEBUG [a5957092] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-evanlori-dot-com-production-elm.sh" ; /usr/bin/env git ls-remote git@example.com:apathinwalking/evanlori-dot-com HEAD )
