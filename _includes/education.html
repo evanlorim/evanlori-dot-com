@@ -1,0 +1,29 @@
+<h1 id="education" class="title is-1">Education</h1>
+{% for ed in include.education %}
+	<div class="card block"><div class="card-content">
+		<nav class="level">
+			<div class="level-left">
+				<div>
+					<p class="title is-4">{{ ed.inst }}</p>
+				</div>
+			</div>
+			<div class="level-right">
+				<div>
+					<time class="has-text-right" datetime="2016-1-1">{{ ed.start | date: "%B %Y" }}</time>&nbsp;-&nbsp;
+					{% if ed.end %}<time datetime="2016-1-1">{{ ed.end | date: "%B %Y" }}</time>
+					{% else %}Present
+					{% endif %}
+					<p class="subtitle is-6 has-text-right-desktop">{{ ed.loc }}</p>
+				</div>
+			</div>
+		</nav>
+		<div class="content has-text-light">
+			<ul>
+				{% for deet in ed.details %}
+					<li>{{ deet }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div></div>
+{% endfor %}
+<h3 id="classes" class="title is-3"></h3>

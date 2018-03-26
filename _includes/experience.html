@@ -1,0 +1,30 @@
+<h1 id="experience" class="title is-1">Other Experience</h1>
+{% for exp in include.experience %}
+	<div class="card block"><div class="card-content">
+		<nav class="level">
+			<div class="level-left">
+				<div>
+					<p class="title is-4">{{ exp.pos }}</p>
+					<p class="subtitle is-6">{{ exp.org }}</p>
+				</div>
+			</div>
+			<div class="level-right">
+				<div>
+					<time class="has-text-right" datetime="2016-1-1">{{ exp.start | date: "%B %Y" }}</time>&nbsp;-&nbsp;
+					{% if exp.end %}<time datetime="2016-1-1">{{ exp.end | date: "%B %Y" }}</time>
+					{% else %}Present
+					{% endif %}
+					<p class="subtitle is-6 has-text-right-desktop">{{ exp.loc }}</p>
+				</div>
+			</div>
+		</nav>
+		<div class="content has-text-light">
+			<ul>
+				{% for deet in exp.details %}
+					<li>{{ deet }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div></div>
+
+{% endfor %}

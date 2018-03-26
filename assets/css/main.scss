@@ -4,7 +4,10 @@
 @import "variables";
 @import "bulma/bulma";
 @import "bulma-divider/bulma-divider";
+@import "bulma-carousel/bulma-carousel";
 @import "overrides";
 
 @import "layout";
-@import "components/artwork-tabs"
+@import "components/artwork-tabs";
+@import "components/post";
+@import "components/carousel";

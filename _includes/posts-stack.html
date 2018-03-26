@@ -1,0 +1,57 @@
+<div class="columns is-multiline is-3 is-variable">
+	{% for a in include.posts %}
+		<div class="column is-half">
+			<div class="card">
+
+				<div class="card-content">
+					<article class="media">
+						{% if a.public_id %}<figure class="media-left">
+							<p class="image is-128x128">
+								<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_128,h_128,c_fill/w_128,h_128,c_crop/{{ a.public_id }}">
+							</p>
+						</figure>{% endif %}
+						<div class="media-content">
+							<p class="title is-4">
+								<a href="{{ a.url }}">{{ a.title }}</a>
+							</p>
+							<p class="subtitle is-6">
+								<time datetime="2016-1-1">{{ a.date | date_to_long_string }}</time>
+							</p>
+							<div class="content">
+								<p>
+									{{ a.excerpt | default: 'More Info coming soon!'}}
+								</p>
+							</div>
+							<span>Tags:
+								{% for tag in a.tags %}
+									<a href="{{ tag_data.href }}" class="has-text-grey-light">{{ tag }}</a>
+									{% unless forloop.last %},&nbsp;{% endunless %}
+								{% endfor %}
+							</span>
+						</div>
+					</article>
+					<nav class="level">
+
+					</nav>
+				</div>
+
+
+					<!-- <div class="card-image">
+						 <figure class="image is-4by3">
+							 <img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_400,h_300,c_fill/w_400,h_300,c_crop/{{ a.public_id }}">
+						 </figure>
+					</div> -->
+
+					<!-- <div class="card-content">
+
+
+
+					</div> -->
+
+					<!-- <div class="card-footer"><div class="card-footer-item">
+					</div></div> -->
+
+			  </div>
+		</div>
+	{% endfor %}
+</div>

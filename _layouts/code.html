@@ -25,7 +25,7 @@ layout: default
 
     <div class="columns is-8 is-variable">
         <div class="column is-three-quarters">
-            {% include posts-grid.html posts = paginator.posts %}
+            {% include posts-stack.html posts = paginator.posts %}
         </div>
         <div class="column is-one-quarter">
             {% include tags-panel.html category = category tag = page.tag %}

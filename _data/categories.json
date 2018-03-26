@@ -31,18 +31,21 @@
 		"tab-title": "Software",
 		"category": "code",
 		"subcategory": "software",
-		"href": "/code/software/"
+		"href": "/code/software/",
+		"icon": "fas fa-code"
 	},
 	{
 		"tab-title": "Web",
 		"category": "code",
 		"subcategory": "web",
-		"href": "/code/web/"
+		"href": "/code/web/",
+		"icon": "fas fa-globe"
 	},
 	{
 		"tab-title": "Fiddles",
 		"category": "code",
 		"subcategory": "fiddles",
-		"href": "/code/fiddles/"
+		"href": "/code/fiddles/",
+		"icon": "fas fa-pencil-alt"
 	}
 ]

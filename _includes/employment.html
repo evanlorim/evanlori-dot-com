@@ -1,0 +1,32 @@
+<h1 id="employment" class="title is-1">Employment</h1>
+{% for job in include.employment %}
+	<div class="card block"><div class="card-content">
+
+		<nav class="level">
+			<div class="level-left">
+				<div>
+					<p class="title is-4">{{ job.pos }}</p>
+					<p class="subtitle is-6">{{ job.org }}</p>
+				</div>
+			</div>
+			<div class="level-right">
+				<div>
+					<time class="has-text-right" datetime="2016-1-1">{{ job.start | date: "%B %Y" }}</time>&nbsp;-&nbsp;
+					{% if job.end %}<time datetime="2016-1-1">{{ job.end | date: "%B %Y" }}</time>
+					{% else %}Present
+					{% endif %}
+					<p class="subtitle is-6 has-text-right-desktop">{{ job.loc }}</p>
+				</div>
+			</div>
+		</nav>
+		<div class="content has-text-light">
+			<ul>
+				{% for deet in job.details %}
+					<li>{{ deet }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+	</div></div>
+
+{% endfor %}

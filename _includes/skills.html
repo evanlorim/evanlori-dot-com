@@ -1,0 +1,30 @@
+<h1 id="skills" class="title is-1">Skills/ Expertise</h1>
+{% for skill in include.skills %}
+	<div class="card block"><div class="card-content">
+		<nav class="level">
+			<div class="level-left">
+				<div>
+					<p class="title is-4">{{ skill.pos }}</p>
+					<p class="subtitle is-6">{{ skill.org }}</p>
+				</div>
+			</div>
+			<div class="level-right">
+				<div>
+					<time class="has-text-right" datetime="2016-1-1">{{ skill.start | date: "%B %Y" }}</time>&nbsp;-&nbsp;
+					{% if skill.end %}<time datetime="2016-1-1">{{ skill.end | date: "%B %Y" }}</time>
+					{% else %}Present
+					{% endif %}
+					<p class="subtitle is-6 has-text-right-desktop">{{ skill.loc }}</p>
+				</div>
+			</div>
+		</nav>
+		<div class="content has-text-light">
+			<ul>
+				{% for deet in skill.details %}
+					<li>{{ deet }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div></div>
+
+{% endfor %}

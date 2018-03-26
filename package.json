@@ -8,6 +8,7 @@
   "dependencies": {
     "Font-Awesome": "https://github.com/FortAwesome/Font-Awesome",
     "bulma": "^0.6.1",
+    "bulma-carousel": "^1.0.11",
     "bulma-divider": "^1.0.1",
     "lightbox2": "^2.10.0",
     "sass-material-colors": "^0.0.5"

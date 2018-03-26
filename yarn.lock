@@ -6,6 +6,10 @@
   version "0.0.0"
   resolved "https://github.com/FortAwesome/Font-Awesome#31281606f5205b0191c17c3b4d2d56e1ddbb2dc6"
 
+bulma-carousel@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/bulma-carousel/-/bulma-carousel-1.0.11.tgz#6a57069afed0377d2e45ee8bf2ff5c75c198075e"
+
 bulma-divider@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-1.0.1.tgz#9b5e537f812b1090033745c6b993253f8e5f429f"

@@ -1,3 +1,4 @@
+{% capture summary %}{% include about/summary.md %}{% endcapture %}
 <footer class="footer">
   <div class="container">
 	  <div class="columns">
@@ -23,7 +24,9 @@
 
 		<div class="column is-6">
 			<p class="title is-4">About Me</p>
-			<p class="is-size-6">{% include about-me.html %}</p>
+			<div class="content">
+				<p class="is-size-6">{{ summary | markdownify }}</p>
+			</div>
 			<div class="is-divider" data-content="SUPPORT TRANS ARTISTS WORK"></div>
 			<p class="buttons">
 				<a class="button is-medium is-white is-outlined" href="{{site.data.links.patreon.href}}">

@@ -1,25 +1,31 @@
 .home-hero {
-  background-image: url(/assets/svg/self-portrait-wider.svg);
-  background-position: top right;
-  height: 540px;
+	background-image: url(/assets/svg/self-portrait-wider.svg);
+	background-position: top right;
+	height: 540px;
 
-  .title {
-    font-size: 4rem;
-  }
+	.title {
+		font-size: 4rem;
+	}
 
-  .subtitle {
-    font-size: 2rem;
-  }
+	.subtitle {
+		font-size: 2rem;
+	}
 }
 
 .nav-spacer {
-  width: 12px;
+	width: 12px;
 }
 
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 
 .text-right {
-    text-align: right;
+	text-align: right;
+}
+
+.centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

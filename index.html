@@ -1,18 +1,89 @@
 ---
 layout: home
 ---
+{% capture artist %}{% include about/artist.md %}{% endcapture %}
+{% capture advocate %}{% include about/advocate.md %}{% endcapture %}
+{% capture programmer %}{% include about/programmer.md %}{% endcapture %}
+
 <section class="hero home-hero">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">
          {{ site.title }}
        </h1>
-      <h2 class="subtitle">
+			<h2 class="subtitle">
          {{ site.subtitle }}
        </h2>
-    </div>
-  </div>
+		</div>
+	</div>
 </section>
 
-<section class="section">
+<section class="hero is-dark">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title is-1">I make art.</h1>
+		</div>
+	</div>
 </section>
+
+<div class="section"><div class="container">
+	<div class="columns">
+		<div class="column">
+			<div class="content is-size-5">{{ artist | markdownify }}</div>
+			<div class="has-text-centered">
+				<a class="button is-large is-primary" href="/art">Check Out My Latest Art&nbsp;<i class="fas fa-arrow-right"></i></a>
+			</div>
+		</div>
+
+		<div class="column">
+			{% include featured-art.html %}
+		</div>
+	</div>
+</div></div>
+
+<section class="hero is-dark">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title is-1">I write code.</h1>
+		</div>
+	</div>
+</section>
+
+<div class="section"><div class="container">
+	<div class="columns">
+		<div class="column is-half">
+			{% include featured-code.html %}
+		</div>
+		<div class="column is-half">
+			<div class="content is-size-5">
+				{{ programmer | markdownify }}
+			</div>
+			<div class="has-text-centered">
+				<a class="button is-large is-primary" href="/code">Check Out My Latest Code&nbsp;<i class="fas fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+<section class="hero is-dark">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title is-1">And I advocate for my community.</h1>
+
+		</div>
+	</div>
+</section>
+
+<div class="section"><div class="container">
+	<div class="columns">
+		<div class="column">
+			<div class="content is-size-5">
+				{{ advocate | markdownify }}
+			</div>
+		</div>
+		<div class="column centered">
+			<a class="button is-large is-primary" href="/work">Check Out My Work&nbsp;<i class="fas fa-arrow-right"></i></a>
+		</div>
+	</div>
+
+</div></div>

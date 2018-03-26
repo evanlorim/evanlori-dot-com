@@ -36,6 +36,7 @@
 
 	{ "category": "code", "name": "nodejs", "href": "/code/tags/nodejs", "type": "tool", "color": "info" },
 	{ "category": "code", "name": "jekyll", "href": "/code/tags/jekyll", "type": "tool", "color": "info" },
+	{ "category": "code", "name": "postgres", "href": "/code/tags/postgres", "type": "tool", "color": "info" },
 
 	{ "category": "code", "name": "angular", "href": "/code/tags/angular", "type": "framework", "color": "success" },
 	{ "category": "code", "name": "materialize", "href": "/code/tags/materialize", "type": "framework", "color": "success" },
