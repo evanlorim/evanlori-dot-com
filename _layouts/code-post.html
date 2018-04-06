@@ -1,89 +1,86 @@
 ---
 layout: default
 ---
-<div class="section"><div class="container"><div class="columns">
+<section class="hero is-dark">
+	<div class="hero-body"><div class="container">
 
-	<div class="column content-column">
 		<div class="columns">
-			<div class="column">
 
-				<nav class="columns">
+			<div class="column"><div>
+				<p class="title is-2">{{ page.title }}</p>
+				<p class="subtitle is-3">{{ page.subtitle }}</p>
+			</div></div>
 
-					<div class="column">
-						<div>
-							<p class="title is-2">{{ page.title }}</p>
-							<p class="subtitle is-3">{{ page.subtitle }}</p>
-						</div>
-					</div>
+			<div class="column is-narrow"><p class="tags">
+				{% for category in page.categories %}
+					<span class="tag is-light is-large"><a href="/art/{{category}}/">{{category}}</a></span>
+				{% endfor %}
+			</p></div>
 
-					<div class="column is-narrow"><div class="tags">
-						{% for category in page.categories %}
-							<span class="tag is-dark is-large"><a href="/art/{{category}}/">{{category}}</a></span>
-						{% endfor %}
-					</div></div>
+		</div>
 
-				</nav>
+	</div></div>
+	<div class="hero-foot"><div class="container">
+		<div class="tabs is-medium is-boxed is-right"><ul>
+			{% if page.github_link %}
+				<li><a href="{{page.github_link}}">
+					<span class="icon"><i class="fab fa-github"></i></span>
+					<span>GitHub Repository</span>
+				</a></li>
+			{% endif %}
 
-				<p class="subtitle"><time datetime="2016-1-1">{{ page.date | date_to_long_string }}</time></p>
+			{% if page.codepen_link %}
+				<li><a href="{{page.codepen_link}}">
+					<span class="icon"><i class="fab fa-codepen"></i></span>
+					<span>Codepen Demo</span>
+				</a></li>
+			{% endif %}
 
-				<div class="post-links buttons">
-					{% if page.github_link %}
-						<a class="button is-small is-white" href="{{page.github_link}}">
-								<span class="icon"><i class="fab fa-github"></i></span>
-								<span>GitHub Repository</span>
-						</a>
-					{% endif %}
+			{% if page.heroku_link %}
+				<li><a href="{{page.heroku_link}}">
+					<span class="icon"><i class="icon-heroku"></i></span>
+					<span>Heroku Demo</span>
+				</a></li>
+			{% endif %}
 
-					{% if page.codepen_link %}
-						<a class="button is-small is-white" href="{{page.codepen_link}}">
-								<span class="icon"><i class="fab fa-codepen"></i></span>
-								<span>Codepen Demo</span>
-						</a>
-					{% endif %}
+			{% if page.live_link %}
+				<li><a href="{{page.live_link}}">
+					<span class="icon"><i class="fas fa-link"></i></span>
+					<span>Live Website</span>
+				</a></li>
+			{% endif %}
+		</ul></div>
+	</div></div>
+</section>
 
-					{% if page.heroku_link %}
-						<a class="button is-small is-white" href="{{page.heroku_link}}">
-							<span class="icon"><i class="icon-heroku"></i></span>
-							<span>Heroku Demo</span>
-						</a>
-					{% endif %}
+<div class="section"><div class="container">
 
-					{% if page.live_link %}
-						<a class="button is-small is-white" href="{{page.live_link}}">
-							<span class="icon"><i class="fas fa-link"></i></span>
-							<span>Live Website</span>
-						</a>
-					{% endif %}
-				</div>
-
-
-			</div>
-
-			{% if page.public_id %}<div class="column is-narrow is-4 image-column">
+	{% if page.public_id %}<div class="box is-outlined">
+		<div class="columns is-centered">
+			<div class="column image-column is-narrow is-two-thirds">
 				<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
 					<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
 				</a>
-			</div>{% endif %}
+			</div>
 		</div>
+	</div>{% endif %}
 
+	<p class="subtitle is-4"><time datetime="2016-1-1">{{ page.date | date_to_long_string | upcase }}</time></p>
 
-
-
-		<div class="post-content">
-			{{ page.content | default: 'Description coming soon.' }}
-		</div>
-
-
-		<nav class="level"><div class="field is-grouped is-grouped-multiline">
-			{% for tag in page.tags %}
-				{% assign tag_data = site.data.tags | where: "name", tag | first %}
-				<div class="control"><div class="tags has-addons">
-					<span class="tag is-rounded is-{{ tag_data.color }}">{{ tag_data.type }}</span>
-					<a href="{{ tag_data.href }}" class="tag is-rounded is-dark">{{ tag }}</a>
-				</div></div>
-			{% endfor %}
-		</div></nav>
-
+	<div class="post-content is-size-5">
+		{{ page.content | default: 'More info about this project coming soon. Stay tuned!' }}
 	</div>
 
-</div></div></div>
+	<div class="is-divider"></div>
+
+	<div class="field is-grouped is-grouped-multiline">
+		{% for tag in page.tags %}
+			{% assign tag_data = site.data.tags | where: "name", tag | first %}
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-rounded is-medium is-{{ tag_data.color }}">{{ tag_data.type }}</span>
+				<a href="{{ tag_data.href }}" class="tag is-light is-rounded is-medium">{{ tag }}</a>
+			</div></div>
+		{% endfor %}
+	</div>
+
+</div></div>

@@ -9330,6 +9330,13 @@ body > .nav {
   margin-bottom: .25rem;
 }
 
+.box.is-outlined, .notification.is-outlined {
+  background-color: transparent;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
 @media screen and (max-width: 768px) {
   .is-paddingless-mobile {
     padding: 0;

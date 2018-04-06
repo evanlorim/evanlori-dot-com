@@ -100,59 +100,53 @@
 	</div>
 </nav>
 
-		<div class="section"><div class="container"><div class="columns">
+		<section class="hero is-dark">
+	<div class="hero-body"><div class="container">
 
-	<div class="column content-column">
 		<div class="columns">
-			<div class="column">
 
-				<nav class="columns">
+			<div class="column"><div>
+				<p class="title is-2">KniDoRAn</p>
+				<p class="subtitle is-3">Knight domination & annealing.</p>
+			</div></div>
 
-					<div class="column">
-						<div>
-							<p class="title is-2">KniDoRAn</p>
-							<p class="subtitle is-3">Knight domination & annealing.</p>
-						</div>
-					</div>
+			<div class="column is-narrow"><p class="tags">
+				
+					<span class="tag is-light is-large"><a href="/art/code/">code</a></span>
+				
+					<span class="tag is-light is-large"><a href="/art/software/">software</a></span>
+				
+			</p></div>
 
-					<div class="column is-narrow"><div class="tags">
-						
-							<span class="tag is-dark is-large"><a href="/art/code/">code</a></span>
-						
-							<span class="tag is-dark is-large"><a href="/art/software/">software</a></span>
-						
-					</div></div>
-
-				</nav>
-
-				<p class="subtitle"><time datetime="2016-1-1">09 December 2014</time></p>
-
-				<div class="post-links buttons">
-					
-						<a class="button is-small is-white" href="https://github.com/apathinwalking/knidoran">
-								<span class="icon"><i class="fab fa-github"></i></span>
-								<span>GitHub Repository</span>
-						</a>
-					
-
-					
-
-					
-
-					
-				</div>
-
-
-			</div>
-
-			
 		</div>
 
+	</div></div>
+	<div class="hero-foot"><div class="container">
+		<div class="tabs is-medium is-boxed is-right"><ul>
+			
+				<li><a href="https://github.com/apathinwalking/knidoran">
+					<span class="icon"><i class="fab fa-github"></i></span>
+					<span>GitHub Repository</span>
+				</a></li>
+			
 
+			
 
+			
 
-		<div class="post-content">
-			<p>KNIght DOmination R ANnealing: a simulated annealing algorithm used to solve Knight Domination problems.</p>
+			
+		</ul></div>
+	</div></div>
+</section>
+
+<div class="section"><div class="container">
+
+	
+
+	<p class="subtitle is-4"><time datetime="2016-1-1">09 DECEMBER 2014</time></p>
+
+	<div class="post-content is-size-5">
+		<p>KNIght DOmination R ANnealing: a simulated annealing algorithm used to solve Knight Domination problems.</p>
 
 <p>Written as a student at St. Mary’s College of Maryland. The following is an excerpt of the write-up we did for this program. This program, written in R, attempts to minimize the set of dominating knights for an NxN board. It uses a simulated annealing approach.</p>
 
@@ -166,22 +160,21 @@
 
 <p>In our second part, during each iteration we generate a successor based on taking one knight and moving it to a random empty space on the board - the resulting board is kept based on the same heuristic and probability (cooling function) as the first part. This second part seems to fine tune our configuration. An example, which is shown below on the right - and begins with the last board configuration from the instance on the bottom left. For a 20x20 board, the smallest set of knights to dominate a board ere we were able to find was 80, which differs by 18 from the set described here(http://home.earthlink.net/~morgenstern/solution/intro.htm). Similar results were found for boards slightly larger, and slightly bigger than 20. After applying the second part, we can take the output again and feed it into an instance of our first part of our algorithm.</p>
 
-		</div>
-
-
-		<nav class="level"><div class="field is-grouped is-grouped-multiline">
-			
-				
-				<div class="control"><div class="tags has-addons">
-					<span class="tag is-rounded is-primary">language</span>
-					<a href="/code/tags/python" class="tag is-rounded is-dark">r</a>
-				</div></div>
-			
-		</div></nav>
-
 	</div>
 
-</div></div></div>
+	<div class="is-divider"></div>
+
+	<div class="field is-grouped is-grouped-multiline">
+		
+			
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-rounded is-medium is-primary">language</span>
+				<a href="/code/tags/python" class="tag is-light is-rounded is-medium">r</a>
+			</div></div>
+		
+	</div>
+
+</div></div>
 
 		
 <footer class="footer">

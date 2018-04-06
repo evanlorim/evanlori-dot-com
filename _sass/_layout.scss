@@ -32,6 +32,13 @@
 
 }
 
+.box.is-outlined, .notification.is-outlined {
+	background-color: transparent;
+	border-width: 2px;
+	border-color: white;
+	border-style: solid;
+}
+
 .is-paddingless-mobile {
 	@media screen and (max-width: $tablet - 1) {
 		padding: 0;
