@@ -1,0 +1,35 @@
+@import "../bulma/utilities/initial-variables";
+
+.home-hero {
+	.title {
+		font-size: 4rem;
+	}
+
+	.subtitle {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: $tablet - 1) {
+	.home-hero {
+		background-image: url(/assets/svg/self-portrait-mobile.svg);
+		background-position: top right;
+		height: 540px;
+	}
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+	.home-hero {
+		background-image: url(/assets/svg/self-portrait-tablet.svg);
+		background-position: top right;
+		height: 540px;
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.home-hero {
+		background-image: url(/assets/svg/self-portrait-wider.svg);
+		background-position: top right;
+		height: 540px;
+	}
+}

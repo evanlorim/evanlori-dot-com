@@ -17,15 +17,15 @@
 		"Organized communities on environmental justice and public health issues.",
 		"Trained other organizers in effective fundraising strategies and engaging with concerned citizens."
 	]},
-	{"pos": "Network Assistant/ IT Support", "org": "St. Mary's College of Maryland OIT", "loc": "St. Mary's City, MD", "start": "2011-11-01", "end": "2014-01-01", "details": [
+	{"pos": "Network Assistant", "org": "St. Mary's College of Maryland OIT", "loc": "St. Mary's City, MD", "start": "2011-11-01", "end": "2014-01-01", "details": [
 		"Front Desk: desktop support; troubleshot and configured students networks, routers, and computers.",
 		"Wireless oversaturation problem: developed system to collect information on location and reach of over 200 wireless routers",
 		"Deployed and maintained Linux and OSX servers"
 	]},
-	{"pos": "Research Intern: Cognitive Linguistics", "org": "John's Hopkins University", "loc": "Baltimore, MD", "start": "2011-06-01", "end": "2011-08-20", "details": [
+	{"pos": "Intern: Cog. Linguistics", "org": "John's Hopkins University", "loc": "Baltimore, MD", "start": "2011-06-01", "end": "2011-08-20", "details": [
 		"Statistically analysed large English word corpora using R and linux tools."
 	]},
-	{"pos": "Research Intern: Neuropsychology", "org": "Kennedy Krieger Institute", "loc": "Baltimore, MD", "start": "2010-06-01", "end": "2010-08-20", "details": [
+	{"pos": "Intern: Neuropsychology", "org": "Kennedy Krieger Institute", "loc": "Baltimore, MD", "start": "2010-06-01", "end": "2010-08-20", "details": [
 		"Created scripts to automatically collate data; doubling data collection speed.",
 		"Assisted in writing programs in R for statistical analysis."
 	]},

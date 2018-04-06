@@ -1,30 +1,35 @@
-<h1 id="skills" class="title is-1">Skills/ Expertise</h1>
-{% for skill in include.skills %}
-	<div class="card block"><div class="card-content">
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">{{ skill.pos }}</p>
-					<p class="subtitle is-6">{{ skill.org }}</p>
+{% assign skills = include.skills | sort: 'title' | sort: 'type' %}
+
+		<h1 class="title is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">SKILLS/ EXPERTISE</h1>
+		<div class="notification">
+			<nav class="level">
+
+				<div class="level-item">
+					<div class="level-item has-text-centered"><div>
+						<p><span class="icon"><i class="fas fa-circle has-text-danger"></i></span></p>
+						<p class="header is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">PEOPLE</p>
+					</div></div>
 				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">{{ skill.start | date: "%B %Y" }}</time>&nbsp;-&nbsp;
-					{% if skill.end %}<time datetime="2016-1-1">{{ skill.end | date: "%B %Y" }}</time>
-					{% else %}Present
-					{% endif %}
-					<p class="subtitle is-6 has-text-right-desktop">{{ skill.loc }}</p>
+
+				<div class="level-item">
+					<div class="level-item has-text-centered"><div>
+						<p><span class="icon"><i class="fas fa-circle has-text-success"></i></span></p>
+						<p class="header is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">ART</p>
+					</div></div>
+				</div>
+
+				<div class="level-item">
+					<div class="level-item has-text-centered"><div>
+						<p><span class="icon"><i class="fas fa-circle has-text-primary"></i></span></p>
+						<p class="header is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">CODE</p>
+					</div></div>
 				</div>
 			</div>
 		</nav>
-		<div class="content has-text-light">
-			<ul>
-				{% for deet in skill.details %}
-					<li>{{ deet }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-	</div></div>
 
-{% endfor %}
+		{% for skill in skills  %}
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">{{ skill.title | upcase }}</p>
+				<progress class="progress is-{{ skill.color }}" value="{{ skill.rating }}" max="100">{{ skill.rating | append: "%" }}</progress>
+			</div>
+		{% endfor %}

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Contact
+subtitle: Message me about services I offer, or just to say hello.
+---
+{% include hero.html title=page.title subtitle=page.subtitle %}
+<section class="section"><div class="container">
+	<div class="columns is-variable is-8">
+
+		<div class="column is-8">
+			<h1 class="title">Email Me</h1>
+			<h2 class="subtitle">Contact me at <a href="{{ site.data.links.email.href }}">{{ site.data.links.email.address }}</a> for services or use the form below.</h2>
+			{% include emailme.html %}
+		</div>
+
+		<div class="column is-4">
+			<h1 class="title">Social Media</h1>
+			<h2 class="subtitle">Follow me and my work.</h2>
+			<div>
+				<div class="block">{% include social-item.html icon=site.data.links.github.icon href=site.data.links.github.href title="GitHub" color="danger" %}</div>
+				<div class="block">{% include social-item.html icon=site.data.links.facebook.icon href=site.data.links.facebook.href title="Facebook" color="primary" %}</div>
+				<div class="block">{% include social-item.html icon=site.data.links.instagram.icon href=site.data.links.instagram.href title="Instagram" color="success" %}</div>
+				<div class="block">{% include social-item.html icon=site.data.links.twitter.icon href=site.data.links.twitter.href title="Twitter" color="info" %}</div>
+				<div class="block">{% include social-item.html icon=site.data.links.linkedin.icon href=site.data.links.linkedin.href title="LinkedIn" color="warning" %}</div>
+			</div>
+		</div>
+
+	</div>
+</div></section>

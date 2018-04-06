@@ -27,17 +27,22 @@ layout: home
 </section>
 
 <div class="section"><div class="container">
-	<div class="columns">
-		<div class="column">
-			<div class="content is-size-5">{{ artist | markdownify }}</div>
-			<div class="has-text-centered">
-				<a class="button is-large is-primary" href="/art">Check Out My Latest Art&nbsp;<i class="fas fa-arrow-right"></i></a>
-			</div>
-		</div>
+	<div class="columns is-variable is-8 is-desktop">
 
 		<div class="column">
 			{% include featured-art.html %}
 		</div>
+
+		<div class="column">
+			<div class="content is-size-5">{{ artist | markdownify }}</div>
+			<div class="has-text-centered">
+				<a class="button is-large is-outlined is-inverted is-dark has-text-weight-semibold" href="/art">
+					<span>See my art</span>
+					<span class="icon"><i class="fas fa-chevron-right fa-sm"></i></span>
+				</a>
+			</div>
+		</div>
+
 	</div>
 </div></div>
 
@@ -50,16 +55,19 @@ layout: home
 </section>
 
 <div class="section"><div class="container">
-	<div class="columns">
-		<div class="column is-half">
+	<div class="columns is-variable is-8 is-desktop">
+		<div class="column">
 			{% include featured-code.html %}
 		</div>
-		<div class="column is-half">
+		<div class="column">
 			<div class="content is-size-5">
 				{{ programmer | markdownify }}
 			</div>
 			<div class="has-text-centered">
-				<a class="button is-large is-primary" href="/code">Check Out My Latest Code&nbsp;<i class="fas fa-arrow-right"></i></a>
+				<a class="button is-large is-outlined is-inverted is-dark has-text-weight-semibold" href="/code">
+					<span>See my code</span>
+					<span class="icon"><i class="fas fa-chevron-right fa-sm"></i></span>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -69,21 +77,28 @@ layout: home
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title is-1">And I advocate for my community.</h1>
-
 		</div>
 	</div>
 </section>
 
 <div class="section"><div class="container">
-	<div class="columns">
+	<div class="columns is-variable is-8 is-desktop">
+
+		<div class="column image-block">
+			<img src="/assets/svg/queer-trans-symbol.svg"></img>
+		</div>
+
 		<div class="column">
 			<div class="content is-size-5">
 				{{ advocate | markdownify }}
 			</div>
+			<div class="has-text-centered">
+				<a class="button is-large is-outlined is-inverted is-dark has-text-weight-semibold" href="/code">
+					<span>See my work</span>
+					<span class="icon"><i class="fas fa-chevron-right fa-sm"></i></span>
+				</a>
+			</div>
 		</div>
-		<div class="column centered">
-			<a class="button is-large is-primary" href="/work">Check Out My Work&nbsp;<i class="fas fa-arrow-right"></i></a>
-		</div>
-	</div>
 
+	</div>
 </div></div>

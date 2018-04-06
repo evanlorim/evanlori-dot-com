@@ -12,6 +12,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Evan Lori Mahone" href="/feed.xml" />
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
+	<link href="/assets/css/font-mfizz/font-mfizz.css" rel="stylesheet"/>
 	<link href="/assets/css/lightbox.css" rel="stylesheet"/>
 
 	<script src="/js/lightbox-plus-jquery.js"></script>
@@ -21,26 +22,82 @@
 </head>
 
 	<body>
-		<nav class="navbar" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
+			</a>
+			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
+			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div id="menu" class="navbar-menu">
 
 
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
-            </a>
-            
-                <a class="navbar-item" href="/">Home</a>
-            
-                <a class="navbar-item" href="/art">Art</a>
-            
-                <a class="navbar-item" href="/code">Code</a>
-            
-                <a class="navbar-item" href="/work">Work</a>
-            
-            <button class="button navbar-burger"></button>
-        </div>
-  </div>
+			<div class="navbar-start">
+				
+					
+					
+					
+					
+					<a href="/" class="navbar-item ">Home</a>
+				
+					
+					
+					
+					
+					<a href="/art" class="navbar-item ">Art</a>
+				
+					
+					
+					
+					
+					<a href="/code" class="navbar-item ">Code</a>
+				
+					
+					
+					
+					
+					<a href="/work" class="navbar-item ">Work</a>
+				
+					
+					
+					
+					
+					<a href="/services" class="navbar-item ">Services</a>
+				
+					
+					
+					
+					
+					<a href="/contact" class="navbar-item ">Contact</a>
+				
+			</div>
+
+			<div class="navbar-end">
+				<div class="navbar-item is-hidden-touch"><div class="field is-grouped is-grouped-multiline">
+					<p class="control"><a class="button is-danger" href="https://www.patreon.com/evanlori">
+						<span class="icon"><i class="fab fa-patreon"></i></span>
+						<span class="has-text-weight-bold is-size-7">BECOME A PATRON</span>
+					</a></p>
+					<p class="control"><a class="button is-warning" href="https://paypal.me/EvanLori">
+						<span class="icon"><i class="fab fa-paypal"></i></span>
+						<span class="has-text-weight-bold is-size-7">DONATE</span>
+					</a></p>
+				</div></div>
+			</div>
+		</div>
+
+	</div>
 </nav>
 
 		
@@ -55,7 +112,6 @@
     </div>
     <div class="hero-foot">
         <div class="container">
-
             
 
 <div class="tabs is-medium is-boxed artwork-tabs"><ul>
@@ -82,197 +138,256 @@
 
 <div class="section"><div class="container">
 
-    <div class="columns is-8 is-variable">
-        <div class="column is-three-quarters">
-            <div class="columns is-multiline is-3 is-variable">
+    <div class="columns is-5 is-variable is-desktop">
+        <div class="column is-three-quarters-desktop">
+
+			
+				
+
+<div class="card block">
 	
-		<div class="column is-half">
-			<div class="card">
-
-				<div class="card-content">
-					<article class="media">
-						<figure class="media-left">
-							<p class="image is-128x128">
-								<img src="https://res.cloudinary.com/evanlori/w_128,h_128,c_fill/w_128,h_128,c_crop/code/wave-art-generator">
-							</p>
-						</figure>
-						<div class="media-content">
-							<p class="title is-4">
-								<a href="/code/fiddles/2018/02/18/wave-art-generator.html">Wave Art Generator</a>
-							</p>
-							<p class="subtitle is-6">
-								<time datetime="2016-1-1">18 February 2018</time>
-							</p>
-							<div class="content">
-								<p>
-									
-
-								</p>
-							</div>
-							<span>Tags:
-								
-									<a href="" class="has-text-grey-light">html</a>
-									,&nbsp;
-								
-									<a href="" class="has-text-grey-light">css</a>
-									,&nbsp;
-								
-									<a href="" class="has-text-grey-light">js</a>
-									,&nbsp;
-								
-									<a href="" class="has-text-grey-light">d3</a>
-									
-								
-							</span>
-						</div>
-					</article>
-					<nav class="level">
-
-					</nav>
-				</div>
-
-
-					<!-- <div class="card-image">
-						 <figure class="image is-4by3">
-							 <img src="https://res.cloudinary.com/evanlori/w_400,h_300,c_fill/w_400,h_300,c_crop/code/wave-art-generator">
-						 </figure>
-					</div> -->
-
-					<!-- <div class="card-content">
-
-
-
-					</div> -->
-
-					<!-- <div class="card-footer"><div class="card-footer-item">
-					</div></div> -->
-
-			  </div>
+		<div class="card-image is-hidden-tablet">
+			<figure class="image is-128by128">
+				<img src="https://res.cloudinary.com/evanlori/w_640,h_360,c_fill/w_640,h_360,c_crop/code/wave-art-generator">
+			</figure>
 		</div>
 	
-		<div class="column is-half">
-			<div class="card">
 
-				<div class="card-content">
-					<article class="media">
-						<figure class="media-left">
-							<p class="image is-128x128">
-								<img src="https://res.cloudinary.com/evanlori/w_128,h_128,c_fill/w_128,h_128,c_crop/code/evolving-waves">
-							</p>
-						</figure>
-						<div class="media-content">
-							<p class="title is-4">
-								<a href="/code/fiddles/2018/02/12/evolving-waves.html">Evolving Waves</a>
-							</p>
-							<p class="subtitle is-6">
-								<time datetime="2016-1-1">12 February 2018</time>
-							</p>
-							<div class="content">
-								<p>
-									
+	<div class="card-content is-paddingless"><div class="columns is-gapless">
+		
+			<div class="column is-4-tablet is-3-desktop is-hidden-mobile" style="background-position: center; background-image: url(https://res.cloudinary.com/evanlori/w_360,h_360,c_fill/w_360,h_360,c_crop/code/wave-art-generator)"></div>
+			<!-- <div class="column is-one-third-tablet is-one-quarter-desktop" style="background-image: url(https://res.cloudinary.com/evanlori/w_540,h_540,c_fill/w_540,h_540,c_crop/code/wave-art-generator)"> -->
 
-								</p>
-							</div>
-							<span>Tags:
-								
-									<a href="" class="has-text-grey-light">html</a>
-									,&nbsp;
-								
-									<a href="" class="has-text-grey-light">css</a>
-									,&nbsp;
-								
-									<a href="" class="has-text-grey-light">js</a>
-									,&nbsp;
-								
-									<a href="" class="has-text-grey-light">p5</a>
-									
-								
-							</span>
-						</div>
-					</article>
-					<nav class="level">
 
-					</nav>
+		
+
+		<div class="column"><div class="code-card-content">
+
+			<div class="columns is-mobile is-gapless">
+				<div class="column">
+					<h5 class="title is-size-5">WAVE ART GENERATOR</h5>
+					<h6 class="subtitle is-size-6">STATIC WAVE ART GENERATOR</time></h6>
 				</div>
+				<div class="column is-narrow"><span class="tags">
+					<span class="tag is-dark is-medium">fiddles</span>
+				</span></div>
+			</div>
+
+			<div class="columns is-mobile is-vcentered is-gapless">
+				<div class="column"><div class="is-size-6"><time>FEB 7 2018</time></div></div>
+				<div class="column is-narrow">
+					<div class="buttons">
+						
+							
+							<span class="button is-small">html</span>
+						
+							
+							<span class="button is-small">css</span>
+						
+							
+							<span class="button is-small">js</span>
+						
+							
+							
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<p class="has-text-light is-size-6"> 
+</p>
+			</div>
 
 
-					<!-- <div class="card-image">
-						 <figure class="image is-4by3">
-							 <img src="https://res.cloudinary.com/evanlori/w_400,h_300,c_fill/w_400,h_300,c_crop/code/evolving-waves">
-						 </figure>
-					</div> -->
+			<div class="columns is-mobile is-gapless">
+				<div class="column"></div>
+				<div class="column is-narrow">
+					<a class="button is-dark is-primary is-medium" href="/code/fiddles/2018/02/18/wave-art-generator.html">
+						<span class="icon"><i class="fas fa-book"></i></span>
+						<span>Read More</span>
+					</a>
+				</div>
+			</div>
 
-					<!-- <div class="card-content">
+
+		</div></div>
 
 
+	</div></div>
 
-					</div> -->
+</div>
 
-					<!-- <div class="card-footer"><div class="card-footer-item">
-					</div></div> -->
+			
+				
 
-			  </div>
+<div class="card block">
+	
+		<div class="card-image is-hidden-tablet">
+			<figure class="image is-128by128">
+				<img src="https://res.cloudinary.com/evanlori/w_640,h_360,c_fill/w_640,h_360,c_crop/code/evolving-waves">
+			</figure>
 		</div>
 	
-		<div class="column is-half">
-			<div class="card">
 
-				<div class="card-content">
-					<article class="media">
-						<figure class="media-left">
-							<p class="image is-128x128">
-								<img src="https://res.cloudinary.com/evanlori/w_128,h_128,c_fill/w_128,h_128,c_crop/code/latex-works">
-							</p>
-						</figure>
-						<div class="media-content">
-							<p class="title is-4">
-								<a href="/code/fiddles/2014/12/09/latex-works.html">LaTeX Works</a>
-							</p>
-							<p class="subtitle is-6">
-								<time datetime="2016-1-1">09 December 2014</time>
-							</p>
-							<div class="content">
-								<p>
-									<p>Just a collection of documents I produced with LaTeX during college.</p>
+	<div class="card-content is-paddingless"><div class="columns is-gapless">
+		
+			<div class="column is-4-tablet is-3-desktop is-hidden-mobile" style="background-position: center; background-image: url(https://res.cloudinary.com/evanlori/w_360,h_360,c_fill/w_360,h_360,c_crop/code/evolving-waves)"></div>
+			<!-- <div class="column is-one-third-tablet is-one-quarter-desktop" style="background-image: url(https://res.cloudinary.com/evanlori/w_540,h_540,c_fill/w_540,h_540,c_crop/code/evolving-waves)"> -->
 
-								</p>
-							</div>
-							<span>Tags:
-								
-									<a href="" class="has-text-grey-light">latex</a>
-									
-								
-							</span>
-						</div>
-					</article>
-					<nav class="level">
 
-					</nav>
+		
+
+		<div class="column"><div class="code-card-content">
+
+			<div class="columns is-mobile is-gapless">
+				<div class="column">
+					<h5 class="title is-size-5">EVOLVING WAVES</h5>
+					<h6 class="subtitle is-size-6">EXPERIMENT WITH PERLIN WAVES</time></h6>
 				</div>
+				<div class="column is-narrow"><span class="tags">
+					<span class="tag is-dark is-medium">fiddles</span>
+				</span></div>
+			</div>
+
+			<div class="columns is-mobile is-vcentered is-gapless">
+				<div class="column"><div class="is-size-6"><time>FEB 1 2018</time></div></div>
+				<div class="column is-narrow">
+					<div class="buttons">
+						
+							
+							<span class="button is-small">html</span>
+						
+							
+							<span class="button is-small">css</span>
+						
+							
+							<span class="button is-small">js</span>
+						
+							
+							
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<p class="has-text-light is-size-6"> 
+</p>
+			</div>
 
 
-					<!-- <div class="card-image">
-						 <figure class="image is-4by3">
-							 <img src="https://res.cloudinary.com/evanlori/w_400,h_300,c_fill/w_400,h_300,c_crop/code/latex-works">
-						 </figure>
-					</div> -->
+			<div class="columns is-mobile is-gapless">
+				<div class="column"></div>
+				<div class="column is-narrow">
+					<a class="button is-dark is-primary is-medium" href="/code/fiddles/2018/02/12/evolving-waves.html">
+						<span class="icon"><i class="fas fa-book"></i></span>
+						<span>Read More</span>
+					</a>
+				</div>
+			</div>
 
-					<!-- <div class="card-content">
+
+		</div></div>
 
 
+	</div></div>
 
-					</div> -->
+</div>
 
-					<!-- <div class="card-footer"><div class="card-footer-item">
-					</div></div> -->
+			
+				
 
-			  </div>
+<div class="card block">
+	
+		<div class="card-image is-hidden-tablet">
+			<figure class="image is-128by128">
+				<img src="https://res.cloudinary.com/evanlori/w_640,h_360,c_fill/w_640,h_360,c_crop/code/latex-works">
+			</figure>
 		</div>
 	
+
+	<div class="card-content is-paddingless"><div class="columns is-gapless">
+		
+			<div class="column is-4-tablet is-3-desktop is-hidden-mobile" style="background-position: center; background-image: url(https://res.cloudinary.com/evanlori/w_360,h_360,c_fill/w_360,h_360,c_crop/code/latex-works)"></div>
+			<!-- <div class="column is-one-third-tablet is-one-quarter-desktop" style="background-image: url(https://res.cloudinary.com/evanlori/w_540,h_540,c_fill/w_540,h_540,c_crop/code/latex-works)"> -->
+
+
+		
+
+		<div class="column"><div class="code-card-content">
+
+			<div class="columns is-mobile is-gapless">
+				<div class="column">
+					<h5 class="title is-size-5">LATEX WORKS</h5>
+					<h6 class="subtitle is-size-6">COLLECTION OF LATEX DOCUMENTS</time></h6>
+				</div>
+				<div class="column is-narrow"><span class="tags">
+					<span class="tag is-dark is-medium">fiddles</span>
+				</span></div>
+			</div>
+
+			<div class="columns is-mobile is-vcentered is-gapless">
+				<div class="column"><div class="is-size-6"><time>DEC 2 2014</time></div></div>
+				<div class="column is-narrow">
+					<div class="buttons">
+						
+							
+							<span class="button is-small">latex</span>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<p class="has-text-light is-size-6"> <p>Just a collection of documents I produced with LaTeX during college.</p>
+</p>
+			</div>
+
+
+			<div class="columns is-mobile is-gapless">
+				<div class="column"></div>
+				<div class="column is-narrow">
+					<a class="button is-dark is-primary is-medium" href="/code/fiddles/2014/12/09/latex-works.html">
+						<span class="icon"><i class="fas fa-book"></i></span>
+						<span>Read More</span>
+					</a>
+				</div>
+			</div>
+
+
+		</div></div>
+
+
+	</div></div>
+
+</div>
+
+			
+
+			
+
+
+
+<div class="box">
+
+	<nav class="pagination" role="navigation" aria-label="pagination">
+
+	    <a class="pagination-previous has-text-light" disabled>Previous</a>
+	    <a class="pagination-previous has-text-light" disabled>Next</a>
+
+	    <ul class="pagination-list">
+	        <li><a class="pagination-link has-text-light" disabled><span><i class="fa fa-angle-double-left"></i></span></a></li>
+
+	        
+
+	        <li><a class="pagination-link has-text-light" disabled><span><i class="fa fa-angle-double-right"></i></span></a></li>
+	    </ul>
+	</nav>
 </div>
 
         </div>
-        <div class="column is-one-quarter">
+        <div class="column is-one-quarter-desktop">
             
 
 <div class="box is-dark">
@@ -306,6 +421,11 @@
                     
                     <li>
                         <a class="" href="/code/tags/python">r</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/python">latex</a>
                     </li>
                 
             </ul>
@@ -377,26 +497,6 @@
         </div>
     </div>
 
-    
-
-
-
-<div class="box">
-
-<nav class="pagination" role="navigation" aria-label="pagination">
-
-    <a class="pagination-previous" disabled>Previous</a>
-    <a class="pagination-previous" disabled>Next</a>
-
-    <ul class="pagination-list">
-        <li><a class="pagination-link" disabled><span><i class="fa fa-angle-double-left"></i></span></a></li>
-
-        
-
-        <li><a class="pagination-link" disabled><span><i class="fa fa-angle-double-right"></i></span></a></li>
-    </ul>
-</nav>
-</div>
 
 
 </div></div>
@@ -404,50 +504,69 @@
 		
 <footer class="footer">
   <div class="container">
-	  <div class="columns">
+	  <div class="columns is-variable is-8">
 
 		<div class="column is-2">
-			<p class="title is-4">Site Map</p>
 			<aside class="menu">
 				<ul class="menu-list">
 				
-					<li><a href="/">Home</a>
+					<li><a class="is-size-6" href="/">Home</a>
 					
 					</li>
 				
-					<li><a href="/art">Art</a>
+					<li><a class="is-size-6" href="/art">Art</a>
 					
 					<ul>
 						
-							<li><a href="/art/">Latest</a>
+							<li><a class="is-size-7" href="/art/">Latest</a>
 						
-							<li><a href="/art/digital/">Digital</a>
+							<li><a class="is-size-7" href="/art/digital/">Digital</a>
 						
-							<li><a href="/art/drawn/">Drawn</a>
+							<li><a class="is-size-7" href="/art/drawn/">Drawn</a>
 						
-							<li><a href="/art/sketchbook/">Sketchbook</a>
+							<li><a class="is-size-7" href="/art/sketch/">Sketch</a>
 						
 					</ul>
 					
 					</li>
 				
-					<li><a href="/code">Code</a>
+					<li><a class="is-size-6" href="/code">Code</a>
 					
 					<ul>
 						
-							<li><a href="/code/">Latest</a>
+							<li><a class="is-size-7" href="/code/">Latest</a>
 						
-							<li><a href="/code/software/">Software</a>
+							<li><a class="is-size-7" href="/code/software/">Software</a>
 						
-							<li><a href="/code/web/">Web</a>
+							<li><a class="is-size-7" href="/code/web/">Web</a>
 						
-							<li><a href="/code/fiddles/">Fiddles</a>
+							<li><a class="is-size-7" href="/code/fiddles/">Fiddles</a>
 						
 					</ul>
 					
 					</li>
 				
-					<li><a href="/work">Work</a>
+					<li><a class="is-size-6" href="/work">Work</a>
+					
+					<ul>
+						
+							<li><a class="is-size-7" href="/work#employment">Employment</a>
+						
+							<li><a class="is-size-7" href="/work#education">Education</a>
+						
+							<li><a class="is-size-7" href="/work#skills">Skills</a>
+						
+							<li><a class="is-size-7" href="/work#experience">Experience</a>
+						
+					</ul>
+					
+					</li>
+				
+					<li><a class="is-size-6" href="/services">Services</a>
+					
+					</li>
+				
+					<li><a class="is-size-6" href="/contact">Contact</a>
 					
 					</li>
 				
@@ -458,11 +577,11 @@
 		<div class="column is-6">
 			<p class="title is-4">About Me</p>
 			<div class="content">
-				<p class="is-size-6"><p>I’m a queer, trans and <a href="https://en.wikipedia.org/wiki/Neurodiversity">neurodivergent</a> artist. I am a woman. I use art and programming to advocate for my community and analyze systems of oppression. I also design neat patterns.</p>
+				<p class="is-size-6"><p>I’m a queer, trans and neurodivergent artist. I am a woman. I use art and programming to advocate for my community and analyze systems of oppression. I also design neat patterns.</p>
 
 <p><strong>My community is my family.</strong> And I have a strong passion to support all queer, trans, and neurodivergent people. I am on a lifelong journey – constantly learning and gaining new skills to support them.</p>
 
-<p>In 2013, I graduated from St. Mary’s College of Maryland with a degree in computer science, and a minor in neuroscience. I’ve been a Baltimore native since then. Currently I’m working with the Baltimore Transgender Alliance, using technology and design for trans liberation.</p>
+<p>In 2013, I graduated from St. Mary’s College of Maryland with a degree in computer science, and a minor in neuroscience. I’ve been a Baltimore native since then. Currently I’m working with The Baltimore Transgender Alliance, using technology and design for trans liberation.</p>
 </p>
 			</div>
 			<div class="is-divider" data-content="SUPPORT TRANS ARTISTS WORK"></div>
@@ -482,7 +601,7 @@
 			<p class="title is-4">Connect With Me</p>
 			<p>Contact me at <a href="mailto:evan@evanlori.com">evan@evanlori.com</a> for commisions. Or follow my work/ connect with me using the links below: </p>
 			<div class="is-divider"></div>
-			<div class="columns">
+			<div class="columns is-desktop is-variable is-2">
 
 				<div class="column">
 					<p class="field"><a class="button is-medium is-white is-outlined" href="mailto:evan@evanlori.com">
@@ -494,7 +613,7 @@
 						<span>Github</span>
 					</a></p>
 
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://facebook.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://www.facebook.com/evanlorimahone/">
 						<span class="icon"><i class="fab fa-facebook"></i></span>
 						<span>Facebook</span>
 					</a></p>
@@ -505,11 +624,11 @@
 						<span class="icon"><i class="fab fa-linkedin"></i></span>
 						<span>LinkedIn</span>
 					</a></p>
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://instagram.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://instagram.com/evanlorimahone/">
 						<span class="icon"><i class="fab fa-instagram"></i></span>
 						<span>Instagram</span>
 					</a></p>
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://twitter.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://twitter.com/evanlorimahone">
 							<span class="icon"><i class="fab fa-twitter"></i></span>
 							<span>Twitter</span>
 					</a></p>

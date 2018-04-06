@@ -20,6 +20,12 @@ copy_files('node_modules/lightbox2/dist/images/', 'assets', 'cp_lightbox_images'
 copy_files('node_modules/bulma-divider/dist/bulma-divider.sass', '_sass/bulma-divider/', 'cp_bulma_divider')
 copy_files('node_modules/bulma-carousel/dist/bulma-carousel.sass', '_sass/bulma-carousel/', 'cp_bulma_carousel_css')
 copy_files('node_modules/bulma-carousel/dist/bulma-carousel.js', 'js', 'cp_bulma_carousel_js')
+# rewrite these lines later vvv
+copy_files('node_modules/font-mfizz/dist/font-mfizz.css', 'assets/css/font-mfizz', 'cp_font_mfizz_a')
+copy_files('node_modules/font-mfizz/dist/font-mfizz.eot', 'assets/css/font-mfizz', 'cp_font_mfizz_b')
+copy_files('node_modules/font-mfizz/dist/font-mfizz.svg', 'assets/css/font-mfizz', 'cp_font_mfizz_c')
+copy_files('node_modules/font-mfizz/dist/font-mfizz.ttf', 'assets/css/font-mfizz', 'cp_font_mfizz_d')
+copy_files('node_modules/font-mfizz/dist/font-mfizz.woff', 'assets/css/font-mfizz', 'cp_font_mfizz_e')
 
 task :copy_vendor_libs do
 	Rake::Task['cp_bulma_a'].execute
@@ -33,4 +39,9 @@ task :copy_vendor_libs do
 	Rake::Task['cp_bulma_divider'].execute
 	Rake::Task['cp_bulma_carousel_css'].execute
 	Rake::Task['cp_bulma_carousel_js'].execute
+	Rake::Task['cp_font_mfizz_a'].execute
+	Rake::Task['cp_font_mfizz_b'].execute
+	Rake::Task['cp_font_mfizz_c'].execute
+	Rake::Task['cp_font_mfizz_d'].execute
+	Rake::Task['cp_font_mfizz_e'].execute
 end

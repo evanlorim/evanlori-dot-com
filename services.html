@@ -1,0 +1,29 @@
+---
+layout: default
+title: Services
+subtitle: The stuff I can do for you.
+---
+{% include hero.html title=page.title subtitle=page.subtitle %}
+<section class="section"><div class="container"><div class="columns is-variable is-3 is-multiline">
+
+	{% for service in site.data.services %}
+		<div class="column is-half"><div class="notification is-{{service.color}}">
+			<div class="columns is-vcentered is-mobile">
+
+				<div class="column is-narrow">
+					<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+						<i class="fas fa-circle fa-stack-2x has-text-white"></i>
+						<i class="{{ service.icon }} fa-stack-1x has-text-{{ service.color }}"></i>
+					</span></span>
+				</div>
+
+				<div class="column">
+					<p class="header is-size-4">{{ service.title }}</p>
+					<p class="subtitle is-size-5">{{ service.description }}</p>
+				</div>
+
+			</div>
+		</div></div>
+	{% endfor %}
+
+</div></div></section>

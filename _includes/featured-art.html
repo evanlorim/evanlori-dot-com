@@ -1,9 +1,10 @@
-{% assign art = site.posts | where_exp: "item", "item.categories contains 'art'" | where: "featured", "true" | limit: 5 %}
+{% assign art = site.posts | where_exp: "item", "item.categories contains 'art'" | where: "featured", "true" | limit: 5 | sort: 'date' | reverse %}
 <div class='carousel carousel-animated carousel-animate-slide'>
 	<div class='carousel-container'>
-
 		{% for post in art %}
-			<div class='carousel-item' onclick="clickCarousel('{{ post.url }}')">
+			{% assign isactive = "" %}
+			{% if forloop.first %}{% assign isactive = 'is-active' %}{% endif %}
+			<div onclick="clickCarousel('{{ post.url }}')" class='carousel-item {{isactive}}'>
 				<figure class="image is-2by3">
 					<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_720,h_480,c_fill/w_720,h_480,c_crop/{{ post.public_id }}">
 					<div class="title is-uppercase is-size-6">{{ post.title }}</div>

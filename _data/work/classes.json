@@ -1,1 +1,17 @@
-[]
+[
+	{"title": "Graph Theory", "type": "cosc", "color": "primary"},
+	{"title": "Theory of Computation", "type": "cosc", "color": "primary"},
+	{"title": "Operations Research", "type": "cosc", "color": "primary"},
+	{"title": "Video Game Design", "type": "cosc", "color": "primary"},
+	{"title": "Artificial Intelligence", "type": "cosc", "color": "primary"},
+
+	{"title": "Linear Algebra", "type": "math", "color": "success"},
+	{"title": "Foundations of Mathematics", "type": "math", "color": "success"},
+
+	{"title": "Biological Psychology", "type": "neuro", "color": "warning"},
+	{"title": "Drugs, Brains and Behavior", "type": "neuro", "color": "warning"},
+	{"title": "Sensation and Perception", "type": "neuro", "color": "warning"},
+
+	{"title": "Psychological Statistics", "type": "psych", "color": "danger"},
+	{"title": "Research Methods", "type": "psych", "color": "danger" },
+]

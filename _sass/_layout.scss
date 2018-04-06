@@ -1,16 +1,4 @@
-.home-hero {
-	background-image: url(/assets/svg/self-portrait-wider.svg);
-	background-position: top right;
-	height: 540px;
-
-	.title {
-		font-size: 4rem;
-	}
-
-	.subtitle {
-		font-size: 2rem;
-	}
-}
+@import "bulma/utilities/initial-variables";
 
 .nav-spacer {
 	width: 12px;
@@ -24,8 +12,76 @@
 	text-align: right;
 }
 
-.centered {
+.image-block {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	img {
+		max-width: 70%;
+	}
+}
+
+.styled-list {
+	list-style: circle;
+	padding-left: 1rem;
+	li {
+		margin-bottom: .25rem;
+	}
+
+}
+
+.is-paddingless-mobile {
+	@media screen and (max-width: $tablet - 1) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-tablet {
+	@media screen and (min-width: $tablet) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-tablet-only {
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-touch {
+	@media screen and (max-width: $tablet - 1) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-desktop {
+	@media screen and (min-width: $desktop) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-desktop-only {
+	@media screen and (min-width: $desktop) and (max-width: $widescreen - 1) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-widescreen {
+	@media screen and (min-width: $widescreen) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-widescreen-only {
+	@media screen and (min-width: $widescreen) and (max-width: $fullhd - 1) {
+		padding: 0;
+	}
+}
+
+.is-paddingless-fullhd {
+	@media screen and (min-width: $fullhd) {
+		padding: 0;
+	}
 }

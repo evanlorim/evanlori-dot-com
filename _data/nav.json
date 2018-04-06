@@ -20,8 +20,8 @@
 				"href": "/art/drawn/"
 			},
 			{
-				"title": "Sketchbook",
-				"href": "/art/sketchbook/"
+				"title": "Sketch",
+				"href": "/art/sketch/"
 			}
 		]
 	},
@@ -49,6 +49,32 @@
 	},
 	{
 		"title": "Work",
-		"href": "/work"
+		"href": "/work",
+		"links": [
+			{
+				"title": "Employment",
+				"href": "/work#employment"
+			},
+			{
+				"title": "Education",
+				"href": "/work#education"
+			},
+			{
+				"title": "Skills",
+				"href": "/work#skills"
+			},
+			{
+				"title": "Experience",
+				"href": "/work#experience"
+			}
+		]
+	},
+	{
+		"title": "Services",
+		"href": "/services"
+	},
+	{
+		"title": "Contact",
+		"href": "/contact"
 	}
 ]

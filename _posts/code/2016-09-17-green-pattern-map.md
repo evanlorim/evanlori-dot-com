@@ -7,6 +7,7 @@ live_link: 'https://water.bniajfi.org/'
 categories: [code, web]
 tags: [html, css, js, nodejs, leaflet, angular, postgres]
 date: 2016-09-17
+subtitle: Baltimore green spaces webmap
 ---
 A webmap for displaying Baltimore's green spaces, community gardens, stormwater complaints, and much more.
 

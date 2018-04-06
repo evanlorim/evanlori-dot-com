@@ -1,6 +1,3 @@
 [
-	{"inst": "St. Mary's College of Maryland", "loc": "St. Mary's City, MD", "start": "2009-08-20", "end": "2013-06-20" ,"details": [
-		"Bachelor's of Arts in Computer Science.",
-		"Minor in Neuroscience."
-	]}
+	{"inst": "St. Mary's College of Maryland", "desc": "BA in Computer Science - Neuroscience minor", "loc": "St. Mary's City, MD", "start": "2009-08-20", "end": "2013-06-20" ,"details"}
 ]

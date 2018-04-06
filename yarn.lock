@@ -14,9 +14,13 @@ bulma-divider@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-1.0.1.tgz#9b5e537f812b1090033745c6b993253f8e5f429f"
 
-bulma@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.6.1.tgz#5f21a77c0c06f7d80051c06628c23516081bd649"
+bulma@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.6.2.tgz#f4b1d11d5acc51a79644eb0a2b0b10649d3d71f5"
+
+"font-mfizz@https://github.com/fizzed/font-mfizz":
+  version "2.4.1"
+  resolved "https://github.com/fizzed/font-mfizz#ccff3ec9555918c0a67ed6b5f360af5841045e3e"
 
 lightbox2@^2.10.0:
   version "2.10.0"

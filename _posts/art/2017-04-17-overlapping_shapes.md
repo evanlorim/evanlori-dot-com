@@ -2,7 +2,7 @@
 layout: art-post
 title: Overlapping Shapes
 public_id: portfolio/overlapping_shapes
-categories: [art, sketchbook]
+categories: [art, sketch]
 tags: [markers, color, doodle, abstract]
 date: 2017-04-17
 ---

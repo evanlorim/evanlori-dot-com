@@ -12,6 +12,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Evan Lori Mahone" href="/feed.xml" />
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
+	<link href="/assets/css/font-mfizz/font-mfizz.css" rel="stylesheet"/>
 	<link href="/assets/css/lightbox.css" rel="stylesheet"/>
 
 	<script src="/js/lightbox-plus-jquery.js"></script>
@@ -21,26 +22,82 @@
 </head>
 
 	<body>
-		<nav class="navbar" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
+			</a>
+			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
+			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div id="menu" class="navbar-menu">
 
 
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
-            </a>
-            
-                <a class="navbar-item" href="/">Home</a>
-            
-                <a class="navbar-item" href="/art">Art</a>
-            
-                <a class="navbar-item" href="/code">Code</a>
-            
-                <a class="navbar-item" href="/work">Work</a>
-            
-            <button class="button navbar-burger"></button>
-        </div>
-  </div>
+			<div class="navbar-start">
+				
+					
+					
+					
+					
+					<a href="/" class="navbar-item ">Home</a>
+				
+					
+					
+					
+					
+					<a href="/art" class="navbar-item ">Art</a>
+				
+					
+					
+					
+					
+					<a href="/code" class="navbar-item ">Code</a>
+				
+					
+					
+					
+					
+					<a href="/work" class="navbar-item is-active">Work</a>
+				
+					
+					
+					
+					
+					<a href="/services" class="navbar-item ">Services</a>
+				
+					
+					
+					
+					
+					<a href="/contact" class="navbar-item ">Contact</a>
+				
+			</div>
+
+			<div class="navbar-end">
+				<div class="navbar-item is-hidden-touch"><div class="field is-grouped is-grouped-multiline">
+					<p class="control"><a class="button is-danger" href="https://www.patreon.com/evanlori">
+						<span class="icon"><i class="fab fa-patreon"></i></span>
+						<span class="has-text-weight-bold is-size-7">BECOME A PATRON</span>
+					</a></p>
+					<p class="control"><a class="button is-warning" href="https://paypal.me/EvanLori">
+						<span class="icon"><i class="fab fa-paypal"></i></span>
+						<span class="has-text-weight-bold is-size-7">DONATE</span>
+					</a></p>
+				</div></div>
+			</div>
+		</div>
+
+	</div>
 </nav>
 
 		<section class="hero is-primary is-medium">
@@ -52,348 +109,1079 @@
     </div>
 </section>
 
-<section class="section"><div class="container"><div class="columns is-8 is-variable">
 
-	<div class="column is-9">
-		<h1 id="employment" class="title is-1">Employment</h1>
+<section class="section"><div class="container"><div class="tile is-ancestor">
 
-	<div class="card block"><div class="card-content">
+	<div class="tile is-vertical is-4"><div class="tile"><div class="tile is-parent is-vertical">
 
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Media Specialist</p>
-					<p class="subtitle is-6">The Baltimore Transgender Alliance</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">June 2016</time>&nbsp;-&nbsp;
-					Present
-					
-					<p class="subtitle is-6 has-text-right-desktop">Baltimore, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Designed, hosted, and developed full-featured website for transgender advocacy organization.</li>
-				
-					<li>Designed, generated media content; email newsletters, social media, flyers, logos, and buttons.</li>
-				
-					<li>Planned events, performed community outreach, co-organized with other LGBTQ and activist organizations.</li>
-				
-			</ul>
-		</div>
+		<article class="tile is-child notification is-primary is-narrow">
+			<div>
 
-	</div></div>
+	<div class="profile-container block"><img src="/assets/images/self-profile.jpg"/></div>
 
+	<div class="title has-text-weight-semibold has-text-centered is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">EVAN LORI MAHONE</div>
 
-	<div class="card block"><div class="card-content">
+	<div class="subtitle has-text-centered is-size-5-mobile is-size-6-tablet is-size-6-desktop is-size-5-widescreen">ARTIST. PROGRAMMER. ADVOCATE.</div>
 
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Canvasser</p>
-					<p class="subtitle is-6">Clean Water Action</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">December 2016</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">January 2018</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">Baltimore, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Advocated on behalf of myself and other trans and gender-non-conforming co-workers.</li>
-				
-					<li>See previous Clean Water Action experience below.</li>
-				
-			</ul>
-		</div>
+	<p class="has-text-centered is-size-5-mobile is-size-6-tablet is-size-6-desktop is-size-5-widescreen">
+		<span class="icon"><i class="fas fa-map-marker"></i></span>
+		<span>Baltimore, MD</span>
+	</p>
 
-	</div></div>
+	<p class="has-text-centered is-size-5-mobile is-size-6-tablet is-size-6-desktop is-size-5-widescreen">
+		<span class="icon"><i class="fas fa-envelope"></i></span>
+		<span>evan@evanlori.com</span>
+	</p>
 
-
-	<div class="card block"><div class="card-content">
-
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Programmer/ Statistician</p>
-					<p class="subtitle is-6">BNIA-JFI</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">January 2015</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">September 2016</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">Baltimore, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Maintained databases. Cleaned and statistically analyzed messy geodata for open data organization.</li>
-				
-					<li>Developed cutting-edge interactive web-map to display publicly available environmental indicators.</li>
-				
-			</ul>
-		</div>
-
-	</div></div>
-
-
-	<div class="card block"><div class="card-content">
-
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Canvass Trainer</p>
-					<p class="subtitle is-6">Clean Water Action</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">March 2014</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">January 2015</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">Baltimore, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Fundraised over twenty-five thousand dollars for environmental advocacy group.</li>
-				
-					<li>Organized communities on environmental justice and public health issues.</li>
-				
-					<li>Trained other organizers in effective fundraising strategies and engaging with concerned citizens.</li>
-				
-			</ul>
-		</div>
-
-	</div></div>
-
-
-	<div class="card block"><div class="card-content">
-
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Network Assistant/ IT Support</p>
-					<p class="subtitle is-6">St. Mary's College of Maryland OIT</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">November 2011</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">January 2014</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">St. Mary's City, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Front Desk: desktop support; troubleshot and configured students networks, routers, and computers.</li>
-				
-					<li>Wireless oversaturation problem: developed system to collect information on location and reach of over 200 wireless routers</li>
-				
-					<li>Deployed and maintained Linux and OSX servers</li>
-				
-			</ul>
-		</div>
-
-	</div></div>
-
-
-	<div class="card block"><div class="card-content">
-
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Research Intern: Cognitive Linguistics</p>
-					<p class="subtitle is-6">John's Hopkins University</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">June 2011</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">August 2011</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">Baltimore, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Statistically analysed large English word corpora using R and linux tools.</li>
-				
-			</ul>
-		</div>
-
-	</div></div>
-
-
-	<div class="card block"><div class="card-content">
-
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">Research Intern: Neuropsychology</p>
-					<p class="subtitle is-6">Kennedy Krieger Institute</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">June 2010</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">August 2010</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">Baltimore, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Created scripts to automatically collate data; doubling data collection speed.</li>
-				
-					<li>Assisted in writing programs in R for statistical analysis.</li>
-				
-			</ul>
-		</div>
-
-	</div></div>
-
-
-
-		<h1 id="education" class="title is-1">Education</h1>
-
-	<div class="card block"><div class="card-content">
-		<nav class="level">
-			<div class="level-left">
-				<div>
-					<p class="title is-4">St. Mary's College of Maryland</p>
-				</div>
-			</div>
-			<div class="level-right">
-				<div>
-					<time class="has-text-right" datetime="2016-1-1">August 2009</time>&nbsp;-&nbsp;
-					<time datetime="2016-1-1">June 2013</time>
-					
-					<p class="subtitle is-6 has-text-right-desktop">St. Mary's City, MD</p>
-				</div>
-			</div>
-		</nav>
-		<div class="content has-text-light">
-			<ul>
-				
-					<li>Bachelor's of Arts in Computer Science.</li>
-				
-					<li>Minor in Neuroscience.</li>
-				
-			</ul>
-		</div>
-	</div></div>
-
-<h3 id="classes" class="title is-3"></h3>
-
-		<h1 id="experience" class="title is-1">Other Experience</h1>
-
-
-		<h1 id="projects" class="title is-1">Projects</h1>
-
-
-		<h1 id="skills" class="title is-1">Skills/ Expertise</h1>
-
-
-	</div>
-
-	<div class="column is-3">
-		<div class="box">
-	<aside class="menu">
-		<h4 class="title is-4">Navigate</h4>
-		<ul class="menu-list">
-			<li><a href="#employment">Employment</a></li>
-			<li>
-				<a href="#education">Education</a>
-				<ul>
-					<li><a href="#classes">Classes</a></li>
-				</ul>
-			</li>
-			<li><a href="#experience">Other Experience</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#skills">Skills/ Expertise</a></li>
-		</ul>
-	</aside>
 </div>
 
+		</article>
+		<article class="tile is-child card"><div class="card-content">
+			
+
+		<h1 class="title is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">SKILLS/ EXPERTISE</h1>
+		<div class="notification">
+			<nav class="level">
+
+				<div class="level-item">
+					<div class="level-item has-text-centered"><div>
+						<p><span class="icon"><i class="fas fa-circle has-text-danger"></i></span></p>
+						<p class="header is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">PEOPLE</p>
+					</div></div>
+				</div>
+
+				<div class="level-item">
+					<div class="level-item has-text-centered"><div>
+						<p><span class="icon"><i class="fas fa-circle has-text-success"></i></span></p>
+						<p class="header is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">ART</p>
+					</div></div>
+				</div>
+
+				<div class="level-item">
+					<div class="level-item has-text-centered"><div>
+						<p><span class="icon"><i class="fas fa-circle has-text-primary"></i></span></p>
+						<p class="header is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">CODE</p>
+					</div></div>
+				</div>
+			</div>
+		</nav>
+
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">1:1 COMMUNICATION</p>
+				<progress class="progress is-danger" value="80" max="100">80%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">COMMUNITY BUILDING</p>
+				<progress class="progress is-danger" value="70" max="100">70%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">COMMUNITY ORGANIZING</p>
+				<progress class="progress is-danger" value="80" max="100">80%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">CONNECTING PEOPLE</p>
+				<progress class="progress is-danger" value="90" max="100">90%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">ILLUSTRATOR</p>
+				<progress class="progress is-success" value="85" max="100">85%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">PHOTOSHOP</p>
+				<progress class="progress is-success" value="65" max="100">65%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">C/C++</p>
+				<progress class="progress is-primary" value="35" max="100">35%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">HTML, CSS & JS</p>
+				<progress class="progress is-primary" value="75" max="100">75%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">JAVA/C#</p>
+				<progress class="progress is-primary" value="75" max="100">75%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">NODEJS/ RUBY</p>
+				<progress class="progress is-primary" value="65" max="100">65%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">PYTHON/ R</p>
+				<progress class="progress is-primary" value="60" max="100">60%</progress>
+			</div>
+		
+			<div class="block">
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">SQL</p>
+				<progress class="progress is-primary" value="55" max="100">55%</progress>
+			</div>
+		
+
+		</div></article>
+
+	</div></div></div>
+
+	<div class="tile is-vertical is-8"><div class="tile"><div class="tile is-parent is-vertical">
+
+		<article class="tile is-child card"><div class="card-content">
+			
+<h1 id="employment" class="title has-text-centered-mobile is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">EMPLOYMENT</h1>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Media Specialist</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">The Baltimore Transgender Alliance</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">JUN 16</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">present</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job1' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Canvasser</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Clean Water Action</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">DEC 16</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">JAN 18</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job2' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Programmer/ Statistician</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">BNIA-JFI</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">JAN 15</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">SEP 16</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job3' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Canvass Trainer</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Clean Water Action</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">MAR 14</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">JAN 15</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job4' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Network Assistant</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's College of Maryland OIT</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">NOV 11</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">JAN 14</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's City, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job5' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Intern: Cog. Linguistics</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">John's Hopkins University</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">JUN 11</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">AUG 11</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job6' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Intern: Neuropsychology</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Kennedy Krieger Institute</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">JUN 10</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">AUG 10</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+
+	
+	<div class="modal" id="job1">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Media Specialist</p>
+				<p class="subtitle is-6">The Baltimore Transgender Alliance</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Designed, hosted, and developed full-featured website for transgender advocacy organization.</li>
+				
+					<li class="is-size-7">Designed, generated media content; email newsletters, social media, flyers, logos, and buttons.</li>
+				
+					<li class="is-size-7">Planned events, performed community outreach, co-organized with other LGBTQ and activist organizations.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job1')"></button>
+	</div>
+
+	
+	<div class="modal" id="job2">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Canvasser</p>
+				<p class="subtitle is-6">Clean Water Action</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Advocated on behalf of myself and other trans and gender-non-conforming co-workers.</li>
+				
+					<li class="is-size-7">See previous Clean Water Action experience below.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job2')"></button>
+	</div>
+
+	
+	<div class="modal" id="job3">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Programmer/ Statistician</p>
+				<p class="subtitle is-6">BNIA-JFI</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Maintained databases. Cleaned and statistically analyzed messy geodata for open data organization.</li>
+				
+					<li class="is-size-7">Developed cutting-edge interactive web-map to display publicly available environmental indicators.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job3')"></button>
+	</div>
+
+	
+	<div class="modal" id="job4">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Canvass Trainer</p>
+				<p class="subtitle is-6">Clean Water Action</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Fundraised over twenty-five thousand dollars for environmental advocacy group.</li>
+				
+					<li class="is-size-7">Organized communities on environmental justice and public health issues.</li>
+				
+					<li class="is-size-7">Trained other organizers in effective fundraising strategies and engaging with concerned citizens.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job4')"></button>
+	</div>
+
+	
+	<div class="modal" id="job5">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Network Assistant</p>
+				<p class="subtitle is-6">St. Mary's College of Maryland OIT</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Front Desk: desktop support; troubleshot and configured students networks, routers, and computers.</li>
+				
+					<li class="is-size-7">Wireless oversaturation problem: developed system to collect information on location and reach of over 200 wireless routers</li>
+				
+					<li class="is-size-7">Deployed and maintained Linux and OSX servers</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job5')"></button>
+	</div>
+
+	
+	<div class="modal" id="job6">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Intern: Cog. Linguistics</p>
+				<p class="subtitle is-6">John's Hopkins University</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Statistically analysed large English word corpora using R and linux tools.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job6')"></button>
+	</div>
+
+	
+	<div class="modal" id="job7">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Intern: Neuropsychology</p>
+				<p class="subtitle is-6">Kennedy Krieger Institute</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Created scripts to automatically collate data; doubling data collection speed.</li>
+				
+					<li class="is-size-7">Assisted in writing programs in R for statistical analysis.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('job7')"></button>
 	</div>
 
 
+		</div></article>
+		<article class="tile is-child card"><div class="card-content">
+			
+<h1 id="employment" class="title has-text-centered-mobile is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">EDUCATION</h1>
 
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item has-text-centered-mobile">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-graduation-cap fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's College of Maryland</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">BA in Computer Science - Neuroscience minor</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+				<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">AUG 09</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">JUN 13</time>
+				</div>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's City, MD</p>
+			</div></div>
+
+		</div>
+
+	</nav>
+
+
+<h1 id="classes" class="title has-text-centered-mobile is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">CLASSES</h1>
+<div class="notification">
+	<div class="field is-grouped is-grouped-multiline">
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-primary">cosc</span>
+				<span class="tag is-light">graph theory</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-primary">cosc</span>
+				<span class="tag is-light">theory of computation</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-primary">cosc</span>
+				<span class="tag is-light">operations research</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-primary">cosc</span>
+				<span class="tag is-light">video game design</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-primary">cosc</span>
+				<span class="tag is-light">artificial intelligence</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-success">math</span>
+				<span class="tag is-light">linear algebra</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-success">math</span>
+				<span class="tag is-light">foundations of mathematics</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-warning">neuro</span>
+				<span class="tag is-light">biological psychology</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-warning">neuro</span>
+				<span class="tag is-light">drugs, brains and behavior</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-warning">neuro</span>
+				<span class="tag is-light">sensation and perception</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-danger">psych</span>
+				<span class="tag is-light">psychological statistics</span>
+			</div></div>
+		
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-danger">psych</span>
+				<span class="tag is-light">research methods</span>
+			</div></div>
+		
+	</div>
+</div>
+
+		</div></article>
+		<article class="tile is-child card"><div class="card-content">
+			
+<h1 id="experience" class="title has-text-centered-mobile is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">OTHER EXPERIENCE</h1>
+
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Bmore Trans</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Founder/ Admin</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+			<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">AUG 17</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">present</time>
+				</div>
+			<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Trans Ladies' Picnic</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Lead Organizer</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+			<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">SEP 16</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">present</time>
+				</div>
+			<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Trans Clothing Closet</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Lead Organizer</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+			<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">MAR 16</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">present</time>
+				</div>
+			<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Baltimore, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">SEAC</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Treasurer</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+			<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">SEP 09</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">MAY 13</time>
+				</div>
+			<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's College, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">After School Program</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Tutor</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+			<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">FEB 13</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">MAY 13</time>
+				</div>
+			<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's City, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+	<nav class="level">
+
+		<div class="level-left">
+
+			<div class="level-item">
+				<span class="icon is-large"><span class="fa-stack fa-lg" style="flex; align-items:center;">
+					<i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+					<i class="fas fa-briefcase fa-stack-1x"></i>
+				</span></span>
+			</div>
+
+			<div class="level-item has-text-centered-mobile"><div>
+				<p class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Teacher's Assistant</p>
+				<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">Computer Architecture</p>
+			</div></div>
+
+		</div>
+
+		<div class="level-right">
+
+			<div class="level-item has-text-right-tablet has-text-centered-mobile"><div>
+			<div class="heading is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">
+					<time datetime="2016-1-1">SEP 11</time>&nbsp;-&nbsp;
+					<time datetime="2016-1-1">DEC 11</time>
+				</div>
+			<p class="subtitle is-size-6-mobile is-size-7-tablet is-size-7-desktop is-size-6-widescreen">St. Mary's College, MD</p>
+			</div></div>
+
+			<div class="level-item" onclick="openModal( 'job7' )">
+				<a class="button is-hidden-mobile is-hidden-desktop"><span class='icon'><i class="fas fa-info"></i></span></a>
+				<a class="button is-hidden-tablet-only"><span>INFO</span><span class='icon'><i class="fas fa-info"></i></span></a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+
+
+	
+	<div class="modal" id="exp1">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Bmore Trans</p>
+				<p class="subtitle is-6">Founder/ Admin</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Moderated online forum for trans folks to connect to resources and community in Baltimore.</li>
+				
+					<li class="is-size-7">Forum is growing: currently over 400 individuals.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('exp1')"></button>
+	</div>
+
+	
+	<div class="modal" id="exp2">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Trans Ladies' Picnic</p>
+				<p class="subtitle is-6">Lead Organizer</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Organized monthly picnic for trans-feminine people, to build community and be public with our identities.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('exp2')"></button>
+	</div>
+
+	
+	<div class="modal" id="exp3">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Trans Clothing Closet</p>
+				<p class="subtitle is-6">Lead Organizer</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Put together an appointment based clothing closet for trans individuals to help them find gender affirming clothing.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('exp3')"></button>
+	</div>
+
+	
+	<div class="modal" id="exp4">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">SEAC</p>
+				<p class="subtitle is-6">Treasurer</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Served as treasurer, and media specialist for St. Mary's Environmental Action Coalition</li>
+				
+					<li class="is-size-7">Helped develop meatless mondays and successful reusable to-go box campaigns.</li>
+				
+					<li class="is-size-7">Interfaced with students and staff during campaigns. Created media and flyers.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('exp4')"></button>
+	</div>
+
+	
+	<div class="modal" id="exp5">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">After School Program</p>
+				<p class="subtitle is-6">Tutor</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Afterschool instructor at Spring Ridge Middle School.</li>
+				
+					<li class="is-size-7">Developed and taught lessons to teach students math and computer science in fun ways.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('exp5')"></button>
+	</div>
+
+	
+	<div class="modal" id="exp6">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification">
+				<p class="heading is-size-6">Teacher's Assistant</p>
+				<p class="subtitle is-6">Computer Architecture</p>
+				<ul class="styled-list">
+				
+					<li class="is-size-7">Taught student’s fundamentals of computer architecture, held review sessions, and graded homework.</li>
+				
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('exp6')"></button>
+	</div>
+
+
+		</div></article>
+
+	</div></div></div>
 
 </div></div></section>
 
 		
 <footer class="footer">
   <div class="container">
-	  <div class="columns">
+	  <div class="columns is-variable is-8">
 
 		<div class="column is-2">
-			<p class="title is-4">Site Map</p>
 			<aside class="menu">
 				<ul class="menu-list">
 				
-					<li><a href="/">Home</a>
+					<li><a class="is-size-6" href="/">Home</a>
 					
 					</li>
 				
-					<li><a href="/art">Art</a>
+					<li><a class="is-size-6" href="/art">Art</a>
 					
 					<ul>
 						
-							<li><a href="/art/">Latest</a>
+							<li><a class="is-size-7" href="/art/">Latest</a>
 						
-							<li><a href="/art/digital/">Digital</a>
+							<li><a class="is-size-7" href="/art/digital/">Digital</a>
 						
-							<li><a href="/art/drawn/">Drawn</a>
+							<li><a class="is-size-7" href="/art/drawn/">Drawn</a>
 						
-							<li><a href="/art/sketchbook/">Sketchbook</a>
+							<li><a class="is-size-7" href="/art/sketch/">Sketch</a>
 						
 					</ul>
 					
 					</li>
 				
-					<li><a href="/code">Code</a>
+					<li><a class="is-size-6" href="/code">Code</a>
 					
 					<ul>
 						
-							<li><a href="/code/">Latest</a>
+							<li><a class="is-size-7" href="/code/">Latest</a>
 						
-							<li><a href="/code/software/">Software</a>
+							<li><a class="is-size-7" href="/code/software/">Software</a>
 						
-							<li><a href="/code/web/">Web</a>
+							<li><a class="is-size-7" href="/code/web/">Web</a>
 						
-							<li><a href="/code/fiddles/">Fiddles</a>
+							<li><a class="is-size-7" href="/code/fiddles/">Fiddles</a>
 						
 					</ul>
 					
 					</li>
 				
-					<li><a href="/work">Work</a>
+					<li><a class="is-size-6" href="/work">Work</a>
+					
+					<ul>
+						
+							<li><a class="is-size-7" href="/work#employment">Employment</a>
+						
+							<li><a class="is-size-7" href="/work#education">Education</a>
+						
+							<li><a class="is-size-7" href="/work#skills">Skills</a>
+						
+							<li><a class="is-size-7" href="/work#experience">Experience</a>
+						
+					</ul>
+					
+					</li>
+				
+					<li><a class="is-size-6" href="/services">Services</a>
+					
+					</li>
+				
+					<li><a class="is-size-6" href="/contact">Contact</a>
 					
 					</li>
 				
@@ -404,11 +1192,11 @@
 		<div class="column is-6">
 			<p class="title is-4">About Me</p>
 			<div class="content">
-				<p class="is-size-6"><p>I’m a queer, trans and <a href="https://en.wikipedia.org/wiki/Neurodiversity">neurodivergent</a> artist. I am a woman. I use art and programming to advocate for my community and analyze systems of oppression. I also design neat patterns.</p>
+				<p class="is-size-6"><p>I’m a queer, trans and neurodivergent artist. I am a woman. I use art and programming to advocate for my community and analyze systems of oppression. I also design neat patterns.</p>
 
 <p><strong>My community is my family.</strong> And I have a strong passion to support all queer, trans, and neurodivergent people. I am on a lifelong journey – constantly learning and gaining new skills to support them.</p>
 
-<p>In 2013, I graduated from St. Mary’s College of Maryland with a degree in computer science, and a minor in neuroscience. I’ve been a Baltimore native since then. Currently I’m working with the Baltimore Transgender Alliance, using technology and design for trans liberation.</p>
+<p>In 2013, I graduated from St. Mary’s College of Maryland with a degree in computer science, and a minor in neuroscience. I’ve been a Baltimore native since then. Currently I’m working with The Baltimore Transgender Alliance, using technology and design for trans liberation.</p>
 </p>
 			</div>
 			<div class="is-divider" data-content="SUPPORT TRANS ARTISTS WORK"></div>
@@ -428,7 +1216,7 @@
 			<p class="title is-4">Connect With Me</p>
 			<p>Contact me at <a href="mailto:evan@evanlori.com">evan@evanlori.com</a> for commisions. Or follow my work/ connect with me using the links below: </p>
 			<div class="is-divider"></div>
-			<div class="columns">
+			<div class="columns is-desktop is-variable is-2">
 
 				<div class="column">
 					<p class="field"><a class="button is-medium is-white is-outlined" href="mailto:evan@evanlori.com">
@@ -440,7 +1228,7 @@
 						<span>Github</span>
 					</a></p>
 
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://facebook.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://www.facebook.com/evanlorimahone/">
 						<span class="icon"><i class="fab fa-facebook"></i></span>
 						<span>Facebook</span>
 					</a></p>
@@ -451,11 +1239,11 @@
 						<span class="icon"><i class="fab fa-linkedin"></i></span>
 						<span>LinkedIn</span>
 					</a></p>
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://instagram.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://instagram.com/evanlorimahone/">
 						<span class="icon"><i class="fab fa-instagram"></i></span>
 						<span>Instagram</span>
 					</a></p>
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://twitter.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://twitter.com/evanlorimahone">
 							<span class="icon"><i class="fab fa-twitter"></i></span>
 							<span>Twitter</span>
 					</a></p>

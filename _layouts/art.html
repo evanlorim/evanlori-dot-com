@@ -13,7 +13,6 @@ layout: default
     </div>
     <div class="hero-foot">
         <div class="container">
-
             {% include tabs.html category = category subcategory = page.subcategory %}
         </div>
     </div>
@@ -23,15 +22,23 @@ layout: default
 
 <div class="section"><div class="container">
 
-    <div class="columns is-8 is-variable">
-        <div class="column is-three-quarters">
-            {% include posts-grid.html posts = paginator.posts %}
+    <div class="columns is-5 is-variable is-desktop">
+        <div class="column is-three-quarters-desktop">
+			<div class="columns is-multiline is-3 is-variable">
+				{% for post in paginator.posts %}
+					 <div class="column is-half">
+						 {% include art-card.html post = post %}
+					</div>
+				{% endfor %}
+			</div>
+			{% include page-nav.html paginator=paginator %}
         </div>
-        <div class="column is-one-quarter">
+
+        <div class="column is-one-quarter-desktop">
             {% include tags-panel.html category = category tag = page.tag %}
         </div>
     </div>
 
-    {% include page-nav.html paginator=paginator %}
+
 
 </div></div>

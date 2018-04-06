@@ -1,15 +1,49 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
+			</a>
+			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
+			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div id="menu" class="navbar-menu">
 
 
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
-            </a>
-            {% for link in site.data.nav %}
-                <a class="navbar-item" href="{{ link.href }}">{{ link.title }}</a>
-            {% endfor %}
-            <button class="button navbar-burger"></button>
-        </div>
-  </div>
+			<div class="navbar-start">
+				{% for link in site.data.nav %}
+					{% assign dothtml = link.href | append: '.html' %}
+					{% assign index = link.href | append: '/index.html' %}
+					{% assign isactive = '' %}
+					{% if page.url == link.href or page.url == dothtml or page.url == index %}
+						{% assign isactive = 'is-active' %}
+					{% endif %}
+					<a href="{{ link.href }}" class="navbar-item {{isactive}}">{{ link.title }}</a>
+				{% endfor %}
+			</div>
+
+			<div class="navbar-end">
+				<div class="navbar-item is-hidden-touch"><div class="field is-grouped is-grouped-multiline">
+					<p class="control"><a class="button is-danger" href="{{ site.data.links.patreon.href }}">
+						<span class="icon"><i class="{{ site.data.links.patreon.icon }}"></i></span>
+						<span class="has-text-weight-bold is-size-7">BECOME A PATRON</span>
+					</a></p>
+					<p class="control"><a class="button is-warning" href="{{ site.data.links.paypal.href }}">
+						<span class="icon"><i class="{{ site.data.links.paypal.icon }}"></i></span>
+						<span class="has-text-weight-bold is-size-7">DONATE</span>
+					</a></p>
+				</div></div>
+			</div>
+		</div>
+
+	</div>
 </nav>

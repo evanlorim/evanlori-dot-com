@@ -4,21 +4,32 @@ title: Work
 subtitle: My professional and academic experience.
 ---
 {% include hero.html title=page.title subtitle=page.subtitle %}
-<section class="section"><div class="container"><div class="columns is-8 is-variable">
 
-	<div class="column is-9">
-		{% include employment.html employment=site.data.work.employment %}
-		{% include education.html education=site.data.work.education classes=site.data.work.classes %}
-		{% include experience.html experience=site.data.work.experience %}
-		{% include projects.html projects=site.data.work.projects %}
-		{% include skills.html skills=site.data.work.skills %}
-	</div>
+<section class="section"><div class="container"><div class="tile is-ancestor">
 
-	<div class="column is-3">
-		{% include work-nav.html %}
-	</div>
+	<div class="tile is-vertical is-4"><div class="tile"><div class="tile is-parent is-vertical">
 
+		<article class="tile is-child notification is-primary is-narrow">
+			{% include profile.html %}
+		</article>
+		<article class="tile is-child card"><div class="card-content">
+			{% include skills.html skills=site.data.work.skills %}
+		</div></article>
 
+	</div></div></div>
 
+	<div class="tile is-vertical is-8"><div class="tile"><div class="tile is-parent is-vertical">
+
+		<article class="tile is-child card"><div class="card-content">
+			{% include employment.html employment=site.data.work.employment %}
+		</div></article>
+		<article class="tile is-child card"><div class="card-content">
+			{% include education.html education=site.data.work.education classes=site.data.work.classes %}
+		</div></article>
+		<article class="tile is-child card"><div class="card-content">
+			{% include experience.html experience=site.data.work.experience %}
+		</div></article>
+
+	</div></div></div>
 
 </div></div></section>

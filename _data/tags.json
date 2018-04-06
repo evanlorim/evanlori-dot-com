@@ -33,6 +33,7 @@
 	{ "category": "code", "name": "css", "href": "/code/tags/css", "type": "language", "color": "primary" },
 	{ "category": "code", "name": "python", "href": "/code/tags/python", "type": "language", "color": "primary" },
 	{ "category": "code", "name": "r", "href": "/code/tags/python", "type": "language", "color": "primary" },
+	{ "category": "code", "name": "latex", "href": "/code/tags/python", "type": "language", "color": "primary" },
 
 	{ "category": "code", "name": "nodejs", "href": "/code/tags/nodejs", "type": "tool", "color": "info" },
 	{ "category": "code", "name": "jekyll", "href": "/code/tags/jekyll", "type": "tool", "color": "info" },

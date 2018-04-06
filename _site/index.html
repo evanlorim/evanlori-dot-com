@@ -12,6 +12,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Evan Lori Mahone" href="/feed.xml" />
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
+	<link href="/assets/css/font-mfizz/font-mfizz.css" rel="stylesheet"/>
 	<link href="/assets/css/lightbox.css" rel="stylesheet"/>
 
 	<script src="/js/lightbox-plus-jquery.js"></script>
@@ -21,26 +22,82 @@
 </head>
 
 <body>
-	<nav class="navbar" role="navigation" aria-label="main navigation">
+	<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
+			</a>
+			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
+			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div id="menu" class="navbar-menu">
 
 
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
-            </a>
-            
-                <a class="navbar-item" href="/">Home</a>
-            
-                <a class="navbar-item" href="/art">Art</a>
-            
-                <a class="navbar-item" href="/code">Code</a>
-            
-                <a class="navbar-item" href="/work">Work</a>
-            
-            <button class="button navbar-burger"></button>
-        </div>
-  </div>
+			<div class="navbar-start">
+				
+					
+					
+					
+					
+					<a href="/" class="navbar-item is-active">Home</a>
+				
+					
+					
+					
+					
+					<a href="/art" class="navbar-item ">Art</a>
+				
+					
+					
+					
+					
+					<a href="/code" class="navbar-item ">Code</a>
+				
+					
+					
+					
+					
+					<a href="/work" class="navbar-item ">Work</a>
+				
+					
+					
+					
+					
+					<a href="/services" class="navbar-item ">Services</a>
+				
+					
+					
+					
+					
+					<a href="/contact" class="navbar-item ">Contact</a>
+				
+			</div>
+
+			<div class="navbar-end">
+				<div class="navbar-item is-hidden-touch"><div class="field is-grouped is-grouped-multiline">
+					<p class="control"><a class="button is-danger" href="https://www.patreon.com/evanlori">
+						<span class="icon"><i class="fab fa-patreon"></i></span>
+						<span class="has-text-weight-bold is-size-7">BECOME A PATRON</span>
+					</a></p>
+					<p class="control"><a class="button is-warning" href="https://paypal.me/EvanLori">
+						<span class="icon"><i class="fab fa-paypal"></i></span>
+						<span class="has-text-weight-bold is-size-7">DONATE</span>
+					</a></p>
+				</div></div>
+			</div>
+		</div>
+
+	</div>
 </nav>
 
 		
@@ -54,7 +111,7 @@
          Evan Lori Mahone
        </h1>
 			<h2 class="subtitle">
-         Trans fem // Artist // Activist // Programmer
+         Artist. Programmer. Advocate.
        </h2>
 		</div>
 	</div>
@@ -69,54 +126,61 @@
 </section>
 
 <div class="section"><div class="container">
-	<div class="columns">
-		<div class="column">
-			<div class="content is-size-5"><p>I have been making art my entire life. I love learning new ways to create and express myself. I use whatever media I have at-hand to create. Digital, pen, pencil, markers, yarn, found objects.</p>
-
-<p>I have a special interest in patterns. Repetitive patterns with small incremental changes. The patterns which I see in the world - I draw, and the patterns which I draw - I see in the world. My drawing is meditative and reflective.</p>
-
-<p>I use art as a tool in my activism. For the past 8 years or so I’ve been making designs, posters and buttons for the various projects and causes I’ve been involved with. Since 2016 I’ve been working as media specialist for <a href="https://www.bmoretransalliance.com">The Baltimore Transgender Alliance</a>. My art is also act of empowerment – for myself and my community.</p>
-</div>
-			<div class="has-text-centered">
-				<a class="button is-large is-primary" href="/art">Check Out My Latest Art&nbsp;<i class="fas fa-arrow-right"></i></a>
-			</div>
-		</div>
+	<div class="columns is-variable is-8 is-desktop">
 
 		<div class="column">
 			
 <div class='carousel carousel-animated carousel-animate-slide'>
 	<div class='carousel-container'>
-
 		
-			<div class='carousel-item' onclick="clickCarousel('/art/digital/2018/02/03/poster-transing-politics.html')">
+			
+			
+			<div onclick="clickCarousel('/art/digital/2018/03/28/trans_potluck_april_18.html')" class='carousel-item is-active'>
+				<figure class="image is-2by3">
+					<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/april-18-trans-potluck">
+					<div class="title is-uppercase is-size-6">Trans Potluck Apr 18</div>
+				</figure>
+			</div>
+		
+			
+			
+			<div onclick="clickCarousel('/art/digital/2018/03/08/poster_transing_politics.html')" class='carousel-item '>
 				<figure class="image is-2by3">
 					<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/poster_transing_politics">
 					<div class="title is-uppercase is-size-6">Transing Politics</div>
 				</figure>
 			</div>
 		
-			<div class='carousel-item' onclick="clickCarousel('/art/digital/2018/02/03/untitled-pattern-1.html')">
+			
+			
+			<div onclick="clickCarousel('/art/digital/2018/02/03/untitled-pattern-1.html')" class='carousel-item '>
 				<figure class="image is-2by3">
 					<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/untitled_pattern_1">
 					<div class="title is-uppercase is-size-6">Untitled Pattern #1</div>
 				</figure>
 			</div>
 		
-			<div class='carousel-item' onclick="clickCarousel('/art/digital/2017/11/11/jamie_grace.html')">
+			
+			
+			<div onclick="clickCarousel('/art/digital/2017/11/11/jamie_grace.html')" class='carousel-item '>
 				<figure class="image is-2by3">
 					<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/jamie_grace">
 					<div class="title is-uppercase is-size-6">Jamie Grace</div>
 				</figure>
 			</div>
 		
-			<div class='carousel-item' onclick="clickCarousel('/art/digital/2017/11/05/tmor_2017_poster.html')">
+			
+			
+			<div onclick="clickCarousel('/art/digital/2017/11/05/tmor_2017_poster.html')" class='carousel-item '>
 				<figure class="image is-2by3">
 					<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/tmor_2017_poster">
 					<div class="title is-uppercase is-size-6">Tmor 2017 Poster</div>
 				</figure>
 			</div>
 		
-			<div class='carousel-item' onclick="clickCarousel('/art/digital/2017/08/18/queer_love_cookout_2017_flyer.html')">
+			
+			
+			<div onclick="clickCarousel('/art/digital/2017/08/18/queer_love_cookout_2017_flyer.html')" class='carousel-item '>
 				<figure class="image is-2by3">
 					<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/queer_love_cookout_2017_flyer">
 					<div class="title is-uppercase is-size-6">Queer Love Cookout 2017 Flyer</div>
@@ -138,6 +202,22 @@
 </div>
 
 		</div>
+
+		<div class="column">
+			<div class="content is-size-5"><p>I have been making art my entire life. I love learning new ways to create and express myself. I use whatever media I have at-hand to create: digital, pen, pencil, markers, yarn, found objects.</p>
+
+<p>I have a special interest in patterns, specifically, repetitive patterns with small incremental changes. The patterns which I see in the world I draw, and the patterns which I draw I see in the world. My drawing is meditative and reflective.</p>
+
+<p>I use art as a tool in my activism. For the past 8 years or so I’ve been making designs, posters and buttons for the various projects and causes I’ve been involved with. Since 2016 I’ve been working as media specialist for <a href="https://www.bmoretransalliance.com">The Baltimore Transgender Alliance</a>. My art is also an act of empowerment – for myself and my community.</p>
+</div>
+			<div class="has-text-centered">
+				<a class="button is-large is-outlined is-inverted is-dark has-text-weight-semibold" href="/art">
+					<span>See my art</span>
+					<span class="icon"><i class="fas fa-chevron-right fa-sm"></i></span>
+				</a>
+			</div>
+		</div>
+
 	</div>
 </div></div>
 
@@ -150,11 +230,11 @@
 </section>
 
 <div class="section"><div class="container">
-	<div class="columns">
-		<div class="column is-half">
+	<div class="columns is-variable is-8 is-desktop">
+		<div class="column">
 			
 <nav class="panel">
-
+	<p class="panel-heading">Featured Code</p>
 	
 	<a class="panel-block" href="/code/software/2018/03/26/becoming-bands.html">
 			<span class="panel-icon">
@@ -163,7 +243,7 @@
 				<i class="fas fa-code"></i>
 			</span>
 			<span>Becoming Bands</span>
-			<span style="flex: 1;"></span>
+			<span style="flex: 1"></span>
 			<time class="has-text-right" datetime="2016-1-1">26 March 2018</time>
 
 	</a>
@@ -175,7 +255,7 @@
 				<i class="fas fa-pencil-alt"></i>
 			</span>
 			<span>Wave Art Generator</span>
-			<span style="flex: 1;"></span>
+			<span style="flex: 1"></span>
 			<time class="has-text-right" datetime="2016-1-1">18 February 2018</time>
 
 	</a>
@@ -187,7 +267,7 @@
 				<i class="fas fa-pencil-alt"></i>
 			</span>
 			<span>Evolving Waves</span>
-			<span style="flex: 1;"></span>
+			<span style="flex: 1"></span>
 			<time class="has-text-right" datetime="2016-1-1">12 February 2018</time>
 
 	</a>
@@ -199,7 +279,7 @@
 				<i class="fas fa-globe"></i>
 			</span>
 			<span>Personal Website</span>
-			<span style="flex: 1;"></span>
+			<span style="flex: 1"></span>
 			<time class="has-text-right" datetime="2016-1-1">31 January 2018</time>
 
 	</a>
@@ -211,7 +291,7 @@
 				<i class="fas fa-globe"></i>
 			</span>
 			<span>BTA Website</span>
-			<span style="flex: 1;"></span>
+			<span style="flex: 1"></span>
 			<time class="has-text-right" datetime="2016-1-1">18 November 2017</time>
 
 	</a>
@@ -220,15 +300,18 @@
 </nav>
 
 		</div>
-		<div class="column is-half">
+		<div class="column">
 			<div class="content is-size-5">
 				<p>In 2013 - I graduated from St. Mary’s College of Maryland with a degree in computer science. In college I was highly motivated by the application of computer science to my other studies – psychology and neuroscience. I specialized in cognitive science and data science.</p>
 
-<p>Over the past 5 years, however – I have learned to combine my skills in art and design with those in programming. I taught myself, and learned through work experience how to do web design and full stack development. More recently I have taken that even further – to create art with my code; generative art. I’ve been working on generating the patterns which I draw and see in the world with code.</p>
+<p>Over the past 5 years; however, I have learned to combine my skills in art and design with those in programming. I taught myself, and learned through work experience, how to do web design and full stack development. More recently I have taken that even further – to create art with my code; generative art. I’ve been working on generating the patterns which I draw and see in the world with code.</p>
 
 			</div>
 			<div class="has-text-centered">
-				<a class="button is-large is-primary" href="/code">Check Out My Latest Code&nbsp;<i class="fas fa-arrow-right"></i></a>
+				<a class="button is-large is-outlined is-inverted is-dark has-text-weight-semibold" href="/code">
+					<span>See my code</span>
+					<span class="icon"><i class="fas fa-chevron-right fa-sm"></i></span>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -238,77 +321,103 @@
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title is-1">And I advocate for my community.</h1>
-
 		</div>
 	</div>
 </section>
 
 <div class="section"><div class="container">
-	<div class="columns">
+	<div class="columns is-variable is-8 is-desktop">
+
+		<div class="column image-block">
+			<img src="/assets/svg/queer-trans-symbol.svg"></img>
+		</div>
+
 		<div class="column">
 			<div class="content is-size-5">
 				<p>I am a trans woman. I am queer. I am <a href="https://en.wikipedia.org/wiki/Neurodiversity">neurodivergent</a>. Living at the intersection of these identities is not easy. However, I strongly believe that any trial I endure only equips me to better serve others. As long as I am living and surviving, I will use what I have been through to better understand and be empathetic towards others.</p>
 
-<p>My community is my family. And I am committed to support all queer, trans, and neurodivergent people. Many of my community members call me mom – because I’m always looking out for them – whether by cooking them food, giving advice, or just being an ear or a shoulder.</p>
+<p>My community is my family. I am committed to support all queer, trans, and neurodivergent people. Many of my community members call me mom – because I’m always looking out for them – whether by cooking them food, giving advice, or just being an ear or a shoulder.</p>
 
-<p>I’m always looking for more ways to support my community. Since 2016 I’ve been working with <a href="https://www.bmoretransalliance.com">The Baltimore Transgender Alliance</a> to advocate for trans folks in Baltimore. Other projects I’m working on are the Baltimore Trans Ladies’ Picnic, a trans clothing closet and Bmore Trans.</p>
+<p>I’m always looking for more ways to support my community. Since 2016 I’ve been working with The Baltimore Transgender Alliance to advocate for trans folks in Baltimore. Other projects I’m working on are the Baltimore Trans Ladies’ Picnic, a trans clothing closet and Bmore Trans.</p>
 
 			</div>
+			<div class="has-text-centered">
+				<a class="button is-large is-outlined is-inverted is-dark has-text-weight-semibold" href="/code">
+					<span>See my work</span>
+					<span class="icon"><i class="fas fa-chevron-right fa-sm"></i></span>
+				</a>
+			</div>
 		</div>
-		<div class="column centered">
-			<a class="button is-large is-primary" href="/work">Check Out My Work&nbsp;<i class="fas fa-arrow-right"></i></a>
-		</div>
-	</div>
 
+	</div>
 </div></div>
 
 	
 <footer class="footer">
   <div class="container">
-	  <div class="columns">
+	  <div class="columns is-variable is-8">
 
 		<div class="column is-2">
-			<p class="title is-4">Site Map</p>
 			<aside class="menu">
 				<ul class="menu-list">
 				
-					<li><a href="/">Home</a>
+					<li><a class="is-size-6" href="/">Home</a>
 					
 					</li>
 				
-					<li><a href="/art">Art</a>
+					<li><a class="is-size-6" href="/art">Art</a>
 					
 					<ul>
 						
-							<li><a href="/art/">Latest</a>
+							<li><a class="is-size-7" href="/art/">Latest</a>
 						
-							<li><a href="/art/digital/">Digital</a>
+							<li><a class="is-size-7" href="/art/digital/">Digital</a>
 						
-							<li><a href="/art/drawn/">Drawn</a>
+							<li><a class="is-size-7" href="/art/drawn/">Drawn</a>
 						
-							<li><a href="/art/sketchbook/">Sketchbook</a>
+							<li><a class="is-size-7" href="/art/sketch/">Sketch</a>
 						
 					</ul>
 					
 					</li>
 				
-					<li><a href="/code">Code</a>
+					<li><a class="is-size-6" href="/code">Code</a>
 					
 					<ul>
 						
-							<li><a href="/code/">Latest</a>
+							<li><a class="is-size-7" href="/code/">Latest</a>
 						
-							<li><a href="/code/software/">Software</a>
+							<li><a class="is-size-7" href="/code/software/">Software</a>
 						
-							<li><a href="/code/web/">Web</a>
+							<li><a class="is-size-7" href="/code/web/">Web</a>
 						
-							<li><a href="/code/fiddles/">Fiddles</a>
+							<li><a class="is-size-7" href="/code/fiddles/">Fiddles</a>
 						
 					</ul>
 					
 					</li>
 				
-					<li><a href="/work">Work</a>
+					<li><a class="is-size-6" href="/work">Work</a>
+					
+					<ul>
+						
+							<li><a class="is-size-7" href="/work#employment">Employment</a>
+						
+							<li><a class="is-size-7" href="/work#education">Education</a>
+						
+							<li><a class="is-size-7" href="/work#skills">Skills</a>
+						
+							<li><a class="is-size-7" href="/work#experience">Experience</a>
+						
+					</ul>
+					
+					</li>
+				
+					<li><a class="is-size-6" href="/services">Services</a>
+					
+					</li>
+				
+					<li><a class="is-size-6" href="/contact">Contact</a>
 					
 					</li>
 				
@@ -319,11 +428,11 @@
 		<div class="column is-6">
 			<p class="title is-4">About Me</p>
 			<div class="content">
-				<p class="is-size-6"><p>I’m a queer, trans and <a href="https://en.wikipedia.org/wiki/Neurodiversity">neurodivergent</a> artist. I am a woman. I use art and programming to advocate for my community and analyze systems of oppression. I also design neat patterns.</p>
+				<p class="is-size-6"><p>I’m a queer, trans and neurodivergent artist. I am a woman. I use art and programming to advocate for my community and analyze systems of oppression. I also design neat patterns.</p>
 
 <p><strong>My community is my family.</strong> And I have a strong passion to support all queer, trans, and neurodivergent people. I am on a lifelong journey – constantly learning and gaining new skills to support them.</p>
 
-<p>In 2013, I graduated from St. Mary’s College of Maryland with a degree in computer science, and a minor in neuroscience. I’ve been a Baltimore native since then. Currently I’m working with the Baltimore Transgender Alliance, using technology and design for trans liberation.</p>
+<p>In 2013, I graduated from St. Mary’s College of Maryland with a degree in computer science, and a minor in neuroscience. I’ve been a Baltimore native since then. Currently I’m working with The Baltimore Transgender Alliance, using technology and design for trans liberation.</p>
 </p>
 			</div>
 			<div class="is-divider" data-content="SUPPORT TRANS ARTISTS WORK"></div>
@@ -343,7 +452,7 @@
 			<p class="title is-4">Connect With Me</p>
 			<p>Contact me at <a href="mailto:evan@evanlori.com">evan@evanlori.com</a> for commisions. Or follow my work/ connect with me using the links below: </p>
 			<div class="is-divider"></div>
-			<div class="columns">
+			<div class="columns is-desktop is-variable is-2">
 
 				<div class="column">
 					<p class="field"><a class="button is-medium is-white is-outlined" href="mailto:evan@evanlori.com">
@@ -355,7 +464,7 @@
 						<span>Github</span>
 					</a></p>
 
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://facebook.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://www.facebook.com/evanlorimahone/">
 						<span class="icon"><i class="fab fa-facebook"></i></span>
 						<span>Facebook</span>
 					</a></p>
@@ -366,11 +475,11 @@
 						<span class="icon"><i class="fab fa-linkedin"></i></span>
 						<span>LinkedIn</span>
 					</a></p>
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://instagram.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://instagram.com/evanlorimahone/">
 						<span class="icon"><i class="fab fa-instagram"></i></span>
 						<span>Instagram</span>
 					</a></p>
-					<p class="field"><a class="button is-medium is-white is-outlined" href="https://twitter.com/elm2091">
+					<p class="field"><a class="button is-medium is-white is-outlined" href="https://twitter.com/evanlorimahone">
 							<span class="icon"><i class="fab fa-twitter"></i></span>
 							<span>Twitter</span>
 					</a></p>

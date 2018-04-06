@@ -7,5 +7,6 @@ codepen_link: https://codepen.io/apathinwalking/full/eVWVwK
 categories: [code, fiddles]
 tags: [html, css, js, p5]
 date: 2018-02-12
+subtitle: Experiment with perlin waves
 featured: true
 ---

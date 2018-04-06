@@ -6,5 +6,6 @@ public_id: code/latex-works
 categories: [code, fiddles]
 tags: [latex]
 date: 2014-12-09
+subtitle: Collection of latex documents
 ---
 Just a collection of documents I produced with LaTeX during college.

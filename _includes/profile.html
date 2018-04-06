@@ -1,0 +1,19 @@
+<div>
+
+	<div class="profile-container block"><img src="/assets/images/self-profile.jpg"/></div>
+
+	<div class="title has-text-weight-semibold has-text-centered is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">{{ site.title | upcase }}</div>
+
+	<div class="subtitle has-text-centered is-size-5-mobile is-size-6-tablet is-size-6-desktop is-size-5-widescreen">{{ site.subtitle | upcase }}</div>
+
+	<p class="has-text-centered is-size-5-mobile is-size-6-tablet is-size-6-desktop is-size-5-widescreen">
+		<span class="icon"><i class="fas fa-map-marker"></i></span>
+		<span>{{ site.location }}</span>
+	</p>
+
+	<p class="has-text-centered is-size-5-mobile is-size-6-tablet is-size-6-desktop is-size-5-widescreen">
+		<span class="icon"><i class="{{ site.data.links.email.icon }}"></i></span>
+		<span>{{ site.data.links.email.address }}</span>
+	</p>
+
+</div>

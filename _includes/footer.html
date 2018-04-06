@@ -1,18 +1,17 @@
 {% capture summary %}{% include about/summary.md %}{% endcapture %}
 <footer class="footer">
   <div class="container">
-	  <div class="columns">
+	  <div class="columns is-variable is-8">
 
 		<div class="column is-2">
-			<p class="title is-4">Site Map</p>
 			<aside class="menu">
 				<ul class="menu-list">
 				{% for link in site.data.nav %}
-					<li><a href="{{ link.href }}">{{ link.title }}</a>
+					<li><a class="is-size-6" href="{{ link.href }}">{{ link.title }}</a>
 					{% if link.links %}
 					<ul>
 						{% for l in link.links %}
-							<li><a href="{{ l.href }}">{{ l.title }}</a>
+							<li><a class="is-size-7" href="{{ l.href }}">{{ l.title }}</a>
 						{% endfor %}
 					</ul>
 					{% endif %}
@@ -44,7 +43,7 @@
 			<p class="title is-4">Connect With Me</p>
 			<p>Contact me at <a href="{{site.data.links.email.href}}">{{site.data.links.email.address}}</a> for commisions. Or follow my work/ connect with me using the links below: </p>
 			<div class="is-divider"></div>
-			<div class="columns">
+			<div class="columns is-desktop is-variable is-2">
 
 				<div class="column">
 					<p class="field"><a class="button is-medium is-white is-outlined" href="{{site.data.links.email.href}}">

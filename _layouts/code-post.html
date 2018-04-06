@@ -3,58 +3,70 @@ layout: default
 ---
 <div class="section"><div class="container"><div class="columns">
 
-	{% if page.public_id %}<div class="column image-column">
-		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
-			<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
-		</a>
-	</div>{% endif %}
-
 	<div class="column content-column">
-		<p class="title is-2">{{ page.title }}</p>
+		<div class="columns">
+			<div class="column">
 
-		<nav class="level">
+				<nav class="columns">
 
-			<div class="level-left"><div class="level-item">
+					<div class="column">
+						<div>
+							<p class="title is-2">{{ page.title }}</p>
+							<p class="subtitle is-3">{{ page.subtitle }}</p>
+						</div>
+					</div>
+
+					<div class="column is-narrow"><div class="tags">
+						{% for category in page.categories %}
+							<span class="tag is-dark is-large"><a href="/art/{{category}}/">{{category}}</a></span>
+						{% endfor %}
+					</div></div>
+
+				</nav>
+
 				<p class="subtitle"><time datetime="2016-1-1">{{ page.date | date_to_long_string }}</time></p>
-			</div></div>
 
-			<div class="level-right"><div class="level-item"><div class="tags">
-				{% for category in page.categories %}
-					<span class="tag is-dark is-medium"><a href="/art/{{category}}/">{{category}}</a></span>
-				{% endfor %}
-			</div></div></div>
+				<div class="post-links buttons">
+					{% if page.github_link %}
+						<a class="button is-small is-white" href="{{page.github_link}}">
+								<span class="icon"><i class="fab fa-github"></i></span>
+								<span>GitHub Repository</span>
+						</a>
+					{% endif %}
 
-		</nav>
+					{% if page.codepen_link %}
+						<a class="button is-small is-white" href="{{page.codepen_link}}">
+								<span class="icon"><i class="fab fa-codepen"></i></span>
+								<span>Codepen Demo</span>
+						</a>
+					{% endif %}
 
-		<div class="post-links buttons">
-			{% if page.github_link %}
-				<a class="button is-small is-white" href="{{page.github_link}}">
-						<span class="icon"><i class="fab fa-github"></i></span>
-						<span>GitHub Repository</span>
+					{% if page.heroku_link %}
+						<a class="button is-small is-white" href="{{page.heroku_link}}">
+							<span class="icon"><i class="icon-heroku"></i></span>
+							<span>Heroku Demo</span>
+						</a>
+					{% endif %}
+
+					{% if page.live_link %}
+						<a class="button is-small is-white" href="{{page.live_link}}">
+							<span class="icon"><i class="fas fa-link"></i></span>
+							<span>Live Website</span>
+						</a>
+					{% endif %}
+				</div>
+
+
+			</div>
+
+			{% if page.public_id %}<div class="column is-narrow is-4 image-column">
+				<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
+					<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
 				</a>
-			{% endif %}
-
-			{% if page.codepen_link %}
-				<a class="button is-small is-white" href="{{page.codepen_link}}">
-						<span class="icon"><i class="fab fa-codepen"></i></span>
-						<span>Codepen Demo</span>
-				</a>
-			{% endif %}
-
-			{% if page.heroku_link %}
-				<a class="button is-small is-white" href="{{page.heroku_link}}">
-					<span class="icon"><i class="fab fa-heroku"></i></span>
-					<span>Heroku Demo</span>
-				</a>
-			{% endif %}
-
-			{% if page.live_link %}
-				<a class="button is-small is-white" href="{{page.heroku_link}}">
-					<span class="icon"><i class="fas fa-link"></i></span>
-					<span>Live Website</span>
-				</a>
-			{% endif %}
+			</div>{% endif %}
 		</div>
+
+
 
 
 		<div class="post-content">

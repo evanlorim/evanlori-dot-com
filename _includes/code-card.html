@@ -1,0 +1,70 @@
+{% if post.public_id %}
+	{% assign image_540by540 = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/w_540,h_540,c_fill/w_540,h_540,c_crop/" | append: include.post.public_id %}
+	{% assign image_360by360 = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/w_360,h_360,c_fill/w_360,h_360,c_crop/" | append: include.post.public_id %}
+	{% assign image_400by300 = "https://res.cloudinary.com/" | append: site.cloud_name | append: "/w_400,h_300,c_fill/w_400,h_300,c_crop/" | append: include.post.public_id %}
+
+{% endif %}
+
+<div class="card block">
+	{% if post.public_id %}
+		<div class="card-image is-hidden-tablet">
+			<figure class="image is-128by128">
+				<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_640,h_360,c_fill/w_640,h_360,c_crop/{{ include.post.public_id }}">
+			</figure>
+		</div>
+	{% endif %}
+
+	<div class="card-content is-paddingless"><div class="columns is-gapless">
+		{% if post.public_id %}
+			<div class="column is-4-tablet is-3-desktop is-hidden-mobile" style="background-position: center; background-image: url(https://res.cloudinary.com/{{ site.cloud_name }}/w_360,h_360,c_fill/w_360,h_360,c_crop/{{ include.post.public_id }})"></div>
+			<!-- <div class="column is-one-third-tablet is-one-quarter-desktop" style="background-image: url(https://res.cloudinary.com/{{ site.cloud_name }}/w_540,h_540,c_fill/w_540,h_540,c_crop/{{ include.post.public_id }})"> -->
+
+
+		{% endif %}
+
+		<div class="column"><div class="code-card-content">
+
+			<div class="columns is-mobile is-gapless">
+				<div class="column">
+					<h5 class="title is-size-5">{{ post.title | upcase }}</h5>
+					<h6 class="subtitle is-size-6">{{ post.subtitle | upcase }}</time></h6>
+				</div>
+				<div class="column is-narrow"><span class="tags">
+					{% for category in post.categories %}{% unless category == 'code' %}<span class="tag is-dark is-medium">{{ category | downcase }}</span>{% endunless %}{% endfor %}
+				</span></div>
+			</div>
+
+			<div class="columns is-mobile is-vcentered is-gapless">
+				<div class="column"><div class="is-size-6"><time>{{ post.date | date: "%^b %u %Y" }}</time></div></div>
+				<div class="column is-narrow">
+					<div class="buttons">
+						{% for tag in post.tags %}
+							{% assign tag_data = site.data.tags | where: "name", tag | first %}
+							{% if tag_data.type == 'language' %}<span class="button is-small">{{ tag | downcase }}</span>{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<p class="has-text-light is-size-6"> {{ post.excerpt }}</p>
+			</div>
+
+
+			<div class="columns is-mobile is-gapless">
+				<div class="column"></div>
+				<div class="column is-narrow">
+					<a class="button is-dark is-primary is-medium" href="{{ post.url }}">
+						<span class="icon"><i class="fas fa-book"></i></span>
+						<span>Read More</span>
+					</a>
+				</div>
+			</div>
+
+
+		</div></div>
+
+
+	</div></div>
+
+</div>

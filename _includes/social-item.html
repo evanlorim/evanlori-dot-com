@@ -1,0 +1,28 @@
+<div class="notification block is-{{ include.color | default: 'primary'}}">
+
+	<nav class="level is-mobile">
+		<div class="level-left">
+			<div class="level-item">
+				<span class="icon is-large">
+					<span class="fa-stack fa-lg" style="flex; align-items:center;">
+						<i class="fas fa-circle fa-stack-2x has-text-white"></i>
+						<i class="{{ include.icon }} fa-stack-1x has-text-{{ include.color | default: 'primary'}}"></i>
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="level-item is-hidden-touch is-hidden-desktop-only has-text-centered-mobile">
+			<p class="title is-size-5">
+				{{ include.title | upcase }}
+			</p>
+		</div>
+		<div class="level-right ">
+			<div class="level-item has-text-centered-mobile">
+				<a href="{{ include.href }}" class="button is-medium is-inverted is-{{ include.color | default: 'primary' }}">
+					GO&nbsp;<span class="icon"><i class="fas fa-sm fa-chevron-right"></i></span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+</div>
