@@ -9330,7 +9330,7 @@ body > .nav {
   margin-bottom: .25rem;
 }
 
-.box.is-outlined, .notification.is-outlined {
+.box.is-outlined {
   background-color: transparent;
   border-width: 2px;
   border-color: white;
@@ -9400,8 +9400,26 @@ body > .nav {
   margin-bottom: 1.5em;
 }
 
-.post-links p {
-  margin-bottom: 1.5em;
+.post-image-container {
+  max-height: 540px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.post-image-container a {
+  flex: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post-image-container a img.post-image {
+  flex-grow: 2;
+  flex-shrink: 1;
+  max-height: 100%;
+  height: auto;
+  width: auto;
 }
 
 .carousel-item {

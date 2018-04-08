@@ -18,7 +18,7 @@
 			<div class="column is-narrow">
 				<div class="tags has-text-right-desktop">
 					{% for category in post.categories %}
-						{% unless category == 'art' %}<span class="tag is-medium is-dark">{{ category | downcase }}</span>{% endunless %}
+						{% unless category == 'art' %}<a class="tag is-medium is-dark" href="/art/{{category}}">{{ category | downcase }}</a>{% endunless %}
 					{% endfor %}
 				</div>
 			</div>

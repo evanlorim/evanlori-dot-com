@@ -13,7 +13,10 @@ layout: default
 
 			<div class="column is-narrow"><p class="tags">
 				{% for category in page.categories %}
-					<span class="tag is-light is-large"><a href="/art/{{category}}/">{{category}}</a></span>
+					{% if category == 'code' %}{% assign link = '/art/' %}
+					{% else %}{% assign link = "/code/{{category}}/" %}
+					{% endif %}
+					<a class="tag is-light is-large" href="{{ link }}">{{category}}</a>
 				{% endfor %}
 			</p></div>
 
@@ -55,14 +58,10 @@ layout: default
 
 <div class="section"><div class="container">
 
-	{% if page.public_id %}<div class="box is-outlined">
-		<div class="columns is-centered">
-			<div class="column image-column is-narrow is-two-thirds">
-				<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
-					<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
-				</a>
-			</div>
-		</div>
+	{% if page.public_id %}<div class="box is-outlined post-image-container">
+		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
+			<img class="post-image" data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
+		</a>
 	</div>{% endif %}
 
 	<p class="subtitle is-4"><time datetime="2016-1-1">{{ page.date | date_to_long_string | upcase }}</time></p>

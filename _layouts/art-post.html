@@ -1,46 +1,85 @@
 ---
 layout: default
 ---
-<div class="section"><div class="container"><div class="columns">
+<section class="hero is-dark">
+	<div class="hero-body"><div class="container">
 
-	<div class="column image-column">
-		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
-			<img data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
-		</a>
-	</div>
+		<div class="columns">
 
-	<div class="column content-column">
-		<p class="title is-2">{{ page.title }}</p>
-
-		<nav class="level">
-
-			<div class="level-left"><div class="level-item">
-				<p class="subtitle"><time datetime="2016-1-1">{{ page.date | date_to_long_string }}</time></p>
+			<div class="column"><div>
+				<p class="title is-2">{{ page.title }}</p>
+				<p class="subtitle is-3">{{ page.subtitle }}</p>
 			</div></div>
 
-			<div class="level-right"><div class="level-item"><div class="tags">
+			<div class="column is-narrow"><p class="tags">
 				{% for category in page.categories %}
-					<span class="tag is-dark is-medium"><a href="/art/{{category}}/">{{category}}</a></span>
+					{% if category == 'art' %}{% assign link = '/art/' %}
+					{% else %}{% assign link = "/art/{{category}}/" %}
+					{% endif %}
+					<a class="tag is-light is-large" href="{{ link }}">{{category}}</a>
 				{% endfor %}
-			</div></div></div>
+			</p></div>
 
-		</nav>
+		</div>
 
-		<p class="content">
-			Description coming soon!
-			<!-- At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. -->
-		</p>
+	</div></div>
+	<!-- <div class="hero-foot"><div class="container">
+		<div class="tabs is-medium is-boxed is-right"><ul>
+			{% if page.github_link %}
+				<li><a href="{{page.github_link}}">
+					<span class="icon"><i class="fab fa-github"></i></span>
+					<span>GitHub Repository</span>
+				</a></li>
+			{% endif %}
 
-		<div class="content"><div class="field is-grouped is-grouped-multiline">
-			{% for tag in page.tags %}
-				{% assign tag_data = site.data.tags | where: "name", tag | first %}
-				<div class="control"><div class="tags has-addons">
-					<span class="tag is-rounded is-{{ tag_data.color }}">{{ tag_data.type }}</span>
-					<a href="{{ tag_data.href }}" class="tag is-rounded is-dark">{{ tag }}</a>
-				</div></div>
-			{% endfor %}
-		</div></div>
+			{% if page.codepen_link %}
+				<li><a href="{{page.codepen_link}}">
+					<span class="icon"><i class="fab fa-codepen"></i></span>
+					<span>Codepen Demo</span>
+				</a></li>
+			{% endif %}
 
+			{% if page.heroku_link %}
+				<li><a href="{{page.heroku_link}}">
+					<span class="icon"><i class="icon-heroku"></i></span>
+					<span>Heroku Demo</span>
+				</a></li>
+			{% endif %}
+
+			{% if page.live_link %}
+				<li><a href="{{page.live_link}}">
+					<span class="icon"><i class="fas fa-link"></i></span>
+					<span>Live Website</span>
+				</a></li>
+			{% endif %}
+		</ul></div>
+	</div></div> -->
+</section>
+
+<div class="section"><div class="container">
+
+	{% if page.public_id %}<div class="box is-outlined post-image-container">
+		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
+			<img class="post-image" data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
+		</a>
+	</div>{% endif %}
+
+	<p class="subtitle is-4"><time datetime="2016-1-1">{{ page.date | date_to_long_string | upcase }}</time></p>
+
+	<div class="post-content is-size-5">
+		{{ page.content | default: 'More info about this project coming soon. Stay tuned!' }}
 	</div>
 
-</div></div></div>
+	<div class="is-divider"></div>
+
+	<div class="field is-grouped is-grouped-multiline">
+		{% for tag in page.tags %}
+			{% assign tag_data = site.data.tags | where: "name", tag | first %}
+			<div class="control"><div class="tags has-addons">
+				<span class="tag is-rounded is-medium is-{{ tag_data.color }}">{{ tag_data.type }}</span>
+				<a href="{{ tag_data.href }}" class="tag is-light is-rounded is-medium">{{ tag }}</a>
+			</div></div>
+		{% endfor %}
+	</div>
+
+</div></div>
