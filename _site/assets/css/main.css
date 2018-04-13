@@ -9315,6 +9315,9 @@ body > .nav {
 .carousel .carousel-container .carousel-item img {
   background-color: #263238;
 }
+.carousel .carousel-main {
+  left: -100%;
+}
 
 .carousel.is-white {
   border: 2px solid white;
@@ -9340,10 +9343,10 @@ body > .nav {
   border: 2px solid #607d8b;
 }
 .carousel.is-dark .carousel-navigation {
-  background-color: #607d8b;
+  background-color: #263238;
 }
 .carousel.is-dark .carousel-container .carousel-item img {
-  background-color: #263238;
+  background-color: #222d32;
 }
 
 .carousel.has-nav-lr {
@@ -9411,6 +9414,9 @@ body > .nav {
 .carousel.is-1 .carousel-container .carousel-item {
   padding: 1em;
   flex-basis: calc(100% / 1);
+}
+.carousel.is-1.is-reversing .carousel-container {
+  transform: translateX(calc(-100% / 1));
 }
 
 @media screen and (max-width: 768px) {
@@ -9963,6 +9969,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 1);
   }
+  .carousel.is-1-mobile.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
+  }
 }
 @media screen and (min-width: 769px) {
   .carousel.is-1-tablet .carousel-container {
@@ -9972,6 +9981,9 @@ body > .nav {
   .carousel.is-1-tablet .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 1);
+  }
+  .carousel.is-1-tablet.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -9983,6 +9995,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 1);
   }
+  .carousel.is-1-tablet-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel.is-1-touch .carousel-container {
@@ -9992,6 +10007,9 @@ body > .nav {
   .carousel.is-1-touch .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 1);
+  }
+  .carousel.is-1-touch.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
   }
 }
 @media screen and (min-width: 1024px) {
@@ -10003,6 +10021,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 1);
   }
+  .carousel.is-1-desktop.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .carousel.is-1-desktop-only .carousel-container {
@@ -10012,6 +10033,9 @@ body > .nav {
   .carousel.is-1-desktop-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 1);
+  }
+  .carousel.is-1-desktop-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
   }
 }
 @media screen and (min-width: 1216px) {
@@ -10023,6 +10047,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 1);
   }
+  .carousel.is-1-widescreen.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
+  }
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .carousel.is-1-widescreen-only .carousel-container {
@@ -10032,6 +10059,9 @@ body > .nav {
   .carousel.is-1-widescreen-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 1);
+  }
+  .carousel.is-1-widescreen-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
   }
 }
 @media screen and (min-width: 1408px) {
@@ -10043,6 +10073,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 1);
   }
+  .carousel.is-1-fullhd.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 1));
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel.is-2-mobile .carousel-container {
@@ -10052,6 +10085,9 @@ body > .nav {
   .carousel.is-2-mobile .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 2);
+  }
+  .carousel.is-2-mobile.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
   }
 }
 @media screen and (min-width: 769px) {
@@ -10063,6 +10099,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 2);
   }
+  .carousel.is-2-tablet.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .carousel.is-2-tablet-only .carousel-container {
@@ -10072,6 +10111,9 @@ body > .nav {
   .carousel.is-2-tablet-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 2);
+  }
+  .carousel.is-2-tablet-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
   }
 }
 @media screen and (max-width: 768px) {
@@ -10083,6 +10125,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 2);
   }
+  .carousel.is-2-touch.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
+  }
 }
 @media screen and (min-width: 1024px) {
   .carousel.is-2-desktop .carousel-container {
@@ -10092,6 +10137,9 @@ body > .nav {
   .carousel.is-2-desktop .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 2);
+  }
+  .carousel.is-2-desktop.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
@@ -10103,6 +10151,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 2);
   }
+  .carousel.is-2-desktop-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
+  }
 }
 @media screen and (min-width: 1216px) {
   .carousel.is-2-widescreen .carousel-container {
@@ -10112,6 +10163,9 @@ body > .nav {
   .carousel.is-2-widescreen .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 2);
+  }
+  .carousel.is-2-widescreen.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
   }
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
@@ -10123,6 +10177,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 2);
   }
+  .carousel.is-2-widescreen-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
+  }
 }
 @media screen and (min-width: 1408px) {
   .carousel.is-2-fullhd .carousel-container {
@@ -10132,6 +10189,9 @@ body > .nav {
   .carousel.is-2-fullhd .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 2);
+  }
+  .carousel.is-2-fullhd.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 2));
   }
 }
 @media screen and (max-width: 768px) {
@@ -10143,6 +10203,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 3);
   }
+  .carousel.is-3-mobile.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
+  }
 }
 @media screen and (min-width: 769px) {
   .carousel.is-3-tablet .carousel-container {
@@ -10152,6 +10215,9 @@ body > .nav {
   .carousel.is-3-tablet .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 3);
+  }
+  .carousel.is-3-tablet.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -10163,6 +10229,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 3);
   }
+  .carousel.is-3-tablet-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel.is-3-touch .carousel-container {
@@ -10172,6 +10241,9 @@ body > .nav {
   .carousel.is-3-touch .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 3);
+  }
+  .carousel.is-3-touch.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
   }
 }
 @media screen and (min-width: 1024px) {
@@ -10183,6 +10255,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 3);
   }
+  .carousel.is-3-desktop.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .carousel.is-3-desktop-only .carousel-container {
@@ -10192,6 +10267,9 @@ body > .nav {
   .carousel.is-3-desktop-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 3);
+  }
+  .carousel.is-3-desktop-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
   }
 }
 @media screen and (min-width: 1216px) {
@@ -10203,6 +10281,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 3);
   }
+  .carousel.is-3-widescreen.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
+  }
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .carousel.is-3-widescreen-only .carousel-container {
@@ -10212,6 +10293,9 @@ body > .nav {
   .carousel.is-3-widescreen-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 3);
+  }
+  .carousel.is-3-widescreen-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
   }
 }
 @media screen and (min-width: 1408px) {
@@ -10223,6 +10307,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 3);
   }
+  .carousel.is-3-fullhd.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 3));
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel.is-4-mobile .carousel-container {
@@ -10232,6 +10319,9 @@ body > .nav {
   .carousel.is-4-mobile .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 4);
+  }
+  .carousel.is-4-mobile.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
   }
 }
 @media screen and (min-width: 769px) {
@@ -10243,6 +10333,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 4);
   }
+  .carousel.is-4-tablet.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .carousel.is-4-tablet-only .carousel-container {
@@ -10252,6 +10345,9 @@ body > .nav {
   .carousel.is-4-tablet-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 4);
+  }
+  .carousel.is-4-tablet-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
   }
 }
 @media screen and (max-width: 768px) {
@@ -10263,6 +10359,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 4);
   }
+  .carousel.is-4-touch.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
+  }
 }
 @media screen and (min-width: 1024px) {
   .carousel.is-4-desktop .carousel-container {
@@ -10272,6 +10371,9 @@ body > .nav {
   .carousel.is-4-desktop .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 4);
+  }
+  .carousel.is-4-desktop.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
@@ -10283,6 +10385,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 4);
   }
+  .carousel.is-4-desktop-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
+  }
 }
 @media screen and (min-width: 1216px) {
   .carousel.is-4-widescreen .carousel-container {
@@ -10292,6 +10397,9 @@ body > .nav {
   .carousel.is-4-widescreen .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 4);
+  }
+  .carousel.is-4-widescreen.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
   }
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
@@ -10303,6 +10411,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 4);
   }
+  .carousel.is-4-widescreen-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
+  }
 }
 @media screen and (min-width: 1408px) {
   .carousel.is-4-fullhd .carousel-container {
@@ -10312,6 +10423,9 @@ body > .nav {
   .carousel.is-4-fullhd .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 4);
+  }
+  .carousel.is-4-fullhd.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 4));
   }
 }
 @media screen and (max-width: 768px) {
@@ -10323,6 +10437,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 5);
   }
+  .carousel.is-5-mobile.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
+  }
 }
 @media screen and (min-width: 769px) {
   .carousel.is-5-tablet .carousel-container {
@@ -10332,6 +10449,9 @@ body > .nav {
   .carousel.is-5-tablet .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 5);
+  }
+  .carousel.is-5-tablet.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -10343,6 +10463,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 5);
   }
+  .carousel.is-5-tablet-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel.is-5-touch .carousel-container {
@@ -10352,6 +10475,9 @@ body > .nav {
   .carousel.is-5-touch .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 5);
+  }
+  .carousel.is-5-touch.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
   }
 }
 @media screen and (min-width: 1024px) {
@@ -10363,6 +10489,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 5);
   }
+  .carousel.is-5-desktop.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .carousel.is-5-desktop-only .carousel-container {
@@ -10372,6 +10501,9 @@ body > .nav {
   .carousel.is-5-desktop-only .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 5);
+  }
+  .carousel.is-5-desktop-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
   }
 }
 @media screen and (min-width: 1216px) {
@@ -10383,6 +10515,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 5);
   }
+  .carousel.is-5-widescreen.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
+  }
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .carousel.is-5-widescreen-only .carousel-container {
@@ -10393,6 +10528,9 @@ body > .nav {
     padding: 1em;
     flex-basis: calc(100% / 5);
   }
+  .carousel.is-5-widescreen-only.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
+  }
 }
 @media screen and (min-width: 1408px) {
   .carousel.is-5-fullhd .carousel-container {
@@ -10402,6 +10540,9 @@ body > .nav {
   .carousel.is-5-fullhd .carousel-container .carousel-item {
     padding: 1em;
     flex-basis: calc(100% / 5);
+  }
+  .carousel.is-5-fullhd.is-reversing .carousel-container {
+    transform: translateX(calc(-100% / 5));
   }
 }
 

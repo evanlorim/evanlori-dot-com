@@ -55,6 +55,9 @@ $carousel-sizes: (1, 2, 3, 4, 5)
 		.carousel-item
 			padding: 1em
 			flex-basis: calc(100% / #{$size})
+	&.is-reversing
+		.carousel-container
+			transform: translateX(calc(-100% / #{$size}))
 
 
 
@@ -71,6 +74,9 @@ $carousel-sizes: (1, 2, 3, 4, 5)
 
 	.carousel-container .carousel-item img
 		background-color: $grey-darker
+	
+	.carousel-main
+		left: -100%
 
 .carousel.is-white
 	border: 2px solid $white
@@ -89,9 +95,9 @@ $carousel-sizes: (1, 2, 3, 4, 5)
 .carousel.is-dark
 	border: 2px solid $grey
 	.carousel-navigation
-		background-color: $grey
-	.carousel-container .carousel-item img
 		background-color: $grey-darker
+	.carousel-container .carousel-item img
+		background-color: darken($grey-darker, 2)
 
 .carousel.has-nav-lr
 	+has-nav-lr
