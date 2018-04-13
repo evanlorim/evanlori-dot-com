@@ -1,15 +1,49 @@
-{% assign art = site.posts | where_exp: "item", "item.categories contains 'art'" | where: "featured", "true" | limit: 5 | sort: 'date' | reverse %}
-<div class='carousel carousel-animated carousel-animate-slide'>
+{% assign posts = site.posts | where_exp: "item", "item.categories contains 'art'" | where: "featured", "true" | limit: 5 | sort: 'date' | reverse %}
+{% assign w = 630 %}
+{% assign h = 420 %}
+
+<div class="carousel carousel-animated carousel-animate-slide is-1 has-nav-lr-bottom">
+	<div class="carousel-navigation is-left">
+		<span class="carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
+	</div>
+	
+	<div class='carousel-main'>
+		<div class='carousel-container'>
+			{% for post in posts %}
+				{% assign isactive = "" %}
+				{% if forloop.first %}{% assign isactive = 'is-active' %}{% endif %}
+					<div class='carousel-item {{isactive}}' onClick="clickCarousel('{{ post.url }}')">
+						<figure class="image is-2by3">
+							<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_{{w}},h_{{h}},c_fill/w_{{w}},h_{{h}},c_crop/{{ post.images[0].public_id }}">
+						</figure>
+					</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="carousel-navigation is-right">
+		<span class="carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
+	</div>
+</div>
+
+
+
+
+
+<!-- {% assign art = site.posts | where_exp: "item", "item.categories contains 'art'" | where: "featured", "true" | limit: 5 | sort: 'date' | reverse %}
+<div class='carousel featured-art carousel-animated carousel-animate-slide'>
 	<div class='carousel-container'>
 		{% for post in art %}
 			{% assign isactive = "" %}
 			{% if forloop.first %}{% assign isactive = 'is-active' %}{% endif %}
-			<div onclick="clickCarousel('{{ post.url }}')" class='carousel-item {{isactive}}'>
-				<figure class="image is-2by3">
-					<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_720,h_480,c_fill/w_720,h_480,c_crop/{{ post.public_id }}">
-					<div class="title is-uppercase is-size-6">{{ post.title }}</div>
-				</figure>
-			</div>
+			{% if post.images %}
+				<div onclick="clickCarousel('{{ post.url }}')" class='carousel-item {{isactive}}'>
+					<figure class="image is-2by3">
+						<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_720,h_480,c_fill/w_720,h_480,c_crop/{{ post.images[0].public_id }}">
+						<div class="title is-uppercase is-size-6">{{ post.title }}</div>
+					</figure>
+				</div>
+			{% endif %}
 		{% endfor %}
 
 	</div>
@@ -23,4 +57,4 @@
 		</div>
 
 	</div>
-</div>
+</div> -->

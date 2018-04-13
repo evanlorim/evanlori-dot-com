@@ -2,7 +2,8 @@
 layout: code-post
 title: Evolving Waves
 subtitle: Experiment with perlin waves
-public_id: code/evolving-waves
+images:
+  - public_id: code/evolving-waves
 github_link: https://gist.github.com/apathinwalking/0fcbae39a9d14bb720184562ecbb1396
 codepen_link: https://codepen.io/apathinwalking/full/eVWVwK
 categories: [code, fiddles]

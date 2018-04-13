@@ -23,46 +23,26 @@ layout: default
 		</div>
 
 	</div></div>
-	<!-- <div class="hero-foot"><div class="container">
-		<div class="tabs is-medium is-boxed is-right"><ul>
-			{% if page.github_link %}
-				<li><a href="{{page.github_link}}">
-					<span class="icon"><i class="fab fa-github"></i></span>
-					<span>GitHub Repository</span>
-				</a></li>
-			{% endif %}
-
-			{% if page.codepen_link %}
-				<li><a href="{{page.codepen_link}}">
-					<span class="icon"><i class="fab fa-codepen"></i></span>
-					<span>Codepen Demo</span>
-				</a></li>
-			{% endif %}
-
-			{% if page.heroku_link %}
-				<li><a href="{{page.heroku_link}}">
-					<span class="icon"><i class="icon-heroku"></i></span>
-					<span>Heroku Demo</span>
-				</a></li>
-			{% endif %}
-
-			{% if page.live_link %}
-				<li><a href="{{page.live_link}}">
-					<span class="icon"><i class="fas fa-link"></i></span>
-					<span>Live Website</span>
-				</a></li>
-			{% endif %}
-		</ul></div>
-	</div></div> -->
 </section>
 
 <div class="section"><div class="container">
 
-	{% if page.public_id %}<div class="box is-outlined post-image-container">
-		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
+	{% if page.images %}
+		{% assign img_count = page.images | size %}
+		{% if img_count == 1 %}
+			{% assign image = page.images[0] %}
+			{% include post-image.html image=image %}
+		{% else %}
+			{% include carousel.html images=page.images %}
+		{% endif %}
+		
+	{% endif %}
+
+	<!-- {% if page.images %}<div class="box is-outlined post-image-container">
+		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}" data-lightbox="{{ page.public_id}}">
 			<img class="post-image" data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
 		</a>
-	</div>{% endif %}
+	</div>{% endif %} -->
 
 	<p class="subtitle is-4"><time datetime="2016-1-1">{{ page.date | date_to_long_string | upcase }}</time></p>
 

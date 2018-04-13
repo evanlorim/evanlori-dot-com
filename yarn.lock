@@ -22,9 +22,9 @@ bulma@^0.6.2:
   version "2.4.1"
   resolved "https://github.com/fizzed/font-mfizz#ccff3ec9555918c0a67ed6b5f360af5841045e3e"
 
-lightbox2@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.10.0.tgz#06b3f7b7bd7c1332c20d037602d9657542fd7de4"
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 sass-material-colors@^0.0.5:
   version "0.0.5"

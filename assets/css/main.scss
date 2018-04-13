@@ -3,15 +3,18 @@
 // Bulma.io CSS Framework
 @import "variables";
 @import "bulma/bulma";
+@import "overrides";
 @import "bulma-divider/bulma-divider";
 @import "bulma-carousel/bulma-carousel";
-@import "overrides";
+@import "carousel-overrides";
+
 
 @import "layout";
 @import "components/artwork-tabs";
 @import "components/post";
-@import "components/carousel";
+@import "components/carousel-custom";
 @import "components/home-hero";
 @import "components/profile";
 @import "components/header";
 @import "components/code-card";
+@import "components/post-image";

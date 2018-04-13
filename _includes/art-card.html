@@ -1,17 +1,23 @@
+{% assign image_height = 360 %}
+{% assign image_width = 640 %}
+
 <div class="card">
 
-   <div class="card-image">
+	<div class="card-image">
 		<figure class="image is-16by9">
-			<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_640,h_360,c_fill/w_640,h_360,c_crop/{{ include.post.public_id }}">
+			{% if post.images %}
+				{% include card-image.html images=post.images img_height=360 img_width=640 %}
+				<img src="{{ img_url }}"
+			{% endif %}
 		</figure>
-   </div>
+	</div>
 
 	<div class="card-content">
 
 		<div class="columns is-mobile">
 			<div class="column">
 				<h5 class="title is-size-5">{{ post.title | upcase }}</h5>
-				<h6 class="subtitle is-size-6"><time>{{ post.date | date: "%^b %u %Y" }}</time></h6>
+				<h6 class="subtitle is-size-6"><time>{{ post.date | date: "%^b %e %Y" }}</time></h6>
 			</div>
 
 

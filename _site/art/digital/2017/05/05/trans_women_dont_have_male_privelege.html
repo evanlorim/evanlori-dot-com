@@ -13,11 +13,11 @@
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
 	<link href="/assets/css/font-mfizz/font-mfizz.css" rel="stylesheet"/>
-	<link href="/assets/css/lightbox.css" rel="stylesheet"/>
 
-	<script src="/js/lightbox-plus-jquery.js"></script>
+	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bulma-carousel.js"></script>
 	<script src="/js/main.js"></script>
+	<script src="/js/post-images.js"></script>
 	<!-- <link rel="icon" href="/assets/images/favicon.ico"/> -->
 </head>
 
@@ -28,11 +28,11 @@
 			<a class="navbar-item" href="/">
 				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
 			</a>
-			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
 			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
 			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
 			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
-			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a>
 			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
 				<span></span>
 				<span></span>
@@ -123,26 +123,47 @@
 		</div>
 
 	</div></div>
-	<!-- <div class="hero-foot"><div class="container">
-		<div class="tabs is-medium is-boxed is-right"><ul>
-			
-
-			
-
-			
-
-			
-		</ul></div>
-	</div></div> -->
 </section>
 
 <div class="section"><div class="container">
 
-	<div class="box is-outlined post-image-container">
-		<a href="https://res.cloudinary.com/evanlori/portfolio/trans_women_dont_have_male_privelege"  data-lightbox="portfolio/trans_women_dont_have_male_privelege">
-			<img class="post-image" data-lightbox="portfolio/trans_women_dont_have_male_privelege" src="https://res.cloudinary.com/evanlori/portfolio/trans_women_dont_have_male_privelege">
-		</a>
+	
+		
+		
+			
+			
+
+
+<div class="post-image-container">
+	<a class="post-image" onClick="openModal( 'image_' )">
+		<img src="https://res.cloudinary.com/evanlori/h_540,c_fill/portfolio/trans_women_dont_have_male_privelege">
+	</a>
+</div>
+<div class="modal" id="image_">
+	<div class="modal-background"></div>
+	<div class="modal-content">
+		<img src="https://res.cloudinary.com/evanlori/portfolio/trans_women_dont_have_male_privelege">
 	</div>
+	<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_')"></button>
+</div>
+
+
+<div class="modal" id="image_">
+	<div class="modal-background"></div>
+	<div class="modal-content">
+		<img src="https://res.cloudinary.com/evanlori/portfolio/trans_women_dont_have_male_privelege">
+	</div>
+	<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_')"></button>
+</div>
+		
+		
+	
+
+	<!-- <div class="box is-outlined post-image-container">
+		<a href="https://res.cloudinary.com/evanlori/" data-lightbox="">
+			<img class="post-image" data-lightbox="" src="https://res.cloudinary.com/evanlori/">
+		</a>
+	</div> -->
 
 	<p class="subtitle is-4"><time datetime="2016-1-1">05 MAY 2017</time></p>
 

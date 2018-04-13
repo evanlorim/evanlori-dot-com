@@ -2,7 +2,8 @@
 layout: code-post
 title: LaTeX Works
 github_link: https://github.com/apathinwalking/latex-works
-public_id: code/latex-works
+images:
+  - public_id: code/latex-works
 categories: [code, fiddles]
 tags: [latex]
 date: 2014-12-09

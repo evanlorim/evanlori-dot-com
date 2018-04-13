@@ -1,0 +1,38 @@
+{% assign size = 640 %}
+{% assign img_count = include.images | size %}
+
+<div class="carousel carousel-animated carousel-animate-slide is-1-mobile is-2-tablet is-3-desktop has-nav-lr-bottom-mobile has-nav-lr-tablet is-light">
+	<div class="carousel-navigation is-left">
+		<span class="carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
+	</div>
+
+	<div class='carousel-main'>
+		<div class='carousel-container'>
+			{% for image in include.images %}
+				{% assign modal_id = 'image_' | append: image.public_id | replace: '/', '_' | handleize %}
+				{% assign isactive = "" %}
+				{% if forloop.first %}{% assign isactive = 'is-active' %}{% endif %}
+					<div class='carousel-item {{isactive}}' onClick="openModal( '{{ modal_id }}' )">
+						<figure class="image is-1by1">
+							<img src="https://res.cloudinary.com/{{ site.cloud_name }}/w_{{size}},h_{{size}},c_fill/w_{{size}},h_{{size}},c_crop/{{ image.public_id }}">
+						</figure>
+					</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="carousel-navigation is-right">
+		<span class="carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
+	</div>
+</div>
+
+{% for image in include.images %}
+	{% assign modal_id = 'image_' | append: image.public_id | replace: '/', '_' | handleize %}
+	<div class="modal" id="{{ modal_id }}">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<img src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ image.public_id }}">
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('{{modal_id}}')"></button>
+	</div>
+{% endfor %}

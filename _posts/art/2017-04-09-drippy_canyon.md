@@ -1,7 +1,8 @@
 ---
 layout: art-post
 title: Drippy Canyon
-public_id: portfolio/drippy_canyon
+images:
+  - public_id: portfolio/drippy_canyon
 categories: [art, sketch]
 tags: [markers, color, illustration, doodle, surreal]
 date: 2017-04-09

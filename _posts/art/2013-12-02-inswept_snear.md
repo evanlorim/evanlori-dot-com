@@ -1,7 +1,8 @@
 ---
 layout: art-post
 title: Inswept Snear
-public_id: portfolio/inswept_snear
+images:
+  - public_id: portfolio/inswept_snear
 categories: [art, drawn]
 tags: [multimedia, markers, digitized, doodle, illustration, surreal]
 date: 2013-12-02

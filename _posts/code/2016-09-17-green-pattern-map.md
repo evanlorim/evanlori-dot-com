@@ -1,7 +1,8 @@
 ---
 layout: code-post
 title: Green Pattern Map
-public_id: 'code/green-pattern-map'
+images:
+  - public_id: 'code/green-pattern-map'
 github_link: 'https://github.com/apathinwalking/green-pattern-map'
 live_link: 'https://water.bniajfi.org/'
 categories: [code, web]

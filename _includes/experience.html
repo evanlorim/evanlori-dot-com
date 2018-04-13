@@ -1,7 +1,7 @@
 
 <h1 id="experience" class="title has-text-centered-mobile is-size-4-mobile is-size-5-tablet is-size-5-desktop is-size-4-widescreen">OTHER EXPERIENCE</h1>
 {% for exp in include.experience %}
-
+	{% assign modal_id = 'exp' | append: forloop.index %}
 	<nav class="level">
 
 		<div class="level-left">

@@ -1,0 +1,189 @@
+$carousel-sizes: (1, 2, 3, 4, 5)
+
+=has-nav-lr
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	.carousel-navigation
+		flex-basis: 5%
+		flex-shrink: 0
+		flex-grow: 0
+		width: auto
+		height: auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding-left: 1em
+		padding-right: 1em
+		z-index: 20
+		&.is-left
+			order: 1
+		&.is-right
+			order: 3
+	.carousel-main
+		order: 2
+		flex: 1
+		width: 100%
+		padding-left: .5em
+		padding-right: .5em
+
+=has-nav-lr-bottom
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: flex-start
+	.carousel-navigation
+		width: auto
+		height: auto
+		flex-basis: 50%
+	.carousel-main
+		flex-basis: 100%
+		width: 100%
+		padding-left: .5em
+		padding-right: .5em
+		order: 1
+	.carousel-navigation.is-left
+		order: 2
+	.carousel-navigation.is-right
+		order: 3
+
+=carousel-size($size)
+	.carousel-container
+		left: calc(-100% / #{$size})
+		transform: translateX(calc(100% / #{$size}))
+		.carousel-item
+			padding: 1em
+			flex-basis: calc(100% / #{$size})
+
+
+
+.carousel
+	+block
+	border: 2px solid $grey-lighter
+	background-color: transparent
+	box-shadow: none
+	border-radius: $radius-large
+
+	.carousel-navigation
+		background-color: $grey-lighter
+		padding: 1em
+
+	.carousel-container .carousel-item img
+		background-color: $grey-darker
+
+.carousel.is-white
+	border: 2px solid $white
+	.carousel-navigation
+		background-color: $white
+	.carousel-container .carousel-item img
+		background-color: $grey-darker
+
+.carousel.is-light
+	border: 2px solid $grey-lighter
+	.carousel-navigation
+		background-color: $grey-lighter
+	.carousel-container .carousel-item img
+		background-color: $grey-darker
+
+.carousel.is-dark
+	border: 2px solid $grey
+	.carousel-navigation
+		background-color: $grey
+	.carousel-container .carousel-item img
+		background-color: $grey-darker
+
+.carousel.has-nav-lr
+	+has-nav-lr
+
+.carousel.has-nav-lr-bottom
+	+has-nav-lr-bottom
+
+.carousel.is-1
+	+carousel-size(1)
+
+.carousel
+	&.has-nav-lr-mobile 
+		@media screen and (max-width: $tablet - 1) 
+			+has-nav-lr
+	&.has-nav-lr-tablet 
+		@media screen and (min-width: $tablet) 
+			+has-nav-lr
+	&.has-nav-lr-tablet-only 
+		@media screen and (min-width: $tablet) and (max-width: $desktop - 1) 
+			+has-nav-lr
+	&.has-nav-lr-touch 
+		@media screen and (max-width: $tablet - 1) 
+			+has-nav-lr
+	&.has-nav-lr-desktop 
+		@media screen and (min-width: $desktop) 
+			+has-nav-lr
+	&.has-nav-lr-desktop-only 
+		@media screen and (min-width: $desktop) and (max-width: $widescreen - 1) 
+			+has-nav-lr
+	&.has-nav-lr-widescreen 
+		@media screen and (min-width: $widescreen) 
+			+has-nav-lr
+	&.has-nav-lr-widescreen-only 
+		@media screen and (min-width: $widescreen) and (max-width: $fullhd - 1) 
+			+has-nav-lr
+	&.has-nav-lr-fullhd 
+		@media screen and (min-width: $fullhd) 
+			+has-nav-lr
+	&.has-nav-lr-bottom-mobile 
+		@media screen and (max-width: $tablet - 1) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-tablet 
+		@media screen and (min-width: $tablet) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-tablet-only 
+		@media screen and (min-width: $tablet) and (max-width: $desktop - 1) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-touch 
+		@media screen and (max-width: $tablet - 1) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-desktop 
+		@media screen and (min-width: $desktop) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-desktop-only 
+		@media screen and (min-width: $desktop) and (max-width: $widescreen - 1) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-widescreen 
+		@media screen and (min-width: $widescreen) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-widescreen-only 
+		@media screen and (min-width: $widescreen) and (max-width: $fullhd - 1) 
+			+has-nav-lr-bottom
+	&.has-nav-lr-bottom-fullhd 
+		@media screen and (min-width: $fullhd) 
+			+has-nav-lr-bottom
+
+.carousel
+	@each $size in $carousel-sizes
+		&.is-#{$size}-mobile 
+			@media screen and (max-width: $tablet - 1) 
+				+carousel-size($size)
+		&.is-#{$size}-tablet 
+			@media screen and (min-width: $tablet) 
+				+carousel-size($size)
+		&.is-#{$size}-tablet-only 
+			@media screen and (min-width: $tablet) and (max-width: $desktop - 1) 
+				+carousel-size($size)
+		&.is-#{$size}-touch 
+			@media screen and (max-width: $tablet - 1) 
+				+carousel-size($size)
+		&.is-#{$size}-desktop 
+			@media screen and (min-width: $desktop) 
+				+carousel-size($size)
+		&.is-#{$size}-desktop-only 
+			@media screen and (min-width: $desktop) and (max-width: $widescreen - 1) 
+				+carousel-size($size)
+		&.is-#{$size}-widescreen 
+			@media screen and (min-width: $widescreen) 
+				+carousel-size($size)
+		&.is-#{$size}-widescreen-only 
+			@media screen and (min-width: $widescreen) and (max-width: $fullhd - 1) 
+				+carousel-size($size)
+		&.is-#{$size}-fullhd 
+			@media screen and (min-width: $fullhd) 
+				+carousel-size($size)

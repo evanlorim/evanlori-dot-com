@@ -2,4 +2,5 @@
 .jekyll-metadata
 .env
 .tmp
+log
 node_modules
