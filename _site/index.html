@@ -16,8 +16,8 @@
 
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bulma-carousel.js"></script>
+	<script src="/js/another-carousel.js"></script>
 	<script src="/js/main.js"></script>
-	<script src="/js/post-images.js"></script>
 	<!-- <link rel="icon" href="/assets/images/favicon.ico"/> -->
 </head>
 
@@ -28,11 +28,11 @@
 			<a class="navbar-item" href="/">
 				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
 			</a>
-			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
 			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
 			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
 			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
-			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
 			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
 				<span></span>
 				<span></span>
@@ -132,8 +132,59 @@
 			
 
 
+<div class="a-carousel is-1by1 has-nav-lr-bottom has-img-3by2 is-dark is-animated">
 
-<div class="carousel carousel-animated carousel-animate-slide is-1 has-nav-lr-bottom is-dark">
+	<div class="a-carousel-navigation is-left">
+		<span class="a-carousel-nav-left button is-large"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
+	</div>
+	<div class="a-carousel-main">
+		<div class='a-carousel-container'>
+			
+				
+				
+				<div class='a-carousel-item is-active' onClick="clickCarousel('/art/digital/2018/03/28/trans_potluck_april_18.html')"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/april-18-trans-potluck">
+				</div></div>
+			
+				
+				
+				<div class='a-carousel-item ' onClick="clickCarousel('/art/digital/2018/03/08/poster_transing_politics.html')"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/poster_transing_politics">
+				</div></div>
+			
+				
+				
+				<div class='a-carousel-item ' onClick="clickCarousel('/art/digital/2018/02/03/untitled-pattern-1.html')"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/untitled_pattern_1">
+				</div></div>
+			
+				
+				
+				<div class='a-carousel-item ' onClick="clickCarousel('/art/digital/2017/11/05/tmor_2017_poster.html')"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/tmor_2017_poster">
+				</div></div>
+			
+				
+				
+				<div class='a-carousel-item ' onClick="clickCarousel('/art/digital/2017/08/18/queer_love_cookout_2017_flyer.html')"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/queer_love_cookout_2017_flyer">
+				</div></div>
+			
+				
+				
+				<div class='a-carousel-item ' onClick="clickCarousel('/art/digital/2017/06/08/trans_dykes.html')"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/trans-dykes-logo">
+				</div></div>
+			
+		</div>
+	</div>
+	<div class="a-carousel-navigation is-right">
+		<span class="a-carousel-nav-right button is-large"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
+	</div>
+
+</div>
+
+<!-- <div class="carousel is-1 has-nav-lr-bottom is-dark">
 	<div class="carousel-navigation is-left">
 		<span class="carousel-nav-left button is-large"><span class="icon has-text-grey-light"><i class="fas fa-chevron-left"></i></span></span>
 	</div>
@@ -167,14 +218,6 @@
 			
 				
 				
-					<div class='carousel-item ' onClick="clickCarousel('/art/digital/2017/11/11/jamie_grace.html')">
-						<figure class="image is-2by3">
-							<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/jamie_grace">
-						</figure>
-					</div>
-			
-				
-				
 					<div class='carousel-item ' onClick="clickCarousel('/art/digital/2017/11/05/tmor_2017_poster.html')">
 						<figure class="image is-2by3">
 							<img src="https://res.cloudinary.com/evanlori/w_630,h_420,c_fill/w_630,h_420,c_crop/portfolio/tmor_2017_poster">
@@ -203,10 +246,7 @@
 	<div class="carousel-navigation is-right">
 		<span class="carousel-nav-right button is-large is-outlined"><span class="icon has-text-grey-light"><i class="fas fa-chevron-right"></i></span></span>
 	</div>
-</div>
-
-
-
+</div> -->
 
 
 <!-- 
@@ -242,17 +282,6 @@
 					<figure class="image is-2by3">
 						<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/untitled_pattern_1">
 						<div class="title is-uppercase is-size-6">Untitled Pattern #1</div>
-					</figure>
-				</div>
-			
-		
-			
-			
-			
-				<div onclick="clickCarousel('/art/digital/2017/11/11/jamie_grace.html')" class='carousel-item '>
-					<figure class="image is-2by3">
-						<img src="https://res.cloudinary.com/evanlori/w_720,h_480,c_fill/w_720,h_480,c_crop/portfolio/jamie_grace">
-						<div class="title is-uppercase is-size-6">Jamie Grace</div>
 					</figure>
 				</div>
 			

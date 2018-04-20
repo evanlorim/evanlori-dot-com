@@ -35,8 +35,23 @@
 .box.is-outlined {
 	background-color: transparent;
 	border-width: 2px;
-	border-color: white;
+	border-color: $white;
 	border-style: solid;
+}
+
+.box.modal-details {
+	background-color: transparent;
+}
+
+.modal-content {
+	display: flex;
+	flex-direction: column;
+	img .modal-image {
+		flex-basis: 90%;
+	}
+	.modal-details {
+		flex-basis: 10%;
+	}
 }
 
 .is-paddingless-mobile {

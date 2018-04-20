@@ -7,8 +7,8 @@ layout: default
 		<div class="columns">
 
 			<div class="column"><div>
-				<p class="title is-2">{{ page.title }}</p>
-				<p class="subtitle is-3">{{ page.subtitle }}</p>
+				<p class="title is-1 is-capitalized">{{ page.title }}</p>
+				<p class="subtitle is-3">{{ page.subtitle | capitalize }}</p>
 			</div></div>
 
 			<div class="column is-narrow"><p class="tags">
@@ -58,11 +58,9 @@ layout: default
 
 <div class="section"><div class="container">
 
-	{% if page.public_id %}<div class="box is-outlined post-image-container">
-		<a href="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}"  data-lightbox="{{ page.public_id}}">
-			<img class="post-image" data-lightbox="{{ page.public_id}}" src="https://res.cloudinary.com/{{ site.cloud_name }}/{{ page.public_id }}">
-		</a>
-	</div>{% endif %}
+	{% if page.images %}
+		{% include another-carousel.html images=page.images %}
+	{% endif %}
 
 	<p class="subtitle is-4"><time datetime="2016-1-1">{{ page.date | date_to_long_string | upcase }}</time></p>
 

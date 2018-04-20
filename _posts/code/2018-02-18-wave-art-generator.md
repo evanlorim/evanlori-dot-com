@@ -11,3 +11,6 @@ date: 2018-02-18
 subtitle: Static wave art generator
 featured: true
 ---
+Here is a paragraph.
+
+Here is another paragraph.

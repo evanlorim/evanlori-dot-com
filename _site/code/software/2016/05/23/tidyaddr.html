@@ -16,8 +16,8 @@
 
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bulma-carousel.js"></script>
+	<script src="/js/another-carousel.js"></script>
 	<script src="/js/main.js"></script>
-	<script src="/js/post-images.js"></script>
 	<!-- <link rel="icon" href="/assets/images/favicon.ico"/> -->
 </head>
 
@@ -28,11 +28,11 @@
 			<a class="navbar-item" href="/">
 				<span class="icon"><i class="fa fa-fw fa-2x fa-leaf"></i></span>
 			</a>
-			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
+			<!-- <a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">MO</a>
 			<a class="navbar-item is-hidden-mobile is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">TA</a>
 			<a class="navbar-item is-hidden-tablet-only	is-hidden-mobile is-hidden-widescreen-only is-hidden-fullhd">DE</a>
 			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-mobile is-hidden-fullhd">WI</a>
-			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a>
+			<a class="navbar-item is-hidden-tablet-only	is-hidden-desktop-only is-hidden-widescreen-only is-hidden-mobile">HD</a> -->
 			<div id="burger" class="navbar-burger" onclick="toggleNavMenu()">
 				<span></span>
 				<span></span>
@@ -106,8 +106,8 @@
 		<div class="columns">
 
 			<div class="column"><div>
-				<p class="title is-2">TidyAddr</p>
-				<p class="subtitle is-3">address cleaning algorithm</p>
+				<p class="title is-1 is-capitalized">TidyAddr</p>
+				<p class="subtitle is-3">Address cleaning algorithm</p>
 			</div></div>
 
 			<div class="column is-narrow"><p class="tags">
@@ -142,6 +142,117 @@
 </section>
 
 <div class="section"><div class="container">
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="is-hidden-tablet block">
+	<div class="a-carousel is-1by1 has-nav-lr-bottom no-slide is-light is-animated is-animated-slide">
+		
+	<div class="a-carousel-navigation is-left">
+		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
+	</div>
+	<div class="a-carousel-main">
+		<div class='a-carousel-container'>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_tidy-addr' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/tidy-addr">
+				</div></div>
+			
+		</div>
+	</div>
+	<div class="a-carousel-navigation is-right">
+		<span class="a-carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
+	</div>
+
+	</div>
+</div>
+
+<div class="is-hidden-mobile is-hidden-desktop block">
+	<div class="a-carousel is-1by1 has-nav-lr no-slide is-light is-animated is-animated-slide">
+		
+	<div class="a-carousel-navigation is-left">
+		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
+	</div>
+	<div class="a-carousel-main">
+		<div class='a-carousel-container'>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_tidy-addr' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/tidy-addr">
+				</div></div>
+			
+		</div>
+	</div>
+	<div class="a-carousel-navigation is-right">
+		<span class="a-carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
+	</div>
+
+	</div>
+</div>
+
+<div class="is-hidden-touch block">
+	<div class="a-carousel is-1by1 has-nav-lr no-slide is-light is-animated is-animated-slide">
+		
+	<div class="a-carousel-navigation is-left">
+		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
+	</div>
+	<div class="a-carousel-main">
+		<div class='a-carousel-container'>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_tidy-addr' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/tidy-addr">
+				</div></div>
+			
+		</div>
+	</div>
+	<div class="a-carousel-navigation is-right">
+		<span class="a-carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
+	</div>
+
+	</div>
+</div>
+
+
+
+	
+	<div class="modal a-carousel-modal" id="image_code_tidy-addr">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/tidy-addr">
+			<div class="modal-details">
+				<p class="is-size-4 has-text-centered"></p>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_tidy-addr')"></button>
+	</div>
 
 	
 

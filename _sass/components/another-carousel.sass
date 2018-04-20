@@ -1,0 +1,250 @@
+$a-carousel-padding: .5em
+
+$a-carousel-animation-speed: .5s
+$a-carousel-animation-method: ease-in-out
+
+$a-carousel-nav-background: transparent !default
+$a-carousel-nav-color: $text !default
+$a-carousel-border: 2px solid $grey !default
+$a-carousel-img-background: $grey-lighter !default
+
+$a-carousel-light-nav-background: $grey-lighter !default
+$a-carousel-light-nav-color: $text !default
+$a-carousel-light-border: 2px solid $grey-lighter !default
+$a-carousel-light-img-background: $grey-darker !default
+
+$a-carousel-dark-nav-background: $grey-darker !default
+$a-carousel-dark-nav-color: $text !default
+$a-carousel-dark-border: 2px solid $grey !default
+$a-carousel-dark-img-background: darken($grey-darker, 2) !default
+
+$a-carousel-white-nav-background: $white !default
+$a-carousel-white-nav-color: $text !default
+$a-carousel-white-border: 2px solid $white !default
+$a-carousel-white-img-background: $grey-lighter !default
+
+$a-carousel-col-counts: (1, 2, 3, 4, 5) !default
+$a-carousel-row-counts: (1, 2, 3) !default
+$max-img-sizes: (560px, 280px, 140px)
+$img-ratios: ((1,1),(4,3),(3,2),(16,9),(2,1))
+=a-carousel-item
+	display: block
+	position: relative
+	height: 0
+	padding: 100% 0 0 0
+	grid-column: span 1
+	grid-row: span 1
+	padding-top: 100%
+	.a-carousel-img
+		padding: $a-carousel-padding
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+
+=a-carousel-main
+	height: auto
+	width: 100%
+	display: flex
+	justify-content: center
+	margin: 0
+	padding: 0
+	@content
+
+=a-carousel-container
+	padding: $a-carousel-padding
+	flex: 1
+	display: grid
+	// grid-gap: $a-carousel-paddingnth($max-img-sizes)
+	justify-content: center
+	align-content: center
+	@content
+
+=has-nav-lr
+	display: flex
+	flex-direction: row
+	.a-carousel-navigation
+		padding: 1em
+		flex-basis: 5%
+		flex-shrink: 0
+		flex-grow: 0
+		width: auto
+		height: auto
+		display: flex
+		flex-direction: center
+		align-items: center
+		padding-left: 1em
+		padding-right: 1em
+		z-index: 20
+		&.is-left
+			order: 1
+		&.is-right
+			order: 3
+	.a-carousel-main
+		order: 2
+		flex: 1
+		width: 100%
+		flex: 1
+
+=has-nav-lr-bottom
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: flex-start
+	.a-carousel-navigation
+		width: auto
+		height: auto
+		flex-basis: 50%
+		padding: 1em
+		display: flex
+		justify-content: center
+		align-items: center
+	.a-carousel-main
+		flex-basis: 100%
+		width: 100%
+		order: 1
+	.a-carousel-navigation.is-left
+		order: 2
+	.a-carousel-navigation.is-right
+		order: 3
+
+=is-white
+	border: $a-carousel-white-border
+	.a-carousel-navigation
+		background-color: $a-carousel-white-nav-background
+	.a-carousel-main .a-carousel-container .a-carousel-img img
+		background-color: $a-carousel-white-img-background
+	&.has-nav-lr
+		.a-carousel-navigation.is-left
+			border-right: $a-carousel-white-border
+		.a-carousel-navigation.is-right
+			border-left: $a-carousel-white-border
+	&.has-nav-lr-bottom
+		.a-carousel-navigation
+			border-top: $a-carousel-white-border
+
+=is-dark
+	border: $a-carousel-dark-border
+	.a-carousel-navigation
+		background-color: $a-carousel-dark-nav-background
+	.a-carousel-main .a-carousel-container .a-carousel-img img
+		background-color: $a-carousel-dark-img-background
+	&.has-nav-lr
+		.a-carousel-navigation.is-left
+			border-right: $a-carousel-dark-border
+		.a-carousel-navigation.is-right
+			border-left: $a-carousel-dark-border
+	&.has-nav-lr-bottom
+		.a-carousel-navigation
+			border-top: $a-carousel-dark-border
+
+=is-light
+	border: $a-carousel-light-border
+	.a-carousel-navigation
+		background-color: $a-carousel-light-nav-background
+	.a-carousel-main .a-carousel-container .a-carousel-img img
+		background-color: $a-carousel-light-img-background
+	&.has-nav-lr
+		.a-carousel-navigation.is-left
+			border-right: $a-carousel-light-border
+		.a-carousel-navigation.is-right
+			border-left: $a-carousel-light-border
+	&.has-nav-lr-bottom
+		.a-carousel-navigation
+			border-top: $a-carousel-light-border
+
+=no-slide
+	.a-carousel-navigation
+		display: none
+		flex: 0
+	&.is-1by1 .a-carousel-container
+		$size: nth($max-img-sizes, 1)
+		width: 100%
+		max-height: $size
+		display: flex
+		flex-direction: row
+		padding: calc(2*#{$a-carousel-padding})
+		.a-carousel-item
+			flex: 1
+			height: auto
+			max-height: calc(#{$size} - 4*#{$a-carousel-padding})
+			padding-top: 0
+			.a-carousel-img
+				position: relative
+				max-height: calc(#{$size} - 4*#{$a-carousel-padding})
+				img
+					max-height: calc(#{$size} - 4*#{$a-carousel-padding})
+
+=a-carousel-size($col-count, $row-count, $max-img-size)
+	.a-carousel-main .a-carousel-container
+		$items-vis: $col-count * $row-count
+		grid-template-columns: repeat($col-count, minmax(max-content, $max-img-size))
+		grid-template-rows: repeat($row-count, auto)
+		.a-carousel-item:nth-child(-n + #{$items-vis + 1})
+			display: block
+		.a-carousel-item:nth-child(n + #{$items-vis + 1})
+			display: none
+		@for $i from 1 through $row-count
+			.a-carousel-item:nth-child(#{$row-count}n - #{$i - 1})
+				grid-row-start: $row-count - $i + 1
+
+=has-img-ratio($w, $h)
+	.a-carousel-main .a-carousel-container .a-carousel-item
+		padding-top: percentage($h/$w)
+
+=a-carousel
+	+block
+	position: relative
+	overflow: hidden
+	background-color: transparent
+	box-shadow: none
+	border-radius: $radius-large
+	.a-carousel-main
+		+a-carousel-main
+			.a-carousel-container
+				+a-carousel-container
+					.a-carousel-item
+						+a-carousel-item
+	&.has-nav-lr
+		+has-nav-lr
+	&.has-nav-lr-bottom
+		+has-nav-lr-bottom
+	&.is-white
+		+is-white
+	&.is-dark
+		+is-dark
+	&.is-light
+		+is-light
+	@for $i from 1 through length($a-carousel-col-counts)
+		$col-count: nth($a-carousel-col-counts, $i)
+		@for $j from 1 through length($a-carousel-row-counts)
+			$row-count: nth($a-carousel-row-counts, $j)
+			$max-img-size: nth($max-img-sizes, $j)
+			&.is-#{$col-count}by#{$row-count}
+				+a-carousel-size($col-count, $row-count, $max-img-size)
+	@each $ratio in $img-ratios
+		$w: nth($ratio, 1)
+		$h: nth($ratio, 2)
+		&.has-img-#{$w}by#{$h}
+			+has-img-ratio($w,$h)
+	&.no-slide
+		+no-slide
+
+.a-carousel
+	+a-carousel
+			
+.a-carousel-modal
+	.modal-content 
+		display: flex
+		flex-direction: column
+		img .modal-image 
+			flex-basis: 90%
+		.modal-details
+			padding: $notification-padding
+			+block
+			flex-basis: 10%
+			background-color: transparent

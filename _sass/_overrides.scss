@@ -379,3 +379,7 @@ body > .nav {
 .card .tag.is-dark {
 	background-color: $grey-dark !important;
 }
+
+.card .card-image img {
+	background-color: darken($grey-dark, 4);
+}
