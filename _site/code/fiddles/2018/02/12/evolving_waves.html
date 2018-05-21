@@ -4,11 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-	<title>Wave Art Generator</title>
-	<meta name="description" content="Here is a paragraph." />
+	<title>Evolving Waves</title>
+	<meta name="description" content="This is my first experiment with trying to digitally recreate a motif I use in many of my drawings." />
 
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/css/main.css" />
-	<link rel="canonical" href="http://localhost:4000/code/fiddles/2018/02/18/wave-art-generator.html" />
+	<link rel="canonical" href="http://localhost:4000/code/fiddles/2018/02/12/evolving_waves.html" />
 	<link rel="alternate" type="application/rss+xml" title="Evan Lori Mahone" href="/feed.xml" />
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
@@ -106,8 +106,8 @@
 		<div class="columns">
 
 			<div class="column"><div>
-				<p class="title is-1 is-capitalized">Wave Art Generator</p>
-				<p class="subtitle is-3">Static wave art generator</p>
+				<p class="title is-1 is-capitalized">Evolving Waves</p>
+				<p class="subtitle is-3">Experiment with perlin waves</p>
 			</div></div>
 
 			<div class="column is-narrow"><p class="tags">
@@ -126,14 +126,14 @@
 	<div class="hero-foot"><div class="container">
 		<div class="tabs is-medium is-boxed is-right"><ul>
 			
-				<li><a href="https://gist.github.com/apathinwalking/ef8d285b29195d184eebeb00f38911d3">
+				<li><a href="https://gist.github.com/apathinwalking/0fcbae39a9d14bb720184562ecbb1396">
 					<span class="icon"><i class="fab fa-github"></i></span>
 					<span>GitHub Repository</span>
 				</a></li>
 			
 
 			
-				<li><a href="https://codepen.io/apathinwalking/full/paPLeK">
+				<li><a href="https://codepen.io/apathinwalking/full/eVWVwK">
 					<span class="icon"><i class="fab fa-codepen"></i></span>
 					<span>Codepen Demo</span>
 				</a></li>
@@ -180,8 +180,8 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_wave-art-generator' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/wave-art-generator">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_evolving-waves' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/evolving-waves">
 				</div></div>
 			
 		</div>
@@ -206,8 +206,8 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_wave-art-generator' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/wave-art-generator">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_evolving-waves' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/evolving-waves">
 				</div></div>
 			
 		</div>
@@ -232,8 +232,8 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_wave-art-generator' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/wave-art-generator">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_evolving-waves' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/evolving-waves">
 				</div></div>
 			
 		</div>
@@ -248,25 +248,46 @@
 
 
 	
-	<div class="modal a-carousel-modal" id="image_code_wave-art-generator">
+	<div class="modal a-carousel-modal" id="image_code_evolving-waves">
 		<div class="modal-background"></div>
 		<div class="modal-content">
-			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/wave-art-generator">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/evolving-waves">
 			<div class="modal-details">
 				<p class="is-size-4 has-text-centered"></p>
 			</div>
 		</div>
-		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_wave-art-generator')"></button>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_evolving-waves')"></button>
 	</div>
 
 	
 
-	<p class="subtitle is-4"><time datetime="2016-1-1">18 FEBRUARY 2018</time></p>
+	<p class="subtitle is-4"><time datetime="2016-1-1">12 FEBRUARY 2018</time></p>
 
-	<div class="post-content is-size-5">
-		<p>Here is a paragraph.</p>
+	<div class="post-content content has-text-weight-light is-size-5">
+		<p>This is my first experiment with trying to digitally recreate a motif I use in many of my drawings.</p>
 
-<p>Here is another paragraph.</p>
+<p>I wanted to make a program that would take one wave and gradually change it until it becomes another wave. I chose to model perlin waves – as they were most similar to the shapes I draw. You can see an example of the motif I’m modelling  <a href="/art/digital/2018/02/03/untitled_pattern_1.html">here</a> or <a href="/art/sketch/2013/07/01/the_matriarch.html">here</a>. I chose to use <a href="https://p5js.org/">p5js</a> because it came with a builtin perlin wave function and seemed the easiest to prototype with.</p>
+
+<p>This program draws a series of perlin waves with one alpha wave (the top wave) and one omega wave (the bottom one). Every wave inbetween is an interpolation calculated by multiplying the difference between waves (delta) by fraction representing the percentage of the way the wave is between alpha and omega.</p>
+
+<p>The program allows you to manipulate a number of variables via sliders:</p>
+<ol>
+  <li><strong>x-increment</strong> - x is the first value used in the 2D perlin wave function. The x-increment is the difference in x-values between subsequent calls to the perlin wave function within a single frame.</li>
+  <li><strong>y-increment</strong> - y is the second value used in the 2D perlin wave function. The y-increment is the difference in y-values between subsequent calls to the perlin wave function between frames.</li>
+  <li><strong>t-increment</strong> - t is the value for the x-coordinate of the output wave. Increasing the increment decreases the number of calls to the perlin wave in a single frame (and vise-versa).</li>
+  <li><strong>slice-increment</strong> - this variable determined the number of wave generations there are between alpha and omega. Essentially the height of the drawing space is taken and divided by the slice-increment. This determined the number of generations that will be drawn to the screen.</li>
+  <li>The <strong>alpha and omega waves</strong> are two different perlin wave functions read with different initial y values (alpha is 0, omega is a large number like 100000). I decided to not have a slider for this as the results weren’t interesting.</li>
+</ol>
+
+<p>You can check out the embedded demo of this code below if you are on desktop, or check it out on <a href="{page.codepen_link}">Codepen</a> or <a href="{page.github_link}">GitHub</a>.</p>
+
+<p class="is-hidden-touch">
+	<p data-height="980" data-theme-id="light" data-slug-hash="eVWVwK" data-default-tab="result" data-user="apathinwalking" data-embed-version="2" data-pen-title="Evolving Waves 1" class="codepen">See the Pen <a href="https://codepen.io/apathinwalking/pen/eVWVwK/">Evolving Waves 1</a> by Evan Lori Mahone (<a href="https://codepen.io/apathinwalking">@apathinwalking</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+</p>
+
+<p>If you want to see Here are my other work in digitally recreating my drawing style - here are my <a href="/code/fiddles/2018/02/18/wave_art_generator.html">second</a> and <a href="/code/software/2018/03/26/becoming_bands.html">third</a> experiments.</p>
 
 	</div>
 
@@ -295,7 +316,7 @@
 			
 			<div class="control"><div class="tags has-addons">
 				<span class="tag is-rounded is-medium is-danger">library</span>
-				<a href="/code/tags/d3" class="tag is-light is-rounded is-medium">d3</a>
+				<a href="/code/tags/p5" class="tag is-light is-rounded is-medium">p5</a>
 			</div></div>
 		
 	</div>
