@@ -5,7 +5,7 @@ images:
   - public_id: 'code/green-pattern-map'
 github_link: 'https://github.com/apathinwalking/green-pattern-map'
 live_link: 'https://water.bniajfi.org/'
-categories: [code, web]
+categories: [code, frontend]
 tags: [html, css, js, nodejs, leaflet, angular, postgres]
 date: 2016-09-17
 subtitle: Baltimore green spaces webmap

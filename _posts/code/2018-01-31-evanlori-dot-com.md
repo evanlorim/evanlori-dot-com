@@ -4,7 +4,7 @@ title: Personal Website
 github_link: https://github.com/apathinwalking/evanlori-dot-com
 images:
   - public_id: code/evan-lori
-categories: [code, web]
+categories: [code, frontend]
 tags: [html, css, jekyll, bulma]
 date: 2018-01-31
 featured: true

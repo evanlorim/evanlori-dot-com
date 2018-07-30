@@ -1,9 +1,0 @@
----
-layout: art-post
-title: Overlapping Shapes
-images:
-  - public_id: portfolio/overlapping_shapes
-categories: [art, sketch]
-tags: [markers, color, doodle, abstract]
-date: 2017-04-17
----

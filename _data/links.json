@@ -1,14 +1,14 @@
 {
 	"facebook": {
-		"href": "https://www.facebook.com/evanlorimahone/",
+		"href": "https://www.facebook.com/evanlorim/",
 		"icon": "fab fa-facebook"
 	},
 	"twitter": {
-		"href": "https://twitter.com/evanlorimahone",
+		"href": "https://twitter.com/evanlorim",
 		"icon": "fab fa-twitter"
 	},
 	"patreon": {
-		"href": "https://www.patreon.com/evanlori",
+		"href": "https://www.patreon.com/evanlorim",
 		"icon": "fab fa-patreon"
 	},
 	"linkedin": {
@@ -20,7 +20,7 @@
 		"icon": "fab fa-github"
 	},
 	"instagram": {
-		"href": "https://instagram.com/evanlorimahone/",
+		"href": "https://instagram.com/evanlorim/",
 		"icon": "fab fa-instagram"
 	},
 	"paypal": {

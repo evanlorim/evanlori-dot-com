@@ -17,35 +17,22 @@
 		"href": "/art/drawn/"
 	},
 	{
-		"tab-title": "Sketch",
-		"category": "art",
-		"subcategory": "sketch",
-		"href": "/art/sketch/"
-	},
-	{
 		"tab-title": "Latest",
 		"category": "code",
 		"href": "/code/"
 	},
 	{
-		"tab-title": "Software",
+		"tab-title": "Backend",
 		"category": "code",
-		"subcategory": "software",
-		"href": "/code/software/",
+		"subcategory": "backend",
+		"href": "/code/backend/",
 		"icon": "fas fa-code"
 	},
 	{
-		"tab-title": "Web",
+		"tab-title": "Frontend",
 		"category": "code",
-		"subcategory": "web",
-		"href": "/code/web/",
+		"subcategory": "frontend",
+		"href": "/code/frontend/",
 		"icon": "fas fa-globe"
-	},
-	{
-		"tab-title": "Fiddles",
-		"category": "code",
-		"subcategory": "fiddles",
-		"href": "/code/fiddles/",
-		"icon": "fas fa-pencil-alt"
 	}
 ]

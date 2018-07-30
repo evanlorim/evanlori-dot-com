@@ -6,14 +6,14 @@ images:
   - public_id: code/evolving-waves
 github_link: https://gist.github.com/apathinwalking/0fcbae39a9d14bb720184562ecbb1396
 codepen_link: https://codepen.io/apathinwalking/full/eVWVwK
-categories: [code, fiddles]
+categories: [code, frontend]
 tags: [html, css, js, p5]
 date: 2018-02-12
 featured: true
 ---
 This is my first experiment with trying to digitally recreate a motif I use in many of my drawings.
 
-I wanted to make a program that would take one wave and gradually change it until it becomes another wave. I chose to model perlin waves -- as they were most similar to the shapes I draw. You can see an example of the motif I'm modelling  [here]({% post_url 2018-02-03-untitled_pattern_1 %}) or [here]({% post_url 2013-06-31-the_matriarch %}). I chose to use [p5js](https://p5js.org/) because it came with a builtin perlin wave function and seemed the easiest to prototype with. 
+I wanted to make a program that would take one wave and gradually change it until it becomes another wave. I chose to model perlin waves -- as they were most similar to the shapes I draw. You can see an example of the motif I'm modelling  [here]({% post_url 2018-02-03-untitled_pattern_1 %})). I chose to use [p5js](https://p5js.org/) because it came with a builtin perlin wave function and seemed the easiest to prototype with. 
 
 This program draws a series of perlin waves with one alpha wave (the top wave) and one omega wave (the bottom one). Every wave inbetween is an interpolation calculated by multiplying the difference between waves (delta) by fraction representing the percentage of the way the wave is between alpha and omega. 
 

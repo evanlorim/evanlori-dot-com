@@ -1,9 +1,0 @@
----
-layout: art-post
-title: Theory Of Emotion
-images:
-  - public_id: portfolio/theory_of_emotion
-categories: [art, sketch]
-tags: [markers, color, doodle, surreal]
-date: 2010-04-10
----

@@ -18,10 +18,6 @@
 			{
 				"title": "Drawn",
 				"href": "/art/drawn/"
-			},
-			{
-				"title": "Sketch",
-				"href": "/art/sketch/"
 			}
 		]
 	},
@@ -34,16 +30,12 @@
 				"href": "/code/"
 			},
 			{
-				"title": "Software",
-				"href": "/code/software/"
+				"title": "Backend",
+				"href": "/code/backend/"
 			},
 			{
-				"title": "Web",
-				"href": "/code/web/"
-			},
-			{
-				"title": "Fiddles",
-				"href": "/code/fiddles/"
+				"title": "Frontend",
+				"href": "/code/frontend/"
 			}
 		]
 	},
