@@ -2,8 +2,9 @@
 layout: art-post
 title: Trans Women Dont Have Male Privelege
 images:
-  - public_id: portfolio/trans_women_dont_have_male_privelege
+  - public_id: portfolio/trans-women-dont-have-male-privilege-square
+  - public_id: portfolio/button-trans-women-dont-have-male-privilege-photo
 categories: [art, digital]
-tags: [vector, color, graphic-design, text, trans]
+tags: [button, vector, color, graphic-design, text, trans]
 date: 2017-05-05
 ---
