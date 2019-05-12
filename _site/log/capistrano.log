@@ -890,3 +890,8 @@ and the repository exists.
   INFO [e18b885d] Running /usr/bin/env echo "Branch master (at da4493b2bc2ef9d9acec1db519c3137c7fb281c1) deployed as release 20180801035951 by elm" >> /var/www/evanlori.com/revisions.log as deploy@104.236.44.151
  DEBUG [e18b885d] Command: cd /var/www/evanlori.com/releases && /usr/bin/env echo "Branch master (at da4493b2bc2ef9d9acec1db519c3137c7fb281c1) deployed as release 20180801035951 by elm" >> /var/www/evanlori.com/revisions.log
   INFO [7d7eb8d6] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-05-11 21:33:56 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9490139d] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [9490139d] Command: /usr/bin/env mkdir -p /tmp
