@@ -3,7 +3,7 @@ layout: code-post
 title: Green Pattern Map
 images:
   - public_id: 'code/green-pattern-map'
-github_link: 'https://github.com/apathinwalking/green-pattern-map'
+github_link: 'https://github.com/evanlorim/green-pattern-map'
 live_link: 'https://water.bniajfi.org/'
 categories: [code, frontend]
 tags: [html, css, js, nodejs, leaflet, angular, postgres]

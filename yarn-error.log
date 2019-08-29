@@ -15,9 +15,9 @@ Platform:
 
 npm manifest: 
   {
-    "name": "apathinwalking.github.io",
+    "name": "evanlorim.github.io",
     "version": "1.0.0",
-    "repository": "https://github.com/apathinwalking/apathinwalking.github.io",
+    "repository": "https://github.com/evanlorim/evanlorim.github.io",
     "author": "Evan Lori Mahone",
     "license": "MIT",
     "private": false,

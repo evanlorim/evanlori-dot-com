@@ -1,7 +1,7 @@
 ---
 layout: code-post
 title: Personal Website
-github_link: https://github.com/apathinwalking/evanlori-dot-com
+github_link: https://github.com/evanlorim/evanlori-dot-com
 images:
   - public_id: code/evan-lori
 categories: [code, frontend]

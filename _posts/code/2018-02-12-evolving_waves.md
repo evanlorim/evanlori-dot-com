@@ -4,8 +4,8 @@ title: Evolving Waves
 subtitle: Experiment with perlin waves
 images:
   - public_id: code/evolving-waves
-github_link: https://gist.github.com/apathinwalking/0fcbae39a9d14bb720184562ecbb1396
-codepen_link: https://codepen.io/apathinwalking/full/eVWVwK
+github_link: https://gist.github.com/evanlorim/0fcbae39a9d14bb720184562ecbb1396
+codepen_link: https://codepen.io/evanlorim/full/eVWVwK
 categories: [code, frontend]
 tags: [html, css, js, p5]
 date: 2018-02-12
