@@ -32,6 +32,13 @@ layout: default
 				</a></li>
 			{% endif %}
 
+			{% if page.gitlab_link %}
+			<li><a href="{{page.gitlab_link}}">
+				<span class="icon"><i class="icon-gitlab-logo"></i></span>
+				<span>GitLab Repository</span>
+			</a></li>
+			{% endif %}
+
 			{% if page.codepen_link %}
 				<li><a href="{{page.codepen_link}}">
 					<span class="icon"><i class="fab fa-codepen"></i></span>
@@ -41,9 +48,23 @@ layout: default
 
 			{% if page.heroku_link %}
 				<li><a href="{{page.heroku_link}}">
-					<span class="icon"><i class="icon-heroku"></i></span>
+					<span class="icon"><i class="icon-heroku-logo-solid"></i></span>
 					<span>Heroku Demo</span>
 				</a></li>
+			{% endif %}
+
+			{% if page.replit_link %}
+				<li><a href="{{page.replit_link}}">
+					<span class="icon"><i class="icon-replit-logo"></i></span>
+					<span>Repl.it Demo</span>
+				</a></li>
+			{% endif %}
+
+			{% if page.codesandbox_link %}
+			<li><a href="{{page.codesandbox_link}}">
+				<span class="icon"><i class="icon-codesandbox-logo"></i></span>
+				<span>CodeSandbox Demo</span>
+			</a></li>
 			{% endif %}
 
 			{% if page.live_link %}
