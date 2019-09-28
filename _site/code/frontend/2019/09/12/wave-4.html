@@ -4,11 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-	<title>Wave Art Interpolation Device 2</title>
+	<title>Wave Art Interpolation Device 4</title>
 	<meta name="description" content="" />
 
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/css/main.css" />
-	<link rel="canonical" href="http://evanlori.com/code/software/2018/02/18/waid-2.html" />
+	<link rel="canonical" href="http://localhost:4000/code/frontend/2019/09/12/wave-4.html" />
 	<link rel="alternate" type="application/rss+xml" title="Evan Lori Mahone" href="/feed.xml" />
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
@@ -106,8 +106,8 @@
 		<div class="columns">
 
 			<div class="column"><div>
-				<p class="title is-1 is-capitalized">Wave Art Interpolation Device 2</p>
-				<p class="subtitle is-3">Dynamic wave art gui</p>
+				<p class="title is-1 is-capitalized">Wave Art Interpolation Device 4</p>
+				<p class="subtitle is-3">Glsl shader art</p>
 			</div></div>
 
 			<div class="column is-narrow"><p class="tags">
@@ -116,7 +116,7 @@
 					<a class="tag is-light is-large" href="/art/">code</a>
 				
 					
-					<a class="tag is-light is-large" href="/code/{{category}}/">software</a>
+					<a class="tag is-light is-large" href="/code/{{category}}/">frontend</a>
 				
 			</p></div>
 
@@ -126,7 +126,7 @@
 	<div class="hero-foot"><div class="container">
 		<div class="tabs is-medium is-boxed is-right"><ul>
 			
-				<li><a href="https://github.com/evanlorim/waid-2/">
+				<li><a href="https://gist.github.com/evanlorim/wave-4/">
 					<span class="icon"><i class="fab fa-github"></i></span>
 					<span>GitHub Repository</span>
 				</a></li>
@@ -135,14 +135,19 @@
 			
 
 			
-
-			
-				<li><a href="https://becoming-bands.herokuapp.com/">
-					<span class="icon"><i class="icon-heroku-logo-solid"></i></span>
-					<span>Heroku Demo</span>
+				<li><a href="https://codepen.io/evanlorim/pen/wvwXqNp">
+					<span class="icon"><i class="fab fa-codepen"></i></span>
+					<span>Codepen Demo</span>
 				</a></li>
 			
 
+			
+
+			
+				<li><a href="https://Wave-Art-Visualization-Engine-4.evanlorim.repl.co">
+					<span class="icon"><i class="icon-replit-logo"></i></span>
+					<span>Repl.it Demo</span>
+				</a></li>
 			
 
 			
@@ -174,7 +179,7 @@
 
 
 <div class="is-hidden-tablet block">
-	<div class="a-carousel is-1by1 has-nav-lr-bottom no-slide is-light is-animated is-animated-slide">
+	<div class="a-carousel is-1by1 has-nav-lr-bottom  is-light is-animated is-animated-slide">
 		
 	<div class="a-carousel-navigation is-left">
 		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
@@ -186,8 +191,32 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_becoming-bands' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/becoming-bands">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_wavy-shaders-shimmer' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-shimmer">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-grain' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-grain">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-xmas' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-xmas">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-barb' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-barb">
 				</div></div>
 			
 		</div>
@@ -200,7 +229,7 @@
 </div>
 
 <div class="is-hidden-mobile is-hidden-desktop block">
-	<div class="a-carousel is-1by1 has-nav-lr no-slide is-light is-animated is-animated-slide">
+	<div class="a-carousel is-2by2 has-nav-lr no-slide is-light is-animated is-animated-slide">
 		
 	<div class="a-carousel-navigation is-left">
 		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
@@ -212,8 +241,32 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_becoming-bands' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/becoming-bands">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_wavy-shaders-shimmer' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-shimmer">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-grain' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-grain">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-xmas' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-xmas">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-barb' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-barb">
 				</div></div>
 			
 		</div>
@@ -226,7 +279,7 @@
 </div>
 
 <div class="is-hidden-touch block">
-	<div class="a-carousel is-1by1 has-nav-lr no-slide is-light is-animated is-animated-slide">
+	<div class="a-carousel is-2by2 has-nav-lr no-slide is-light is-animated is-animated-slide">
 		
 	<div class="a-carousel-navigation is-left">
 		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
@@ -238,8 +291,32 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_becoming-bands' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/becoming-bands">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_wavy-shaders-shimmer' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-shimmer">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-grain' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-grain">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-xmas' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-xmas">
+				</div></div>
+			
+				
+				
+				
+				
+				<div class='a-carousel-item ' onClick="openModal( 'image_code_wavy-shaders-barb' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/w_640,h_640,c_fill/w_640,h_640,c_crop/code/wavy-shaders-barb">
 				</div></div>
 			
 		</div>
@@ -254,20 +331,56 @@
 
 
 	
-	<div class="modal a-carousel-modal" id="image_code_becoming-bands">
+	<div class="modal a-carousel-modal" id="image_code_wavy-shaders-shimmer">
 		<div class="modal-background"></div>
 		<div class="modal-content">
-			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/becoming-bands">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/wavy-shaders-shimmer">
 			<div class="modal-details">
 				<p class="is-size-4 has-text-centered"></p>
 			</div>
 		</div>
-		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_becoming-bands')"></button>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_wavy-shaders-shimmer')"></button>
+	</div>
+
+	
+	<div class="modal a-carousel-modal" id="image_code_wavy-shaders-grain">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/wavy-shaders-grain">
+			<div class="modal-details">
+				<p class="is-size-4 has-text-centered"></p>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_wavy-shaders-grain')"></button>
+	</div>
+
+	
+	<div class="modal a-carousel-modal" id="image_code_wavy-shaders-xmas">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/wavy-shaders-xmas">
+			<div class="modal-details">
+				<p class="is-size-4 has-text-centered"></p>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_wavy-shaders-xmas')"></button>
+	</div>
+
+	
+	<div class="modal a-carousel-modal" id="image_code_wavy-shaders-barb">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/wavy-shaders-barb">
+			<div class="modal-details">
+				<p class="is-size-4 has-text-centered"></p>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_wavy-shaders-barb')"></button>
 	</div>
 
 	
 
-	<p class="subtitle is-4"><time datetime="2016-1-1">18 FEBRUARY 2018</time></p>
+	<p class="subtitle is-4"><time datetime="2016-1-1">12 SEPTEMBER 2019</time></p>
 
 	<div class="post-content content has-text-weight-light is-size-5">
 		
@@ -298,14 +411,8 @@
 		
 			
 			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-danger">library</span>
-				<a href="/code/tags/d3" class="tag is-light is-rounded is-medium">d3</a>
-			</div></div>
-		
-			
-			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-success">framework</span>
-				<a href="/code/tags/angular" class="tag is-light is-rounded is-medium">angular</a>
+				<span class="tag is-rounded is-medium is-"></span>
+				<a href="" class="tag is-light is-rounded is-medium">glsl</a>
 			</div></div>
 		
 	</div>
