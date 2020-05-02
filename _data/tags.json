@@ -17,6 +17,7 @@
 	{ "category": "art", "name": "illustration", "href": "/art/tags/illustration", "type": "type", "color": "success" },
 	{ "category": "art", "name": "doodle", "href": "/art/tags/doodle", "type": "type", "color": "success" },
 	{ "category": "art", "name": "album-art", "href": "/art/tags/album-art", "type": "type", "color": "success" },
+	{ "category": "art", "name": "banner", "href": "/art/tags/banner", "type": "type", "color": "success" },
 
 	{ "category": "art", "name": "abstract", "href": "/art/tags/abstract", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "surreal", "href": "/art/tags/surreal", "type": "style", "color": "danger" },
@@ -29,6 +30,8 @@
 
 	{ "category": "art", "name": "trans", "href": "/art/tags/trans", "type": "topic", "color": "warning" },
 	{ "category": "art", "name": "bta", "href": "/art/tags/bta", "type": "topic", "color": "warning" },
+	{ "category": "art", "name": "fanart", "href": "/art/tags/fanart", "type": "topic", "color": "warning" },
+	{ "category": "art", "name": "mental-illness", "href": "/art/tags/mental-illness", "type": "topic", "color": "warning" },
 
 
 	{ "category": "code", "name": "html", "href": "/code/tags/html", "type": "language", "color": "primary" },

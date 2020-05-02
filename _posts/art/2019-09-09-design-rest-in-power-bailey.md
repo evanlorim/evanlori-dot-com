@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: Rest in Power Bailey
+title: "Design: Rest in Power Bailey"
 images:
   - public_id: portfolio/rest-in-power-bailey
 categories: [art, digital]

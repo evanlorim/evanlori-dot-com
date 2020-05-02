@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: "TMOR Ball 2019 Poster"
+title: "Flyer: BMORE TMOR 2019 Ball"
 subtitle: "For Trans Day of Resilience 2019"
 images:
   - public_id: portfolio/tmor-ball-2019-flyer

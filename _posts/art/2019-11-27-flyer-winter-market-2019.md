@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: "Winter Market 2019 Flyer"
+title: "Flyer: Winter Market 2019"
 subtitle: "Animals crafting"
 images:
   - public_id: portfolio/flyer-winter-market-2019

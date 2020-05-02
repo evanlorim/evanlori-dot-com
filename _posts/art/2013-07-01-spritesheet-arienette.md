@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: Ariennete Spritesheet
+title: Spritesheet Ariennete
 images:
   - public_id: portfolio/ariennete_spritesheet
 categories: [art, digital]

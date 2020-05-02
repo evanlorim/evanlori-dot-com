@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: "I Love Being Trans"
+title: "Button: I Love Being Trans"
 subtitle: "Button design for BTA"
 images:
   - public_id: portfolio/i-love-being-trans-square

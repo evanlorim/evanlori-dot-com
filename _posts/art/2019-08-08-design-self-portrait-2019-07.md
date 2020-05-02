@@ -1,7 +1,6 @@
 ---
 layout: art-post
-title: Self Portrait 2019
-
+title: "Design: Self Portrait 2019"
 images:
   - public_id: portfolio/self-portrait-2019
 categories: [art, digital]

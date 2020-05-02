@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: "Trans Dance Revolution Flyer"
+title: "Flyer: BMORE TMOR 2019 Trans Dance Revolution"
 subtitle: "A Benefit For Trans Day of Resilience 2019"
 images:
   - public_id: portfolio/flyer-bmore-tmor-2019-trans-dance-revolution
