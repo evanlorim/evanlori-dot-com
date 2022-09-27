@@ -6,7 +6,7 @@ images:
   - public_id: portfolio/design-princess-mononoke
 categories: [art, digital]
 tags: [fanart, illustration, graphic-design, vector, color]
-date: 2021-04-11
+date: 2021-06-01
 featured: false
 ---
 A fanart of my favorite movie Princess Mononoke. Princess Mononoke was an early movie that inspired queer feelings in myself. The drawing is technically unfinished. I tried to color match the palette of the movie, and had a hard time.
