@@ -4,7 +4,7 @@ title: "Design: Self Portrait 2019"
 images:
   - public_id: portfolio/self-portrait-2019
 categories: [art, digital]
-tags: [vector, black-and-white, graphic-design, illustration, pattern]
+tags: [vector, black-and-white, graphic-design, illustration, portrait, pattern]
 date: 2019-08-08
 featured: true
 ---

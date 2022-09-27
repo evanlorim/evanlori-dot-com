@@ -18,6 +18,9 @@
 	{ "category": "art", "name": "doodle", "href": "/art/tags/doodle", "type": "type", "color": "success" },
 	{ "category": "art", "name": "album-art", "href": "/art/tags/album-art", "type": "type", "color": "success" },
 	{ "category": "art", "name": "banner", "href": "/art/tags/banner", "type": "type", "color": "success" },
+	{ "category": "art", "name": "character-art", "href": "/art/tags/character-art", "type": "type", "color": "success" },
+	{ "category": "art", "name": "portrait", "href": "/art/tags/portrait", "type": "type", "color": "success" },
+	{ "category": "art", "name": "pamphlet", "href": "/art/tags/pamphlet", "type": "type", "color": "success" },
 
 	{ "category": "art", "name": "abstract", "href": "/art/tags/abstract", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "surreal", "href": "/art/tags/surreal", "type": "style", "color": "danger" },

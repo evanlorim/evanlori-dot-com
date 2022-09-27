@@ -4,6 +4,6 @@ title: "Design: Rest in Power Bailey"
 images:
   - public_id: portfolio/rest-in-power-bailey
 categories: [art, digital]
-tags: [vector, illustration, color, trans]
+tags: [vector, illustration, portrait, color, trans]
 date: 2019-09-09
 ---
