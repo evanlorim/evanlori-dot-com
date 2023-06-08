@@ -29,6 +29,7 @@
 	{ "category": "art", "name": "fractal", "href": "/art/tags/fractal", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "text", "href": "/art/tags/text", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "pixel-art", "href": "/art/tags/pixel-art", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "grafitti", "href": "/art/tags/grafitti", "type": "style", "color": "danger" },
 
 
 	{ "category": "art", "name": "trans", "href": "/art/tags/trans", "type": "topic", "color": "warning" },
