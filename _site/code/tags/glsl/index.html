@@ -4,11 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-	<title>Wave Art Interpolation Device 2</title>
-	<meta name="description" content="" />
+	<title>GLSL</title>
+	<meta name="description" content="Evan Lori Mahone&#39;s website." />
 
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/css/main.css" />
-	<link rel="canonical" href="http://localhost:4000/code/software/2018/02/18/wave-2.html" />
+	<link rel="canonical" href="http://localhost:4000/code/tags/glsl/" />
 	<link rel="alternate" type="application/rss+xml" title="Evan Lori Mahone" href="/feed.xml" />
 
 	<link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
@@ -100,215 +100,285 @@
 	</div>
 </nav>
 
-		<section class="hero is-dark">
-	<div class="hero-body"><div class="container">
+		
 
-		<div class="columns">
 
-			<div class="column"><div>
-				<p class="title is-1 is-capitalized">Wave Art Interpolation Device 2</p>
-				<p class="subtitle is-3">Dynamic wave art gui</p>
-			</div></div>
+<section class="hero is-primary is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">GLSL</h1>
+            <h2 class="subtitle">Things coded in GLSL.</h2>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container">
+            
 
-			<div class="column is-narrow"><p class="tags">
-				
-					
-					<a class="tag is-light is-large" href="/art/">code</a>
-				
-					
-					<a class="tag is-light is-large" href="/code/{{category}}/">software</a>
-				
-			</p></div>
+<div class="tabs is-medium is-boxed artwork-tabs"><ul>
+    
+        
+		<li class="is-active"><a href="/code/">Latest</a></li>
+    
+        
+		<li class=""><a href="/code/backend/">Backend</a></li>
+    
+        
+		<li class=""><a href="/code/frontend/">Frontend</a></li>
+    
+</ul></div>
 
-		</div>
-
-	</div></div>
-	<div class="hero-foot"><div class="container">
-		<div class="tabs is-medium is-boxed is-right"><ul>
-			
-				<li><a href="https://github.com/evanlorim/wave-2/">
-					<span class="icon"><i class="fab fa-github"></i></span>
-					<span>GitHub Repository</span>
-				</a></li>
-			
-
-			
-
-			
-
-			
-				<li><a href="https://becoming-bands.herokuapp.com/">
-					<span class="icon"><i class="icon-heroku-logo-solid"></i></span>
-					<span>Heroku Demo</span>
-				</a></li>
-			
-
-			
-
-			
-
-			
-		</ul></div>
-	</div></div>
+        </div>
+    </div>
 </section>
+
+
 
 <div class="section"><div class="container">
 
+    <div class="columns is-5 is-variable is-desktop">
+        <div class="column is-three-quarters-desktop">
+
+			
+				<div class="card block">
 	
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="is-hidden-tablet block">
-	<div class="a-carousel is-1by1 has-nav-lr-bottom no-slide is-light is-animated is-animated-slide">
-		
-	<div class="a-carousel-navigation is-left">
-		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
-	</div>
-	<div class="a-carousel-main">
-		<div class='a-carousel-container'>
-			
+		<div class="card-image is-hidden-tablet">
+			<figure class="image is-128by128">
 				
-				
-				
-				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_becoming-bands' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/becoming-bands">
-				</div></div>
-			
+
+
+
+
+
+
+
+
+
+
+			</figure>
 		</div>
-	</div>
-	<div class="a-carousel-navigation is-right">
-		<span class="a-carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
-	</div>
-
-	</div>
-</div>
-
-<div class="is-hidden-mobile is-hidden-desktop block">
-	<div class="a-carousel is-1by1 has-nav-lr no-slide is-light is-animated is-animated-slide">
-		
-	<div class="a-carousel-navigation is-left">
-		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
-	</div>
-	<div class="a-carousel-main">
-		<div class='a-carousel-container'>
-			
-				
-				
-				
-				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_becoming-bands' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/becoming-bands">
-				</div></div>
-			
-		</div>
-	</div>
-	<div class="a-carousel-navigation is-right">
-		<span class="a-carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
-	</div>
-
-	</div>
-</div>
-
-<div class="is-hidden-touch block">
-	<div class="a-carousel is-1by1 has-nav-lr no-slide is-light is-animated is-animated-slide">
-		
-	<div class="a-carousel-navigation is-left">
-		<span class="a-carousel-nav-left button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-left"></i></span></span>
-	</div>
-	<div class="a-carousel-main">
-		<div class='a-carousel-container'>
-			
-				
-				
-				
-				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_becoming-bands' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/becoming-bands">
-				</div></div>
-			
-		</div>
-	</div>
-	<div class="a-carousel-navigation is-right">
-		<span class="a-carousel-nav-right button is-large is-outlined is-dark"><span class="icon"><i class="fas fa-chevron-right"></i></span></span>
-	</div>
-
-	</div>
-</div>
-
-
-
 	
-	<div class="modal a-carousel-modal" id="image_code_becoming-bands">
-		<div class="modal-background"></div>
-		<div class="modal-content">
-			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/becoming-bands">
-			<div class="modal-details">
-				<p class="is-size-4 has-text-centered"></p>
+	<div class="card-content is-paddingless"><div class="columns is-gapless">
+		
+			
+
+
+
+
+
+
+
+
+
+
+			<div class="column is-4-tablet is-3-desktop is-hidden-mobile" style="background-position: center; background-image: url(http://res.cloudinary.com/evanlori/c_thumb,g_center,w_180,h_180/c_thumb,g_center,w_180,h_180,l_code:wavy-shaders-grain/fl_layer_apply,g_north_west,x_180/c_thumb,g_center,w_180,h_180,l_code:wavy-shaders-xmas/fl_layer_apply,g_north_west,y_180/c_thumb,g_center,w_180,h_180,l_code:wavy-shaders-barb/fl_layer_apply,g_north_west,x_180,y_180/code/wavy-shaders-shimmer)"></div>
+		
+
+		<div class="column"><div class="code-card-content">
+
+			<div class="columns is-mobile is-variable is-3">
+				<div class="column">
+					<h5 class="title is-size-5">WAVE ART INTERPOLATION DEVICE 4</h5>
+					<h6 class="subtitle is-size-6">GLSL SHADER ART</time></h6>
+				</div>
+				<div class="column is-narrow"><span class="tags">
+					<a href="/code/frontend" class="tag is-light is-medium">frontend</a>
+				</span></div>
 			</div>
-		</div>
-		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_becoming-bands')"></button>
-	</div>
 
-	
+			<div class="columns is-mobile is-vcentered is-variable is-3">
+				<div class="column"><div class="is-size-6"><time>SEP 12 2019</time></div></div>
+				<div class="column is-narrow">
+					<div class="tags is-hidden-tablet">
+						
+							
+							<a class="tag is-dark" href="/code/tags/html">html</a>
+						
+							
+							<a class="tag is-dark" href="/code/tags/css">css</a>
+						
+							
+							<a class="tag is-dark" href="/code/tags/js">js</a>
+						
+							
+							
+						
+					</div>
+				</div>
+			</div>
 
-	<p class="subtitle is-4"><time datetime="2016-1-1">18 FEBRUARY 2018</time></p>
+			<div class="block"><p class="has-text-light is-size-6"> 
+</p></div>
 
-	<div class="post-content content has-text-weight-light is-size-5">
-		
 
-	</div>
+			<div class="columns is-mobile is-variable is-3">
+				<div class="column" style="display: flex; align-items: flex-end;">
+					<div class="tags is-hidden-mobile">
+						
+							
+							<a class="tag is-dark" href="/code/tags/html">html</a>
+						
+							
+							<a class="tag is-dark" href="/code/tags/css">css</a>
+						
+							
+							<a class="tag is-dark" href="/code/tags/js">js</a>
+						
+							
+							
+						
+					</div>
+				</div>
+				<div class="column is-narrow">
+					<a class="button is-dark is-primary is-medium" href="/code/frontend/2019/09/12/wave-4.html">
+						<span class="icon"><i class="fas fa-book"></i></span>
+						<span>Read More</span>
+					</a>
+				</div>
+			</div>
 
-	<div class="is-divider"></div>
 
-	<div class="field is-grouped is-grouped-multiline">
-		
+		</div></div>
+
+
+	</div></div>
+
+</div>
+
 			
-			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-primary">language</span>
-				<a href="/code/tags/html" class="tag is-light is-rounded is-medium">html</a>
-			</div></div>
-		
+
 			
-			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-primary">language</span>
-				<a href="/code/tags/css" class="tag is-light is-rounded is-medium">css</a>
-			</div></div>
-		
-			
-			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-primary">language</span>
-				<a href="/code/tags/js" class="tag is-light is-rounded is-medium">js</a>
-			</div></div>
-		
-			
-			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-danger">library</span>
-				<a href="/code/tags/d3" class="tag is-light is-rounded is-medium">d3</a>
-			</div></div>
-		
-			
-			<div class="control"><div class="tags has-addons">
-				<span class="tag is-rounded is-medium is-success">framework</span>
-				<a href="/code/tags/angular" class="tag is-light is-rounded is-medium">angular</a>
-			</div></div>
-		
-	</div>
+
+
+
+<div class="box">
+
+	<nav class="pagination" role="navigation" aria-label="pagination">
+
+	    <a class="pagination-previous has-text-light" disabled>Previous</a>
+	    <a class="pagination-previous has-text-light" disabled>Next</a>
+
+	    <ul class="pagination-list">
+	        <li><a class="pagination-link has-text-light" disabled><span><i class="fa fa-angle-double-left"></i></span></a></li>
+
+	        
+
+	        <li><a class="pagination-link has-text-light" disabled><span><i class="fa fa-angle-double-right"></i></span></a></li>
+	    </ul>
+	</nav>
+</div>
+
+        </div>
+        <div class="column is-one-quarter-desktop">
+            
+
+<div class="box is-dark">
+    <aside class="menu">
+        <p class="title is-4">Tags</p>
+
+        
+            <p class="menu-label">Language</p>
+            <ul class="menu-list">
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/html">html</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/js">js</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/css">css</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/python">python</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/python">r</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/python">latex</a>
+                    </li>
+                
+            </ul>
+        
+            <p class="menu-label">Tool</p>
+            <ul class="menu-list">
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/nodejs">nodejs</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/jekyll">jekyll</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/postgres">postgres</a>
+                    </li>
+                
+            </ul>
+        
+            <p class="menu-label">Framework</p>
+            <ul class="menu-list">
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/angular">angular</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/materialize">materialize</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/bulma">bulma</a>
+                    </li>
+                
+            </ul>
+        
+            <p class="menu-label">Library</p>
+            <ul class="menu-list">
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/p5">p5</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/d3">d3</a>
+                    </li>
+                
+                    
+                    <li>
+                        <a class="" href="/code/tags/leaflet">leaflet</a>
+                    </li>
+                
+            </ul>
+        
+
+    </aside>
+</div>
+
+        </div>
+    </div>
+
+
 
 </div></div>
 

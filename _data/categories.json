@@ -35,11 +35,4 @@
 		"href": "/code/frontend/",
 		"icon": "fas fa-globe"
 	},
-	{
-		"tab-title": "Frontend",
-		"category": "code",
-		"subcategory": "software",
-		"href": "/code/software/",
-		"icon": "fas fa-mouse-pointer"
-	}
 ]

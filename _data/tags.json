@@ -5,6 +5,7 @@
 	{ "category": "art", "name": "vector", "href": "/art/tags/vector", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "digitized", "href": "/art/tags/digitized", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "collage", "href": "/art/tags/collage", "type": "media", "color": "primary" },
+	{ "category": "art", "name": "oil-pastels", "href": "/art/tags/oil-pastels", "type": "media", "color": "primary"},
 
 	{ "category": "art", "name": "color", "href": "/art/tags/color", "type": "color", "color": "info" },
 	{ "category": "art", "name": "black-and-white", "href": "/art/tags/black-and-white", "type": "color", "color": "info" },
@@ -19,6 +20,7 @@
 	{ "category": "art", "name": "album-art", "href": "/art/tags/album-art", "type": "type", "color": "success" },
 	{ "category": "art", "name": "banner", "href": "/art/tags/banner", "type": "type", "color": "success" },
 	{ "category": "art", "name": "character-art", "href": "/art/tags/character-art", "type": "type", "color": "success" },
+	{ "category": "art", "name": "figure-drawing", "href": "/art/tags/figure-drawing", "type": "type", "color": "success" },	
 	{ "category": "art", "name": "portrait", "href": "/art/tags/portrait", "type": "type", "color": "success" },
 	{ "category": "art", "name": "pamphlet", "href": "/art/tags/pamphlet", "type": "type", "color": "success" },
 
@@ -30,6 +32,7 @@
 	{ "category": "art", "name": "text", "href": "/art/tags/text", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "pixel-art", "href": "/art/tags/pixel-art", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "grafitti", "href": "/art/tags/grafitti", "type": "style", "color": "danger" },
+	{ "category": "art", "name": "realism", "href": "/art/tags/realism", "type": "style", "color": "danger" },
 
 
 	{ "category": "art", "name": "trans", "href": "/art/tags/trans", "type": "topic", "color": "warning" },
