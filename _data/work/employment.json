@@ -1,4 +1,10 @@
 [	
+	{"pos": "Freelance Graphic Design", "org": "Evan Lori Mahone", "loc": "Baltimore, MD", "start": "2017-01-01", "details": [
+		"Designed buttons, flyers, pamphlets and logos for non-profits"
+	]},
+	{"pos": "Life Model", "org": "Harford Community College", "loc": "Bel Air, MD", "start": "2025-01-17", "href": "https://harford.edu", "details": [
+		"posed for art students, maintaining specific postures for extended periods to help them practice figure drawing"
+	]},
 	{"pos": "Tutor", "org": "Axiom Educators", "loc": "Baltimore, MD", "start": "2022-11-01", "end": "2023-06-09", "href": "https://axiomeducators.com", "details": [
 		"Instructed small groups of students on geometry in a public school setting."
 	]},

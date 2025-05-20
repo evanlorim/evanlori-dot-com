@@ -14,4 +14,9 @@
 
 	{"title": "Psychological Statistics", "type": "psych", "color": "danger"},
 	{"title": "Research Methods", "type": "psych", "color": "danger" },
+
+	{"title": "Illustration", "type": "art", "color": "info"},
+	{"title": "Painting", "type": "art", "color": "info"},
+	{"title": "Art History Ancient to Mideival", "type":"art","color": "info"},
+	{"title": "Art History Mideival to Modern", "type":"art","color": "info"}
 ]

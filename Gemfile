@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.6.2"
-gem "minima", "~> 2.0"
+gem "jekyll"
+gem "minima"
 
 group :jekyll_plugins do
-	gem "jekyll-paginate-v2", "~> 1.7"
+	gem "jekyll-paginate-v2"
 end
 
 group :development do
@@ -13,4 +13,4 @@ end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "webrick", "~> 1.7"
+gem "webrick"
