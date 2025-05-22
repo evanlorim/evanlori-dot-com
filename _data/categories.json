@@ -11,10 +11,10 @@
 		"href": "/art/digital/"
 	},
 	{
-		"tab-title": "Drawn",
+		"tab-title": "Traditional",
 		"category": "art",
-		"subcategory": "drawn",
-		"href": "/art/drawn/"
+		"subcategory": "traditional",
+		"href": "/art/traditional/"
 	},
 	{
 		"tab-title": "Latest",

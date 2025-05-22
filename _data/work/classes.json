@@ -17,6 +17,7 @@
 
 	{"title": "Illustration", "type": "art", "color": "info"},
 	{"title": "Painting", "type": "art", "color": "info"},
-	{"title": "Art History Ancient to Mideival", "type":"art","color": "info"},
-	{"title": "Art History Mideival to Modern", "type":"art","color": "info"}
+	{"title": "Art History Ancient to Midieval", "type":"art","color": "info"},
+	{"title": "Art History Renaissance to Modern", "type":"art","color": "info"},
+	{"title": "Color Theory", "type": "art", "color": "info"}
 ]

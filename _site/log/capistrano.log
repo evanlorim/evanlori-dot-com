@@ -3823,3 +3823,142 @@ SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
   INFO [0c2817c2] Running /usr/bin/env echo "Branch master (at 26199808aa56a7a4224db54da4c1ac031ac14c60) deployed as release 20250521165241 by elm" >> /var/www/evanlori.com/revisions.log as deploy@104.236.44.151
  DEBUG [0c2817c2] Command: cd /var/www/evanlori.com/releases && /usr/bin/env echo "Branch master (at 26199808aa56a7a4224db54da4c1ac031ac14c60) deployed as release 20250521165241 by elm" >> /var/www/evanlori.com/revisions.log
   INFO [0c2817c2] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-05-21 14:21:18 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fc4541ca] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [fc4541ca] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fc4541ca] Finished in 3.896 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4a585c5164f82004c1dc.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4a585c5164f82004c1dc.sh 100.0%
+  INFO [3c02c1db] Running /usr/bin/env chmod 700 /tmp/git-ssh-4a585c5164f82004c1dc.sh as deploy@104.236.44.151
+ DEBUG [3c02c1db] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4a585c5164f82004c1dc.sh
+  INFO [3c02c1db] Finished in 1.186 seconds with exit status 0 (successful).
+  INFO [4cb95f94] Running /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD as deploy@104.236.44.151
+ DEBUG [4cb95f94] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD )
+ DEBUG [4cb95f94] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [4cb95f94] 	@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ DEBUG [4cb95f94] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [4cb95f94] 	IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ DEBUG [4cb95f94] 	Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ DEBUG [4cb95f94] 	It is also possible that a host key has just been changed.
+ DEBUG [4cb95f94] 	The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+ DEBUG [4cb95f94] 	Please contact your system administrator.
+ DEBUG [4cb95f94] 	Add correct host key in /home/deploy/.ssh/known_hosts to get rid of this message.
+ DEBUG [4cb95f94] 	Offending RSA key in /home/deploy/.ssh/known_hosts:1
+ DEBUG [4cb95f94] 	  remove with:
+ DEBUG [4cb95f94] 	  ssh-keygen -f "/home/deploy/.ssh/known_hosts" -R "github.com"
+ DEBUG [4cb95f94] 	Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+ DEBUG [4cb95f94] 	8455ac4d31a6a6fc0d43b002824ed2936733f7b1	HEAD
+  INFO [4cb95f94] Finished in 2.705 seconds with exit status 0 (successful).
+  INFO [b599eeb4] Running /usr/bin/env mkdir -p /var/www/evanlori.com/shared /var/www/evanlori.com/releases as deploy@104.236.44.151
+ DEBUG [b599eeb4] Command: /usr/bin/env mkdir -p /var/www/evanlori.com/shared /var/www/evanlori.com/releases
+  INFO [b599eeb4] Finished in 0.812 seconds with exit status 0 (successful).
+ DEBUG [6dad2f3e] Running [ -f /var/www/evanlori.com/current/REVISION ] as deploy@104.236.44.151
+ DEBUG [6dad2f3e] Command: [ -f /var/www/evanlori.com/current/REVISION ]
+ DEBUG [6dad2f3e] Finished in 0.820 seconds with exit status 0 (successful).
+ DEBUG [709d2992] Running /usr/bin/env cat /var/www/evanlori.com/current/REVISION 2>/dev/null as deploy@104.236.44.151
+ DEBUG [709d2992] Command: /usr/bin/env cat /var/www/evanlori.com/current/REVISION 2>/dev/null
+ DEBUG [709d2992] 	26199808aa56a7a4224db54da4c1ac031ac14c60
+ DEBUG [709d2992] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [bb36a88a] Running [ -f /var/www/evanlori.com/current/REVISION_TIME ] as deploy@104.236.44.151
+ DEBUG [bb36a88a] Command: [ -f /var/www/evanlori.com/current/REVISION_TIME ]
+ DEBUG [bb36a88a] Finished in 0.818 seconds with exit status 0 (successful).
+ DEBUG [9db490a1] Running /usr/bin/env cat /var/www/evanlori.com/current/REVISION_TIME 2>/dev/null as deploy@104.236.44.151
+ DEBUG [9db490a1] Command: /usr/bin/env cat /var/www/evanlori.com/current/REVISION_TIME 2>/dev/null
+ DEBUG [9db490a1] 	1747774169
+ DEBUG [9db490a1] Finished in 0.818 seconds with exit status 0 (successful).
+ DEBUG [910bf15d] Running [ -f /var/www/evanlori.com/repo/HEAD ] as deploy@104.236.44.151
+ DEBUG [910bf15d] Command: [ -f /var/www/evanlori.com/repo/HEAD ]
+ DEBUG [910bf15d] Finished in 0.822 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/evanlori.com/repo
+ DEBUG [de4ee2f6] Running if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [de4ee2f6] Command: if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi
+ DEBUG [de4ee2f6] Finished in 0.820 seconds with exit status 0 (successful).
+  INFO [7673280d] Running /usr/bin/env git remote set-url origin git@github.com:evanlorim/evanlori-dot-com as deploy@104.236.44.151
+ DEBUG [7673280d] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env git remote set-url origin git@github.com:evanlorim/evanlori-dot-com )
+  INFO [7673280d] Finished in 0.814 seconds with exit status 0 (successful).
+  INFO [651f38df] Running /usr/bin/env git remote update --prune as deploy@104.236.44.151
+ DEBUG [651f38df] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [651f38df] 	Fetching origin
+ DEBUG [651f38df] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [651f38df] 	@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ DEBUG [651f38df] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [651f38df] 	IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ DEBUG [651f38df] 	Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ DEBUG [651f38df] 	It is also possible that a host key has just been changed.
+ DEBUG [651f38df] 	The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+ DEBUG [651f38df] 	Please contact your system administrator.
+ DEBUG [651f38df] 	Add correct host key in /home/deploy/.ssh/known_hosts to get rid of this message.
+ DEBUG [651f38df] 	Offending RSA key in /home/deploy/.ssh/known_hosts:1
+ DEBUG [651f38df] 	  remove with:
+ DEBUG [651f38df] 	  ssh-keygen -f "/home/deploy/.ssh/known_hosts" -R "github.com"
+ DEBUG [651f38df] 	Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+ DEBUG [651f38df] 	From github.com:evanlorim/evanlori-dot-com
+   2619980..8455ac4  master     -> master
+  INFO [651f38df] Finished in 2.366 seconds with exit status 0 (successful).
+ DEBUG [f5f0092d] Running if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [f5f0092d] Command: if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi
+ DEBUG [f5f0092d] Finished in 0.709 seconds with exit status 0 (successful).
+  INFO [57d66774] Running /usr/bin/env mkdir -p /var/www/evanlori.com/releases/20250521182132 as deploy@104.236.44.151
+ DEBUG [57d66774] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env mkdir -p /var/www/evanlori.com/releases/20250521182132 )
+  INFO [57d66774] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [cefa2eef] Running /usr/bin/env git archive master _site | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/evanlori.com/releases/20250521182132 as deploy@104.236.44.151
+ DEBUG [cefa2eef] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env git archive master _site | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/evanlori.com/releases/20250521182132 )
+  INFO [cefa2eef] Finished in 0.892 seconds with exit status 0 (successful).
+ DEBUG [ff588e3a] Running if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [ff588e3a] Command: if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi
+ DEBUG [ff588e3a] Finished in 0.737 seconds with exit status 0 (successful).
+ DEBUG [14f0b3fb] Running /usr/bin/env git rev-list --max-count=1 master as deploy@104.236.44.151
+ DEBUG [14f0b3fb] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [14f0b3fb] 	8455ac4d31a6a6fc0d43b002824ed2936733f7b1
+ DEBUG [14f0b3fb] Finished in 1.027 seconds with exit status 0 (successful).
+ DEBUG [6277e213] Running if test ! -d /var/www/evanlori.com/releases/20250521182132; then echo "Directory does not exist '/var/www/evanlori.com/releases/20250521182132'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [6277e213] Command: if test ! -d /var/www/evanlori.com/releases/20250521182132; then echo "Directory does not exist '/var/www/evanlori.com/releases/20250521182132'" 1>&2; false; fi
+ DEBUG [6277e213] Finished in 1.025 seconds with exit status 0 (successful).
+  INFO [bbb1d9dd] Running /usr/bin/env echo "8455ac4d31a6a6fc0d43b002824ed2936733f7b1" > REVISION as deploy@104.236.44.151
+ DEBUG [bbb1d9dd] Command: cd /var/www/evanlori.com/releases/20250521182132 && /usr/bin/env echo "8455ac4d31a6a6fc0d43b002824ed2936733f7b1" > REVISION
+  INFO [bbb1d9dd] Finished in 1.019 seconds with exit status 0 (successful).
+ DEBUG [5da49375] Running if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [5da49375] Command: if test ! -d /var/www/evanlori.com/repo; then echo "Directory does not exist '/var/www/evanlori.com/repo'" 1>&2; false; fi
+ DEBUG [5da49375] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [3caca70b] Running /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" master as deploy@104.236.44.151
+ DEBUG [3caca70b] Command: cd /var/www/evanlori.com/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4a585c5164f82004c1dc.sh" ; /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" master )
+ DEBUG [3caca70b] 	1747851634
+ DEBUG [3caca70b] Finished in 0.819 seconds with exit status 0 (successful).
+ DEBUG [f98630cb] Running if test ! -d /var/www/evanlori.com/releases/20250521182132; then echo "Directory does not exist '/var/www/evanlori.com/releases/20250521182132'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [f98630cb] Command: if test ! -d /var/www/evanlori.com/releases/20250521182132; then echo "Directory does not exist '/var/www/evanlori.com/releases/20250521182132'" 1>&2; false; fi
+ DEBUG [f98630cb] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [407aeb13] Running /usr/bin/env echo "1747851634" > REVISION_TIME as deploy@104.236.44.151
+ DEBUG [407aeb13] Command: cd /var/www/evanlori.com/releases/20250521182132 && /usr/bin/env echo "1747851634" > REVISION_TIME
+  INFO [407aeb13] Finished in 0.828 seconds with exit status 0 (successful).
+  INFO [d9c06c42] Running /usr/bin/env ln -s /var/www/evanlori.com/releases/20250521182132 /var/www/evanlori.com/releases/current as deploy@104.236.44.151
+ DEBUG [d9c06c42] Command: /usr/bin/env ln -s /var/www/evanlori.com/releases/20250521182132 /var/www/evanlori.com/releases/current
+  INFO [d9c06c42] Finished in 1.013 seconds with exit status 0 (successful).
+  INFO [2aa3c014] Running /usr/bin/env mv /var/www/evanlori.com/releases/current /var/www/evanlori.com as deploy@104.236.44.151
+ DEBUG [2aa3c014] Command: /usr/bin/env mv /var/www/evanlori.com/releases/current /var/www/evanlori.com
+  INFO [2aa3c014] Finished in 1.026 seconds with exit status 0 (successful).
+ DEBUG [b77d9d43] Running /usr/bin/env ls -x /var/www/evanlori.com/releases as deploy@104.236.44.151
+ DEBUG [b77d9d43] Command: /usr/bin/env ls -x /var/www/evanlori.com/releases
+ DEBUG [b77d9d43] 	20230612024404	20230612175502	20230614033228	20230616023604	20250521165241
+20250521182132
+ DEBUG [b77d9d43] Finished in 0.816 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 104.236.44.151
+ DEBUG [3d299bb1] Running [ -d /var/www/evanlori.com/current ] as deploy@104.236.44.151
+ DEBUG [3d299bb1] Command: [ -d /var/www/evanlori.com/current ]
+ DEBUG [3d299bb1] Finished in 0.822 seconds with exit status 0 (successful).
+ DEBUG [989c84ca] Running /usr/bin/env readlink /var/www/evanlori.com/current as deploy@104.236.44.151
+ DEBUG [989c84ca] Command: /usr/bin/env readlink /var/www/evanlori.com/current
+ DEBUG [989c84ca] 	/var/www/evanlori.com/releases/20250521182132
+ DEBUG [989c84ca] Finished in 0.816 seconds with exit status 0 (successful).
+  INFO [24ae1bb0] Running /usr/bin/env rm -rf /var/www/evanlori.com/releases/20230612024404 as deploy@104.236.44.151
+ DEBUG [24ae1bb0] Command: /usr/bin/env rm -rf /var/www/evanlori.com/releases/20230612024404
+  INFO [24ae1bb0] Finished in 1.028 seconds with exit status 0 (successful).
+ DEBUG [c00dc708] Running if test ! -d /var/www/evanlori.com/releases; then echo "Directory does not exist '/var/www/evanlori.com/releases'" 1>&2; false; fi as deploy@104.236.44.151
+ DEBUG [c00dc708] Command: if test ! -d /var/www/evanlori.com/releases; then echo "Directory does not exist '/var/www/evanlori.com/releases'" 1>&2; false; fi
+ DEBUG [c00dc708] Finished in 0.817 seconds with exit status 0 (successful).
+  INFO [c3b2c695] Running /usr/bin/env echo "Branch master (at 8455ac4d31a6a6fc0d43b002824ed2936733f7b1) deployed as release 20250521182132 by elm" >> /var/www/evanlori.com/revisions.log as deploy@104.236.44.151
+ DEBUG [c3b2c695] Command: cd /var/www/evanlori.com/releases && /usr/bin/env echo "Branch master (at 8455ac4d31a6a6fc0d43b002824ed2936733f7b1) deployed as release 20250521182132 by elm" >> /var/www/evanlori.com/revisions.log
+  INFO [c3b2c695] Finished in 1.021 seconds with exit status 0 (successful).
