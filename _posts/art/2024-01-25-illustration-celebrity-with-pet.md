@@ -2,7 +2,7 @@
 layout: art-post
 title: Illustration Celebrity with Pet
 images:
-  - public_id: portfolio/illustration-celebrety-with-pet
+  - public_id: portfolio/illustration-celebrity-with-pet
 categories: [art, digital]
 tags: [black-and-white, illustration, likeness, procreate]
 date: 2024-01-25
