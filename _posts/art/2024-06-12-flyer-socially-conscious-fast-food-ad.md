@@ -1,6 +1,6 @@
 ---
 layout: art-post
-title: "Flyer Socially-Conscious Fast Food Ad"
+title: "Flyer Socially-Conscious Ad"
 
 images:
   - public_id: portfolio/flyer-socially-conscious-fast-food-ad

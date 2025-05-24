@@ -13,6 +13,11 @@
 	{ "category": "art", "name": "aseprite", "href": "/art/tags/aseprite", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "procreate", "href": "/art/tags/procreate", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "gimp", "href": "/art/tags/gimp", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "blender", "href": "/art/tags/blender", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "cutting-machine", "href": "/art/tags/cutting-machine", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "paper", "href": "/art/tags/paper", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "synthetic-surfaces", "href": "/art/tags/synthetic-surfaces", "type": "media", "color": "primary"},	
+
 
 	{ "category": "art", "name": "color", "href": "/art/tags/color", "type": "color", "color": "info" },
 	{ "category": "art", "name": "black-and-white", "href": "/art/tags/black-and-white", "type": "color", "color": "info" },
@@ -48,6 +53,7 @@
 	{ "category": "art", "name": "mental-illness", "href": "/art/tags/mental-illness", "type": "topic", "color": "warning" },
 	{ "category": "art", "name": "fishlecia", "href": "/art/tags/fishlecia", "type": "topic", "color": "warning" },
 	{ "category": "art", "name": "oc", "href": "/art/tags/oc", "type": "topic", "color": "warning" },
+	{ "category": "art", "name": "likeness", "href": "/art/tags/likeness", "type": "topic", "color": "warning" },
 
 	{ "category": "code", "name": "html", "href": "/code/tags/html", "type": "language", "color": "primary" },
 	{ "category": "code", "name": "js", "href": "/code/tags/js", "type": "language", "color": "primary" },

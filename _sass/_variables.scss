@@ -1,13 +1,10 @@
-// modified from https://github.com/jenil/bulmaswatch -- darkly theme
-
-@import "sass-material-colors/_sass-material-colors";
 @import "open-color/open-color";
 
 $white-ter: $oc-gray-0;
-$grey-lighter: $oc-gray-1;
-$grey-light: $oc-gray-3;
-$grey: $oc-gray-5;
-$grey-dark: $oc-gray-7;
+$grey-lighter: $oc-gray-2;
+$grey-light: $oc-gray-4;
+$grey: $oc-gray-6;
+$grey-dark: $oc-gray-8;
 $grey-darker: $oc-gray-9;
 
 $orange: $oc-orange-6;
@@ -17,7 +14,9 @@ $turquoise: $oc-teal-6;
 $blue: $oc-blue-6;
 $cyan: $oc-cyan-6;
 $purple: $oc-grape-6;
+$violet: $oc-violet-6;
 $red: $oc-red-6;
+$pink: $oc-pink-6;
 
 $yellow-invert: #fff;
 $blue-invert: #fff;
@@ -25,17 +24,17 @@ $purple-invert: #fff;
 $red-invert: #fff;
 
 
-$primary: $green !default;
-$info: $purple !default;
-$success: $blue !default;
+$primary: $pink !default;
+$info: $green !default;
+$success: $violet !default;
 $warning: $yellow !default;
-$danger: $red !default;
+$danger: $cyan !default;
 $info-invert: $purple-invert !default;
 $success-invert: $blue-invert !default;
 $warning-invert: $yellow-invert !default;
 $danger-invert: $red-invert !default;
 
-$family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-monospace: "Inconsolata", "Consolas", "Monaco", monospace;
 
 $radius-small: 0px;
@@ -65,7 +64,7 @@ $text: #fff;
 $text-light: lighten($text, 10);
 $text-strong: darken($text, 5);
 
-$link: $turquoise;
+$link: $primary;
 $link-hover: lighten($link, 5);
 $link-focus: darken($link, 5);
 $link-active: darken($link, 5);

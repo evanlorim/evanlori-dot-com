@@ -7,11 +7,12 @@
   "private": false,
   "dependencies": {
     "Font-Awesome": "https://github.com/FortAwesome/Font-Awesome",
+    "bootstrap": "^5.3.6",
     "bulma": "^0.6.2",
     "bulma-carousel": "^1.0.11",
     "bulma-divider": "^1.0.1",
     "jquery": "^3.3.1",
-    "sass-material-colors": "^0.0.5",
-    "open-color": "^1.9.1"
+    "open-color": "^1.9.1",
+    "sass-material-colors": "^0.0.5"
   }
 }
