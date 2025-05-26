@@ -12,19 +12,19 @@ end
 # Bulma 
 
 copy_files_task_factory('node_modules/bulma/sass', '_sass/bulma', 'copy_bulma_a')
-copy_files_task_factory('node_modules/bulma/bulma.sass', '_sass/bulma', 'copy_bulma_b')
+copy_files_task_factory('node_modules/bulma/bulma.scss', '_sass/bulma', 'copy_bulma_b')
 
 desc "copy bulma libs"
 task :copy_bulma do
-	Rake::Task['copy_bulma_a']
-	Rake::Task['copy_bulma_b']
+	Rake::Task['copy_bulma_a'].execute
+	Rake::Task['copy_bulma_b'].execute
 end
 
 desc "delete bulma files"
 task :delete_bulma do
     FileUtils.remove_dir("_sass/bulma")
-    FileUtils.remove_file("_sass/bulma.sass")
-    puts("deleted _sass/bulma and _/sass/bulma.sass")
+    FileUtils.remove_file("_sass/bulma/bulma.scss")
+    puts("deleted _sass/bulma and _/sass/bulma.scss")
 end
 
 
@@ -35,8 +35,8 @@ copy_files_task_factory('node_modules/Font-Awesome/webfonts', 'assets', 'copy_fo
 
 desc "copy fontawesome libs"
 task :copy_font_awesome do
-	Rake::Task['copy_font_awesome_a']
-	Rake::Task['copy_font_awesome_b']
+	Rake::Task['copy_font_awesome_a'].execute
+	Rake::Task['copy_font_awesome_b'].execute
 end
 
 desc "delete font-awesome"
@@ -72,8 +72,8 @@ copy_files_task_factory('node_modules/bulma-carousel/dist/bulma-carousel.js', 'j
 
 desc "copy bulma-carousel libs"
 task :copy_bulma_carousel do
-	Rake::Task['copy_bulma_carousel_css']
-	Rake::Task['copy_bulma_carousel_js']
+	Rake::Task['copy_bulma_carousel_css'].execute
+	Rake::Task['copy_bulma_carousel_js'].execute
 end
 
 desc "delete bulma-carousel"
