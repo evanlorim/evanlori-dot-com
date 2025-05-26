@@ -2,36 +2,27 @@
 # yarn lockfile v1
 
 
-"Font-Awesome@https://github.com/FortAwesome/Font-Awesome":
-  version "0.0.0"
-  resolved "https://github.com/FortAwesome/Font-Awesome#31281606f5205b0191c17c3b4d2d56e1ddbb2dc6"
-
-bootstrap@^5.3.6:
-  version "5.3.6"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.6.tgz#fbd91ebaff093f5b191a1c01a8c866d24f9fa6e1"
-  integrity sha512-jX0GAcRzvdwISuvArXn3m7KZscWWFAf1MKBcnzaN02qWMb3jpMoUX4/qgeiGzqyIb4ojulRzs89UCUmGcFSzTA==
-
 bulma-carousel@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/bulma-carousel/-/bulma-carousel-1.0.11.tgz#6a57069afed0377d2e45ee8bf2ff5c75c198075e"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bulma-carousel/-/bulma-carousel-1.1.0.tgz#9eef5a5242ed7c2c0954cb3f1f4e4fd7a3ca261b"
+  integrity sha512-6dIWf3KC4csitYu/00QE5PL0HPg1Gdem06dhjlwe643oF6Dk87FBeKfmPFl1aFGmZ4T6fUyS3xCSxTMBsA3PzA==
 
 bulma-divider@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-1.0.1.tgz#9b5e537f812b1090033745c6b993253f8e5f429f"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-1.0.5.tgz#28ab1b3517f155593001e3513aaec3c3d957978a"
+  integrity sha512-JmVEOoDCLVu23Vtc9/JC+WZk3qtzlx2Ge+KExgTkwbpDNLMtp6AVTn9H0iBoXu/S2qM/XxZBHGVoRSmkFcK6tg==
 
 bulma@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.6.2.tgz#f4b1d11d5acc51a79644eb0a2b0b10649d3d71f5"
+  integrity sha512-yafowWQ41npuzO9UFIO22Yquc1pKtUU2fDULJwl6ouRsuMJWGdjukfzpHr7uyhiz59vfhMsAt7F0D06l0NsW5w==
 
 jquery@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
+  integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
 
 open-color@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/open-color/-/open-color-1.9.1.tgz#a6e6328f60eff7aa60e3e8fcfa50f53ff3eece35"
   integrity sha512-vCseG/EQ6/RcvxhUcGJiHViOgrtz4x0XbZepXvKik66TMGkvbmjeJrKFyBEx6daG5rNyyd14zYXhz0hZVwQFOw==
-
-sass-material-colors@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/sass-material-colors/-/sass-material-colors-0.0.5.tgz#b944539236c94e2d4ece35d2ee3fa22f10b2ed43"
