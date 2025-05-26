@@ -4,7 +4,7 @@ title: "Illustration Bruised All Over"
 subtitle: "Illustration prompt."
 images:
   - public_id: portfolio/illustration-bruised-all-over
-categories: [art, traditional]
+categories: [art, digital]
 tags: [figure-drawing, realism, color, oil-pastels]
 date: 2024-04-15
 featured: false

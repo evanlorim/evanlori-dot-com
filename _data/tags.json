@@ -1,5 +1,7 @@
 [
+	{ "category": "art", "name": "mixed-media", "href": "/art/tags/mixed-media", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "pen-and-ink", "href": "/art/tags/pen-and-ink", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "color-pencils", "href": "/art/tags/pen-and-ink", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "markers", "href": "/art/tags/markers", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "multimedia", "href": "/art/tags/multimedia", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "vector", "href": "/art/tags/vector", "type": "media", "color": "primary"},
@@ -8,7 +10,9 @@
 	{ "category": "art", "name": "oil-pastels", "href": "/art/tags/oil-pastels", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "pigment-pens", "href": "/art/tags/pigment-pens", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "watercolor", "href": "/art/tags/watercolor", "type": "media", "color": "primary"},
-	{ "category": "art", "name": "acrylic", "href": "/art/tags/acrylic", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "acrylic-paint", "href": "/art/tags/acrylic", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "oil-paint", "href": "/art/tags/acrylic", "type": "media", "color": "primary"},
+	{ "category": "art", "name": "gouache", "href": "/art/tags/acrylic", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "inkscape", "href": "/art/tags/inkscape", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "aseprite", "href": "/art/tags/aseprite", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "procreate", "href": "/art/tags/procreate", "type": "media", "color": "primary"},
@@ -17,7 +21,7 @@
 	{ "category": "art", "name": "cutting-machine", "href": "/art/tags/cutting-machine", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "paper", "href": "/art/tags/paper", "type": "media", "color": "primary"},
 	{ "category": "art", "name": "synthetic-surfaces", "href": "/art/tags/synthetic-surfaces", "type": "media", "color": "primary"},	
-
+	{ "category": "art", "name": "paint-markers", "href": "/art/tags/paint-markers", "type": "media", "color": "primary"},
 
 	{ "category": "art", "name": "color", "href": "/art/tags/color", "type": "color", "color": "info" },
 	{ "category": "art", "name": "black-and-white", "href": "/art/tags/black-and-white", "type": "color", "color": "info" },
@@ -36,6 +40,7 @@
 	{ "category": "art", "name": "portrait", "href": "/art/tags/portrait", "type": "type", "color": "success" },
 	{ "category": "art", "name": "pamphlet", "href": "/art/tags/pamphlet", "type": "type", "color": "success" },
 	{ "category": "art", "name": "character-sheet", "href": "/art/tags/character-sheet", "type": "type", "color": "success" },
+	{ "category": "art", "name": "wordart", "href": "/art/tags/wordart", "type": "type", "color": "success" },
 
 	{ "category": "art", "name": "abstract", "href": "/art/tags/abstract", "type": "style", "color": "danger" },
 	{ "category": "art", "name": "surreal", "href": "/art/tags/surreal", "type": "style", "color": "danger" },
