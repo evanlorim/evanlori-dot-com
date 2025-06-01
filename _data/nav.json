@@ -4,39 +4,10 @@
 		"href": "/"
 	},
 	{
-		"title": "Art",
-		"href": "/art",
+		"title": "Portfolio",
+		"href": "/portfolio",
 		"links": [
-			{
-				"title": "Latest",
-				"href": "/art/"
-			},
-			{
-				"title": "Digital",
-				"href": "/art/digital/"
-			},
-			{
-				"title": "Traditional",
-				"href": "/art/traditional/"
-			}
-		]
-	},
-	{
-		"title": "Code",
-		"href": "/code",
-		"links": [
-			{
-				"title": "Latest",
-				"href": "/code/"
-			},
-			{
-				"title": "Backend",
-				"href": "/code/backend/"
-			},
-			{
-				"title": "Frontend",
-				"href": "/code/frontend/"
-			}
+
 		]
 	},
 	{
@@ -60,10 +31,6 @@
 				"href": "/work#experience"
 			}
 		]
-	},
-	{
-		"title": "Services",
-		"href": "/services"
 	},
 	{
 		"title": "Contact",

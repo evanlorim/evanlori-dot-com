@@ -1,35 +1,29 @@
 {
-	"facebook": {
-		"href": "https://www.facebook.com/evanlorim/",
-		"icon": "fab fa-facebook"
-	},
-	"twitter": {
-		"href": "https://twitter.com/evanlorim",
-		"icon": "fab fa-twitter"
+	"github": {
+		"href": "https://github.com/evanlorim",
+		"icon": "fab fa-github",
+		"title": "Github" 
 	},
 	"patreon": {
 		"href": "https://www.patreon.com/evanlorim",
-		"icon": "fab fa-patreon"
+		"icon": "fab fa-patreon",
+		"title": "Patreon"
 	},
-	"linkedin": {
-		"href": "https://www.linkedin.com/in/evan-lori-mahone-71607783/",
-		"icon": "fab fa-linkedin"
-	},
-	"github": {
-		"href": "https://github.com/evanlorim",
-		"icon": "fab fa-github"
-	},
-	"instagram": {
-		"href": "https://instagram.com/evanlorim/",
-		"icon": "fab fa-instagram"
-	},
+
 	"paypal": {
 		"href": "https://paypal.me/EvanLori",
-		"icon": "fab fa-paypal"
+		"icon": "fab fa-paypal",
+		"title": "Paypal"
+	},
+	"itch-io": {
+		"href": "https://evanlorim.itch.io/",
+		"icon": "fab fa-itch-io",
+		"title": "Itch.io"
 	},
 	"email": {
 		"address": "evan@evanlori.com",
 		"href": "mailto:evan@evanlori.com",
-		"icon": "fas fa-envelope"
+		"icon": "fas fa-envelope",
+		"title": "Email"
 	}
 }

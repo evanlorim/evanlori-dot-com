@@ -30,8 +30,8 @@ end
 
 # FontAwesome
 
-copy_files_task_factory('node_modules/Font-Awesome/css/all.css', 'assets/css', 'copy_font_awesome_a')
-copy_files_task_factory('node_modules/Font-Awesome/webfonts', 'assets', 'copy_font_awesome_b')
+copy_files_task_factory('node_modules/fontawesome-free/css/all.css', 'assets/css', 'copy_font_awesome_a')
+copy_files_task_factory('node_modules/fontawesome-free/webfonts', 'assets', 'copy_font_awesome_b')
 
 desc "copy fontawesome libs"
 task :copy_font_awesome do

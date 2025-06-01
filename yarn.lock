@@ -2,25 +2,15 @@
 # yarn lockfile v1
 
 
-bulma-carousel@^1.0.11:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/bulma-carousel/-/bulma-carousel-1.1.0.tgz#9eef5a5242ed7c2c0954cb3f1f4e4fd7a3ca261b"
-  integrity sha512-6dIWf3KC4csitYu/00QE5PL0HPg1Gdem06dhjlwe643oF6Dk87FBeKfmPFl1aFGmZ4T6fUyS3xCSxTMBsA3PzA==
-
-bulma-divider@^1.0.1:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-1.0.5.tgz#28ab1b3517f155593001e3513aaec3c3d957978a"
-  integrity sha512-JmVEOoDCLVu23Vtc9/JC+WZk3qtzlx2Ge+KExgTkwbpDNLMtp6AVTn9H0iBoXu/S2qM/XxZBHGVoRSmkFcK6tg==
-
 bulma@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-1.0.4.tgz#942dc017a3a201fa9f0e0c8db3dd52f3cff86712"
   integrity sha512-Ffb6YGXDiZYX3cqvSbHWqQ8+LkX6tVoTcZuVB3lm93sbAVXlO0D6QlOTMnV6g18gILpAXqkG2z9hf9z4hCjz2g==
 
-jquery@^3.3.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
-  integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
+fontawesome-free@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/fontawesome-free/-/fontawesome-free-1.0.4.tgz#c7c499708dabd59eb5dedf232b590a862e05957b"
+  integrity sha512-7sX6Lbg2oQiClFFFFitJlKg20h3YTBON6rdmq3uGjNwDo8G6EjF2bfj2OjjcCUmf4OvZCgyHaXfW2JseqissLw==
 
 open-color@^1.9.1:
   version "1.9.1"

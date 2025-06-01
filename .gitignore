@@ -1,6 +1,8 @@
+.code-workspace
 .sass-cache
 .jekyll-metadata
 .env
 .tmp
+.prettierrc
 log
 node_modules

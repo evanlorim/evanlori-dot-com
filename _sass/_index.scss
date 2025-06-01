@@ -1,0 +1,11 @@
+@use "components/patterns" with  (
+    $fg: #2e333d,
+    $bg: #00d1b2,
+    $size: 12px
+);
+
+@use "bulma/sass" with (
+    $family-primary: '"Lexend", sans-serif',
+);
+
+@import url("https://fonts.googleapis.com/css?family=Lexend:400,700");
