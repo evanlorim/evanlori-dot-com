@@ -1,16 +1,27 @@
-<nav class="navbar">
-	<div class="container">
-		<div id="navMenu" class="navbar-menu">
-			<div class="navbar-start">
-				{% for item in site.nav %}
-				<a class="navbar-item" href="{{item.href}}">{{item.title}}</a>
-				{% endfor %}
-			</div>
-			<div class="navbar-end">
-				<div class="navbar-item">
-					<div class="buttons"></div>
+<nav
+	class="navbar has-border-bottom-2"
+	role="navigation"
+	aria-label="main-navigation"
+>
+	<div class="navbar-brand">
+		<a class="navbar-item" href="/">{{ site.title_short }}</a>
+	</div>
+	<div class="navbar-menu">
+		<div class="navbar-end">
+			{% for pg in site.data.pages %} {% if pg.subpages %}
+			<div class="navbar-item has-dropdown is-hoverable">
+				<a class="navbar-link" href="{{ pg.href }}">{{ pg.title }}</a>
+				<div class="navbar-dropdown has-border-2">
+					{% for sub_pg in pg.subpages %}
+					<a class="navbar-item" href="{{  sub_pg.href }}"
+						>{{ sub_pg.title }}</a
+					>
+					{% endfor %}
 				</div>
 			</div>
+			{% else %}
+			<a class="navbar-item" href="{{ pg.href }}">{{ pg.title }}</a>
+			{% endif %} {% endfor %}
 		</div>
 	</div>
 </nav>

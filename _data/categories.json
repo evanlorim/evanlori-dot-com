@@ -1,38 +1,22 @@
-[
-	{
-		"tab-title": "Latest",
-		"category": "art",
-		"href": "/art/"
-	},
-	{
-		"tab-title": "Digital",
-		"category": "art",
-		"subcategory": "digital",
-		"href": "/art/digital/"
-	},
-	{
-		"tab-title": "Traditional",
-		"category": "art",
-		"subcategory": "traditional",
-		"href": "/art/traditional/"
-	},
-	{
-		"tab-title": "Latest",
-		"category": "code",
-		"href": "/code/"
-	},
-	{
-		"tab-title": "Backend",
-		"category": "code",
-		"subcategory": "backend",
-		"href": "/code/backend/",
-		"icon": "fas fa-code"
-	},
-	{
-		"tab-title": "Frontend",
-		"category": "code",
-		"subcategory": "frontend",
-		"href": "/code/frontend/",
-		"icon": "fas fa-globe"
-	},
+[   
+    {
+        "uid": "art",
+        "title": "Art",
+        "href": "/portfolio/category/art"
+    },
+    {
+        "uid": "code",
+        "title": "Code",
+        "href": "/portfolio/category/code"
+    },
+    {
+        "uid": "resource",
+        "title": "Resources",
+        "href": "/portfolio/category/resource"
+    },
+    {
+        "uid": "sketch",
+        "title": "Sketchbook",
+        "href": "/portfolio/category/sketch"
+    }
 ]

@@ -1,13 +1,13 @@
 {
-  "name": "evanlorim.github.io",
-  "version": "1.0.0",
-  "repository": "https://github.com/evanlorim/evanlorim.github.io",
+  "name": "evanlori-dot-com",
+  "version": "2.0.0",
+  "description": "Evan Lori Mahone's personal website",
+  "main": "none",
+  "repository": "https://github.com/evanlorim/evanlori-dot-com.git",
   "author": "Evan Lori Mahone",
   "license": "GPL3",
   "private": false,
   "dependencies": {
-    "bulma": "^1.0.4",
-    "fontawesome-free": "^1.0.4",
-    "open-color": "^1.9.1"
+    "bulma": "^1.0.4"
   }
 }

@@ -1,7 +1,0 @@
-[
-	{"title": "Art Commisions", "icon": "fas fa-paint-brush", "color": "primary", "description": "I take commissions for digital and hand-drawn art."},
-	{"title": "Prints", "icon": "fas fa-file", "color": "success", "description": "Ask me if I can make you a print of one of my pieces."},
-	{"title": "Web Design", "icon": "fas fa-globe", "color": "warning", "description": "I do front-end and back-end as well as full stack development."},
-	{"title": "Button Making", "icon": "fas fa-user-circle", "color": "info", "description": "I design and print and press 1-inch buttons in batches"},
-	{"title": "Programming", "icon": "fas fa-code", "color": "danger", "description": "I specialize in data-science. Python, and R are my favorites."}
-]

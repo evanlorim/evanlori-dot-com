@@ -1,11 +1,57 @@
-@use "components/patterns" with  (
-    $fg: #2e333d,
-    $bg: #00d1b2,
-    $size: 12px
+@use "variables";
+
+// BULMA STUFF
+
+@use "bulma/sass/utilities" with (
+    $link: variables.$primary
 );
 
-@use "bulma/sass" with (
-    $family-primary: '"Lexend", sans-serif',
-);
 
-@import url("https://fonts.googleapis.com/css?family=Lexend:400,700");
+@forward "bulma/sass/base";
+@forward "bulma/sass/components/card";
+@forward "bulma/sass/components/breadcrumb";
+@forward "bulma/sass/components/modal";
+@forward "bulma/sass/components/navbar";
+@forward "bulma/sass/components/pagination";
+@use "bulma/sass/components/panel" with (
+    $panel-shadow: variables.$panel-shadow
+);
+@forward "bulma/sass/components/tabs";
+
+@forward "bulma/sass/elements/block";
+@use "bulma/sass/elements/box" with (
+    $box-shadow: variables.$box-shadow
+);
+@forward "bulma/sass/elements/button";
+@forward "bulma/sass/elements/content";
+@forward "bulma/sass/elements/icon";
+@forward "bulma/sass/elements/image";
+@forward "bulma/sass/elements/tag";
+@forward "bulma/sass/elements/title";
+
+@forward "bulma/sass/grid";
+
+@forward "bulma/sass/helpers/aspect-ratio";
+@forward "bulma/sass/helpers/border";
+@forward "bulma/sass/helpers/color";
+@forward "bulma/sass/helpers/flexbox";
+@forward "bulma/sass/helpers/gap";
+@forward "bulma/sass/helpers/other";
+@forward "bulma/sass/helpers/overflow";
+@forward "bulma/sass/helpers/position";
+@forward "bulma/sass/helpers/spacing";
+@forward "bulma/sass/helpers/typography";
+@forward "bulma/sass/helpers/visibility";
+
+@forward "bulma/sass/layout/container";
+@forward "bulma/sass/layout/footer";
+@forward "bulma/sass/layout/hero";
+@forward "bulma/sass/layout/level";
+@forward "bulma/sass/layout/media";
+@forward "bulma/sass/layout/section";
+
+@forward "bulma/sass/themes";
+
+@use "components/helpers";
+
+// font go here

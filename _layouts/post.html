@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% include hero.html title=page.title subtitle=page.subtitle %}
+
+<section class="section">
+    {% include post/image-grid.html images=page.images.feature %}
+</section>
+<section class="section">
+    <p class="subtitle is-5"><time datetime="2016-1-1">{{ page.date | date_to_long_string | upcase }}</time></p>
+    <div class="content is-size-6">
+        {{ content }}
+    </div>
+    <hr class="is-divider"></hr>
+    <p>
+        <span class="has-text-weight-bold is-size-6">Categories: </span>
+        {% for category in page.categories %}
+            {% assign category_data = site.data.categories | where: "uid", category | first %}
+            <span class="tag"><a href="{{ category_data.href }}">{{ category }}</a></span>
+        {% endfor %}
+    </p>
+    <p class="pt-3">
+        <span class="has-text-weight-bold is-size-6">Tags: </span>
+        {% for tag in page.tags %}
+            {% assign tag_data = site.data.tags | where: "uid", tag | first %}
+            <span class="tag"><a href="{{ tag_data.href }}">{{ tag }}</a></span>
+        {% endfor %}
+    </p>
+</section>

@@ -7,22 +7,25 @@ description: >-
 url: "http://evanlori.com"
 cloud_name: "evanlori"
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - LICENSE
-  - package.json
-  - yarn.lock
-  - tasks
-  - Rakefile
-  - .env
-  - .tmp
-
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-paginate-v2
+  
+permalink: /portfolio/posts/:year/:month/:title.html
+
+exclude:
+  - .jekyll-cache/
+  - .sass-cache/
+  - .vscode/
+  - node_modules/
+  - tasks/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - package.json
+  - Rakefile
+  - yarn.lock
 
 sass:
   style: expanded
@@ -32,7 +35,6 @@ pagination:
   enabled: true
   per_page: 6
   limit: 0
-  permalink: '/page/:num/'
   sort_field: 'date'
   sort_reverse: true
   trail:
