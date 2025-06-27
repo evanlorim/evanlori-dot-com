@@ -2,17 +2,14 @@ title: Evan Lori Mahone
 title_short: ELM
 subtitle: "Artist. Programmer. Advocate."
 location: "Baltimore, MD"
-description: >-
-  Evan Lori Mahone's website.
+description: "Evan Lori Mahone's website."
 url: "http://evanlori.com"
 cloud_name: "evanlori"
-
+  
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-paginate-v2
-  
-permalink: /portfolio/posts/:year/:month/:title.html
 
 exclude:
   - .jekyll-cache/
@@ -31,9 +28,11 @@ sass:
   style: expanded
   sass_dir: _sass
 
+permalink: /portfolio/posts/:year/:month/:title.html
+
 pagination:
   enabled: true
-  per_page: 6
+  per_page: 12
   limit: 0
   sort_field: 'date'
   sort_reverse: true

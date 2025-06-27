@@ -3,6 +3,15 @@
         "*.html": "liquid",
         "*.md": "liquid"
     },
+    "files.exclude": {
+        ".vscode/": true,
+        ".jekyll-cache/": true,
+        "node_modules/": true,
+        "Gemfile.lock": true,
+        "yarn.lock": true,
+        "_site": true,
+        "LICENSE": true
+    },
     "workbench.colorTheme": "Default Dark+",
     "[markdown]": {
         "editor.tabSize": 2,

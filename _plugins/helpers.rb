@@ -1,4 +1,3 @@
-require 'cloudinary'
 module Helpers
     
     def regex_match(input, pattern)
