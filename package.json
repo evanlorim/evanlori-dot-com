@@ -8,6 +8,7 @@
   "license": "GPL3",
   "private": false,
   "dependencies": {
-    "bulma": "^1.0.4"
+    "bulma": "^1.0.4",
+    "simple-icons-font": "^15.3.0"
   }
 }

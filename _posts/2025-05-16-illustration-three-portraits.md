@@ -2,7 +2,6 @@
 layout: post
 title: "Illustration: Three Portraits"
 categories: [art]
-date: 2025-05-16
 images:
   thumb: 
       id: portfolio/illustration-three-portraits/illustration-three-portraits-thumbnail

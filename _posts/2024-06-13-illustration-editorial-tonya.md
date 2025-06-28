@@ -2,7 +2,6 @@
 layout: post
 title: "Editorial Illustration: Tonya Harding"
 categories: [art]
-date: 2024-06-13
 images:
   thumb:
       id: portfolio/illustration-editorial-tonya/illustration-editorial-tonya-thumbnail

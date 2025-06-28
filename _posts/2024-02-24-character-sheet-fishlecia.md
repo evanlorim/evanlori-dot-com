@@ -2,7 +2,6 @@
 layout: post
 title: "Character Sheet: Fishlecia"
 categories: [art]
-date: 2024-02-24
 tags:
   - school
   - color

@@ -2,7 +2,6 @@
 layout: post
 title: "Illustration: Celebrity with Pet"
 categories: [art]
-date: 2024-02-07
 images:
   thumb:
       id: portfolio/illustration-celebrity-with-pet/illustration-celebrity-with-pet-thumbnail

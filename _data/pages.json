@@ -5,12 +5,16 @@
     },
     {
         "title": "About",
-        "href": "/"
+        "href": "/about"
     },
     {
         "title": "Portfolio",
         "href": "/portfolio",
         "subpages": [
+            {
+                "title": "All",
+                "href": "/portfolio"
+            },
             {
                 "title": "Art",
                 "href": "/portfolio/category/art"

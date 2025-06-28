@@ -2,7 +2,6 @@
 layout: post
 title: "Illustration: Bruised all Over"
 categories: [art]
-date: 2024-02-07
 tags:
   - school
   - black-and-white

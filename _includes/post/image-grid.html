@@ -1,8 +1,8 @@
+
     <div class="grid">
         {% for image in include.images %}
             {% assign url = image.id | image_url: site.cloud_name %}
-            <div class="cell is-col-span-2">
-                <image class="image" src="{{ url }}"></image>
-            </div>
+            {% include post/modal-image.html id=image.id src=url %}
+            {% include post/image-cell.html id=image.id src=url %}
         {% endfor %}
     </div>

@@ -2,7 +2,6 @@
 layout: post
 title: "Project: Figures in Space"
 categories: [art]
-date: 2023-09-12
 tags:
   - school
   - colored-pencils

@@ -1,12 +1,16 @@
-title: Evan Lori Mahone
 title_short: ELM
-subtitle: "Artist. Programmer. Advocate."
-location: "Baltimore, MD"
+title: Evan Lori Mahone
 description: "Evan Lori Mahone's website."
 url: "http://evanlori.com"
-cloud_name: "evanlori"
-  
+
+fullname: Evan Lori Mahone
+location: "Baltimore, MD"
+
+license: GPL3
+license_link: "https://www.gnu.org/licenses/gpl-3.0-standalone.html"
+
 # Build settings
+cloud_name: "evanlori"
 markdown: kramdown
 plugins:
   - jekyll-paginate-v2
@@ -17,6 +21,7 @@ exclude:
   - .vscode/
   - node_modules/
   - tasks/
+  - populate_images.fish
   - Gemfile
   - Gemfile.lock
   - LICENSE
