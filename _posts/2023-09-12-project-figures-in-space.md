@@ -3,6 +3,7 @@ layout: post
 title: "Project: Figures in Space"
 categories: [art]
 tags:
+  - elm
   - school
   - colored-pencils
   - gouache

@@ -3,9 +3,9 @@
 // BULMA STUFF
 
 @use "bulma/sass/utilities" with (
-    $link: variables.$primary
+	$family-primary: variables.$family-primary,
+	$link: variables.$primary
 );
-
 
 @forward "bulma/sass/base";
 @forward "bulma/sass/components/card";
@@ -14,13 +14,13 @@
 @forward "bulma/sass/components/navbar";
 @forward "bulma/sass/components/pagination";
 @use "bulma/sass/components/panel" with (
-    $panel-shadow: variables.$panel-shadow
+	$panel-shadow: variables.$panel-shadow
 );
 @forward "bulma/sass/components/tabs";
 
 @forward "bulma/sass/elements/block";
 @use "bulma/sass/elements/box" with (
-    $box-shadow: variables.$box-shadow
+	$box-shadow: variables.$box-shadow
 );
 @forward "bulma/sass/elements/button";
 @forward "bulma/sass/elements/content";
@@ -55,3 +55,5 @@
 @use "components/helpers";
 
 // font go here
+@import url(variables.$family-primary-url);
+// @import url(variables.$family-secondary-url);

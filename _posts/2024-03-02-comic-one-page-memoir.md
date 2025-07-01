@@ -8,6 +8,7 @@ images:
   feature:
     - id: portfolio/comic-one-page-memoir/comic-one-page-memoir
 tags:
+  - elm
   - school
   - color
   - monochromatic

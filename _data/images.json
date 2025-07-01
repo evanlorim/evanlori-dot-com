@@ -1,5 +1,350 @@
 [
   {
+    "public_id": "portfolio/goober-013-024/goober-013-024-thumbnail",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-013",
+    "width": 2096,
+    "height": 2494
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-014",
+    "width": 1194,
+    "height": 1511
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-015",
+    "width": 960,
+    "height": 999
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-016",
+    "width": 1540,
+    "height": 1805
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-017",
+    "width": 625,
+    "height": 623
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-018",
+    "width": 1623,
+    "height": 2066
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-019",
+    "width": 2048,
+    "height": 2697
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-020",
+    "width": 1660,
+    "height": 1536
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-021",
+    "width": 1728,
+    "height": 2072
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-022",
+    "width": 1431,
+    "height": 1146
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-023",
+    "width": 1600,
+    "height": 1600
+  },
+  {
+    "public_id": "portfolio/goober-013-024/goober-024",
+    "width": 2048,
+    "height": 2560
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-003",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-012",
+    "width": 1004,
+    "height": 1066
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-011",
+    "width": 2297,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-010",
+    "width": 1662,
+    "height": 1829
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-009",
+    "width": 653,
+    "height": 633
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-008",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-007",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-006",
+    "width": 4096,
+    "height": 4096
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-005",
+    "width": 3195,
+    "height": 3233
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-004",
+    "width": 4096,
+    "height": 4096
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-002",
+    "width": 3078,
+    "height": 3314
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-001",
+    "width": 1609,
+    "height": 1409
+  },
+  {
+    "public_id": "portfolio/goober-001-012/goober-001-012-thumbnail",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "public_id": "portfolio/abstractress-001-012/abstractress-001-012-thumbnail",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "public_id": "cld-sample-5",
+    "width": 1870,
+    "height": 1250
+  },
+  {
+    "public_id": "samples/smile",
+    "width": 1552,
+    "height": 1000
+  },
+  {
+    "public_id": "samples/man-on-a-street",
+    "width": 1340,
+    "height": 1340
+  },
+  {
+    "public_id": "samples/coffee",
+    "width": 1920,
+    "height": 1280
+  },
+  {
+    "public_id": "samples/two-ladies",
+    "width": 1500,
+    "height": 1200
+  },
+  {
+    "public_id": "cld-sample-4",
+    "width": 1870,
+    "height": 1250
+  },
+  {
+    "public_id": "samples/woman-on-a-football-field",
+    "width": 1200,
+    "height": 1350
+  },
+  {
+    "public_id": "cld-sample-3",
+    "width": 1870,
+    "height": 1250
+  },
+  {
+    "public_id": "cld-sample-2",
+    "width": 1870,
+    "height": 1250
+  },
+  {
+    "public_id": "cld-sample",
+    "width": 1870,
+    "height": 1250
+  },
+  {
+    "public_id": "samples/chair",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "public_id": "samples/man-portrait",
+    "width": 1333,
+    "height": 2000
+  },
+  {
+    "public_id": "samples/outdoor-woman",
+    "width": 640,
+    "height": 963
+  },
+  {
+    "public_id": "samples/upscale-face-1",
+    "width": 233,
+    "height": 233
+  },
+  {
+    "public_id": "samples/logo",
+    "width": 480,
+    "height": 314
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-013-024-thumbnail",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-013",
+    "width": 2921,
+    "height": 3127
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-014",
+    "width": 996,
+    "height": 996
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-015",
+    "width": 1458,
+    "height": 1231
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-016",
+    "width": 819,
+    "height": 1158
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-017",
+    "width": 6070,
+    "height": 5013
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-018",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-019",
+    "width": 1393,
+    "height": 1382
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-020",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-021",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-022",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-023",
+    "width": 928,
+    "height": 1506
+  },
+  {
+    "public_id": "portfolio/abstractress-013-024/abstractress-024",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-025-036-thumbnail",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-025",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-026",
+    "width": 1546,
+    "height": 1125
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-027",
+    "width": 1620,
+    "height": 2196
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-028",
+    "width": 2550,
+    "height": 3300
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-029",
+    "width": 2800,
+    "height": 2800
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-030",
+    "width": 1722,
+    "height": 2321
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-031",
+    "width": 2550,
+    "height": 2692
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-032",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-033",
+    "width": 4961,
+    "height": 7016
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-034",
+    "width": 3000,
+    "height": 3000
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-035",
+    "width": 3264,
+    "height": 2984
+  },
+  {
+    "public_id": "portfolio/abstractress-025-036/abstractress-036",
+    "width": 2000,
+    "height": 3418
+  },
+  {
+    "public_id": "portfolio/patternalia-001-012/patternalia-009",
+    "width": 2048,
+    "height": 2048
+  },
+  {
     "public_id": "portfolio/comic-one-page-memoir/comic-one-page-memoir",
     "width": 2400,
     "height": 3800

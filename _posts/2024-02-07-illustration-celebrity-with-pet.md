@@ -10,6 +10,7 @@ images:
   content:
     - id: portfolio/illustration-celebrity-with-pet/illustration-celebrity-with-pet-sketches-1
 tags:
+  - elm
   - school
   - black-and-white
   - digital

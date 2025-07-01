@@ -10,6 +10,7 @@ images:
     - id: portfolio/illustration-three-portraits/illustration-three-portraits-2
     - id: portfolio/illustration-three-portraits/illustration-three-portraits-3
 tags:
+  - elm
   - school
   - color
   - high-saturation

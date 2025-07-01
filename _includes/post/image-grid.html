@@ -1,8 +1,8 @@
-
-    <div class="grid">
-        {% for image in include.images %}
-            {% assign url = image.id | image_url: site.cloud_name %}
-            {% include post/modal-image.html id=image.id src=url %}
-            {% include post/image-cell.html id=image.id src=url %}
-        {% endfor %}
-    </div>
+<div class="grid is-col-min-12">
+    {% for image in include.images %}
+        {% assign src = image.id | image_url: site.cloud_name %}
+        <div class="cell">
+            {% include post/feature-image.html id=image.id src=src %}
+        </div>
+    {% endfor %}
+</div>

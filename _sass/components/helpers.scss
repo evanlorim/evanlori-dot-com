@@ -3,8 +3,8 @@
 @use "bulma/sass/utilities/css-variables" as cv;
 @use "patterns" as *;
 
-$border-color: dv.$primary !default;
-$shadow-color: dv.$primary !default;
+$border-color: iv.$grey-dark !default;
+$shadow-color: iv.$grey-dark !default;
 $widths: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
 
 @each $x in $widths {

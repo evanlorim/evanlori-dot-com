@@ -1,0 +1,17 @@
+[
+    { "val": 0.3333, "ar_class": "is-1by3" },
+    { "val": 0.5000, "ar_class": "is-1by2" },
+    { "val": 0.5625, "ar_class": "is-9by16" },
+    { "val": 0.6000, "ar_class": "is-3by5" },
+    { "val": 0.6666, "ar_class": "is-2by3" },
+    { "val": 0.7500, "ar_class": "is-3by4" },
+    { "val": 0.8000, "ar_class": "is-4by5" },
+    { "val": 1.0000, "ar_class": "is-1by1" },
+    { "val": 1.2500, "ar_class": "is-5by4" },
+    { "val": 1.3333, "ar_class": "is-4by3" },
+    { "val": 1.5000, "ar_class": "is-3by2" },
+    { "val": 1.6666, "ar_class": "is-5by3" },
+    { "val": 1.7777, "ar_class": "is-16by9"},
+    { "val": 2.0000, "ar_class": "is-2by1" },
+    { "val": 3.0000, "ar_class": "is-3by1" }
+]

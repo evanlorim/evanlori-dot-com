@@ -1,15 +1,23 @@
 <div class="card is-shadowless has-border-2">
-	<div class="card-image">
-		<figure class="image is-square">
-			<a href="{{ post.url }}">
-				{% assign image_url = "https://placehold.co/512x512/000000/FFFFFF" %}
-				{% if post.images.thumb %}{% assign image_url = post.images.thumb.id | thumb_url: site.cloud_name %}{% endif %}
-				<img alt="placeholder" src="{{ image_url }}"/>
-			</a>
-		</figure>
-	</div>
-	<div class="card-content has-border-top-2">
-		<p class="title is-6">{{ post.title | upcase }}</p>
-		<p class="subtitle is-7"><time>{{ post.date | date: "%^b %e %Y"}}</time></p>
-	</div>
+    <div class="card-image">
+        <figure class="image is-1by1 has-skeleton">
+            <a href="{{ post.url }}">
+                {% assign image_url = 'https://placehold.co/512x512/000000/FFFFFF' %}
+                {% if post.images.thumb %}
+                    {% assign image_url = post.images.thumb.id | thumb_url: 	site.cloud_name %}
+                {% endif %}
+                <img alt="placeholder" src="{{ image_url }}" />
+            </a>
+        </figure>
+    </div>
+    <div class="card-content has-border-top-2">
+        <p class="title is-6">
+            {{ post.title | upcase }}
+        </p>
+        <p class="subtitle is-7">
+            <time>
+                {{ post.date | date: '%^b %e %Y' }}
+            </time>
+        </p>
+    </div>
 </div>

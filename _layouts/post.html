@@ -1,49 +1,52 @@
 ---
 layout: default
 ---
-{% include hero.html title=page.title subtitle=page.subtitle %}
-
 <section class="section">
-    {% include post/image-grid.html images=page.images.feature %}
+    <div class="container is-fluid">
+        {% include post/image-grid.html images=page.images.feature %}
+    </div>
 </section>
 <section class="section">
-    <p class="subtitle is-4"><time>{{ page.date | date_to_long_string | upcase }}</time></p>
-    <hr class="is-divider"></hr>
-    <div class="columns">
-        <div class="column">
-            <div class="content is-size-5">
-                {{ content }}
+    <div class="container is-fluid">
+        <p class="title is-3 is-family-secondary">{{ page.title }}</p>
+        <p class="subtitle is-5 is-family-secondary"><time>{{ page.date | date_to_long_string | upcase }}</time></p>
+        <hr class="is-divider"></hr>
+        <div class="columns">
+            <div class="column">
+                <div class="content is-size-5">
+                    {{ content }}
+                </div>
             </div>
-        </div>
-        <div class="column is-one-fifth">
-            <p>
-                <span class="has-text-weight-bold is-size-6">Categories: </span>
-                {% for category in page.categories %}
-                    {% assign category_data = site.data.categories | where: "uid", category | first %}
-                    <span class="tag is-small"><a href="{{ category_data.href }}">{{ category }}</a></span>
+            <div class="column is-one-fifth">
+                <p>
+                    <span class="has-text-weight-bold is-size-6">Categories: </span>
+                    {% for category in page.categories %}
+                        {% assign category_data = site.data.categories | where: "uid", category | first %}
+                        <span class="tag is-small"><a href="{{ category_data.href }}">{{ category }}</a></span>
+                    {% endfor %}
+                </p>
+                {% assign groups = "" %}
+                {% assign limit = page.tags.size | minus: 1 %}
+                {% for i in (0..limit) %}
+                    {% assign tag_data = site.data.tags | where: "uid", page.tags[i] | first %}
+                    {% assign group = tag_data["group"] %}
+                    {% assign groups = groups | append: group %}
+                    {% assign groups = groups | append: "," %}
                 {% endfor %}
-            </p>
-            {% assign groups = "" %}
-            {% assign limit = page.tags.size | minus: 1 %}
-            {% for i in (0..limit) %}
-                {% assign tag_data = site.data.tags | where: "uid", page.tags[i] | first %}
-                {% assign group = tag_data["group"] %}
-                {% assign groups = groups | append: group %}
-                {% assign groups = groups | append: "," %}
-            {% endfor %}
-            {% assign groups = groups | split: "," | uniq | sort %}
-            {% for group in groups %}
-                <p class="pt-3">
-                <span class="has-text-weight-bold is-size-6">{{ group | capitalize }}: </span>
-                {% for tag in page.tags %}
-                    {% assign tag_data = site.data.tags | where: "uid", tag | first %}
-                    {% if tag_data.group == group %}
-                        <span class="tag"><a href="{{ tag_data.href }}">{{ tag }}</a></span>
-                    {% endif %}
+                {% assign groups = groups | split: "," | uniq | sort %}
+                {% for group in groups %}
+                    <p class="pt-3">
+                    <span class="has-text-weight-bold is-size-6">{{ group | capitalize }}: </span>
+                    {% for tag in page.tags %}
+                        {% assign tag_data = site.data.tags | where: "uid", tag | first %}
+                        {% if tag_data.group == group %}
+                            <span class="tag"><a href="{{ tag_data.href }}">{{ tag }}</a></span>
+                        {% endif %}
+                    {% endfor %}
+                    </p>
                 {% endfor %}
                 </p>
-            {% endfor %}
-            </p>
+            </div>
         </div>
     </div>
 </section>

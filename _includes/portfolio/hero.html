@@ -1,26 +1,36 @@
-
 <section class="hero has-border-bottom-2">
-	<div class="hero-body">
-		<p class="title">{{ include.title }}</p>
-		{% if include.subtitle %}<p class="subtitle">{{ include.subtitle }}</p>{% endif %}
-	</div>
-	<div class="hero-foot has-border-top-2">
-		<nav class="tabs is-right">
-			<div class="container">
-				<ul>
-					<li class="{% if include.uid == "portfolio" %}is-active{% endif %}">
-						<a href="/portfolio">All</a>
-					</li>
-					{% assign is_active = false %}
+    <div class="hero-body">
+        <p class="title">
+            {{ include.title }}
+        </p>
+        {% if include.subtitle %}
+            <p class="subtitle">
+                {{ include.subtitle }}
+            </p>
+        {% endif %}
+    </div>
+    <div class="hero-foot has-border-top-2">
+        <nav class="tabs is-right">
+            <div class="container">
+                <ul>
+                    <li class="{% if include.uid == "portfolio" %}is-active{% endif %}">
+                        <a href="/portfolio">All
+                        </a>
+                    </li>
+                    {% assign is_active = false %}
                     {% for cat in site.data.categories %}
-						{% if include.type == "category" and include.uid == cat.uid %}{% assign is_active = true %}{% endif %}
+                        {% if include.type == "category" and include.uid == cat.uid %}
+                            {% assign is_active = true %}
+                        {% endif %}
                         <li class="{% if is_active %}is-active{% endif %}">
-                            <a href="{{ cat.href }}">{{ cat.title }}</a>
+                            <a href="{{ cat.href }}">
+                                {{ cat.title }}
+                            </a>
                         </li>
-					    {% assign is_active = false %}
-					{% endfor %}
-				</ul>
-			</div>
-		</nav>
-	</div>
+                        {% assign is_active = false %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+    </div>
 </section>

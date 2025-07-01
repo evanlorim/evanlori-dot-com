@@ -10,6 +10,7 @@ images:
     - id: portfolio/illustration-editorial-tonya/illustration-editorial-tonya-2
     - id: portfolio/illustration-editorial-tonya/illustration-editorial-tonya-3
 tags:
+  - elm
   - school
   - color
   - digital

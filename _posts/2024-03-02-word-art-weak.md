@@ -8,6 +8,7 @@ images:
   feature:
     - id: portfolio/word-art-weak/word-art-weak
 tags:
+  - elm
   - school
   - black-and-white
   - digital

@@ -3,6 +3,7 @@ layout: post
 title: "Character Sheet: Fishlecia"
 categories: [art]
 tags:
+  - elm
   - school
   - color
   - clement8

@@ -4,8 +4,8 @@ title: 'Tag: Client - Me'
 subtitle: Personal Projects
 permalink: /portfolio/tags/client/me
 type: tag
-uid: me
+uid: personal
 pagination:
     enabled: true
-    tag: [me]
+    tag: [personal]
 ---

@@ -8,6 +8,7 @@ images:
   feature:
     - id: portfolio/flyer-socially-conscious-fast-food-ad/flyer-socially-conscious-fast-food-ad
 tags:
+  - elm
   - school
   - color
   - digital

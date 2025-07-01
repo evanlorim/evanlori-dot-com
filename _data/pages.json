@@ -1,44 +1,44 @@
 [
-    {
-        "title": "Home",
-        "href": "/"
-    },
-    {
-        "title": "About",
-        "href": "/about"
-    },
-    {
-        "title": "Portfolio",
-        "href": "/portfolio",
-        "subpages": [
-            {
-                "title": "All",
-                "href": "/portfolio"
-            },
-            {
-                "title": "Art",
-                "href": "/portfolio/category/art"
-            },
-            {
-                "title": "Code",
-                "href": "/portfolio/category/code"
-            },
-            {
-                "title": "Resources",
-                "href": "portfolio/category/resource"
-            },
-            {
-                "title": "Sketchbook",
-                "href": "portfolio/category/sketch"
-            }
-        ]
-    },
-    {
-        "title": "Work",
-        "href": "/work"
-    },
-    {
-        "title": "Contact",
-        "href": "/contact"
-    }
+	{
+		"title": "Home",
+		"href": "/"
+	},
+	{
+		"title": "About",
+		"href": "/about"
+	},
+	{
+		"title": "Portfolio",
+		"href": "/portfolio",
+		"subpages": [
+			{
+				"title": "All",
+				"href": "/portfolio"
+			},
+			{
+				"title": "Art",
+				"href": "/portfolio/category/art"
+			},
+			{
+				"title": "Code",
+				"href": "/portfolio/category/code"
+			},
+			{
+				"title": "Resources",
+				"href": "/portfolio/category/resource"
+			},
+			{
+				"title": "Sketchbook",
+				"href": "/portfolio/category/sketch"
+			}
+		]
+	},
+	{
+		"title": "Work",
+		"href": "/work"
+	},
+	{
+		"title": "Contact",
+		"href": "/contact"
+	}
 ]

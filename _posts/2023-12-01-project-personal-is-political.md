@@ -16,6 +16,7 @@ images:
     - id: portfolio/project-personal-is-political/project-personal-is-political-08
     - id: portfolio/project-personal-is-political/project-personal-is-political-09
 tags:
+  - elm
   - school
   - color
   - digital

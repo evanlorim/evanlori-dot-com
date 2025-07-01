@@ -1,6 +1,5 @@
-{% assign url = site.baseurl | append: "/" }
-{% assign is_active = "" %}
-{% assign aria_current = "" %}
+{% assign url = site.baseurl | append: '/' } {% assign is_active = '' %}
+{% assign aria_current = '' %}
 
 {% assign paths = include.url | breadcrumb_paths %}
 {% assign titles = include.url | breadcrumb_titles %}
@@ -9,11 +8,15 @@
     <ul>
         {% for i in (0..(length) %}
             {% if i == length %}
-                {% assign is_active = "is-active" %}
-                {% assign aria_current = "page" %}
+                {% assign is_active = 'is-active' %}
+                {% assign aria_current = 'page' %}
             {% endif %}
-            {% assign url = url | append: paths[i] | append: "/" %}
-            <li class="{{ is_active }}"><a href="{{ url }}" aria-current="{{ aria_current }}">{{ titles[i] }}</a></li>
+            {% assign url = url | append: paths[i] | append: '/' %}
+            <li class="{{ is_active }}">
+                <a href="{{ url }}" aria-current="{{ aria_current }}">
+                    {{ titles[i] }}
+                </a>
+            </li>
         {% endfor %}
     </ul>
 </nav>

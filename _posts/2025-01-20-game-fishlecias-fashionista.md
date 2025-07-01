@@ -21,6 +21,7 @@ links:
   itch_io: https://evanlorim.itch.io/fishlecias-fashionista
   github: https://github.com/evanlorim/game-fishlecias-fashionista
 tags:
+  - elm
   - school
   - godot
   - clement8

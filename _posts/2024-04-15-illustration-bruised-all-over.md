@@ -3,12 +3,9 @@ layout: post
 title: "Illustration: Bruised all Over"
 categories: [art]
 tags:
-  - school
-  - black-and-white
+  - elm
   - digital
   - illustration
-  - procreate
-  - likeness
 links:
   - https://www.croquiscafe.com
 ---
