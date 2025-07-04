@@ -9,6 +9,7 @@
     "bulma": "^0.6.2",
     "bulma-carousel": "^1.0.11",
     "bulma-divider": "^1.0.1",
+    "fontawesome-free": "^1.0.4",
     "jquery": "^3.3.1",
     "open-color": "^1.9.1"
   }

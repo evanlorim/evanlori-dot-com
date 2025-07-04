@@ -30,13 +30,13 @@ end
 
 # FontAwesome
 
-copy_files_task_factory('node_modules/Font-Awesome/css/all.css', 'assets/css', 'copy_font_awesome_a')
-copy_files_task_factory('node_modules/Font-Awesome/webfonts', 'assets', 'copy_font_awesome_b')
+copy_files_task_factory('node_modules/fontawesome-free/css/all.css', 'assets/css', 'copy_font_awesome_a')
+copy_files_task_factory('node_modules/fontawesome-free/webfonts', 'assets', 'copy_font_awesome_b')
 
 desc "copy fontawesome libs"
 task :copy_font_awesome do
-	Rake::Task['copy_font_awesome_a']
-	Rake::Task['copy_font_awesome_b']
+	Rake::Task['copy_font_awesome_a'].execute
+	Rake::Task['copy_font_awesome_b'].execute
 end
 
 desc "delete font-awesome"
@@ -72,8 +72,8 @@ copy_files_task_factory('node_modules/bulma-carousel/dist/bulma-carousel.js', 'j
 
 desc "copy bulma-carousel libs"
 task :copy_bulma_carousel do
-	Rake::Task['copy_bulma_carousel_css']
-	Rake::Task['copy_bulma_carousel_js']
+	Rake::Task['copy_bulma_carousel_css'].execute
+	Rake::Task['copy_bulma_carousel_js'].execute
 end
 
 desc "delete bulma-carousel"

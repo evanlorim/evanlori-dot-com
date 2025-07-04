@@ -1,6 +1,8 @@
+.code-workspace
 .sass-cache
 .jekyll-metadata
 .env
 .tmp
+.code-workspace
 log
 node_modules

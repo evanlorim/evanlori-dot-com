@@ -59,6 +59,8 @@
 	{ "category": "art", "name": "fishlecia", "href": "/art/tags/fishlecia", "type": "topic", "color": "warning" },
 	{ "category": "art", "name": "oc", "href": "/art/tags/oc", "type": "topic", "color": "warning" },
 	{ "category": "art", "name": "likeness", "href": "/art/tags/likeness", "type": "topic", "color": "warning" },
+	{ "category": "art", "name": "schoolwork", "href": "/art/tags/schoolwork", "type": "topic", "color": "warning" },
+
 
 	{ "category": "code", "name": "html", "href": "/code/tags/html", "type": "language", "color": "primary" },
 	{ "category": "code", "name": "js", "href": "/code/tags/js", "type": "language", "color": "primary" },
