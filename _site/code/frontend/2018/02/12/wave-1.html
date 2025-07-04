@@ -186,8 +186,8 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_evolving-waves' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/evolving-waves">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_archive_code_evolving-waves' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/archive/code/evolving-waves">
 				</div></div>
 			
 		</div>
@@ -212,8 +212,8 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_evolving-waves' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/evolving-waves">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_archive_code_evolving-waves' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/archive/code/evolving-waves">
 				</div></div>
 			
 		</div>
@@ -238,8 +238,8 @@
 				
 				
 				
-				<div class='a-carousel-item is-active' onClick="openModal( 'image_code_evolving-waves' )"><div class="a-carousel-img">
-					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/code/evolving-waves">
+				<div class='a-carousel-item is-active' onClick="openModal( 'image_archive_code_evolving-waves' )"><div class="a-carousel-img">
+					<img src="https://res.cloudinary.com/evanlori/h_640,c_fill/archive/code/evolving-waves">
 				</div></div>
 			
 		</div>
@@ -254,15 +254,15 @@
 
 
 	
-	<div class="modal a-carousel-modal" id="image_code_evolving-waves">
+	<div class="modal a-carousel-modal" id="image_archive_code_evolving-waves">
 		<div class="modal-background"></div>
 		<div class="modal-content">
-			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/code/evolving-waves">
+			<img class="modal-image block" src="https://res.cloudinary.com/evanlori/archive/code/evolving-waves">
 			<div class="modal-details">
 				<p class="is-size-4 has-text-centered"></p>
 			</div>
 		</div>
-		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_code_evolving-waves')"></button>
+		<button class="modal-close is-large" aria-label="close" onclick=" closeModal('image_archive_code_evolving-waves')"></button>
 	</div>
 
 	
@@ -272,11 +272,12 @@
 	<div class="post-content content has-text-weight-light is-size-5">
 		<p>This is my first experiment with trying to digitally recreate a motif I use in many of my drawings.</p>
 
-<p>I wanted to make a program that would take one wave and gradually change it until it becomes another wave. I chose to model perlin waves – as they were most similar to the shapes I draw. You can see an example of the motif I’m modelling  <a href="/art/digital/2018/02/03/design-untitled-pattern-1.html">here</a>). I chose to use <a href="https://p5js.org/">p5js</a> because it came with a builtin perlin wave function and seemed the easiest to prototype with.</p>
+<p>I wanted to make a program that would take one wave and gradually change it until it becomes another wave. I chose to model perlin waves – as they were most similar to the shapes I draw. You can see an example of the motif I’m modelling <a href="/art/digital/2018/02/03/design-untitled-pattern-1.html">here</a>). I chose to use <a href="https://p5js.org/">p5js</a> because it came with a builtin perlin wave function and seemed the easiest to prototype with.</p>
 
 <p>This program draws a series of perlin waves with one alpha wave (the top wave) and one omega wave (the bottom one). Every wave inbetween is an interpolation calculated by multiplying the difference between waves (delta) by fraction representing the percentage of the way the wave is between alpha and omega.</p>
 
 <p>The program allows you to manipulate a number of variables via sliders:</p>
+
 <ol>
   <li><strong>x-increment</strong> - x is the first value used in the 2D perlin wave function. The x-increment is the difference in x-values between subsequent calls to the perlin wave function within a single frame.</li>
   <li><strong>y-increment</strong> - y is the second value used in the 2D perlin wave function. The y-increment is the difference in y-values between subsequent calls to the perlin wave function between frames.</li>
