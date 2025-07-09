@@ -1,5 +1,8 @@
+.liquidrc
+.prettierrc
 .sass-cache
 .jekyll-cache
 .vscode
-populate_images.fish
 node_modules
+_sass/bulma
+_sass/open-color

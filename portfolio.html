@@ -1,0 +1,12 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio
+---
+<div class="grid is-col-min-15 is-gap-4">
+  {% for cat in site.data.categories %}
+    	<div class="cell">
+      		{% include portfolio/card.html id = cat.images.thumb.id transformations = cat.images.thumb.transformations title = cat.title url = cat.permalink %}
+    	</div>
+  {% endfor %}
+</div>

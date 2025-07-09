@@ -1,12 +1,14 @@
-<section class="hero has-border-bottom-2">
-    <div class="hero-body">
-        <p class="title">
-            {{ include.title }}
-        </p>
-        {% if include.subtitle %}
-            <p class="subtitle">
-                {{ include.subtitle }}
+<section class="hero is-family-secondary">
+    <div class="container has-text-centered">
+        <div class="hero-body">
+            <p class="title has-text-weight-black is-size-2">
+                {{ include.title }}
             </p>
-        {% endif %}
+            {% if include.subtitle %}
+                <p class="subtitle">
+                    {{ include.subtitle }}
+                </p>
+            {% endif %}
+        </div>
     </div>
 </section>

@@ -1,13 +1,11 @@
 ---
-layout: post
 title: "Illustration: Charm"
-categories: [art]
-tags:
-  - elm
-  - school
-  - color
-  - digital
-  - illustration
-  - portrait
-  - procreate
+categories: [illustration]
+images:
+    thumb:
+        id: portfolio/illustration-charm
+    feature:
+      - id: portfolio/illustration-charm
+meta:
+    software: [procreate]
 ---

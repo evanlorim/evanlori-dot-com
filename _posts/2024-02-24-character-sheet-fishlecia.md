@@ -1,17 +1,11 @@
 ---
-layout: post
 title: "Character Sheet: Fishlecia"
-categories: [art]
-tags:
-  - elm
-  - school
-  - color
-  - clement8
-  - digital
-  - character-art
-  - character-sheet
-  - illustration
-  - aseprite
-  - fishlecia
-  - oc
+categories: [illustration]
+images:
+    thumb:
+        id: portfolio/character-sheet-fishlecia
+    feature:
+      - id: portfolio/character-sheet-fishlecia
+meta:
+    software: [aseprite]
 ---

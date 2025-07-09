@@ -1,0 +1,354 @@
+@use "sass:math";
+@use "variables" as v;
+
+$bg: v.$pattern-bg-color;
+$fg: v.$pattern-fg-color;
+
+$size: 12px !default;
+
+$list: (
+	"bayer-4x4-00": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: linear-gradient($fg 0%, $fg 100%),
+		background-size: $size $size,
+	),
+	"bayer-4x4-02": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(to right, transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(135deg, transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+		),
+		background-size: $size $size,
+	),
+	"bayer-4x4-03": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $fg, $fg 25%, transparent 25%, transparent 100%),
+			linear-gradient(transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(to right, transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+		),
+		background-size: $size $size,
+		background-position: (
+			calc($size * 0.5) 0,
+			left top,
+			left top,
+		),
+	),
+	"bayer-4x4-04": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(to right, transparent, transparent 25%, $fg 25%, $fg 50%, transparent 50%, transparent 75%, $fg 75%, $fg 100%),
+		),
+		background-size: $size $size,
+	),
+	"bayer-4x4-05": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(transparent 0%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(to right, transparent 0%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left top,
+			left top,
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-06": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $fg, $fg 25%, transparent 25%, transparent 100%),
+			linear-gradient(135deg, $fg, $fg 25%, transparent 25%, transparent 100%),
+			linear-gradient(45deg, $fg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left calc($size * 0.25) top calc($size * 0.75),
+			left calc($size * 0.75) top calc($size * 0.25),
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-07": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $fg, $fg 25%, transparent 25%, transparent 100%),
+			linear-gradient(45deg, $fg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			$size $size,
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left calc($size * 0.75) top calc($size * 0.25),
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-08": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(45deg, $fg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-09": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, transparent, transparent 87.5%, $bg 87.5%, $bg 100%),
+			linear-gradient(135deg, $bg, $bg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(45deg, $fg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left calc($size * 0.25) top calc($size * 0.5),
+			left top calc($size * 0.25),
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-10": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, transparent, transparent 87.5%, $bg 87.5%, $bg 100%),
+			linear-gradient(135deg, $bg, $bg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(135deg, transparent, transparent 87.5%, $bg 87.5%, $bg 100%),
+			linear-gradient(135deg, $bg, $bg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(45deg, $fg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			$size $size,
+			$size $size,
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left calc($size * 0.75) top,
+			left calc($size * 0.5) top calc($size * 0.75),
+			left calc($size * 0.25) top calc($size * 0.5),
+			left top calc($size * 0.25),
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-11": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(45deg, $bg, $bg 25%, transparent 25%, transparent 100%),
+			linear-gradient(135deg, transparent, transparent 87.5%, $bg 87.5%, $bg 100%),
+			linear-gradient(135deg, $bg, $bg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(135deg, transparent, transparent 87.5%, $bg 87.5%, $bg 100%),
+			linear-gradient(135deg, $bg, $bg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(45deg, $fg, $fg 25%, transparent 25%, transparent 75%, $fg 75%, $fg 100%),
+			linear-gradient(45deg, $fg, $fg 25%, $bg 25%, $bg 75%, $fg 75%, $fg 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			$size $size,
+			$size $size,
+			$size $size,
+			calc($size * 0.5) calc($size * 0.5),
+			calc($size * 0.5) calc($size * 0.5),
+		),
+		background-position: (
+			left top,
+			left calc($size * 0.75) top,
+			left calc($size * 0.5) top calc($size * 0.75),
+			left calc($size * 0.25) top calc($size * 0.5),
+			left top calc($size * 0.25),
+			left top,
+			calc($size * 0.25) calc($size * 0.25),
+		),
+	),
+	"bayer-4x4-12": (
+		background-color: $fg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(transparent, transparent 25%, $bg 25%, $bg 50%, transparent 50%, transparent 75%, $bg 75%, $bg 100%)
+				linear-gradient(to right, $bg, $bg 25%, transparent 25%, transparent 50%, $bg 50%, $bg 75%, transparent 75%, transparent 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+		),
+	),
+	"bayer-4x4-13": (
+		background-color: $fg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $bg, $bg 37.5%, transparent 37.5%, transparent 100%),
+			linear-gradient(transparent, transparent 25%, $bg 25%, $bg 50%, transparent 50%, transparent 75%, $bg 75%, $bg 100%),
+			linear-gradient(to right, $bg, $bg 25%, transparent 25%, transparent 50%, $bg 50%, $bg 75%, transparent 75%, transparent 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			$size $size,
+		),
+	),
+	"bayer-4x4-14": (
+		background-color: $fg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $bg, $bg 37.5%, transparent 37.5%, transparent 100%),
+			linear-gradient(135deg, $bg, $bg 37.5%, transparent 37.5%, transparent 100%),
+			linear-gradient(transparent, transparent 25%, $bg 25%, $bg 50%, transparent 50%, transparent 75%, $bg 75%, $bg 100%),
+			linear-gradient(to right, $bg, $bg 25%, transparent 25%, transparent 50%, $bg 50%, $bg 75%, transparent 75%, transparent 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			$size $size,
+			$size $size,
+		),
+		background-position: (
+			left calc($size * 0.5) top calc($size * 0.5),
+			left top,
+			left top,
+			left top,
+		),
+	),
+	"bayer-4x4-15": (
+		background-color: $fg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(45deg, $bg, $bg 75%, transparent 75%, transparent 100%),
+			linear-gradient(transparent, transparent 25%, $bg 25%, $bg 50%, transparent 50%, transparent 75%, $bg 75%, $bg 100%),
+			linear-gradient(to right, $bg, $bg 25%, transparent 25%, transparent 50%, $bg 50%, $bg 75%, transparent 75%, transparent 100%),
+		),
+		background-size: (
+			$size $size,
+			$size $size,
+			$size $size,
+		),
+	),
+	"bayer-4x4-16": (
+		background-color: $bg,
+		opacity: 1,
+		background-image: linear-gradient(transparent 0%, transparent 100%),
+		background-size: $size $size,
+	),
+	"macpaint-02": macpaint-02($fg, $bg),
+	"macpaint-02-inverse": macpaint-02($bg, $fg),
+	"macpaint-09": macpaint-09($fg, $bg),
+	"macpaint-09-inverse": macpaint-09($bg, $fg),
+);
+
+@function macpaint-02($fg, $bg) {
+	@return (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(315deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(135deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(315deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(135deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(315deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(135deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+			linear-gradient(315deg, $fg, $fg 12.5%, transparent 12.5%, transparent 100%),
+		),
+		background-size: $size $size,
+		background-position: (
+			left top calc($size * 0.25),
+			left calc($size * 0.25) top calc($size * 0.5),
+			left top calc($size * 0.75),
+			left calc($size * 0.25) top,
+			left calc($size * 0.5) top,
+			left calc($size * 0.75) top calc($size * 0.25),
+			left calc($size * 0.5) top calc($size * 0.5),
+			left calc($size * 0.75) top calc($size * 0.75),
+		)
+	);
+}
+
+@function macpaint-09($fg, $bg) {
+	@return (
+		background-color: $bg,
+		opacity: 1,
+		background-image: (
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(135deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+			linear-gradient(315deg, $fg, $fg math.percentage(calc(1 / 16)), transparent math.percentage(calc(1 / 16)), transparent 100%),
+		),
+		background-size: $size * 2 $size * 2,
+		background-position: (
+			left top,
+			left calc($size * 0.25) top calc($size * 0.25),
+			left calc($size * 0.75) top calc($size * 0.25),
+			left $size top calc($size * 0.5),
+			left calc($size * 1.5) top calc($size * 0.5),
+			left calc($size * 1.75) top calc($size * 0.75),
+			left calc($size * 0.5) top calc($size * 0.75),
+			left calc($size * 0.75) top $size,
+			left calc($size * 1.75) top $size,
+			left top calc($size * 1.25),
+			left $size top calc($size * 1.25),
+			left calc($size * 1.25) top calc($size * 1.5),
+			left calc($size * 0.25) top calc($size * 1.5),
+			left calc($size * 0.5) top calc($size * 1.75),
+			left calc($size * 1.25) top calc($size * 1.75),
+			left calc($size * 1.5) top,
+		)
+	);
+}

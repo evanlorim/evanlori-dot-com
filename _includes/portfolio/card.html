@@ -1,23 +1,14 @@
-<div class="card is-shadowless has-border-2">
-    <div class="card-image">
-        <figure class="image is-1by1 has-skeleton">
-            <a href="{{ post.url }}">
-                {% assign image_url = 'https://placehold.co/512x512/000000/FFFFFF' %}
-                {% if post.images.thumb %}
-                    {% assign image_url = post.images.thumb.id | thumb_url: 	site.cloud_name %}
-                {% endif %}
-                <img alt="placeholder" src="{{ image_url }}" />
-            </a>
-        </figure>
-    </div>
-    <div class="card-content has-border-top-2">
-        <p class="title is-6">
-            {{ post.title | upcase }}
-        </p>
-        <p class="subtitle is-7">
-            <time>
-                {{ post.date | date: '%^b %e %Y' }}
-            </time>
-        </p>
-    </div>
+{% assign src = site.cloud_name | image_url: include.id, 'jpeg', include.transformations %}
+
+<div class="card">
+	<div class="card-image">
+		<a href="{{ include.url }}">
+			<figure class="image is-1by1 is-skeleton">
+				<img class="hover-initial" src="{{src}}" />
+				<p class="hover-terminal is-family-secondary is-size-4 has-text-weight-bold has-text-centered is-justify-content-center is-align-items-center p-4 has-text-black has-background-white">
+					{{ include.title }}
+				</p>
+			</figure>
+		</a>
+	</div>
 </div>

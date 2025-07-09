@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% include breadcrumbs.html url=page.url %}
+<div class="grid is-col-min-15 is-gap-4">
+    {% for post in paginator.posts %}
+        <div class="cell">
+            {% include portfolio/card.html id = post.images.thumb.id transformations = post.images.thumb.transformations title = post.title url = post.url date = post.date %}
+        </div>
+    {% endfor %}
+</div>
+{% assign pages = site.posts | where_exp: "post", "post.categories contains page.pagination.category" %}
+
+{% unless pages.size <= site.pagination.per_page %}
+	{% include portfolio/pagination.html %}
+{% endunless %}

@@ -1,10 +1,7 @@
 ---
-layout: portfolio
-title: 'Category: Code'
-permalink: /portfolio/category/code/
-type: category
-uid: code
+title: "Code"
+permalink: /portfolio/code
 pagination:
-  enabled: true
-  category: code
+    enabled: true
+    category: code
 ---

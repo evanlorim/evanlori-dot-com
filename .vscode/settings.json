@@ -1,37 +1,31 @@
 {
-	"files.associations": {
-		"*.html": "liquid",
-		"*.md": "liquid"
-	},
-	"files.exclude": {
-		".vscode/": true,
-		".jekyll-cache/": true,
-		"node_modules/": true,
-		"Gemfile.lock": true,
-		"yarn.lock": true,
-		"_site": true,
-		"LICENSE": true
-	},
-	"workbench.colorTheme": "Monokai Pro",
-	"[markdown]": {
-		"editor.tabSize": 2,
-		"editor.insertSpaces": false
-	},
-	"[liquid]": {
-		"editor.defaultFormatter": "sissel.shopify-liquid",
-		"editor.formatOnSave": true,
-		"editor.tabSize": 4,
-		"editor.insertSpaces": false
-	},
-	"liquid.completion.tags": true,
-	"liquid.completion.objects": true,
-	"liquid.completion.filters": true,
-	"liquid.completion.operators": true,
-	"liquid.completion.schema": true,
-	"liquid.validate.schema": true,
-	"liquid.hover.tags": true,
-	"liquid.hover.filters": true,
-	"liquid.hover.objects": true,
-	"liquid.hover.schema": true,
-	"liquid.config.method": "liquidrc"
+    "files.associations": {
+        "*.html": "liquid",
+        "*.md": "liquid"
+    },
+    "files.exclude": {
+        ".vscode/": true,
+        ".jekyll-cache/": true,
+        "node_modules/": true,
+        "Gemfile.lock": true,
+        "yarn.lock": true,
+        "_site": true,
+        "LICENSE": true,
+        ".liquidrc": true,
+        ".prettierrc": true
+    },
+    "[liquid]": {
+        "editor.defaultFormatter": "sissel.shopify-liquid"
+    },
+    "liquid.completion.tags": true,
+    "liquid.completion.objects": true,
+    "liquid.completion.filters": true,
+    "liquid.completion.operators": true,
+    "liquid.completion.schema": true,
+    "liquid.validate.schema": true,
+    "liquid.hover.tags": true,
+    "liquid.hover.filters": true,
+    "liquid.hover.schema": true,
+    "liquid.config.method": "liquidrc",
+    "editor.insertSpaces": false
 }

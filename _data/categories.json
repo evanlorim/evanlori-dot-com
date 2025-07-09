@@ -1,22 +1,79 @@
-[   
+[
     {
-        "uid": "art",
-        "title": "Art",
-        "href": "/portfolio/category/art"
+        "id": "abstract",
+        "title": "Abstract Art",
+        "permalink": "/portfolio/abstract/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/drawing-abstract-2023-01-10-post-processed",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
     },
     {
-        "uid": "code",
+        "id": "code",
         "title": "Code",
-        "href": "/portfolio/category/code"
+        "permalink": "/portfolio/code/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/patternalia-010",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
     },
     {
-        "uid": "resource",
-        "title": "Resources",
-        "href": "/portfolio/category/resource"
+        "id": "design",
+        "title": "Graphic Design",
+        "permalink": "/portfolio/design/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/flyer-bmore-tmor-2019-ball",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
     },
     {
-        "uid": "sketch",
+        "id": "illustration",
+        "title": "Illustration",
+        "permalink": "/portfolio/illustration/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/illustration-seduction",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
+    },
+    {
+        "id": "mixed",
+        "title": "Mixed Media",
+        "permalink": "/portfolio/mixed/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/project-figures-in-space-photo",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
+    },
+    {
+        "id": "painting",
+        "title": "Paintings",
+        "permalink": "/portfolio/painting/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/painting-beauty-photo",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
+    },
+    {
+        "id": "sketch",
         "title": "Sketchbook",
-        "href": "/portfolio/category/sketch"
+        "permalink": "/portfolio/sketch/",
+        "images": {
+            "thumb": {
+                "id": "portfolio/goober-013",
+                "transformations": ["c_auto,g_auto,w_512,h_512"]
+            }
+        }
     }
 ]

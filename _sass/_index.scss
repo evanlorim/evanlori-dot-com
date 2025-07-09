@@ -1,26 +1,34 @@
-@use "variables";
+@use "variables" as v;
 
 // BULMA STUFF
 
 @use "bulma/sass/utilities" with (
-	$family-primary: variables.$family-primary,
-	$link: variables.$primary
+	$primary: v.$primary,
+	$background: v.$background,
+	$link: v.$link,
+	$scheme-h: v.$scheme-h,
+	$scheme-s: v.$scheme-s,
+	$family-primary: v.$family-primary,
+	$family-secondary: v.$family-secondary
 );
 
 @forward "bulma/sass/base";
-@forward "bulma/sass/components/card";
+@use "bulma/sass/components/card" with (
+	$card-radius: v.$card-radius,
+	$card-shadow: v.$card-shadow
+);
 @forward "bulma/sass/components/breadcrumb";
 @forward "bulma/sass/components/modal";
 @forward "bulma/sass/components/navbar";
 @forward "bulma/sass/components/pagination";
 @use "bulma/sass/components/panel" with (
-	$panel-shadow: variables.$panel-shadow
+	$panel-shadow: v.$panel-shadow
 );
 @forward "bulma/sass/components/tabs";
 
 @forward "bulma/sass/elements/block";
 @use "bulma/sass/elements/box" with (
-	$box-shadow: variables.$box-shadow
+	$box-shadow: v.$box-shadow
 );
 @forward "bulma/sass/elements/button";
 @forward "bulma/sass/elements/content";
@@ -50,10 +58,7 @@
 @forward "bulma/sass/layout/media";
 @forward "bulma/sass/layout/section";
 
-@forward "bulma/sass/themes";
+@use "bulma/sass/themes";
 
-@use "components/helpers";
-
-// font go here
-@import url(variables.$family-primary-url);
-// @import url(variables.$family-secondary-url);
+@forward "helpers";
+@forward "components/hover";

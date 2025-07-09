@@ -1,0 +1,57 @@
+@use "variables" as v;
+@use "patterns" as patterns;
+@use "open-color/open-color" as oc;
+
+@each $x in v.$widths {
+    .has-border-#{$x} {
+        border-width: $x * 1px !important;
+        border-style: solid !important;
+        border-color: v.$border-color;
+    }
+
+    .has-border-top-#{$x} {
+        border-top-width: $x * 1px !important;
+        border-top-style: solid !important;
+        border-color: v.$border-color;
+    }
+
+    .has-border-bottom-#{$x} {
+        border-bottom-width: $x * 1px !important;
+        border-bottom-style: solid !important;
+        border-color: v.$border-color;
+    }
+    @each $y in v.$widths {
+        $xpx: $x * 1px;
+        $ypx: $y * 1px;
+        .has-shadow-#{$x}-#{$y} {
+            filter: drop-shadow($xpx $ypx v.$shadow-color);
+        }
+    }
+}
+
+@each $name, $styles in patterns.$list {
+    .has-background-#{$name} {
+        @each $prop, $val in $styles {
+            #{$prop}: $val;
+        }
+    }
+    @each $x in v.$widths {
+        @each $y in v.$widths {
+            .has-shadow-#{$x}-#{$y}-#{$name}:before {
+                content: "";
+                position: absolute;
+                inset: calc($x * 0.5px) calc($y * 0.5px);
+                transform: translate($x * 2px, $y * 2px);
+                z-index: -1;
+                border-radius: inherit;
+                @each $prop, $val in $styles {
+                    #{$prop}: $val;
+                }
+            }
+        }
+    }
+}
+
+.has-text-weight-black {
+    font-weight: 900 !important;
+}

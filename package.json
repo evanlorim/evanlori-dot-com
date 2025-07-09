@@ -1,14 +1,18 @@
 {
-  "name": "evanlori-dot-com",
-  "version": "2.0.0",
-  "description": "Evan Lori Mahone's personal website",
-  "main": "none",
-  "repository": "https://github.com/evanlorim/evanlori-dot-com.git",
-  "author": "Evan Lori Mahone",
-  "license": "GPL3",
-  "private": false,
-  "dependencies": {
-    "bulma": "^1.0.4",
-    "simple-icons-font": "^15.3.0"
-  }
+    "name": "evanlori-dot-com",
+    "version": "2.0.0",
+    "description": "Evan Lori Mahone's personal website",
+    "main": "none",
+    "repository": "https://github.com/evanlorim/evanlori-dot-com.git",
+    "author": "Evan Lori Mahone",
+    "license": "GPL3",
+    "private": false,
+    "dependencies": {
+        "bulma": "^1.0.4",
+        "open-color": "^1.9.1"
+    },
+    "scripts": {
+        "postinstall": "bundle exec rake post_install",
+        "postuninstall": "bundle exec rake post_uninstall"
+    }
 }

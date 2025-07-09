@@ -1,21 +1,10 @@
 ---
-layout: post
 title: "Project: Figures in Space"
-categories: [art]
-tags:
-  - elm
-  - school
-  - colored-pencils
-  - gouache
-  - mixed
-  - oil-pastels
-  - paint-markers
-  - synthetic-surface
-  - color
-  - low-saturation
-  - digital
-  - traditional
-  - illustration
-  - procreate
-  - inkscape
+categories: [mixed]
+images:
+    thumb:
+        id: portfolio/project-figures-in-space-photo
+    feature:
+      - id: portfolio/project-figures-in-space-photo
+      - id: portfolio/project-figures-in-space-linework
 ---

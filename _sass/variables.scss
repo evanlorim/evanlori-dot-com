@@ -1,8 +1,27 @@
+// helpers
+$border-color: #fff;
+$shadow-color: #fff;
+$widths: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
+
+// patterns
+$pattern-fg-color: #fff;
+$pattern-bg-color: #000;
+
+// bulma utils
 $primary: hsl(171, 100%, 41%);
-$background: hsl(221, 14%, 4%);
+$background: #000;
+$link: $primary;
+$scheme-h: 0;
+$scheme-s: 0%;
+$family-primary: "Open Sans", sans-serif;
+$family-secondary: "Avara", serif;
 
+// bulma card
+$card-radius: 0rem;
+$card-shadow: none;
+
+// bulma box
 $box-shadow: none;
-$panel-shadow: none;
 
-$family-primary: '"Lato", sans-serif';
-$family-primary-url: "https://fonts.googleapis.com/css?family=Lato:400,700";
+// bulma panel
+$panel-shadow: none;

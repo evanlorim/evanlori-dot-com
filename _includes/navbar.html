@@ -1,34 +1,21 @@
 <nav
-    class="navbar has-border-bottom-2"
+    class="navbar is-spaced is-family-secondary has-text-weight-bold is-size-5"
     role="navigation"
     aria-label="main-navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-            {{ site.title_short }}
-        </a>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-end">
-            {% for pg in site.data.pages %}
-                {% if pg.subpages %}
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link" href="{{ sitee.base_url | append: pg.href }}">
-                            {{ pg.title }}
-                        </a>
-                        <div class="navbar-dropdown has-border-2">
-                            {% for sub_pg in pg.subpages %}
-                                <a class="navbar-item" href="{{ site.base_url | append: sub_pg.href }}">
-                                    {{ sub_pg.title }}
-                                </a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                {% else %}
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                {{ site.title_short }}
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                {% for pg in site.data.pages %}
                     <a class="navbar-item" href="{{ site.base_url | append: pg.href }}">
                         {{ pg.title }}
                     </a>
-                {% endif %}
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </nav>

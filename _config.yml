@@ -9,38 +9,51 @@ location: "Baltimore, MD"
 license: GPL3
 license_link: "https://www.gnu.org/licenses/gpl-3.0-standalone.html"
 
+defaults:
+    - scope:
+          type: "posts"
+      values:
+          layout: "post"
+          images:
+              thumb:
+                  transformations: ["c_auto,g_auto,w_512,h_512"]
+    - scope:
+          path: "categories/"
+      values:
+          layout: "category"
+
 # Build settings
 cloud_name: "evanlori"
-markdown: kramdown
 plugins:
-  - jekyll-paginate-v2
+    - jekyll-paginate-v2
 
 exclude:
-  - .jekyll-cache/
-  - .sass-cache/
-  - .vscode/
-  - node_modules/
-  - tasks/
-  - populate_images.fish
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - package.json
-  - Rakefile
-  - yarn.lock
+    - .jekyll-cache/
+    - .sass-cache/
+    - .vscode/
+    - .liquidrc
+    - .prettierrc
+    - node_modules/
+    - tasks/
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - package.json
+    - Rakefile
+    - yarn.lock
 
 sass:
-  style: expanded
-  sass_dir: _sass
+    style: expanded
+    sass_dir: _sass
 
 permalink: /portfolio/posts/:year/:month/:title.html
 
 pagination:
-  enabled: true
-  per_page: 12
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  trail:
-    before: 2
-    after: 2
+    enabled: true
+    per_page: 12
+    limit: 0
+    sort_field: "date"
+    sort_reverse: true
+    trail:
+        before: 2
+        after: 2

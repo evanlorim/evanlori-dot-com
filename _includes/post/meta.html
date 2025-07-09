@@ -1,0 +1,20 @@
+<div class="is-size-5">
+	{%- for key in site.data.meta.keys -%}
+		{%- if include.meta[key.id] -%}
+			{%- assign vals = page.meta[key.id] -%}
+				<b>
+				{{- key.title -}}{{- ": " -}}
+				</b>
+			{%- for val in vals -%}
+				{%- assign val_data = site.data.meta.vals | where: 'key', key | where: 'id', val | first -%}
+				{%- if val_data.link -%}
+					<a href="{{- val.data.link -}}">{{- val_data.title -}}</a>
+				{%- else -%}
+					{{- val_data.title -}}
+				{%- endif -%}
+				{%- unless forloop.last -%}{{-", "-}}{%- endunless -%}
+			{%- endfor -%}
+			</br>
+		{%- endif -%}
+	{%- endfor -%}
+</div>

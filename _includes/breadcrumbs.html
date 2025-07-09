@@ -1,0 +1,30 @@
+{% assign sub_url = site.baseurl | append: "/" %}
+{% assign is_active = '' %}
+{% assign aria_current = '' %}
+{% assign components = include.url | remove_first: "/" | remove: "/index.html" | split: '/' %}
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+	<ul>
+	{% for component in components %}
+		{% assign title = '' %}
+		{% if component ==  'portfolio' %}
+			{% assign title = 'Portfolio' %}
+		{% elsif component contains 'page' %}
+			{% assign title = component | remove: 'page' | prepend: "Page "%}
+		{% elsif forloop.index == 2 %}
+			{% assign category = site.data.categories | where: "id", component | first %}
+			{% assign title = category.title %}
+		{% endif %}
+		{% assign sub_url = sub_url | append: component | append: '/' %}
+		{% if forloop.last %}
+			{% assign is_active = 'is-active' %}
+			{% assign aria_current = 'page' %}
+		{% endif %}
+		<li class="{{ is_active }}">
+			<a href="{{ sub_url }}" aria-current="{{ aria_current }}">
+				{{ title }}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</nav>
