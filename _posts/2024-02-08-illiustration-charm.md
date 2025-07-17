@@ -1,11 +1,9 @@
 ---
 title: "Illustration: Charm"
 categories: [illustration]
+thumb: portfolio/illustration-charm
 images:
-    thumb:
-        id: portfolio/illustration-charm
-    feature:
-      - id: portfolio/illustration-charm
+  -  portfolio/illustration-charm
 meta:
-    software: [procreate]
+  software: [procreate]
 ---

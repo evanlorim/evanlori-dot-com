@@ -1,9 +1,9 @@
 ---
 title: "Flyer: Trans Elders United"
 categories: [design]
+thumb: portfolio/flyer-trans-elders-united-2020-censored
 images:
-    thumb:
-        id: portfolio/flyer-trans-elders-united-2020-censored
-    feature:
-      - id: portfolio/flyer-trans-elders-united-2020-censored
+  - portfolio/flyer-trans-elders-united-2020-censored
+meta:
+  software: [inkscape]
 ---

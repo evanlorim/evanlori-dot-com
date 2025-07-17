@@ -1,0 +1,23 @@
+- id: cosc
+  title: Computer Science
+
+- id: psych
+  title: Psychology
+
+- id: neuro
+  title: Neuroscience
+
+- id: math
+  title: Math
+
+- id: art
+  title: Art
+
+- id: social
+  title: Social
+
+- id: software
+  title: Software
+
+- id: education
+  title: Education

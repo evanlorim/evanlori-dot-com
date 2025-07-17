@@ -1,0 +1,53 @@
+- type: cosc
+  title: Graph Theory
+
+- type: cosc
+  title: Theory of Computation
+
+- type: cosc
+  title: Operations Research
+
+- type: cosc
+  title: Video Game Design
+
+- type: cosc
+  title: Artificial Intelligence
+
+- type: math
+  title: Linear Algebra
+
+- type: math
+  title: Foundations of Mathematics
+
+- type: neuro
+  title: Biological Psychology
+
+- type: neuro
+  title: Neuropsychopharmacology
+
+- type: neuro
+  title: Sensation and Perception
+
+- type: psych
+  title: Research Methods in Psychology
+
+- type: psych
+  title: Psychological Statistics
+
+- type: psych
+  title: Service Learning
+
+- type: art
+  title: Drawing I-IV
+
+- type: art
+  title: Painting I-III
+
+- type: art
+  title: "Art History: Ancient to Midieval"
+
+- type: art
+  title: "Art History: Renaissance to Modern"
+
+- type: art
+  title: Color Theory

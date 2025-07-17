@@ -1,12 +1,10 @@
 ---
 title: "Illustration: Harpy"
 categories: [illustration]
+thumb: portfolio/illustration-harpy
 images:
-    thumb:
-        id: portfolio/illustration-harpy
-    feature:
-      - id: portfolio/illustration-harpy
-      - id: portfolio/illustration-harpy-original
+  -  portfolio/illustration-harpy
+  -  portfolio/illustration-harpy-original
 meta:
-    software: [procreate, inkscape]
+  software: [procreate, inkscape]
 ---

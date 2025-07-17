@@ -1,0 +1,24 @@
+@use "../variables" as v;
+
+// .masonry {
+//     column-count: 3;
+//     column-gap: v.$masonry-gap;
+//     img.masonry-img {
+//         width: 100%;
+//         display: block;
+//         margin-bottom: v.$masonry-gap;
+//     }
+// }
+
+// // mobile
+// @media (max-width: v.$tablet) {
+//     .masonry {
+//         column-count: 1;
+//     }
+// }
+
+// @media (min-width: v.$tablet) and (max-width: v.$desktop) {
+//     .masonry {
+//         column-count: 2;
+//     }
+// }

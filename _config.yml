@@ -1,31 +1,21 @@
 title_short: ELM
 title: Evan Lori Mahone
-description: "Evan Lori Mahone's website."
-url: "http://evanlori.com"
 
-fullname: Evan Lori Mahone
-location: "Baltimore, MD"
+# Build settings
+plugins:
+    - jekyll-paginate-v2
 
-license: GPL3
-license_link: "https://www.gnu.org/licenses/gpl-3.0-standalone.html"
+cloud_name: evanlori
 
 defaults:
     - scope:
-          type: "posts"
+          type: posts
       values:
-          layout: "post"
-          images:
-              thumb:
-                  transformations: ["c_auto,g_auto,w_512,h_512"]
+          layout: post
     - scope:
-          path: "categories/"
+          path: categories/
       values:
-          layout: "category"
-
-# Build settings
-cloud_name: "evanlori"
-plugins:
-    - jekyll-paginate-v2
+          layout: category
 
 exclude:
     - .jekyll-cache/
@@ -34,19 +24,19 @@ exclude:
     - .liquidrc
     - .prettierrc
     - node_modules/
+    - config.rb
     - tasks/
     - Gemfile
     - Gemfile.lock
     - LICENSE
     - package.json
+    - README.md
     - Rakefile
     - yarn.lock
 
 sass:
     style: expanded
     sass_dir: _sass
-
-permalink: /portfolio/posts/:year/:month/:title.html
 
 pagination:
     enabled: true
@@ -57,3 +47,5 @@ pagination:
     trail:
         before: 2
         after: 2
+
+permalink: /portfolio/posts/:year/:month/:title.html

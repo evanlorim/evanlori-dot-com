@@ -1,0 +1,14 @@
+{% assign transformation = site.data.images.transformations
+    | where: 'type', 'gallery'
+    | where: 'public_id', include.public_id
+    | first
+    | default: site.data.default.transformation.gallery %}
+{% assign src = include.public_id,
+    | image_url: transformation %}
+
+<a href="#modal-{{ include.i }}" style="height:100%; width:100%;">
+    <img
+        class="has-border-1"
+        src="{{ src }}"
+        style="object-fit: cover; height: 100%; width: 100%;" />
+</a>

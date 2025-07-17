@@ -3,42 +3,37 @@
 // BULMA STUFF
 
 @use "bulma/sass/utilities" with (
-	$primary: v.$primary,
-	$background: v.$background,
-	$link: v.$link,
-	$scheme-h: v.$scheme-h,
-	$scheme-s: v.$scheme-s,
-	$family-primary: v.$family-primary,
-	$family-secondary: v.$family-secondary
+    $family-primary: v.$family-primary,
+    $family-secondary: v.$family-secondary
 );
 
 @forward "bulma/sass/base";
-@use "bulma/sass/components/card" with (
-	$card-radius: v.$card-radius,
-	$card-shadow: v.$card-shadow
-);
 @forward "bulma/sass/components/breadcrumb";
-@forward "bulma/sass/components/modal";
-@forward "bulma/sass/components/navbar";
-@forward "bulma/sass/components/pagination";
-@use "bulma/sass/components/panel" with (
-	$panel-shadow: v.$panel-shadow
+@use "bulma/sass/components/modal" with (
+    $modal-content-width: v.$modal-content-width
 );
-@forward "bulma/sass/components/tabs";
-
+@use "bulma/sass/components/navbar" with (
+    $navbar-background-color: v.$navbar-background-color
+);
+@forward "bulma/sass/components/pagination";
 @forward "bulma/sass/elements/block";
 @use "bulma/sass/elements/box" with (
-	$box-shadow: v.$box-shadow
+    $box-shadow: v.$box-shadow,
+    $box-radius: v.$box-radius,
+    $box-background-color: v.$box-background-color
 );
 @forward "bulma/sass/elements/button";
 @forward "bulma/sass/elements/content";
 @forward "bulma/sass/elements/icon";
 @forward "bulma/sass/elements/image";
-@forward "bulma/sass/elements/tag";
+@use "bulma/sass/elements/table" with (
+    $table-cell-border-width: v.$table-cell-border-width,
+    $table-head-cell-border-width: v.$table-head-cell-border-width,
+    $table-foot-cell-border-width: v.$table-foot-cell-border-width,
+    $table-background-color: v.$table-background-color
+);
 @forward "bulma/sass/elements/title";
-
 @forward "bulma/sass/grid";
-
 @forward "bulma/sass/helpers/aspect-ratio";
 @forward "bulma/sass/helpers/border";
 @forward "bulma/sass/helpers/color";
@@ -52,13 +47,16 @@
 @forward "bulma/sass/helpers/visibility";
 
 @forward "bulma/sass/layout/container";
-@forward "bulma/sass/layout/footer";
+@use "bulma/sass/layout/footer" with (
+    $footer-background-color: v.$footer-background-color
+);
 @forward "bulma/sass/layout/hero";
-@forward "bulma/sass/layout/level";
 @forward "bulma/sass/layout/media";
 @forward "bulma/sass/layout/section";
 
-@use "bulma/sass/themes";
+@forward "bulma/sass/themes";
+@forward "theme";
 
 @forward "helpers";
 @forward "components/hover";
+@forward "components/masonry";

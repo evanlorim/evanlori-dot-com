@@ -1,9 +1,10 @@
 ---
 title: "Illustration: Smoldering"
 categories: [illustration]
+thumb: portfolio/illustration-smoldering
 images:
-    thumb:  
-        id: portfolio/illustration-smoldering
-    feature:
-      - id: portfolio/illustration-smoldering
+  -  portfolio/illustration-smoldering
+meta:
+  palette: [bw]
+  software: [procreate]
 ---

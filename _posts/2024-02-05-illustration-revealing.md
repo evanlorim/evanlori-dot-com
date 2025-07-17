@@ -1,11 +1,9 @@
 ---
 title: "Illustration: Revealing"
 categories: [illustration]
+thumb: portfolio/illustration-revealing
 images:
-    thumb:
-        id: portfolio/illustration-revealing
-    feature:
-      - id: portfolio/illustration-revealing
+  -  portfolio/illustration-revealing
 meta:
-    software: [procreate]
+  software: [procreate]
 ---

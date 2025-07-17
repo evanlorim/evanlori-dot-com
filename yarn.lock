@@ -11,3 +11,13 @@ open-color@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/open-color/-/open-color-1.9.1.tgz#a6e6328f60eff7aa60e3e8fcfa50f53ff3eece35"
   integrity sha512-vCseG/EQ6/RcvxhUcGJiHViOgrtz4x0XbZepXvKik66TMGkvbmjeJrKFyBEx6daG5rNyyd14zYXhz0hZVwQFOw==
+
+remixicon@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-4.6.0.tgz#f2adafd18aaa983d61f8c9f7274fa17706da4ddc"
+  integrity sha512-bKM5odjqE1yzVxEZGJE7F79WHhNrJFIKHXR+GG+P1IWXn8AnJZhl8SbIRDJsNAvIqx4VPkNwjuHfc42tutMDpQ==
+
+simple-icons-font@^15.5.0:
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/simple-icons-font/-/simple-icons-font-15.5.0.tgz#8ea226a291b61125ab2e02fd5486814ff9d8d796"
+  integrity sha512-tC0fbE38L2QbaJTIHrGLDI9QsOFZrhcp4GPOvhdKTfw9Kw7vaGFHGPgs/pB2hwOJPpJMCFkWnb07NG4CmD99pg==

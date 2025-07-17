@@ -1,24 +1,22 @@
 ---
 title: "Sketchbook: Abstractress"
 categories: [sketch,abstract]
+thumb:  portfolio/abstractress-002
 images:
-    thumb: 
-        id: portfolio/abstractress-002
-    feature:
-      - id: portfolio/abstractress-043
-      - id: portfolio/abstractress-041
-      - id: portfolio/abstractress-039
-      - id: portfolio/abstractress-034
-      - id: portfolio/abstractress-033
-      - id: portfolio/abstractress-031
-      - id: portfolio/abstractress-029
-      - id: portfolio/abstractress-021
-      - id: portfolio/abstractress-020
-      - id: portfolio/abstractress-011
-      - id: portfolio/abstractress-008
-      - id: portfolio/abstractress-006
-      - id: portfolio/abstractress-005
-      - id: portfolio/abstractress-003
-      - id: portfolio/abstractress-002
-      - id: portfolio/abstractress-001
+  -  portfolio/abstractress-043
+  -  portfolio/abstractress-041
+  -  portfolio/abstractress-039
+  -  portfolio/abstractress-034
+  -  portfolio/abstractress-033
+  -  portfolio/abstractress-031
+  -  portfolio/abstractress-029
+  -  portfolio/abstractress-021
+  -  portfolio/abstractress-020
+  -  portfolio/abstractress-011
+  -  portfolio/abstractress-008
+  -  portfolio/abstractress-006
+  -  portfolio/abstractress-005
+  -  portfolio/abstractress-003
+  -  portfolio/abstractress-002
+  -  portfolio/abstractress-001
 ---

@@ -1,12 +1,10 @@
 ---
 title: "Illustration: Hair Flip"
 categories: [illustration]
+thumb: portfolio/illustration-hair-flip
 images:
-    thumb:
-        id: portfolio/illustration-hair-flip
-    feature:
-      - id: portfolio/illustration-hair-flip
+  -  portfolio/illustration-hair-flip
 meta:
-    color: [bw]
-    software: [procreate]
+  palette: [bw]
+  software: [procreate]
 ---

@@ -1,21 +1,19 @@
 <nav
-    class="navbar is-spaced is-family-secondary has-text-weight-bold is-size-5"
+    class="navbar has-border-bottom-1 is-spaced is-family-secondary has-text-weight-bold is-size-5"
     role="navigation"
     aria-label="main-navigation">
     <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                {{ site.title_short }}
+        <div class="is-flex is-justify-content-center is-align-items-center" style="width: 100%">
+            <a class="navbar-item is-radiusless has-text-invert" href="/">
+                <strong>
+                    {{ site.title_short }}
+                </strong>
             </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                {% for pg in site.data.pages %}
-                    <a class="navbar-item" href="{{ site.base_url | append: pg.href }}">
-                        {{ pg.title }}
-                    </a>
-                {% endfor %}
-            </div>
+            {% for pg in site.data.pages %}
+                <a class="navbar-item is-radiusless has-text-invert" href="{{ site.base_url | append: pg.href }}">
+                    {{ pg.title }}
+                </a>
+            {% endfor %}
         </div>
     </div>
 </nav>

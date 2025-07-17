@@ -1,0 +1,42 @@
+---
+- type: donate
+  id: patreon
+  icon: si si-patreon
+  title: Patreon
+  link: https://www.patreon.com/evanlorim
+  user: evanlorim
+
+- type: donate
+  id: paypal
+  icon: si si-paypal
+  title: PayPal
+  link: https://www.paypal.com/paypalme/EvanLori
+  user: "@EvanLori"
+
+- type: creative
+  id: github
+  icon: si si-github
+  title: GitHub
+  link: https://github.com/evanlorim/
+  user: evanlorim
+
+- type: creative
+  id: itchio
+  icon: si si-itchdotio
+  title: "Itch.io"
+  link: https://evanlorim.itch.io/
+  user: evanlorim
+
+- type: creative
+  id: gumroad
+  icon: si si-gumroad
+  title: "GumRoad"
+  link: https://evanlori.gumroad.com/
+  user: evanlori
+
+- type: contact
+  id: email
+  icon: ri-mail-fill
+  title: E-Mail
+  link: mailto:evan@evanlori.com
+  user: evan@evanlori.com

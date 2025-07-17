@@ -1,0 +1,216 @@
+---
+- key: database
+  id: mongodb
+  title: MongoDB
+
+- key: database
+  id: postgresql
+  title: PostgreSQL
+
+- key: framework
+  id: bulma
+  title: Bulma
+
+- key: framework
+  id: godot
+  title: Godot
+
+- key: framework
+  id: jekyll
+  title: Jekyll
+
+- key: language
+  id: css
+  title: CSS
+
+- key: language
+  id: glsl
+  title: GLSL
+
+- key: language
+  id: html
+  title: HTML
+
+- key: language
+  id: js
+  title: Javascript
+
+- key: language
+  id: python
+  title: Python
+
+- key: language
+  id: r
+  title: R
+
+- key: language
+  id: ruby
+  title: Ruby
+
+- key: library
+  id: d3
+  title: d3
+
+- key: library
+  id: leaflet
+  title: Leaflet
+
+- key: library
+  id: p5
+  title: p5
+
+- key: media
+  id: acrylic-paint
+  title: acrylic paint
+
+- key: media
+  id: alcohol-markers
+  title: alcohol markers
+
+- key: media
+  id: collage
+  title: collage
+
+- key: media
+  id: colored-pencils
+  title: colored pencils
+
+- key: media
+  id: gouache
+  title: gouache
+
+- key: media
+  id: graphite
+  title: graphite
+
+- key: media
+  id: ink
+  title: ink
+
+- key: media
+  id: oil-paint
+  title: oil paint
+
+- key: media
+  id: oil-pastels
+  title: oil pastels
+
+- key: media
+  id: paint-markers
+  title: paint markers
+
+- key: media
+  id: paper
+  title: paper
+
+- key: media
+  id: pigment-pens
+  title: pigment pens
+
+- key: media
+  id: watercolor
+  title: watercolor
+
+- key: substrate
+  id: hotpress
+  title: hot-press watercolor paper
+
+- key: substrate
+  id: coldpress
+  title: cold-press watercolor paper
+
+- key: substrate
+  id: synthetic-surface
+  title: synthetic surface
+
+- key: substrate
+  id: canvas
+  title: canvas
+
+- key: palette
+  id: bw
+  title: black and white
+
+- key: palette
+  id: clement8
+  title: Clément 8
+  link: "https://lospec.com/palette-list/clement-8"
+
+- key: palette
+  id: color
+  title: color
+
+- key: palette
+  id: hisat
+  title: high saturation
+
+- key: palette
+  id: losat
+  title: low saturation
+
+- key: palette
+  id: matriax8c
+  title: Matriax8c
+  link: "https://lospec.com/palette-list/matriax8c"
+
+- key: palette
+  id: mono
+  title: monochromatic
+
+- key: palette
+  id: pico8
+  title: Pico 8
+  link: "https://lospec.com/palette-list/pico-8"
+
+- key: palette
+  id: shikiori
+  title: Sailor Shikiori
+  link: "https://shikiori-en.sailor.co.jp/ink-color-lineup/"
+
+- key: rte
+  id: nodejs
+  title: NodeJS
+
+- key: software
+  id: aseprite
+  title: Aseprite
+
+- key: software
+  id: blender
+  title: Blender
+
+- key: software
+  id: gimp
+  title: GIMP
+
+- key: software
+  id: inkscape
+  title: Inkscape
+
+- key: software
+  id: krita
+  title: Krita
+
+- key: software
+  id: procreate
+  title: Procreate
+
+- key: links
+  id: itchio
+  title: Itch.io
+  icon: si si-itchdotio
+
+- key: links
+  id: github
+  title: Github
+  icon: si si-github
+
+- key: links
+  id: codepen
+  title: Codepen
+  icon: si si-codepen
+
+- key: links
+  id: gumroad
+  title: Gumroad
+  icon: si si-gumroad

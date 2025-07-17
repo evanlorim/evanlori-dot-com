@@ -1,11 +1,10 @@
 ---
 title: "Painting: Beauty"
 categories: [painting]
+thumb: portfolio/painting-beauty-photo
 images:
-    thumb:
-        id: portfolio/painting-beauty-photo
-    feature:
-      - id: portfolio/painting-beauty-photo
+  -  portfolio/painting-beauty-photo
 meta:
-    media: [oil-paint]
+  media: [oil-paint]
+  substrate: [canvas]
 ---

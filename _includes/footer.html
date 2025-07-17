@@ -1,17 +1,10 @@
-<footer class="footer">
+<footer class="footer has-border-top-1  ">
     <div class="container">
-        <div class="content has-text-centered">
-            <p>
-                Website created by
-                <strong>
-                    {{ site.fullname }}
-                </strong>
-                in {{ site.location }}. Website content is licensed
-                <a href="{{ site.license_link }}">
-                    {{ site.license }}
-                </a>
-                .
-            </p>
+        <div class="content has-text-centered is-size-7">
+        {% for credit in site.data.credits %}
+			{% include footer/credit.html asset = credit.asset author = credit.author license = credit.license source = credit.source
+			%}
+		{% endfor %}
         </div>
     </div>
 </footer>

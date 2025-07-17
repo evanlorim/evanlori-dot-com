@@ -1,11 +1,9 @@
 ---
 title: "Illustration: Seduction"
 categories: [illustration]
+thumb: portfolio/illustration-seduction
 images:
-    thumb:
-        id: portfolio/illustration-seduction
-    feature:
-      - id: portfolio/illustration-seduction
+  -  portfolio/illustration-seduction
 meta:
-    software: [procreate]
+  software: [procreate]
 ---

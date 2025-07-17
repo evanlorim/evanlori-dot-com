@@ -1,9 +1,9 @@
 ---
 title: "Illustration Portrait: Jen"
 categories: [illustration]
+thumb: portfolio/illustration-portrait-jen-2021-04-11
 images:
-    thumb:
-        id: portfolio/illustration-portrait-jen-2021-04-11
-    feature:
-      - id: portfolio/illustration-portrait-jen-2021-04-11
+  -  portfolio/illustration-portrait-jen-2021-04-11
+meta:
+  software: [inkscape]
 ---

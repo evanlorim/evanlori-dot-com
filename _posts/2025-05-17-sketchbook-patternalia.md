@@ -1,13 +1,11 @@
 ---
 title: "Sketchbook: Patternalia"
 categories: [sketch]
+thumb:  portfolio/patternalia-012
 images:
-    thumb: 
-        id: portfolio/patternalia-012
-    feature:
-      - id: portfolio/patternalia-015
-      - id: portfolio/patternalia-012
-      - id: portfolio/patternalia-010
-      - id: portfolio/patternalia-007
-      - id: portfolio/patternalia-004
+  -  portfolio/patternalia-015
+  -  portfolio/patternalia-012
+  -  portfolio/patternalia-010
+  -  portfolio/patternalia-007
+  -  portfolio/patternalia-004
 ---

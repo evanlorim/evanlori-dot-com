@@ -1,9 +1,9 @@
 ---
 title: "Illustration: Self Love"
 categories: [illustration]
-images:
-    thumb:
-        id: portfolio/illustration-self-love
-    feature:
-      - id: portfolio/illustration-self-love
+thumb: portfolio/illustration-self-love
+images: 
+  - portfolio/illustration-self-love
+meta:
+  software: [inkscape]
 ---

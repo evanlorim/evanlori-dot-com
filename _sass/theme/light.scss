@@ -1,0 +1,9 @@
+@mixin theme {
+    :root {
+        --bulma-body-background-color: #fff;
+        --bulma-navbar-background-color: #0000;
+
+        --invert: #000;
+        --scheme: #fff;
+    }
+}

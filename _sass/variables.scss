@@ -1,27 +1,41 @@
+@use "open-color/open-color" as oc;
+
+// components
+$masonry-gap: 0.5rem;
+
 // helpers
 $border-color: #fff;
 $shadow-color: #fff;
-$widths: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
-
-// patterns
-$pattern-fg-color: #fff;
-$pattern-bg-color: #000;
 
 // bulma utils
-$primary: hsl(171, 100%, 41%);
-$background: #000;
-$link: $primary;
-$scheme-h: 0;
-$scheme-s: 0%;
 $family-primary: "Open Sans", sans-serif;
 $family-secondary: "Avara", serif;
+$gap: 32px;
+$tablet: 769px;
+$desktop: 960px + 2 * $gap;
+$widescreen: 1152px + 2 * $gap;
+$fullhd: 1344px + 2 * $gap;
 
-// bulma card
-$card-radius: 0rem;
-$card-shadow: none;
+// colors
+$white: #fff;
+$black: #000;
+
+// bulma navbar
+$navbar-background-color: #0000;
 
 // bulma box
 $box-shadow: none;
+$box-radius: 0rem;
+$box-background-color: #0000;
 
-// bulma panel
-$panel-shadow: none;
+// bulma table
+$table-cell-border-width: 0 0 0;
+$table-head-cell-border-width: 0 0 0;
+$table-foot-cell-border-width: 0 0 0;
+$table-background-color: #0000;
+
+// bulma footer
+$footer-background-color: #0000;
+
+// bulma modal
+$modal-content-width: 40rem;

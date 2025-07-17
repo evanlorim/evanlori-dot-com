@@ -1,0 +1,99 @@
+- title: Freelance Graphic Design
+  employer: Contractual
+  location: Baltimore, MD
+  dates:
+    - start: 2017-01-01
+  details:
+    - Designed buttons, flyers, pamphlets and logos for non-profits.
+
+- title: Life Model
+  employer: Harford Community College
+  location: Bel Air, MD
+  dates:
+    - start: 2025-01-17
+      end: 2025-05-17
+  details:
+    - Posed for art students, maintaining specific postures for extended periods to help them practice figure drawing.
+
+- title: Assistant Teacher
+  employer: Code in the Schools
+  location: Baltimore, MD
+  dates:
+    - start: 2023-07-01
+      end: 2023-11-01
+  details:
+    - Instructed full classrooms in elementary computer science.
+
+- title: Tutor
+  employer: Axiom Educators
+  location: Baltimore, MD
+  dates:
+    - start: 2022-11-01
+      end: 2023-06-09
+  details:
+    - Instructed small groups of students on geometry in a public school setting.
+
+- title: Canvass Trainer
+  employer: Clean Water Action
+  location: Baltimore, MD
+  dates:
+    - start: 2014-03-01
+      end: 2015-01-01
+    - start: 2016-12-01
+      end: 2018-01-01
+    - start: 2021-07-03
+      end: 2022-09-21
+  details:
+    - Fundraised over twenty-five thousand dollars for environmental advocacy group in one year.
+    - Organized communities on environmental justice and public health issues.
+    - Trained other organizers in effective fundraising strategies and engaging with concerned citizens.
+
+- title: Media Specialist
+  employer: The Baltimore Transgender Alliance
+  location: Baltimore, MD
+  dates:
+    - start: 2016-06-01
+      end: 2021-05-01
+  details:
+    - Designed, hosted, and developed full-featured website for transgender advocacy organization.
+    - Designed, generated media content; email newsletters, social media, flyers, logos, and buttons.
+    - Planned events, performed community outreach, co-organized with other LGBTQ and activist organizations.
+
+- title: Programmer/ Statistician
+  employer: BNIA-JFI
+  location: Baltimore, MD
+  dates:
+    - start: 2015-01-01
+      end: 2016-09-17
+  details:
+    - Maintained databases. Cleaned and statistically analyzed messy geodata for open data organization.
+    - Developed cutting-edge interactive web-map to display publicly available environmental indicators.
+
+- title: Network Assistant
+  employer: St. Mary's College of MD OIT
+  location: St. Mary's City, MD
+  dates:
+    - start: 2011-11-01
+      end: 2014-01-01
+  details:
+    - Front Desk:: desktop support; troubleshot and configured students networks, routers, and computers.
+    - Wireless oversaturation problem:: developed system to collect information on location and reach of over 200 wireless routers.
+    - Deployed and maintained Linux and OSX servers.
+
+- title: Computer Science Tutor
+  employer: Spring Ridge Middle School
+  location: St. Mary's City, MD
+  dates:
+    - start: 2013-02-01
+      end: 2013-05-30
+  details:
+    - Developed and taught lessons at afterschool program to teach students math and computer science in fun ways.
+
+- title: Teacher's Assistant
+  employer: St. Mary's College of MD
+  location: St. Mary's City, MD
+  dates:
+    - start: 2011-09-01
+      end: 2011-12-31
+  detailts:
+    - Taught student’s fundamentals of computer architecture, held review sessions, and graded homework.

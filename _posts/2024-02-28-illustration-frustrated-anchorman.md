@@ -1,11 +1,9 @@
 ---
 title: "Illustration: Frustrated Anchorman"
 categories: [illustration]
+thumb: portfolio/illustration-frustrated-anchorman
 images:
-    thumb:
-        id: portfolio/illustration-frustrated-anchorman
-    feature:
-      - id: portfolio/illustration-frustrated-anchorman
+  -  portfolio/illustration-frustrated-anchorman
 meta:
-    software: [aseprite]
+  software: [aseprite]
 ---

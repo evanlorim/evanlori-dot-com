@@ -1,9 +1,9 @@
 ---
 title: "Illustration: Self-Portrait"
 categories: [illustration]
+thumb: portfolio/illustration-self-portrait-2019-07
 images:
-    thumb:
-        id: portfolio/illustration-self-portrait-2019-07
-    feature:
-      - id: portfolio/illustration-self-portrait-2019-07
+  - portfolio/illustration-self-portrait-2019-07
+meta:
+  software: [inkscape]
 ---

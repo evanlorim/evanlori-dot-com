@@ -1,13 +1,11 @@
 ---
 title: "Illustration: Celebrity with Pet"
 categories: [illustration]
+thumb: portfolio/illustration-celebrity-with-pet
 images:
-    thumb:
-        id: portfolio/illustration-celebrity-with-pet
-    feature:
-      - id: portfolio/illustration-celebrity-with-pet
+  -  portfolio/illustration-celebrity-with-pet
 meta:
-    palette: [bw]
-    software: [procreate]
+  palette: [bw]
+  software: [procreate]
 ---
 Capturing the likeness of Pedro Pascal with his former pet.

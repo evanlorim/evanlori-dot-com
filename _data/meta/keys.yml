@@ -1,0 +1,48 @@
+---
+- id: dimension
+  title: Dimensions
+  icon: ri-ruler-2-fill
+
+- id: database
+  title: Database
+  icon: ri-database-2-fill
+
+- id: font
+  title: Fonts
+  icon: ri-font-family
+
+- id: framework
+  title: Framework
+  icon: ri-stack-fill
+
+- id: language
+  title: Language
+  icon: ri-code-fill
+
+- id: library
+  title: Library
+  icon: ri-book-shelf-fill
+
+- id: media
+  title: Media
+  icon: ri-pencil-fill
+
+- id: palette
+  title: Palette
+  icon: ri-palette-fill
+
+- id: rte
+  title: Run Time Environment
+  icon: ri-cpu-fill
+
+- id: substrate
+  title: Substrate
+  icon: ri-artboard-fill
+
+- id: software
+  title: Software
+  icon: ri-apps-2-fill
+
+- id: links
+  title: Links
+  icon: ri-links-fill

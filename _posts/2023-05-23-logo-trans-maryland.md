@@ -1,9 +1,9 @@
 ---
 title: "Logo: Trans Maryland"
 categories: [design]
+thumb: portfolio/logo-trans-maryland-demo
 images:
-    thumb:
-        id: portfolio/logo-trans-maryland-demo
-    feature:
-      - id: portfolio/logo-trans-maryland-demo
+  -  portfolio/logo-trans-maryland-demo
+meta:
+  software: [inkscape]
 ---

@@ -1,11 +1,10 @@
 ---
 title: "Character Sheet: Fishlecia"
 categories: [illustration]
+thumb: portfolio/character-sheet-fishlecia
 images:
-    thumb:
-        id: portfolio/character-sheet-fishlecia
-    feature:
-      - id: portfolio/character-sheet-fishlecia
+  -  portfolio/character-sheet-fishlecia
 meta:
-    software: [aseprite]
+  software: [aseprite]
+  palette: [clement8]
 ---

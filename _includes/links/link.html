@@ -1,0 +1,11 @@
+<span class="icon-text is-size-5">
+    <span class="icon">
+        <span class="{{ include.icon }}"></span>
+    </span>
+    <span>
+        {{- link.title | append: ': ' -}}
+    </span>
+    <a href="{{ include.url }}">
+        {{ include.user }}
+    </a>
+</span>

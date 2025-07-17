@@ -1,11 +1,10 @@
 ---
 title: "Painting: Please Don't Die"
 categories: [painting]
+thumb: portfolio/painting-please-dont-die-photo
 images:
-    thumb:
-        id: portfolio/painting-please-dont-die-photo
-    feature:
-      - id: portfolio/painting-please-dont-die-photo
+  -  portfolio/painting-please-dont-die-photo
 meta:
-    media: [acrylic-paint]
+  media: [acrylic-paint]
+  substrate: [canvas]
 ---

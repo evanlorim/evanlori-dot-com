@@ -1,0 +1,17 @@
+{% assign data = site.data.links
+    | where: 'type', include.type
+    | first %}
+<span class="icon-text is-size-5">
+    <span class="icon">
+        <i class="{{ data.icon-base }} {{ data.icon-class }}"></i>
+    </span>
+    <span>
+        <b>
+            {{ data.title }}
+            {{ ': ' }}
+        </b>
+        <a href="{{ include.url }}">
+            {{ include.url }}
+        </a>
+    </span>
+</span>

@@ -1,5 +1,5 @@
 {
-    "engine": "shopify",
+    "engine": "jekyll",
     "files": {
         "settings": "",
         "locales": "",
@@ -13,7 +13,7 @@
         "preserveLine": 2,
         "endNewline": true,
         "liquid": {
-            "indentAttribute": true,
+            "indentAttribute": false,
             "lineBreakSeparator": "before",
             "normalizeSpacing": true,
             "quoteConvert": "single",
