@@ -2,23 +2,23 @@
 - asset: website
   author: Evan Lori Mahone
   license:
-      title": GPL3
-      url: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+    title: GPL3
+    url: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 - asset: bulma css
   author: Jeremy Thomas
   license:
-      title: MIT
-      url: https://mit-license.org/
+    title: MIT
+    url: https://mit-license.org/
   source:
-      title: bulma.io
-      url: https://bulma.io
+    title: bulma.io
+    url: https://bulma.io
 
 - asset: avara
   author: Raphaël Bastide with the contribution of Wei Huang Lucas Le Bihan Walid Bouchouchi Jérémy Landestion
   license:
-      title: OFL
-      url: https://openfontlicense.org/
+    title: OFL
+    url: https://openfontlicense.org/
   source:
-      title: velvetyne.fr
-      url: https://velvetyne.fr
+    title: velvetyne.fr
+    url: https://velvetyne.fr
