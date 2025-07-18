@@ -22,13 +22,10 @@
           | first %}
         {% assign title = category.title %}
       {% endif %}
-      {% assign sub_url = sub_url | append: component
-      %}
+      {% assign sub_url = sub_url | append: component %}
       {% if forloop.last %}
         {% assign is_active = 'is-active' %}
         {% assign aria_current = 'page' %}
-      {% else %}
-        {% assign sub_url = sub_url | append: '/' %}
       {% endif %}
       <li class="{{ is_active }}">
         <a
@@ -38,6 +35,7 @@
           {{ title }}
         </a>
       </li>
+      {% assign sub_url = sub_url | append: '/' %}
     {% endfor %}
   </ul>
 </nav>
