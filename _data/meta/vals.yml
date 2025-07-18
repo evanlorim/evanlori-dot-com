@@ -167,8 +167,32 @@
   title: synthetic surface
 
 - key: surface
+  id: cardstock
+  title: cardstock
+
+- key: surface
   id: computer-paper
   title: computer paper
+
+- key: surface
+  id: mixed
+  title: mixed media paper
+
+- key: surface
+  id: marker
+  title: marker paper
+
+- key: surface
+  id: newsprint
+  title: newsprint
+
+- key: surface
+  id: kraft
+  title: kraft paper
+
+- key: surface
+  id: bristol
+  title: bristol paper
 
 - key: surface
   id: canvas
