@@ -1,18 +1,17 @@
 ---
 layout: default
 title: Portfolio
-permalink: /portfolio
 ---
 <div class="columns is-1 is-multiline">
-    {% for cat in site.data.categories %}
-        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
-            {% assign transformation = site.data.images.transformations
-                | where: 'type', 'thumb'
-                | where: 'public_id', cat.thumb
-                | first
-                | map: 'transformation'
-                | default: site.data.default.transformation.thumb %}
-            {% include portfolio/square.html public_id = cat.thumb title = cat.title url = cat.permalink transformation = transformation %}
-        </div>
-    {% endfor %}
+  {% for cat in site.data.categories %}
+    <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+      {% assign transformation = site.data.images.transformations
+        | where: 'type', 'thumb'
+        | where: 'public_id', cat.thumb
+        | first
+        | map: 'transformation'
+        | default: site.data.default.transformation.thumb %}
+      {% include portfolio/square.html public_id = cat.thumb title = cat.title url = cat.permalink transformation = transformation %}
+    </div>
+  {% endfor %}
 </div>
