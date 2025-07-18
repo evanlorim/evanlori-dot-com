@@ -1,8 +1,18 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.19.2"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "evanlori-dot-com"
+set :repo_url, "git@github.com:evanlorim/evanlori-dot-com"
+
+
+set :deploy_to, -> { "/var/www/evanlori.com" }
+
+set :ssh_options, {   
+	forward_agent: true,
+  	auth_methods: %w[publickey] 
+}
+
+set :repo_tree, '_site'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
