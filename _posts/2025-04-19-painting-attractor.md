@@ -7,4 +7,5 @@ images:
 meta:
   media: [acrylic-paint]
   surface: [canvas]
+  software: [open-camera,gimp]
 ---
