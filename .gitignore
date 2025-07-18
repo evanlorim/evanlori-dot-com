@@ -6,7 +6,3 @@
 .vscode
 config.rb
 node_modules
-_sass/bulma
-_sass/open-color
-assets/fonts/simple-icons
-assets/fonts/remix-icons
