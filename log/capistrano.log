@@ -1,0 +1,120 @@
+# Logfile created on 2025-07-18 11:27:46 -0400 by logger.rb/v1.7.0
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-07-18 11:27:46 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fb42b54c] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [fb42b54c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-07-18 11:30:16 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [63d39b71] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [63d39b71] Command: /usr/bin/env mkdir -p /tmp
+  INFO [63d39b71] Finished in 4.553 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-65bb3859b4a72277775c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-65bb3859b4a72277775c.sh 100.0%
+  INFO [d3a47d81] Running /usr/bin/env chmod 700 /tmp/git-ssh-65bb3859b4a72277775c.sh as deploy@104.236.44.151
+ DEBUG [d3a47d81] Command: /usr/bin/env chmod 700 /tmp/git-ssh-65bb3859b4a72277775c.sh
+  INFO [d3a47d81] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [0fa02671] Running /usr/bin/env git ls-remote git@example.com:me/my_repo.git HEAD as deploy@104.236.44.151
+ DEBUG [0fa02671] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-65bb3859b4a72277775c.sh" ; /usr/bin/env git ls-remote git@example.com:me/my_repo.git HEAD )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-07-18 11:32:52 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [bb585339] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [bb585339] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bb585339] Finished in 4.323 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-48b055cf8db3ac5cd5f6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-48b055cf8db3ac5cd5f6.sh 100.0%
+  INFO [2a8ea1ee] Running /usr/bin/env chmod 700 /tmp/git-ssh-48b055cf8db3ac5cd5f6.sh as deploy@104.236.44.151
+ DEBUG [2a8ea1ee] Command: /usr/bin/env chmod 700 /tmp/git-ssh-48b055cf8db3ac5cd5f6.sh
+  INFO [2a8ea1ee] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [f2058453] Running /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD as deploy@104.236.44.151
+ DEBUG [f2058453] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-48b055cf8db3ac5cd5f6.sh" ; /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD )
+ DEBUG [f2058453] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [f2058453] 	@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ DEBUG [f2058453] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [f2058453] 	IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ DEBUG [f2058453] 	Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ DEBUG [f2058453] 	It is also possible that a host key has just been changed.
+ DEBUG [f2058453] 	The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+ DEBUG [f2058453] 	Please contact your system administrator.
+ DEBUG [f2058453] 	Add correct host key in /home/deploy/.ssh/known_hosts to get rid of this message.
+ DEBUG [f2058453] 	Offending RSA key in /home/deploy/.ssh/known_hosts:1
+ DEBUG [f2058453] 	  remove with:
+ DEBUG [f2058453] 	  ssh-keygen -f "/home/deploy/.ssh/known_hosts" -R "github.com"
+ DEBUG [f2058453] 	Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+ DEBUG [f2058453] 	git@github.com: Permission denied (publickey).
+ DEBUG [f2058453] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-07-18 11:34:26 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6788ee79] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [6788ee79] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6788ee79] Finished in 3.991 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-c70c50944b1d694c0c7b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-c70c50944b1d694c0c7b.sh 100.0%
+  INFO [d93ac386] Running /usr/bin/env chmod 700 /tmp/git-ssh-c70c50944b1d694c0c7b.sh as deploy@104.236.44.151
+ DEBUG [d93ac386] Command: /usr/bin/env chmod 700 /tmp/git-ssh-c70c50944b1d694c0c7b.sh
+  INFO [d93ac386] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [e8425b6a] Running /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD as deploy@104.236.44.151
+ DEBUG [e8425b6a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c70c50944b1d694c0c7b.sh" ; /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD )
+ DEBUG [e8425b6a] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [e8425b6a] 	@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ DEBUG [e8425b6a] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [e8425b6a] 	IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ DEBUG [e8425b6a] 	Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ DEBUG [e8425b6a] 	It is also possible that a host key has just been changed.
+ DEBUG [e8425b6a] 	The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+ DEBUG [e8425b6a] 	Please contact your system administrator.
+ DEBUG [e8425b6a] 	Add correct host key in /home/deploy/.ssh/known_hosts to get rid of this message.
+ DEBUG [e8425b6a] 	Offending RSA key in /home/deploy/.ssh/known_hosts:1
+ DEBUG [e8425b6a] 	  remove with:
+ DEBUG [e8425b6a] 	  ssh-keygen -f "/home/deploy/.ssh/known_hosts" -R "github.com"
+ DEBUG [e8425b6a] 	Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+ DEBUG [e8425b6a] 	git@github.com: Permission denied (publickey).
+ DEBUG [e8425b6a] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-07-18 11:36:21 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4dc18202] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [4dc18202] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4dc18202] Finished in 5.649 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4e06a7dc2d14a60ab62a.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4e06a7dc2d14a60ab62a.sh 100.0%
+  INFO [b985966a] Running /usr/bin/env chmod 700 /tmp/git-ssh-4e06a7dc2d14a60ab62a.sh as deploy@104.236.44.151
+ DEBUG [b985966a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4e06a7dc2d14a60ab62a.sh
+  INFO [b985966a] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [6423facf] Running /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD as deploy@104.236.44.151
+ DEBUG [6423facf] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4e06a7dc2d14a60ab62a.sh" ; /usr/bin/env git ls-remote git@github.com:evanlorim/evanlori-dot-com HEAD )
+ DEBUG [6423facf] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [6423facf] 	@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ DEBUG [6423facf] 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ DEBUG [6423facf] 	IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ DEBUG [6423facf] 	Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ DEBUG [6423facf] 	It is also possible that a host key has just been changed.
+ DEBUG [6423facf] 	The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+ DEBUG [6423facf] 	Please contact your system administrator.
+ DEBUG [6423facf] 	Add correct host key in /home/deploy/.ssh/known_hosts to get rid of this message.
+ DEBUG [6423facf] 	Offending RSA key in /home/deploy/.ssh/known_hosts:1
+ DEBUG [6423facf] 	  remove with:
+ DEBUG [6423facf] 	  ssh-keygen -f "/home/deploy/.ssh/known_hosts" -R "github.com"
+ DEBUG [6423facf] 	Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+ DEBUG [6423facf] 	git@github.com: Permission denied (publickey).
+ DEBUG [6423facf] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-07-18 11:43:24 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7d742eb9] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.44.151
+ DEBUG [7d742eb9] Command: /usr/bin/env mkdir -p /tmp
