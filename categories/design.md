@@ -1,5 +1,5 @@
 ---
-title: "Graphic Design"
+title: Graphic Design
 permalink: /portfolio/design
 pagination:
     enabled: true

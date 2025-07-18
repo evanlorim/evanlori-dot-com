@@ -9,7 +9,6 @@
     "private": false,
     "dependencies": {
         "bulma": "^1.0.4",
-        "open-color": "^1.9.1",
         "remixicon": "^4.6.0",
         "simple-icons-font": "^15.5.0"
     },

@@ -1,0 +1,13 @@
+:root {
+  --scheme-main: #fff;
+  --scheme-invert: #000;
+  --bulma-body-background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scheme-invert: #fff;
+    --scheme-main: #000;
+    --bulma-body-background-color: #000;
+  }
+}

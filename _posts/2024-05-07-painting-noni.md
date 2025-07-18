@@ -7,5 +7,5 @@ images:
 meta:
   dimensions: [8in x 11in]
   media: [acrylic-paint]
-  substrate: [canvas]
+  surface: [canvas]
 ---

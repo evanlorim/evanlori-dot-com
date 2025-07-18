@@ -6,5 +6,5 @@ images:
   -  portfolio/painting-beauty-photo
 meta:
   media: [oil-paint]
-  substrate: [canvas]
+  surface: [canvas]
 ---

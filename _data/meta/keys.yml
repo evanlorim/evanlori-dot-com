@@ -15,6 +15,10 @@
   title: Framework
   icon: ri-stack-fill
 
+- id: icon
+  title: Icons
+  icon: ri-shape-line
+
 - id: language
   title: Language
   icon: ri-code-fill
@@ -35,8 +39,12 @@
   title: Run Time Environment
   icon: ri-cpu-fill
 
-- id: substrate
-  title: Substrate
+- id: reference
+  title: Reference
+  icon: ri-image-fill
+
+- id: surface
+  title: Surface
   icon: ri-artboard-fill
 
 - id: software

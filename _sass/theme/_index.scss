@@ -1,9 +1,0 @@
-@use "dark";
-@use "light";
-
-// default dark theme
-@include dark.theme;
-
-@media (prefers-color-scheme: light) {
-    @include light.theme;
-}

@@ -1,5 +1,5 @@
 ---
-title: "Drawing"
+title: Drawing
 permalink: /portfolio/drawing
 pagination: 
     enabled: true

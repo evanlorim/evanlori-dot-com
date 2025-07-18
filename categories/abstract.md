@@ -1,5 +1,5 @@
 ---
-title: "Abstract Art"
+title: Abstract Art
 permalink: /portfolio/abstract
 pagination: 
     enabled: true

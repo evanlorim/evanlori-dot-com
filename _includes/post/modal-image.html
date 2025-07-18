@@ -10,7 +10,7 @@
     <a href="#">
         <div class="modal-background"></div>
         <div class="modal-content">
-            <img class="modal-img" src="{{ src }}" />
+            <img class="modal-image" src="{{ src }}" />
         </div>
     </a>
 </div>
@@ -19,21 +19,5 @@
     #modal-{{ include.i }}:target {
         display: flex;
     }
-    .modal-content:has(.modal-img) {
-        width: 100vw;
-        /* full viewport width */
-        height: 100vh;
-    }
-    .modal-img {
-        max-width: calc(100vw - 4rem);
-        max-height: calc(100vh - 4rem);
-        width: auto;
-        height: auto;
-        display: block;
-        margin: auto;
-        /* adds vertical margin too */
-        object-fit: contain;
-    }
-
 
 </style>

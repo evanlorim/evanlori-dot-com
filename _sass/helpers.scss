@@ -1,48 +1,98 @@
-$widths: 1, 2, 3, 4, 6, 8, 10;
+$transition-duration: 0.3s !default;
+$transition-timing-function: ease !default;
+$border-width: 1px !default;
 
-@each $x in $widths {
-    .has-border-#{$x} {
-        border-width: $x * 1px !important;
-        border-style: solid !important;
-        border-color: var(--invert);
-    }
+.has-border {
+  border-width: $border-width !important;
+  border-style: solid !important;
+  border-color: var(--scheme-invert) !important;
+}
 
-    .has-border-top-#{$x} {
-        border-top-width: $x * 1px !important;
-        border-top-style: solid !important;
-        border-color: var(--invert);
-    }
+.has-border-top {
+  border-top-width: $border-width !important;
+  border-top-style: solid !important;
+  border-top-color: var(--scheme-invert) !important;
+}
 
-    .has-border-bottom-#{$x} {
-        border-bottom-width: $x * 1px !important;
-        border-bottom-style: solid !important;
-        border-color: var(--invert);
-    }
-    @each $y in $widths {
-        $xpx: $x * 1px;
-        $ypx: $y * 1px;
-        .has-shadow-#{$x}-#{$y} {
-            filter: drop-shadow($xpx $ypx var(--invert));
-        }
-    }
+.has-border-bottom {
+  border-bottom-width: $border-width !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: var(--scheme-invert) !important;
+}
+
+.has-border-right {
+  border-right-width: $border-width !important;
+  border-right-style: solid !important;
+  border-right-color: var(--scheme-invert) !important;
+}
+
+.has-border-left {
+  border-left-width: $border-width !important;
+  border-left-style: solid !important;
+  border-left-color: var(--scheme-invert) !important;
 }
 
 .has-background-invert {
-    background-color: var(--invert) !important;
+  background-color: var(--scheme-invert) !important;
 }
 
 .has-text-invert {
-    color: var(--invert) !important;
+  color: var(--scheme-invert) !important;
 }
 
-.hase-background-on-scheme {
-    background-color: var(--scheme) !important;
+.has-background-on-scheme {
+  background-color: var(--scheme-main) !important;
 }
 
 .has-text-on-scheme {
-    color: var(--scheme) !important;
+  color: var(--scheme-main) !important;
+}
+
+.is-transparent {
+  background-color: #0000 !important;
 }
 
 .has-text-weight-black {
-    font-weight: 900 !important;
+  font-weight: 900 !important;
+}
+
+.has-border-on-hover {
+  border-width: $border-width !important;
+  border-style: solid !important;
+  border-color: #0000 !important;
+  transition: border-width $transition-duration $transition-timing-function
+    border-style $transition-duration $transition-timing-function border-color
+    $transition-duration $transition-timing-function !important;
+}
+
+.has-border-on-hover:hover {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: var(--scheme-invert) !important;
+}
+
+.has-text-invert-on-hover,
+.has-text-on-scheme-on-hover {
+  transition: color $transition-duration $transition-timing-function !important;
+}
+
+.has-background-invert-on-hover,
+.has-background-on-scheme-on-hover {
+  transition: background-color $transition-duration $transition-timing-function !important;
+}
+
+.has-text-invert-on-hover:hover {
+  color: var(--scheme-invert) !important;
+}
+
+.has-text-on-scheme-on-hover:hover {
+  color: var(--scheme-main) !important;
+}
+
+.has-background-invert-on-hover:hover {
+  background-color: var(--scheme-invert) !important;
+}
+
+.has-background-on-scheme-on-hover:hover {
+  background-color: var(--scheme-main) !important;
 }

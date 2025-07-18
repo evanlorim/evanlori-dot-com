@@ -5,10 +5,8 @@
     | default: site.data.default.transformation.gallery %}
 {% assign src = include.public_id,
     | image_url: transformation %}
-
-<a href="#modal-{{ include.i }}" style="height:100%; width:100%;">
-    <img
-        class="has-border-1"
-        src="{{ src }}"
-        style="object-fit: cover; height: 100%; width: 100%;" />
-</a>
+<div class="gallery-image-container">
+    <a href="#modal-{{ include.i }}">
+        <img class="gallery-image has-border" src="{{ src }}" />
+    </a>
+</div>

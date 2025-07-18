@@ -1,3 +1,18 @@
-- public_id: xxx
+- public_id: portfolio/drawing-portrait-self-acne-scars
   type: thumb
-  transformation: []
+  transformation: ["c_crop,x_175,y_324,w_1536,h_1536", "c_scale,w_512,h_512"]
+- public_id: portfolio/project-figures-in-space-photo
+  type: thumb
+  transformation: ["c_crop,x_1490,y_356,w_3253,h_3253", "c_scale,w_512,h_512"]
+- public_id: portfolio/painting-noni-photo
+  type: thumb
+  transformation: ["c_crop,x_280,y_283,w_1949,h_1949", "c_scale,w_512,h_512"]
+- public_id: portfolio/painting-attractor-photo-01
+  type: thumb
+  transformation: ["c_crop,x_83,y_390,w_838,h_828", "c_scale,w_512,h_512"]
+- public_id: portfolio/painting-beauty-photo
+  type: thumb
+  transformation: ["c_crop,x_551,y_576,w_1907,h_1907", "c_scale,w_512,h_512"]
+- public_id: portfolio/painting-please-dont-die-photo-post-processed
+  type: thumb
+  transformation: ["c_crop,x_124,y_104,w_1051,h_1051", "c_scale,w_512,h_512"]

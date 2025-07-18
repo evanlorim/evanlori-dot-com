@@ -14,4 +14,5 @@ images:
   -  portfolio/project-personal-is-political-09
 meta:
   software: [aseprite]
+  palette: [pico8]
 ---

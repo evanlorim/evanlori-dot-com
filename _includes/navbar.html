@@ -1,16 +1,16 @@
 <nav
-    class="navbar has-border-bottom-1 is-spaced is-family-secondary has-text-weight-bold is-size-5"
+    class="navbar has-border-bottom is-spaced is-family-secondary has-text-weight-bold is-size-5"
     role="navigation"
     aria-label="main-navigation">
     <div class="container">
         <div class="is-flex is-justify-content-center is-align-items-center" style="width: 100%">
-            <a class="navbar-item is-radiusless has-text-invert" href="/">
+            <a class="navbar-item is-radiusless has-text-invert has-border-on-hover has-background-on-scheme-on-hover" href="/">
                 <strong>
                     {{ site.title_short }}
                 </strong>
             </a>
             {% for pg in site.data.pages %}
-                <a class="navbar-item is-radiusless has-text-invert" href="{{ site.base_url | append: pg.href }}">
+                <a class="navbar-item is-radiusless has-text-invert has-border-on-hover has-background-on-scheme-on-hover" href="{{ site.base_url | append: pg.href }}">
                     {{ pg.title }}
                 </a>
             {% endfor %}

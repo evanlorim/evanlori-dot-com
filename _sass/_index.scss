@@ -9,13 +9,14 @@
 
 @forward "bulma/sass/base";
 @forward "bulma/sass/components/breadcrumb";
-@use "bulma/sass/components/modal" with (
-    $modal-content-width: v.$modal-content-width
-);
+@forward "bulma/sass/components/modal";
 @use "bulma/sass/components/navbar" with (
     $navbar-background-color: v.$navbar-background-color
 );
-@forward "bulma/sass/components/pagination";
+@use "bulma/sass/components/pagination" with (
+    $pagination-item-border-width: v.$pagination-item-border-width,
+    $pagination-shadow-inset: v.$pagination-shadow-inset
+);
 @forward "bulma/sass/elements/block";
 @use "bulma/sass/elements/box" with (
     $box-shadow: v.$box-shadow,
@@ -34,7 +35,7 @@
 );
 @forward "bulma/sass/elements/title";
 @forward "bulma/sass/grid";
-@forward "bulma/sass/helpers/aspect-ratio";
+
 @forward "bulma/sass/helpers/border";
 @forward "bulma/sass/helpers/color";
 @forward "bulma/sass/helpers/flexbox";
@@ -58,5 +59,14 @@
 @forward "theme";
 
 @forward "helpers";
-@forward "components/hover";
-@forward "components/masonry";
+@use "components/hover" with (
+    $transition-duration: v.$transition-duration,
+    $transition-timing-function: v.$transition-timing-function
+);
+@use "components/modal-image" with (
+    $modal-image-margin-x: v.$modal-image-margin-x,
+    $modal-image-margin-y: v.$modal-image-margin-y
+);
+@use "components/gallery-image" with (
+    $gallery-image-max-height: v.$gallery-image-max-height
+);

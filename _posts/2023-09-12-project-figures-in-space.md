@@ -6,6 +6,6 @@ images:
   -  portfolio/project-figures-in-space-photo
   -  portfolio/project-figures-in-space-linework
 meta:
-  media: [gouache, colored-pencils, paint-markers, oil-pastels]
-  substrate: [synthetic-surface]
+  media: [gouache, colored-pencil, paint-marker, oil-pastel]
+  surface: [synthetic-surface]
 ---

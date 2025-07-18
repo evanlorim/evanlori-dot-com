@@ -1,10 +1,10 @@
 ---
 title: "Painting: @Tractor"
 categories: [painting,abstract]
-thumb: portfolio/painting-attractor-photo # TODO Get better photo
+thumb: portfolio/painting-attractor-photo-01
 images:
-  -  portfolio/painting-attractor-photo
+  -  portfolio/painting-attractor-photo-01
 meta:
   media: [acrylic-paint]
-  substrate: [canvas]
+  surface: [canvas]
 ---

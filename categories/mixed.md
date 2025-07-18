@@ -1,5 +1,5 @@
 ---
-title: "Mixed Media"
+title: Mixed Media
 permalink: /portfolio/mixed
 pagination:
     enabled: true

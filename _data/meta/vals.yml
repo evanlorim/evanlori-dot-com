@@ -7,17 +7,45 @@
   id: postgresql
   title: PostgreSQL
 
+- key: font
+  id: avara
+  title: Avara
+  link: https://velvetyne.fr/fonts/avara/
+
+- key: font
+  id: darumadrop-one
+  title: Darumadrop One
+  link: https://fonts.google.com/specimen/Darumadrop+One
+
+- key: icon
+  id: remix
+  title: Remix Icon
+  link: https://remixicon.com/
+
+- key: icon
+  id: simple
+  title: Simple Icons
+  link: https://simpleicons.org/
+
+- key: icon
+  id: fa
+  title: FontAwesome
+  link: https://fontawesome.com/
+
 - key: framework
   id: bulma
   title: Bulma
+  link: https://bulma.io/
 
 - key: framework
   id: godot
   title: Godot
+  link: https://godotengine.org/
 
 - key: framework
   id: jekyll
   title: Jekyll
+  link: https://jekyllrb.com/
 
 - key: language
   id: css
@@ -50,14 +78,17 @@
 - key: library
   id: d3
   title: d3
+  link: https://d3js.org/
 
 - key: library
   id: leaflet
   title: Leaflet
+  link: https://leafletjs.com/
 
 - key: library
   id: p5
   title: p5
+  link: https://p5js.org/
 
 - key: media
   id: acrylic-paint
@@ -65,15 +96,19 @@
 
 - key: media
   id: alcohol-markers
-  title: alcohol markers
+  title: alcohol marker
+
+- key: media
+  id: ballpoint
+  title: ballpoint pen
 
 - key: media
   id: collage
   title: collage
 
 - key: media
-  id: colored-pencils
-  title: colored pencils
+  id: colored-pencil
+  title: colored pencil
 
 - key: media
   id: gouache
@@ -84,6 +119,14 @@
   title: graphite
 
 - key: media
+  id: grease-pencil
+  title: grease pencil
+
+- key: media
+  id: highlighter
+  title: highlighter
+
+- key: media
   id: ink
   title: ink
 
@@ -92,38 +135,42 @@
   title: oil paint
 
 - key: media
-  id: oil-pastels
-  title: oil pastels
+  id: oil-pastel
+  title: oil pastel
 
 - key: media
-  id: paint-markers
-  title: paint markers
+  id: paint-marker
+  title: paint marker
 
 - key: media
   id: paper
   title: paper
 
 - key: media
-  id: pigment-pens
-  title: pigment pens
+  id: pigment-pen
+  title: pigment pen
 
 - key: media
   id: watercolor
   title: watercolor
 
-- key: substrate
+- key: surface
   id: hotpress
   title: hot-press watercolor paper
 
-- key: substrate
+- key: surface
   id: coldpress
   title: cold-press watercolor paper
 
-- key: substrate
+- key: surface
   id: synthetic-surface
   title: synthetic surface
 
-- key: substrate
+- key: surface
+  id: computer-paper
+  title: computer paper
+
+- key: surface
   id: canvas
   title: canvas
 
@@ -171,29 +218,45 @@
   id: nodejs
   title: NodeJS
 
+- key: reference
+  id: croquis
+  title: Croquis Cafe
+  link: https://www.croquiscafe.com
+
 - key: software
   id: aseprite
   title: Aseprite
+  link: https://www.aseprite.org/
 
 - key: software
   id: blender
   title: Blender
+  link: https://www.blender.org/
 
 - key: software
   id: gimp
   title: GIMP
+  link: https://www.gimp.org/
 
 - key: software
   id: inkscape
   title: Inkscape
+  link: https://inkscape.org/
 
 - key: software
   id: krita
   title: Krita
+  link: https://krita.org/
+
+- key: software
+  id: open-camera
+  title: Open Camera
+  link: https://opencamera.org.uk/
 
 - key: software
   id: procreate
   title: Procreate
+  link: https://procreate.com/
 
 - key: links
   id: itchio

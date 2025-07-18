@@ -37,7 +37,8 @@
                                 | first -%}
                             {%- if val_data -%}
                                 {%- if val_data.link -%}
-                                    <a href="{{- val.data.link -}}">
+                                    <a href="{{- val_data.link -}}">
+										
                                         {{- val_data.title -}}
                                     </a>
                                 {%- else -%}

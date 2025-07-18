@@ -2,15 +2,15 @@
 ---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
-  <body>
-    {% include navbar.html %}
-    {% include hero.html title = page.title subtitle = page.subtitle %}
-    <section class="section">
-      <div class="container">
-        {{ content }}
-      </div>
-    </section>
-    {% include footer.html %}
-  </body>
+    {% include head.html %}
+    <body>
+        {% include navbar.html %}
+        {% include hero.html title = page.title subtitle = page.subtitle %}
+        <section class="section">
+            <div class="container">
+                {{ content }}
+            </div>
+        </section>
+        {% include footer.html %}
+    </body>
 </html>
