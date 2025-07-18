@@ -11,4 +11,5 @@ meta:
   icon: [simple, remix]
   links:
     - [github,https://github.com/evanlorim/evanlori-dot-com]
+    - [url,https://evanlori.com]
 ---
