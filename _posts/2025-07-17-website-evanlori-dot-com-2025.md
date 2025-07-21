@@ -7,7 +7,7 @@ images:
 meta:
   framework: [bulma,jekyll]
   language: [css,html,ruby]
-  fonts: [avara]
+  font: [avara]
   icon: [simple, remix]
   links:
     - [github,https://github.com/evanlorim/evanlori-dot-com]
