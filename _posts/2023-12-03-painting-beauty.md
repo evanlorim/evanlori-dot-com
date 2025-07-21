@@ -6,5 +6,6 @@ images:
   - portfolio/painting-beauty-photo
 meta:
   media: [oil-paint]
+  photographer: [ian]
   surface: [canvas]
 ---

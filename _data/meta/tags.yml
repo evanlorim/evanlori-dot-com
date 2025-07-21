@@ -35,6 +35,10 @@
   title: Palette
   icon: ri-palette-fill
 
+- id: photographer
+  title: Photographer
+  icon: ri-camera-3-fill
+
 - id: rte
   title: Run Time Environment
   icon: ri-cpu-fill

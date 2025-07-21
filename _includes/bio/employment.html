@@ -1,14 +1,15 @@
 <table class="table is-fullwidth">
-        <thead>
-                <tr>
-                        <th colspan="2">
-                                <p class="title is-4">Employment:</p>
-                        </th>
-                </tr>
-        </thead>
-        <tbody>
-                {% for job in site.data.bio.employment %}
-                        {% include bio/job.html title = job.title employer = job.employer location = job.location dates = job.dates %}
-                {% endfor %}
-        </tbody>
+  <thead>
+    <tr>
+      <th colspan="2">
+        <p class="title is-4">Employment:
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for job in site.data.bio.employment %}
+      {% include bio/job.html title = job.title employer = job.employer location = job.location dates = job.dates %}
+    {% endfor %}
+  </tbody>
 </table>

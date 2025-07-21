@@ -1,0 +1,22 @@
+{%- assign t_data = site.data.meta.tags
+  | where: 'id', 'dimensions'
+  | first -%}
+<span class="icon-text is-nowrap">
+  <span class="icon">
+    <span class="{{- t_data.icon -}}"></span>
+  </span>
+  <span>
+    <b>
+      {{- t_data.title -}}:
+    </b>
+    &nbsp;
+  </span>
+</span>
+<span>
+  {%- for val in include.vals -%}
+    {{- val -}}
+    {%- unless forloop.last -%}
+      ,&nbsp;
+    {%- endunless -%}
+  {%- endfor -%}
+</span>

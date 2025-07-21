@@ -1,308 +1,321 @@
 ---
-- key: database
+- tag: database
   id: mongodb
   title: MongoDB
 
-- key: database
+- tag: database
   id: postgresql
   title: PostgreSQL
 
-- key: font
+- tag: font
   id: avara
   title: Avara
   link: https://velvetyne.fr/fonts/avara/
 
-- key: font
+- tag: font
   id: darumadrop-one
   title: Darumadrop One
   link: https://fonts.google.com/specimen/Darumadrop+One
 
-- key: icon
+- tag: icon
   id: remix
   title: Remix Icon
   link: https://remixicon.com/
 
-- key: icon
+- tag: icon
   id: simple
   title: Simple Icons
   link: https://simpleicons.org/
 
-- key: icon
+- tag: icon
   id: fa
   title: FontAwesome
   link: https://fontawesome.com/
 
-- key: framework
+- tag: framework
   id: bulma
   title: Bulma
   link: https://bulma.io/
 
-- key: framework
+- tag: framework
   id: godot
   title: Godot
   link: https://godotengine.org/
 
-- key: framework
+- tag: framework
   id: jekyll
   title: Jekyll
   link: https://jekyllrb.com/
 
-- key: language
+- tag: language
   id: css
   title: CSS
 
-- key: language
+- tag: language
   id: glsl
   title: GLSL
 
-- key: language
+- tag: language
   id: html
   title: HTML
 
-- key: language
+- tag: language
   id: js
   title: Javascript
 
-- key: language
+- tag: language
   id: python
   title: Python
 
-- key: language
+- tag: language
   id: r
   title: R
 
-- key: language
+- tag: language
   id: ruby
   title: Ruby
 
-- key: library
+- tag: library
   id: d3
   title: d3
   link: https://d3js.org/
 
-- key: library
+- tag: library
   id: leaflet
   title: Leaflet
   link: https://leafletjs.com/
 
-- key: library
+- tag: library
   id: p5
   title: p5
   link: https://p5js.org/
 
-- key: media
+- tag: media
   id: acrylic-paint
   title: acrylic paint
 
-- key: media
+- tag: media
   id: alcohol-marker
   title: alcohol marker
 
-- key: media
+- tag: media
   id: ballpoint
   title: ballpoint pen
 
-- key: media
+- tag: media
   id: collage
   title: collage
 
-- key: media
+- tag: media
   id: colored-pencil
   title: colored pencil
 
-- key: media
+- tag: media
   id: gouache
   title: gouache
 
-- key: media
+- tag: media
   id: graphite
   title: graphite
 
-- key: media
+- tag: media
   id: grease-pencil
   title: grease pencil
 
-- key: media
+- tag: media
   id: highlighter
   title: highlighter
 
-- key: media
+- tag: media
   id: ink
   title: ink
 
-- key: media
+- tag: media
   id: oil-paint
   title: oil paint
 
-- key: media
+- tag: media
   id: oil-pastel
   title: oil pastel
 
-- key: media
+- tag: media
   id: paint-marker
   title: paint marker
 
-- key: media
+- tag: media
   id: paper
   title: paper
 
-- key: media
+- tag: media
   id: pigment-pen
   title: pigment pen
 
-- key: media
+- tag: media
   id: watercolor
   title: watercolor
 
-- key: surface
+- tag: media
+  id: vinyl
+  title: vinyl
+
+- tag: surface
   id: hotpress
   title: hot-press watercolor paper
 
-- key: surface
+- tag: surface
   id: coldpress
   title: cold-press watercolor paper
 
-- key: surface
+- tag: surface
+  id: construction
+  title: construction paper
+
+- tag: surface
   id: synthetic-surface
   title: synthetic surface
 
-- key: surface
+- tag: surface
   id: cardstock
   title: cardstock
 
-- key: surface
+- tag: surface
   id: computer-paper
   title: computer paper
 
-- key: surface
+- tag: surface
   id: mixed
   title: mixed media paper
 
-- key: surface
+- tag: surface
   id: marker
   title: marker paper
 
-- key: surface
+- tag: surface
   id: newsprint
   title: newsprint
 
-- key: surface
+- tag: surface
   id: kraft
   title: kraft paper
 
-- key: surface
+- tag: surface
   id: bristol
   title: bristol paper
 
-- key: surface
+- tag: surface
   id: canvas
   title: canvas
 
-- key: palette
+- tag: palette
   id: bw
   title: black and white
 
-- key: palette
+- tag: palette
   id: clement8
   title: Clément 8
   link: "https://lospec.com/palette-list/clement-8"
 
-- key: palette
+- tag: palette
   id: color
   title: color
 
-- key: palette
+- tag: palette
   id: hisat
   title: high saturation
 
-- key: palette
+- tag: palette
   id: losat
   title: low saturation
 
-- key: palette
+- tag: palette
   id: matriax8c
   title: Matriax8c
   link: "https://lospec.com/palette-list/matriax8c"
 
-- key: palette
+- tag: palette
   id: mono
   title: monochromatic
 
-- key: palette
+- tag: palette
   id: pico8
   title: Pico 8
   link: "https://lospec.com/palette-list/pico-8"
 
-- key: palette
+- tag: palette
   id: shikiori
   title: Sailor Shikiori
   link: "https://shikiori-en.sailor.co.jp/ink-color-lineup/"
 
-- key: rte
+- tag: photographer
+  id: ian
+  title: Ian Welch
+  link: "https://www.instagram.com/ianwe86/"
+
+- tag: rte
   id: nodejs
   title: NodeJS
 
-- key: reference
+- tag: reference
   id: croquis
   title: Croquis Cafe
   link: https://www.croquiscafe.com
 
-- key: software
+- tag: software
   id: aseprite
   title: Aseprite
   link: https://www.aseprite.org/
 
-- key: software
+- tag: software
   id: blender
   title: Blender
   link: https://www.blender.org/
 
-- key: software
+- tag: software
   id: gimp
   title: GIMP
   link: https://www.gimp.org/
 
-- key: software
+- tag: software
   id: inkscape
   title: Inkscape
   link: https://inkscape.org/
 
-- key: software
+- tag: software
   id: krita
   title: Krita
   link: https://krita.org/
 
-- key: software
+- tag: software
   id: open-camera
   title: Open Camera
   link: https://opencamera.org.uk/
 
-- key: software
+- tag: software
   id: procreate
   title: Procreate
   link: https://procreate.com/
 
-- key: links
+- tag: links
   id: itchio
   title: Itch.io
   icon: si si-itchdotio
 
-- key: links
+- tag: links
   id: github
   title: Github
   icon: si si-github
 
-- key: links
+- tag: links
   id: codepen
   title: Codepen
   icon: si si-codepen
 
-- key: links
+- tag: links
   id: gumroad
   title: Gumroad
   icon: si si-gumroad
 
-- key: links
+- tag: links
   id: url
   title: URL
   icon: ri-links-fill

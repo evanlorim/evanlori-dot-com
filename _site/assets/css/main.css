@@ -18955,7 +18955,7 @@ has-background-danger.is-hoverable:active {
   border-width: 1px !important;
   border-style: solid !important;
   border-color: rgba(0, 0, 0, 0) !important;
-  transition: border-width 0.3s ease border-style 0.3s ease border-color 0.3s ease !important;
+  transition: border-width 294ms ease border-style 294ms ease border-color 294ms ease !important;
 }
 
 .has-border-on-hover:hover {
@@ -18966,12 +18966,12 @@ has-background-danger.is-hoverable:active {
 
 .has-text-invert-on-hover,
 .has-text-on-scheme-on-hover {
-  transition: color 0.3s ease !important;
+  transition: color 294ms ease !important;
 }
 
 .has-background-invert-on-hover,
 .has-background-on-scheme-on-hover {
-  transition: background-color 0.3s ease !important;
+  transition: background-color 294ms ease !important;
 }
 
 .has-text-invert-on-hover:hover {
@@ -18990,14 +18990,14 @@ has-background-danger.is-hoverable:active {
   background-color: var(--scheme-main) !important;
 }
 
-.is-fullwidth {
-  width: 100%;
-}
-
 @media screen and (max-width: 1023px) {
   .is-unclickable-touch {
     pointer-events: none;
   }
+}
+
+.is-nowrap {
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 1024px) {
@@ -19028,7 +19028,7 @@ has-background-danger.is-hoverable:active {
 
 .modal-image {
   max-width: calc(100vw - 4rem);
-  max-height: calc(100vh - 4rem);
+  max-height: calc(100vh - 2.5rem);
   width: auto;
   height: auto;
   display: block;

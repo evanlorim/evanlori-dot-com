@@ -1,0 +1,32 @@
+{%- assign t_data = site.data.meta.tags
+  | where: 'id', include.tag
+  | first -%}
+<span class="icon-text is-nowrap">
+  <span class="icon">
+    <span class="{{- t_data.icon -}}"></span>
+  </span>
+  <span>
+    <b>
+      {{- t_data.title -}}:
+    </b>
+    &nbsp;
+  </span>
+</span>
+<span>
+  {%- for val in include.vals -%}
+    {%- assign v_data = site.data.meta.vals
+      | where: 'tag', tag
+      | where: 'id', val 
+      | first -%}
+    {%- if v_data.link -%}
+      <a href="{{v_data.link}}">
+        {{- v_data.title -}}
+      </a>
+    {%- else -%}
+      {{- v_data.title -}}
+    {%- endif -%}
+    {%- unless forloop.last -%}
+      ,&nbsp;
+    {%- endunless -%}
+  {%- endfor -%}
+</span>

@@ -1,0 +1,20 @@
+{%- assign v_data = site.data.meta.vals
+  | where: 'tag', 'links'
+  | where: 'id', include.id
+  | first -%}
+<span class="icon-text is-no-wrap">
+  <span class="icon">
+    <span class="{{- v_data.icon -}}"></span>
+  </span>
+  <span>
+    <b>
+      {{- v_data.title -}}:
+    </b>
+    &nbsp;
+  </span>
+</span>
+<span>
+  <a href="{{- include.url -}}">
+    {{- include.url -}}
+  </a>
+</span>

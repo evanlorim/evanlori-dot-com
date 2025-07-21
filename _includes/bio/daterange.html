@@ -1,0 +1,10 @@
+<time class="is-nowrap" datetime="2016-1-1">
+  {{ include.start | date: '%^b %y' }}
+</time>
+<br class="is-hidden-desktop">
+<span class="is-nowrap">
+  &nbsp;-&nbsp;
+  <time datetime="2016-1-1">
+    {{ include.end | date: '%^b %y' | default: 'PRESENT' }}
+  </time>
+</span>

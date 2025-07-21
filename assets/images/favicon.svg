@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" id="svg8" inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)" sodipodi:docname="favicon.svg" inkscape:export-filename="favicon-16x16.png" inkscape:export-xdpi="32" inkscape:export-ydpi="32" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <defs id="defs2">
+        <inkscape:path-effect is_visible="true" id="path-effect2734" effect="spiro" lpeversion="0" />
+        <inkscape:path-effect simplify_just_coalesce="false" simplify_individual_paths="false" helper_size="0" smooth_angles="360" threshold="0.00108696" steps="1" is_visible="true" id="path-effect2732" effect="simplify" lpeversion="0" />
+        <inkscape:path-effect is_visible="true" id="path-effect2696" effect="spiro" lpeversion="0" />
+        <inkscape:path-effect simplify_just_coalesce="false" simplify_individual_paths="false" helper_size="0" smooth_angles="360" threshold="0.00108696" steps="1" is_visible="true" id="path-effect2694" effect="simplify" lpeversion="0" />
+        <inkscape:path-effect effect="simplify" id="path-effect2694-9" is_visible="true" steps="1" threshold="0.00108696" smooth_angles="360" helper_size="0" simplify_individual_paths="false" simplify_just_coalesce="false" lpeversion="0" />
+        <inkscape:path-effect effect="spiro" id="path-effect2696-4" is_visible="true" lpeversion="0" />
+    </defs>
+    <sodipodi:namedview id="base" pagecolor="#e5e5e5" bordercolor="#000000" borderopacity="1" inkscape:pageopacity="1" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="400" inkscape:cy="560" inkscape:document-units="px" inkscape:current-layer="layer1" inkscape:document-rotation="0" showgrid="true" units="px" guidecolor="#ff0000" guideopacity="0.49803922" borderlayer="false" showborder="true" inkscape:showpageshadow="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1">
+        <inkscape:grid type="xygrid" id="grid835" units="px" spacingx="4" spacingy="4" color="#0000ff" opacity="0.14901961" empspacing="4" empcolor="#0000ff" empopacity="0.25098039" dotted="false" originx="0" originy="0" />
+        <sodipodi:guide position="0,2999.9999" orientation="0,7559.0551" id="guide887" inkscape:locked="false" />
+        <sodipodi:guide position="1999.9999,2999.9999" orientation="11338.583,0" id="guide889" inkscape:locked="false" />
+        <sodipodi:guide position="1999.9999,0" orientation="0,-7559.0551" id="guide891" inkscape:locked="false" />
+        <sodipodi:guide position="0,0" orientation="-11338.583,0" id="guide893" inkscape:locked="false" />
+        <inkscape:grid empspacing="1" spacingy="100" spacingx="100" id="grid2747" type="xygrid" originx="0" originy="0" units="px" />
+    </sodipodi:namedview>
+    <metadata id="metadata5">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:creator>
+                    <cc:Agent>
+                        <dc:title>Evan Lori Mahone</dc:title>
+                    </cc:Agent>
+                </dc:creator>
+                <dc:language>English</dc:language>
+                <cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+                <dc:rights>
+                    <cc:Agent>
+                        <dc:title>CC0</dc:title>
+                    </cc:Agent>
+                </dc:rights>
+            </cc:Work>
+            <cc:License rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+                <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+            </cc:License>
+        </rdf:RDF>
+    </metadata>
+    <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+        <circle style="fill:#ffffff;fill-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers" id="path3" cx="24" cy="24" r="24" />
+        <path style="font-weight:bold;font-size:50px;line-height:16.7436px;font-family:Avara;-inkscape-font-specification:'Avara Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:1.74412" d="M 25.99996566772461,9.999999999999996 31.99996566772461,12 35.99996566772461,18 33.99996566772461,22 17.99996566772461,26 19.99996566772461,34 25.99996566772461,36 29.99996566772461,34 34.95834420339084,29.58639904721779 35.04158713205837,32.41360095278219 31.99996566772461,36 27.99996566772461,38 H 21.99996566772461 L 15.99996566772461,36 11.99996566772461,28 V 20 L 15.99996566772461,12 21.99996566772461,9.999999999999996 Z M 19.99996566772461,14 17.99996566772461,24 27.99996566772461,20 V 14 L 23.99996566772461,12 Z" id="text1" aria-label="e" sodipodi:nodetypes="ccccccccccccccccccccccccc" />
+    </g>
+</svg>

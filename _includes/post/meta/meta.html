@@ -1,0 +1,21 @@
+{% for kv in include.meta %}
+  {% assign tag = kv[0] %}
+  {% assign vals = kv[1] %}
+  {% if tag == 'dimensions' %}
+    <p>
+      {% include post/meta/dimensions.html vals=vals %}
+    </p>
+  {% elsif tag == 'links' %}
+    {% for val in vals %}
+      {% assign id = val[0] %}
+      {% assign url = val[1] %}
+      <p>
+        {% include post/meta/link.html id=id url=url %}
+      </p>
+    {% endfor %}
+  {% else %}
+    <p>
+      {% include post/meta/tag.html tag=tag vals=vals %}
+    </p>
+  {% endif %}
+{% endfor %}
