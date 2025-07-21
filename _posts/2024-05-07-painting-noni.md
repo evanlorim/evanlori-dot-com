@@ -5,7 +5,7 @@ thumb: portfolio/painting-noni-photo
 images:
   - portfolio/painting-noni-photo
 meta:
-  dimensions: [8in x 11in]
+  dimension: [8in x 11in]
   media: [acrylic-paint]
   surface: [canvas]
 ---
