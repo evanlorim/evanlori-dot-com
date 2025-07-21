@@ -10,5 +10,5 @@ meta:
   software: [procreate]
   media: [paint-marker, paper, vinyl]
   photographer: [ian]
-  surface: [synthetic-surface, construction-paper]
+  surface: [synthetic-surface, construction]
 ---
