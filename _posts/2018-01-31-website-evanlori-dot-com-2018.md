@@ -1,5 +1,5 @@
 ---
-title: "Website: Evan Lori Dot Com  2018"
+title: "Website: Evan Lori Dot Com    2018"
 categories: [code]
 thumb: portfolio/website-evanlori-dot-com-2018-screenshot
 images:

@@ -1,19 +1,36 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.indentSize": 2,
   "editor.insertSpaces": true,
   "files.associations": {
-    "*.html": "liquid",
-    "*.md": "liquid"
-  },
-  "[markdown]": {
-    "editor.indentSize": 2,
-    "editor.tabSize": 2
+    "*.md": "liquid",
+    "*.yaml.liquid": "liquid",
+    "*.json.liquid": "liquid",
+    "*.html": "liquid"
   },
   "[yaml]": {
-    "editor.indentSize": 2,
-    "editor.tabSize": 2
+    "editor.insertSpaces": true,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.quickSuggestions": {
+      "strings": true,
+      "other": true,
+      "comments": false
+    }
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
   },
   "[liquid]": {
     "editor.defaultFormatter": "sissel.shopify-liquid",
@@ -44,6 +61,10 @@
     "config.rb": true,
     "Rakefile": true,
     "Gemfile": true,
-    "package.json": true
+    "package.json": true,
+    "config/": true,
+    "lib/": true,
+    "log/": true,
+    "Capfile": true
   }
 }

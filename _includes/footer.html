@@ -1,10 +1,10 @@
-<footer class="footer has-border-top  ">
-    <div class="container">
-        <div class="content has-text-centered is-size-7">
-            {% for credit in site.data.credits %}
-                {% include footer/credit.html asset = credit.asset author = credit.author license = credit.license source = credit.source
-                  %}
-            {% endfor %}
+<footer class="footer has-border-top    ">
+        <div class="container">
+                <div class="content has-text-centered is-size-7">
+                        {% for credit in site.data.credits %}
+                                {% include footer/credit.html asset = credit.asset author = credit.author license = credit.license source = credit.source
+                                    %}
+                        {% endfor %}
+                </div>
         </div>
-    </div>
 </footer>

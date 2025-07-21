@@ -13,7 +13,7 @@
     "preserveLine": 2,
     "endNewline": true,
     "liquid": {
-      "indentAttribute": false,
+      "indentAttribute": true,
       "lineBreakSeparator": "before",
       "normalizeSpacing": true,
       "quoteConvert": "single",
@@ -22,7 +22,7 @@
     "markup": {
       "quoteConvert": "double",
       "selfCloseSpace": true,
-      "delimiterTerminus": "inline",
+      "delimiterTerminus": "force",
       "stripAttributeLines": true,
       "commentNewline": false,
       "forceIndent": true,

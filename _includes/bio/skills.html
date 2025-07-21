@@ -1,24 +1,24 @@
 <table class="table is-fullwidth">
-    <thead><tr><th><p class="title is-4">
-        Skills:
-    </p></th></tr></thead>
-    <tbody>
-        {%- assign types = site.data.bio.skills | map: 'type' | uniq | sort -%}
-        {%- for type in  types -%}
-            {%- assign title = site.data.bio.fields | where: 'id', type | map: 'title' | first -%}
-            {%- assign skills_of_type = site.data.bio.skills | where: 'type', type | map: 'title' | sort -%}
-            {%- if skills_of_type -%}
-                <tr>
-                    <td>
-                        <b>{{- title -}}</b>
-                        </br>
-                        {%- for skill in skills_of_type -%}
-                            {{ skill }}
-                            {%- unless forloop.last -%}{{- ", " -}}{%- endunless -%}
-                        {%- endfor -%}
-                    </td>
-                </tr>
-            {%- endif -%}
-        {%- endfor -%}
-    </tbody>
+        <thead><tr><th><p class="title is-4">
+                Skills:
+        </p></th></tr></thead>
+        <tbody>
+                {%- assign types = site.data.bio.skills | map: 'type' | uniq | sort -%}
+                {%- for type in    types -%}
+                        {%- assign title = site.data.bio.fields | where: 'id', type | map: 'title' | first -%}
+                        {%- assign skills_of_type = site.data.bio.skills | where: 'type', type | map: 'title' | sort -%}
+                        {%- if skills_of_type -%}
+                                <tr>
+                                        <td>
+                                                <b>{{- title -}}</b>
+                                                </br>
+                                                {%- for skill in skills_of_type -%}
+                                                        {{ skill }}
+                                                        {%- unless forloop.last -%}{{- ", " -}}{%- endunless -%}
+                                                {%- endfor -%}
+                                        </td>
+                                </tr>
+                        {%- endif -%}
+                {%- endfor -%}
+        </tbody>
 </table>

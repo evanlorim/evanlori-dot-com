@@ -3,9 +3,9 @@ title: "Editorial Illustration: Tonya Harding"
 categories: [illustration]
 thumb: portfolio/illustration-editorial-tonya-1
 images:
-  -  portfolio/illustration-editorial-tonya-1
-  -  portfolio/illustration-editorial-tonya-2
-  -  portfolio/illustration-editorial-tonya-3
+  - portfolio/illustration-editorial-tonya-1
+  - portfolio/illustration-editorial-tonya-2
+  - portfolio/illustration-editorial-tonya-3
 meta:
   software: [procreate]
 ---

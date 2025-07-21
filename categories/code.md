@@ -2,6 +2,6 @@
 title: Code
 permalink: /portfolio/code
 pagination:
-    enabled: true
-    category: code
+  enabled: true
+  category: code
 ---

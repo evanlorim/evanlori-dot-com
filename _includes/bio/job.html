@@ -1,24 +1,24 @@
 <tr>
-    <td class="">
-        <b>
-            {{ include.title | upcase }}
-        </b>
-        </br>
-        <i>{{ include.employer }}</i>
-        </br>{{ include.location }}
-    </td>
-    <td class="has-text-right">
-        {% for date in include.dates %}
-            <time datetime="2016-1-1">
-                {{ date.start | date: '%^b %y' }}
-            </time>
-            &nbsp;-&nbsp;
-            <time datetime="2016-1-1">
-                {{ date.end | date: '%^b %y' | default: 'PRESENT' }}
-            </time>
-            {% unless forloop.last %}
-            </br>
-            {% endunless %}
-        {% endfor %}
-    </td>
+        <td class="">
+                <b>
+                        {{ include.title | upcase }}
+                </b>
+                </br>
+                <i>{{ include.employer }}</i>
+                </br>{{ include.location }}
+        </td>
+        <td class="has-text-right">
+                {% for date in include.dates %}
+                        <time datetime="2016-1-1">
+                                {{ date.start | date: '%^b %y' }}
+                        </time>
+                        &nbsp;-&nbsp;
+                        <time datetime="2016-1-1">
+                                {{ date.end | date: '%^b %y' | default: 'PRESENT' }}
+                        </time>
+                        {% unless forloop.last %}
+                        </br>
+                        {% endunless %}
+                {% endfor %}
+        </td>
 </tr>

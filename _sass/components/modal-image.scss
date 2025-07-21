@@ -2,16 +2,16 @@ $modal-image-margin-x: 4rem !default;
 $modal-image-margin-y: 4rem !default;
 
 .modal-content:has(.modal-image) {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .modal-image {
-    max-width: calc(100vw - $modal-image-margin-x);
-    max-height: calc(100vh - $modal-image-margin-y);
-    width: auto;
-    height: auto;
-    display: block;
-    margin: auto;
-    object-fit: contain;
+  max-width: calc(100vw - $modal-image-margin-x);
+  max-height: calc(100vh - $modal-image-margin-y);
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
+  object-fit: contain;
 }

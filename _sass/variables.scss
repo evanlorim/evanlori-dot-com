@@ -13,6 +13,10 @@ $gallery-image-max-height: 720px;
 $family-primary: "Open Sans", sans-serif;
 $family-secondary: "Avara", serif;
 
+$gap: 32px;
+$tablet: 769px;
+$desktop: 960px + 2 * $gap;
+
 // bulma navbar
 $navbar-background-color: #0000;
 
@@ -34,3 +38,8 @@ $footer-background-color: #0000;
 $pagination-item-border-width: 1px;
 $pagination-shadow-inset: none;
 $pagination-disabled-border-color: #000;
+
+// bulma-card
+$card-background-color: #0000;
+$card-shadow: none;
+$card-radius: 0rem;

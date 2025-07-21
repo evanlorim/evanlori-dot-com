@@ -1,16 +1,22 @@
 <p>
-	{{- include.asset | capitalize -}}
-	{%- if include.author -%}
-		{{- " by " -}}
-		<b>{{- include.author -}}</b>
-	{%- endif -%}
-	{%- if include.license -%}
-		{{- " licensed under " -}}
-		<a href="{{- include.license.url -}}">{{- include.license.title -}}</a>
-	{%- endif -%}
-	{%- if include.source -%}
-		{{- " from " -}}
-		<a href="{{- include.source.url -}}">{{- include.source.title -}}</a>
-	{%- endif -%}
-	{{- "." -}}
+  {{- include.asset | capitalize -}}
+  {%- if include.author -%}
+    {{- ' by ' -}}
+    <b>
+      {{- include.author -}}
+    </b>
+  {%- endif -%}
+  {%- if include.license -%}
+    {{- ' licensed under ' -}}
+    <a href="{{- include.license.url -}}">
+      {{- include.license.title -}}
+    </a>
+  {%- endif -%}
+  {%- if include.source -%}
+    {{- ' from ' -}}
+    <a href="{{- include.source.url -}}">
+      {{- include.source.title -}}
+    </a>
+  {%- endif -%}
+  {{- '.' -}}
 </p>

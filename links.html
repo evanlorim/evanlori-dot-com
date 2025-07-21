@@ -4,19 +4,19 @@ title: Links
 ---
 {% assign types = site.data.links | map: 'type' | uniq %}
 <div class="columns">
-    {% for type in types %}
-        <div class="column has-text-centered">
-            <p class="title is-4 is-uppercase">
-                {{ type | capitalize }}
-            </p>
-            <ul>
-                {% assign links = site.data.links | where: 'type', type %}
-                {% for link in links %}
-                    <li class="pb-2">
-                        {% include links/link.html title = link.title icon = link.icon url = link.url user = link.user %}
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endfor %}
+  {% for type in types %}
+    <div class="column has-text-centered">
+      <p class="title is-4 is-uppercase">
+        {{ type | capitalize }}
+      </p>
+      <ul>
+        {% assign links = site.data.links | where: 'type', type %}
+        {% for link in links %}
+          <li class="pb-2">
+            {% include links/link.html title = link.title icon = link.icon url = link.url user = link.user %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
 </div>

@@ -1,23 +1,25 @@
 {% assign transformation = site.data.images.transformations
-    | where: 'type', 'modal'
-    | where: 'public_id', include.public_id
-    | first
-    | default: site.data.default.transformation.modal %}
+  | where: 'type', 'modal'
+  | where: 'public_id', include.public_id
+  | first
+  | default: site.data.default.transformation.modal %}
 {% assign src = include.public_id,
-    | image_url: transformation %}
+  | image_url: transformation %}
 
-<div class="modal" id="modal-{{ include.i }}">
-    <a href="#">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <img class="modal-image" src="{{ src }}" />
-        </div>
-    </a>
+<div class="modal is-hidden-touch" id="modal-{{ include.i }}">
+  <a href="#">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <img class="modal-image" src="{{ src }}" />
+    </div>
+  </a>
 </div>
 
 <style>
-    #modal-{{ include.i }}:target {
-        display: flex;
-    }
+  #modal-{{ include.i }}:target {
+    display: flex;
+  }
+
+
 
 </style>

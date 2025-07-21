@@ -2,29 +2,29 @@
 layout: default
 ---
 <div class="is-flex pb-2">
-    <div class="box has-border is-flex is-flex-grow-0">
-        {% include breadcrumbs.html url=page.url %}
-    </div>
+  <div class="box has-border is-flex is-flex-grow-0">
+    {% include breadcrumbs.html url=page.url %}
+  </div>
 </div>
 <div class="columns is-1 is-multiline">
-    {% for post in paginator.posts %}
-        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
-            {% assign transformation = site.data.images.transformations
-                | where: 'type', 'thumb'
-                | where: 'public_id', post.thumb
-                | first
-                | map: 'transformation'
-                | default: site.data.default.transformation.thumb %}
-            {% include portfolio/square.html public_id = post.thumb transformation = transformation title = post.title url = post.url date = post.date
-              %}
-        </div>
-    {% endfor %}
+  {% for post in paginator.posts %}
+    <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
+      {% assign transformation = site.data.images.transformations
+        | where: 'type', 'thumb'
+        | where: 'public_id', post.thumb
+        | first
+        | map: 'transformation'
+        | default: site.data.default.transformation.thumb %}
+      {% include card.html public_id = post.thumb transformation = transformation title = post.title url = post.url date = post.date
+      %}
+    </div>
+  {% endfor %}
 </div>
 {% assign pages = site.posts
-    | where_exp: 'post', 'post.categories contains page.pagination.category' %}
+  | where_exp: 'post', 'post.categories contains page.pagination.category' %}
 
 {% unless pages.size <= site.pagination.per_page %}
-    <div class="box has-border mt-2">
-        {% include pagination.html %}
-    </div>
+  <div class="box has-border mt-2">
+    {% include pagination.html %}
+  </div>
 {% endunless %}

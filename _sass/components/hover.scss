@@ -1,23 +1,27 @@
+@use "../bulma/sass/utilities/mixins";
 $transition-duration: 0.3s !default;
 $transition-timing-function: ease !default;
+$desktop: 1024 !default;
 
-.hover-initial {
+@include mixins.from($desktop) {
+  .hover-initial {
     cursor: pointer;
     display: block;
     transition: opacity $transition-duration $transition-timing-function;
     + .hover-terminal {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: opacity $transition-duration $transition-timing-function;
-        display: flex;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity $transition-duration $transition-timing-function;
+      display: flex;
     }
-}
+  }
 
-.hover-initial:hover {
+  .hover-initial:hover {
     opacity: 0;
     + .hover-terminal {
-        opacity: 1;
+      opacity: 1;
     }
+  }
 }

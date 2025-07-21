@@ -3,7 +3,7 @@ title: "Illustration: Celebrity with Pet"
 categories: [illustration]
 thumb: portfolio/illustration-celebrity-with-pet
 images:
-  -  portfolio/illustration-celebrity-with-pet
+  - portfolio/illustration-celebrity-with-pet
 meta:
   palette: [bw]
   software: [procreate]

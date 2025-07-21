@@ -2,6 +2,6 @@
 title: Illustration
 permalink: /portfolio/illustration
 pagination:
-    enabled: true
-    category: illustration
+  enabled: true
+  category: illustration
 ---

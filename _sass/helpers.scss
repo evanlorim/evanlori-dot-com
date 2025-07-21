@@ -1,6 +1,8 @@
+@use "bulma/sass/utilities/mixins";
 $transition-duration: 0.3s !default;
 $transition-timing-function: ease !default;
 $border-width: 1px !default;
+$desktop: 1024 !default;
 
 .has-border {
   border-width: $border-width !important;
@@ -95,4 +97,10 @@ $border-width: 1px !default;
 
 .has-background-on-scheme-on-hover:hover {
   background-color: var(--scheme-main) !important;
+}
+
+.is-unclickable-touch {
+  @include mixins.until($desktop) {
+    pointer-events: none;
+  }
 }

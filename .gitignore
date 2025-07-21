@@ -4,5 +4,4 @@
 .sass-cache
 .jekyll-cache
 .vscode
-config.rb
 node_modules

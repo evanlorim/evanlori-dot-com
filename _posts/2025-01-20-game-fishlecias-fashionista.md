@@ -3,9 +3,9 @@ title: "Game: Fishlecia's Fashionista"
 categories: [code,illustration]
 thumb: portfolio/game-fishlecias-fashionista-screenshot-003
 images:
-  -  portfolio/game-fishlecias-fashionista-screenshot-001
-  -  portfolio/game-fishlecias-fashionista-screenshot-002
-  -  portfolio/game-fishlecias-fashionista-screenshot-003
+  - portfolio/game-fishlecias-fashionista-screenshot-001
+  - portfolio/game-fishlecias-fashionista-screenshot-002
+  - portfolio/game-fishlecias-fashionista-screenshot-003
 meta:
   framework: [godot]
   palette: [clement8]

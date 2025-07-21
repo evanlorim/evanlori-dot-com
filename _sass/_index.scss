@@ -3,35 +3,43 @@
 // BULMA STUFF
 
 @use "bulma/sass/utilities" with (
-    $family-primary: v.$family-primary,
-    $family-secondary: v.$family-secondary
+  $family-primary: v.$family-primary,
+  $family-secondary: v.$family-secondary,
+  $gap: v.$gap,
+  $tablet: v.$tablet,
+  $desktop: v.$desktop
 );
 
 @forward "bulma/sass/base";
 @forward "bulma/sass/components/breadcrumb";
+@use "bulma/sass/components/card" with (
+  $card-background-color: v.$card-background-color,
+  $card-shadow: v.$card-shadow,
+  $card-radius: v.$card-radius
+);
 @forward "bulma/sass/components/modal";
 @use "bulma/sass/components/navbar" with (
-    $navbar-background-color: v.$navbar-background-color
+  $navbar-background-color: v.$navbar-background-color
 );
 @use "bulma/sass/components/pagination" with (
-    $pagination-item-border-width: v.$pagination-item-border-width,
-    $pagination-shadow-inset: v.$pagination-shadow-inset
+  $pagination-item-border-width: v.$pagination-item-border-width,
+  $pagination-shadow-inset: v.$pagination-shadow-inset
 );
 @forward "bulma/sass/elements/block";
 @use "bulma/sass/elements/box" with (
-    $box-shadow: v.$box-shadow,
-    $box-radius: v.$box-radius,
-    $box-background-color: v.$box-background-color
+  $box-shadow: v.$box-shadow,
+  $box-radius: v.$box-radius,
+  $box-background-color: v.$box-background-color
 );
 @forward "bulma/sass/elements/button";
 @forward "bulma/sass/elements/content";
 @forward "bulma/sass/elements/icon";
 @forward "bulma/sass/elements/image";
 @use "bulma/sass/elements/table" with (
-    $table-cell-border-width: v.$table-cell-border-width,
-    $table-head-cell-border-width: v.$table-head-cell-border-width,
-    $table-foot-cell-border-width: v.$table-foot-cell-border-width,
-    $table-background-color: v.$table-background-color
+  $table-cell-border-width: v.$table-cell-border-width,
+  $table-head-cell-border-width: v.$table-head-cell-border-width,
+  $table-foot-cell-border-width: v.$table-foot-cell-border-width,
+  $table-background-color: v.$table-background-color
 );
 @forward "bulma/sass/elements/title";
 @forward "bulma/sass/grid";
@@ -49,7 +57,7 @@
 
 @forward "bulma/sass/layout/container";
 @use "bulma/sass/layout/footer" with (
-    $footer-background-color: v.$footer-background-color
+  $footer-background-color: v.$footer-background-color
 );
 @forward "bulma/sass/layout/hero";
 @forward "bulma/sass/layout/media";
@@ -60,13 +68,14 @@
 
 @forward "helpers";
 @use "components/hover" with (
-    $transition-duration: v.$transition-duration,
-    $transition-timing-function: v.$transition-timing-function
+  $transition-duration: v.$transition-duration,
+  $transition-timing-function: v.$transition-timing-function,
+  $desktop: v.$desktop
 );
 @use "components/modal-image" with (
-    $modal-image-margin-x: v.$modal-image-margin-x,
-    $modal-image-margin-y: v.$modal-image-margin-y
+  $modal-image-margin-x: v.$modal-image-margin-x,
+  $modal-image-margin-y: v.$modal-image-margin-y
 );
 @use "components/gallery-image" with (
-    $gallery-image-max-height: v.$gallery-image-max-height
+  $gallery-image-max-height: v.$gallery-image-max-height
 );

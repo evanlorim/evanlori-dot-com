@@ -3,47 +3,47 @@ title: Evan Lori Mahone
 
 # Build settings
 plugins:
-    - jekyll-paginate-v2
+  - jekyll-paginate-v2
 
 cloud_name: evanlori
 
 defaults:
-    - scope:
-          type: posts
-      values:
-          layout: post
-    - scope:
-          path: categories/
-      values:
-          layout: category
+  - scope:
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: categories/
+    values:
+      layout: category
 
 exclude:
-    - .jekyll-cache/
-    - .sass-cache/
-    - .vscode/
-    - .liquidrc
-    - .prettierrc
-    - node_modules/
-    - config.rb
-    - tasks/
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - package.json
-    - README.md
-    - Rakefile
-    - yarn.lock
+  - .jekyll-cache/
+  - .sass-cache/
+  - .vscode/
+  - .liquidrc
+  - .prettierrc
+  - node_modules/
+  - config.rb
+  - tasks/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - package.json
+  - README.md
+  - Rakefile
+  - yarn.lock
 
 sass:
-    style: expanded
-    sass_dir: _sass
+  style: expanded
+  sass_dir: _sass
 
 pagination:
-    enabled: true
-    per_page: 12
-    limit: 0
-    sort_field: "date"
-    sort_reverse: true
-    trail:
-        before: 2
-        after: 2
+  enabled: true
+  per_page: 12
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2

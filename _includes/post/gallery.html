@@ -1,9 +1,9 @@
 <div class="columns is-1 is-multiline is-centered">
-    {% for public_id in include.images %}
-        {% capture i %}{% increment i %}{% endcapture %}
-        <div class="column is-one-third-desktop is-one-half-tablet is-full-mobile">
-            {% include post/gallery-image.html public_id = public_id i = i %}
-            {% include post/modal-image.html public_id = public_id i = i %}
-        </div>
-    {% endfor %}
+  {% for public_id in include.images %}
+    {% capture i %}{% increment i %}{% endcapture %}
+    <div class="column is-one-third-desktop is-one-half-tablet is-full-mobile">
+      {% include post/gallery-image.html public_id = public_id i = i %}
+      {% include post/modal-image.html public_id = public_id i = i %}
+    </div>
+  {% endfor %}
 </div>

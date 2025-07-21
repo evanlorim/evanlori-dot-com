@@ -11,7 +11,7 @@ title: Portfolio
         | first
         | map: 'transformation'
         | default: site.data.default.transformation.thumb %}
-      {% include portfolio/square.html public_id = cat.thumb title = cat.title url = cat.permalink transformation = transformation %}
+      {% include card.html public_id = cat.thumb title = cat.title url = cat.permalink transformation = transformation haslabel=true %}
     </div>
   {% endfor %}
 </div>
