@@ -16,3 +16,6 @@
 - public_id: portfolio/painting-please-dont-die-photo-post-processed
   type: thumb
   transformation: ["c_crop,x_124,y_104,w_1051,h_1051", "c_scale,w_512,h_512"]
+- public_id: portfolio/handout-bmore-tmor-2018-front
+  type: thumb
+  transformation: ["c_crop,x_150,y_150,w_1350,h_1350", "c_scale,w_512,h_512"]

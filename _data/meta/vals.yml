@@ -17,6 +17,16 @@
   title: Darumadrop One
   link: https://fonts.google.com/specimen/Darumadrop+One
 
+- tag: font
+  id: blackout
+  title: Blackout
+  link: https://www.theleagueofmoveabletype.com/blackout
+
+- tag: font
+  id: saira-sc
+  title: Saira Semi-Condensed
+  link: https://fonts.google.com/specimen/Saira+Semi+Condensed
+
 - tag: icon
   id: remix
   title: Remix Icon
@@ -158,6 +168,22 @@
   id: vinyl
   title: vinyl
 
+- tag: media
+  id: cutting-machine
+  title: cutting machine
+
+- tag: media
+  id: construction
+  title: construction paper
+
+- tag: media
+  id: synthetic
+  title: synthetic surface
+
+- tag: media
+  id: cardboard
+  title: cardboard
+
 - tag: surface
   id: hotpress
   title: hot-press watercolor paper
@@ -171,7 +197,7 @@
   title: construction paper
 
 - tag: surface
-  id: synthetic-surface
+  id: synthetic
   title: synthetic surface
 
 - tag: surface

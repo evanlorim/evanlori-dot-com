@@ -6,5 +6,5 @@ images:
   - portfolio/drawing-portrait-self-acne-scars
 meta:
   media: [gouache, oil-pastel, acrylic-paint]
-  surface: [synthetic-surface]
+  surface: [synthetic]
 ---

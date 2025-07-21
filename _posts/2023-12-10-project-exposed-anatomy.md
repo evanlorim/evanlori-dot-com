@@ -8,7 +8,7 @@ images:
   - portfolio/project-exposed-anatomy-photo
 meta:
   software: [procreate]
-  media: [paint-marker, paper, vinyl]
+  media: [paint-marker, paper, vinyl, cutting-machine]
   photographer: [ian]
-  surface: [synthetic-surface, construction]
+  surface: [synthetic, construction]
 ---
