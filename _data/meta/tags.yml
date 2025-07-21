@@ -55,6 +55,10 @@
   title: Software
   icon: ri-apps-2-fill
 
+- id: tool
+  title: Tools
+  icon: ri-tools-fill
+
 - id: links
   title: Links
   icon: ri-links-fill

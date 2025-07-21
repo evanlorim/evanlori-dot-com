@@ -295,6 +295,11 @@
   title: Procreate
   link: https://procreate.com/
 
+- tag: tool
+  id: waid-3
+  title: WAID 3
+  link: https://evanlori.com/code/2018/03/26/code-wave-3
+
 - tag: links
   id: itchio
   title: Itch.io
