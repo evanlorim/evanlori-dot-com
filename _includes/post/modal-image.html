@@ -1,6 +1,7 @@
 {% assign transformation = site.data.images.transformations
   | where: 'type', 'modal'
   | where: 'public_id', include.public_id
+  | map: 'transformation'
   | first
   | default: site.data.default.transformation.modal %}
 {% assign src = include.public_id,
