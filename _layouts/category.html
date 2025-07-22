@@ -9,13 +9,7 @@ layout: default
 <div class="columns is-1 is-multiline">
   {% for post in paginator.posts %}
     <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
-      {% assign transformation = site.data.images.transformations
-        | where: 'type', 'thumb'
-        | where: 'public_id', post.thumb
-        | first
-        | map: 'transformation'
-        | default: site.data.default.transformation.thumb %}
-      {% include card.html public_id = post.thumb transformation = transformation title = post.title url = post.url date = post.date
+      {% include card.html public_id = post.thumb title = post.title url = post.url date = post.date
       %}
     </div>
   {% endfor %}

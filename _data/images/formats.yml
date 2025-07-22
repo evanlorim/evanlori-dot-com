@@ -1,3 +1,6 @@
 - public_id: portfolio/patternalia-012
   type: gallery
   format: gif
+- public_id: portfolio/patternalia-012
+  type: modal
+  format: gif

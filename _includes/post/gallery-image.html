@@ -1,11 +1,4 @@
-{% assign transformation = site.data.images.transformations
-  | where: 'type', 'gallery'
-  | where: 'public_id', include.public_id
-  | map: 'transformation'
-  | first
-  | default: site.data.default.transformation.gallery %}
-{% assign src = include.public_id,
-  | image_url: transformation %}
+{% assign src = include.public_id, | image_url: 'gallery' %}
 <div class="gallery-image-container">
   <a class="is-unclickable-touch" href="#modal-{{ include.i }}">
     <img class="gallery-image has-border" src="{{ src }}" />

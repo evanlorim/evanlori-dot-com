@@ -1,0 +1,8 @@
+transformation:
+  thumb: ["c_auto,g_auto,w_512,h_512"]
+  modal: ["c_fit,w_1920,h_1440"]
+  gallery: ["c_fit,w_1440,h_1440"]
+format:
+  thumb: "jpeg"
+  modal: "jpeg"
+  gallery: "jpeg"

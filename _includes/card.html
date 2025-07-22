@@ -1,5 +1,4 @@
-{% assign src = include.public_id
-  | image_url: include.transformation %}
+{% assign src = include.public_id | image_url: 'thumb' %}
 <div class="card">
   <div class="card-image">
     <a href="{{ include.url }}">

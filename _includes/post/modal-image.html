@@ -1,11 +1,4 @@
-{% assign transformation = site.data.images.transformations
-  | where: 'type', 'modal'
-  | where: 'public_id', include.public_id
-  | map: 'transformation'
-  | first
-  | default: site.data.default.transformation.modal %}
-{% assign src = include.public_id,
-  | image_url: transformation %}
+{% assign src = include.public_id, | image_url: 'modal' %}
 
 <div class="modal is-hidden-touch" id="modal-{{ include.i }}">
   <a href="#">
@@ -20,7 +13,5 @@
   #modal-{{ include.i }}:target {
     display: flex;
   }
-
-
 
 </style>
