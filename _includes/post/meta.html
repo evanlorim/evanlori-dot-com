@@ -1,3 +1,6 @@
+<p>
+  {% include post/meta/date.html date=include.date %}
+</p>
 {% for kv in include.meta %}
   {% assign tag = kv[0] %}
   {% assign vals = kv[1] %}

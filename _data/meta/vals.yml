@@ -8,6 +8,11 @@
   title: PostgreSQL
 
 - tag: font
+  id: afacad-flux
+  title: Afacad Flux
+  link: https://fonts.google.com/specimen/Afacad+Flux
+
+- tag: font
   id: avara
   title: Avara
   link: https://velvetyne.fr/fonts/avara/
@@ -21,6 +26,16 @@
   id: blackout
   title: Blackout
   link: https://www.theleagueofmoveabletype.com/blackout
+
+- tag: font
+  id: grenze
+  title: Grenze
+  link: https://fonts.google.com/specimen/Grenze
+
+- tag: font
+  id: texturina
+  title: Texturina
+  link: https://fonts.google.com/specimen/Texturina
 
 - tag: font
   id: saira-sc
@@ -233,34 +248,14 @@
   title: canvas
 
 - tag: palette
-  id: bw
-  title: black and white
-
-- tag: palette
   id: clement8
   title: Clément 8
   link: "https://lospec.com/palette-list/clement-8"
 
 - tag: palette
-  id: color
-  title: color
-
-- tag: palette
-  id: hisat
-  title: high saturation
-
-- tag: palette
-  id: losat
-  title: low saturation
-
-- tag: palette
   id: matriax8c
   title: Matriax8c
   link: "https://lospec.com/palette-list/matriax8c"
-
-- tag: palette
-  id: mono
-  title: monochromatic
 
 - tag: palette
   id: pico8
@@ -271,6 +266,11 @@
   id: shikiori
   title: Sailor Shikiori
   link: "https://shikiori-en.sailor.co.jp/ink-color-lineup/"
+
+- tag: palette
+  id: krita-cmyk
+  title: Krita CMYK Swatch
+  link: "https://github.com/KDE/krita/blob/master/krita/data/palettes/swatch-cmyk.gpl"
 
 - tag: photographer
   id: ian
@@ -325,6 +325,11 @@
   id: waid-3
   title: WAID 3
   link: https://evanlori.com/code/2018/03/26/code-wave-3
+
+- tag: tool
+  id: guilloche-ext
+  title: Guilloche Extension for Inkscape
+  link: https://inkscape.org/~DrWiggly/%E2%98%85guillocheextensions-for-v1x
 
 - tag: links
   id: itchio

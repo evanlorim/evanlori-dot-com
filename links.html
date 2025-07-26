@@ -3,20 +3,28 @@ layout: default
 title: Links
 ---
 {% assign types = site.data.links | map: 'type' | uniq %}
-<div class="columns">
+<div class="columns is-centered">
   {% for type in types %}
-    <div class="column has-text-centered">
-      <p class="title is-4 is-uppercase">
-        {{ type | capitalize }}
-      </p>
-      <ul>
-        {% assign links = site.data.links | where: 'type', type %}
-        {% for link in links %}
-          <li class="pb-2">
-            {% include links/link.html title = link.title icon = link.icon url = link.url user = link.user %}
-          </li>
-        {% endfor %}
-      </ul>
+    {% assign links = site.data.links | where: 'type', type %}
+    <div class="column">
+      <table class="table is-fullwidth is-narrow">
+        <thead>
+          <tr>
+            <th class="has-text-centered title is-4 is-uppercase pb-4">
+              {{ type }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for link in links %}
+            <tr>
+              <td class="has-text-centered">
+                {% include links/link.html title = link.title icon = link.icon url = link.url user = link.user %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   {% endfor %}
 </div>

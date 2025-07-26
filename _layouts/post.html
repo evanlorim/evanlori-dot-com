@@ -4,7 +4,7 @@ layout: default
 {% include post/gallery.html images = page.images %}
 {% if page.meta %}
   <div class="box has-border mt-2">
-    {% include post/meta/meta.html meta = page.meta %}
+    {% include post/meta.html meta = page.meta date = page.date %}
   </div>
 {% endif %}
 {% if content.size > 1 %}

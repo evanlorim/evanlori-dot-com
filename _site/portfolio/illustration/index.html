@@ -376,43 +376,49 @@ has-text-centered is-justify-content-center is-align-items-center p-4">
     
 
 
-
-
-
-
 <nav
   class="pagination is-centered"
   role="navigation"
   aria-label="pagination"
 >
-  <a class="pagination-previous is-radiusless has-border is-disabled" href="">
+  <a
+    class="pagination-previous is-radiusless has-border is-hidden-touch
+     is-disabled "
+    >
     <span class=icon>
       <i class="ri-arrow-left-s-line"></i>
     </span>
   </a>
-  <a class="pagination-next is-radiusless has-border " href="">
+  <a
+    class="pagination-next is-radiusless has-border is-hidden-touch
+    "
+    >
     <span class=icon>
       <i class="ri-arrow-right-s-line"></i>
     </span>
   </a>
+  <br>
   <ul class="pagination-list">
     <li>
-      <a class="pagination-link is-radiusless has-border" href="/portfolio/illustration/">
+      <a
+        class="pagination-link is-radiusless has-border
+         is-disabled "
+        >
         <span class=icon>
           <i class="ri-skip-left-line"></i>
         </span>
       </a>
     </li>
     <li>
-      <span class="pagination-ellipsis">
-        &hellip;
+      <span class="pagination-ellipsis">&hellip;
       </span>
     </li>
     
       
       <li>
         <a
-          class="pagination-link is-radiusless has-border is-current"
+          class="pagination-link is-radiusless has-border 
+          is-current"
           href="/portfolio/illustration/index.html"
           title="Illustration"
         >
@@ -423,7 +429,8 @@ has-text-centered is-justify-content-center is-align-items-center p-4">
       
       <li>
         <a
-          class="pagination-link is-radiusless has-border "
+          class="pagination-link is-radiusless has-border 
+          "
           href="/portfolio/illustration/page2/index.html"
           title="Illustration - page 2"
         >
@@ -432,12 +439,14 @@ has-text-centered is-justify-content-center is-align-items-center p-4">
       </li>
     
     <li>
-      <span class="pagination-ellipsis">
-        &hellip;
+      <span class="pagination-ellipsis">&hellip;
       </span>
     </li>
     <li>
-      <a class="pagination-link is-radiusless has-border" href="/portfolio/illustration/page2/">
+      <a
+        class="pagination-link is-radiusless has-border
+      "
+        >
         <span class="icon">
           <i class="ri-skip-right-line"></i>
         </span>

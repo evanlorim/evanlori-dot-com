@@ -1,38 +1,38 @@
 ---
-- id: abstract
-  title: Abstract Art
-  permalink: /portfolio/abstract/
-  thumb: portfolio/drawing-abstract-2023-01-10-post-processed
-
-- id: code
-  title: Code
-  permalink: /portfolio/code/
-  thumb: portfolio/code-wave-3-bw
-
 - id: design
   title: Graphic Design
   permalink: /portfolio/design/
-  thumb: portfolio/pamphlet-trans-maryland-2023-05-07-inside-web
+  thumb: portfolio/flyer-trans-resistance-and-resilience-2020
 
 - id: drawing
   title: Drawing
   permalink: /portfolio/drawing/
   thumb: portfolio/drawing-portrait-self-acne-scars
 
-- id: illustration
-  title: Illustration
-  permalink: /portfolio/illustration/
-  thumb: portfolio/illustration-revealing
-
 - id: mixed
   title: Mixed Media
   permalink: /portfolio/mixed/
   thumb: portfolio/project-figures-in-space-photo
 
+- id: illustration
+  title: Illustration
+  permalink: /portfolio/illustration/
+  thumb: portfolio/illustration-revealing
+
 - id: painting
   title: Painting
   permalink: /portfolio/painting/
   thumb: portfolio/painting-noni-photo
+
+- id: code
+  title: Code
+  permalink: /portfolio/code/
+  thumb: portfolio/code-wave-3-bw
+
+- id: abstract
+  title: Abstract Art
+  permalink: /portfolio/abstract/
+  thumb: portfolio/drawing-abstract-2023-01-10-post-processed
 
 - id: sketch
   title: Sketchbook

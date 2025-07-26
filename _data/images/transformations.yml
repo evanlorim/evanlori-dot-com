@@ -19,3 +19,9 @@
 - public_id: portfolio/handout-bmore-tmor-2018-front
   type: thumb
   transformation: ["c_crop,x_150,y_150,w_1350,h_1350", "c_scale,w_512,h_512"]
+- public_id: portfolio/flyer-trans-resistance-and-resilience-2020
+  type: thumb
+  transformation: ["c_crop,x_80,y_800,w_2048,h_2048", "c_scale,w_512,h_512"]
+- public_id: portfolio/pamphlet-trans-maryland-2023-05-07-inside-web
+  type: thumb
+  transformation: ["c_crop,x_0,y_0,w_1536,h_1536", "c_scale,w_512,h_512"]

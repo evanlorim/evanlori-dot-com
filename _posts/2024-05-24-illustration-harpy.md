@@ -7,5 +7,4 @@ images:
   - portfolio/illustration-harpy-original
 meta:
   software: [procreate, inkscape]
-  palette: [bw]
 ---

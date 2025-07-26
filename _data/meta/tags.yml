@@ -62,3 +62,7 @@
 - id: links
   title: Links
   icon: ri-links-fill
+
+- id: date
+  title: Date
+  icon: ri-calendar-fill
