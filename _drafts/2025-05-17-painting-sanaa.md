@@ -1,5 +1,5 @@
 ---
-title: "Painting: @Tractor"
+title: "Painting: Sanaa"
 categories: [painting]
 meta:
   media: [acrylic-paint]
