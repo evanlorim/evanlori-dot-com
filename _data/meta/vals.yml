@@ -18,9 +18,9 @@
   link: https://velvetyne.fr/fonts/avara/
 
 - tag: font
-  id: darumadrop-one
-  title: Darumadrop One
-  link: https://fonts.google.com/specimen/Darumadrop+One
+  id: basteleur
+  title: Basteleur
+  link: https://velvetyne.fr/fonts/basteleur/
 
 - tag: font
   id: blackout
@@ -28,19 +28,49 @@
   link: https://www.theleagueofmoveabletype.com/blackout
 
 - tag: font
+  id: darumadrop-one
+  title: Darumadrop One
+  link: https://mksd.jp/darumadrop.html
+
+- tag: font
+  id: enoway-pro
+  title: Enoway Pro
+  link: https://www.behance.net/gallery/207949409/Enoway-Pro-Art-Deco-Free-Font
+
+- tag: font
+  id: faune
+  title: Faune
+  link: https://frenchtype.com/Faune
+
+- tag: font
+  id: gay-pinson
+  title: Gay Pinson
+  link: https://partage.lokipropagand.art/products/gay-pinson/
+
+- tag: font
   id: grenze
   title: Grenze
   link: https://fonts.google.com/specimen/Grenze
 
 - tag: font
+  id: saira
+  title: Saira
+  link: https://fonts.google.com/specimen/Saira+Semi+Condensed
+
+- tag: font
+  id: spectral
+  title: Spectral
+  link: https://productiontype.com/font/spectral
+
+- tag: font
+  id: telma
+  title: Telma
+  link: https://www.fontshare.com/?q=Telma
+
+- tag: font
   id: texturina
   title: Texturina
   link: https://fonts.google.com/specimen/Texturina
-
-- tag: font
-  id: saira-sc
-  title: Saira Semi-Condensed
-  link: https://fonts.google.com/specimen/Saira+Semi+Condensed
 
 - tag: icon
   id: remix
@@ -261,6 +291,11 @@
   id: pico8
   title: Pico 8
   link: "https://lospec.com/palette-list/pico-8"
+
+- tag: palette
+  id: reasonable-colors
+  title: Reasonable Colors
+  link: https://www.reasonable.work/colors/
 
 - tag: palette
   id: shikiori
