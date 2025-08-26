@@ -12,7 +12,7 @@ yarn install
 ```
 eval (ssh-agent -c)
 ssh-add ~/.ssh/id_ed25519
-git push -A
+git add -A
 git commit - m *message*
 git push origin master
 cap production deploy
