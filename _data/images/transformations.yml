@@ -25,3 +25,9 @@
 - public_id: portfolio/pamphlet-trans-maryland-2023-05-07-inside-web
   type: thumb
   transformation: ["c_crop,x_0,y_0,w_1536,h_1536", "c_scale,w_512,h_512"]
+- public_id: portfolio/flyer-trans-md-fundraiser-08-13-2025
+  type: thumb
+  transformation: ["c_crop,x_250,y_438,w_4000,h_4000", "c_scale,w_512,h_512"]
+- public_id: portfolio/flyer-trans-md-fundraiser-08-16-2025-inverse
+  type: thumb
+  transformation: ["c_crop,x_156,y_192,w_2488,h_2488", "c_scale,w_512,h_512"]
