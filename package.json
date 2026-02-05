@@ -6,7 +6,6 @@
     "repository": "https://github.com/evanlorim/evanlori-dot-com.git",
     "author": "Evan Lori Mahone",
     "license": "GPL3",
-    "private": false,
     "dependencies": {
         "bulma": "^1.0.4",
         "remixicon": "^4.6.0",
@@ -15,6 +14,5 @@
     "scripts": {
         "postinstall": "bundle exec rake post_install",
         "postuninstall": "bundle exec rake post_uninstall"
-    },
-    "devDependencies": {}
+    }
 }

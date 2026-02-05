@@ -60,16 +60,15 @@ end
 desc "copy all vendor libs"
 task :copy_vendors do
 	Rake::Task['copy_bulma'].execute
-	Rake::Task['copy_opencolor'].execute
 	Rake::Task['copy_simpleicons'].execute
-  Rake::Task['copy_remixicons'].execute
+  	Rake::Task['copy_remixicons'].execute
 end
 
 desc "delete all vendor libs"
 task :delete_vendors do
 	Rake::Task['delete_bulma'].execute
-	Rake::Task['delete_opencolor'].execute
 	Rake::Task['delete_simpleicons'].execute
+	Rake::Task['delete_remixicons'].execute
 end
 
 desc "post yarn install script"
